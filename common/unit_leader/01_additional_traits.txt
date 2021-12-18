@@ -20,7 +20,27 @@ leader_traits = {
 			factor = 0  # Scripted starting leaders only
 		}
 	}
-	
+	#############################
+	###AUSTRO HUNGARIAN TRAITS###
+	#############################
+
+	imperial_austrian_army = {
+		type = all
+		trait_type = personality_trait
+
+		new_commander_weight = {
+			factor = 0  # Scripted starting leaders only
+		}
+	}
+
+	imperial_austrian_navy = {
+		type = all
+		trait_type = personality_trait
+
+		new_commander_weight = {
+			factor = 0  # Scripted starting leaders only
+		}
+	}
 	#############################
 	#####RUSSIAN TRAITS##########
 	#############################
@@ -67,6 +87,15 @@ leader_traits = {
 	}
 
 	qing_airforce_trait = {
+		type = all
+		trait_type = personality_trait
+
+		new_commander_weight = {
+			factor = 0  # Scripted starting leaders only
+		}
+	}
+
+	nationalist_chinese = {
 		type = all
 		trait_type = personality_trait
 

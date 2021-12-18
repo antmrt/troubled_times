@@ -10,7 +10,7 @@ bookmarks = {
 			history = "GER_PRE_WW1_DESC"
 			ideology = neutrality
 			ideas = {
-				
+				GER_looming_revolution
 			}
 			focuses = {
 				

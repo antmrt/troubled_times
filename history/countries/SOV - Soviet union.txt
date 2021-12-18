@@ -3,7 +3,22 @@
 #### NO STEP BACK
 ####
 
+if = {
+	limit = {
+		has_start_date < 1919.1.1
 
+	}
+	give_military_access = GER
+	set_oob = "SOV_1918"
+	
+}
+1918.11.11 = {
+	declare_war_on = {
+		target = WHR
+		type = civil_war
+	}
+	add_civil_war_target = WHR
+}
 #You don't want Russian party names? Just remove these lines
 set_party_name = {
 	ideology = communism
@@ -695,6 +710,7 @@ starting_train_buffer = 3.0
 
 if = {
 	limit = {
+		has_start_date > 1919.1.1
 		NOT = {
 			has_dlc = "No Step Back"
 		}
@@ -703,12 +719,13 @@ if = {
 }
 if = {
 	limit = {
+		has_start_date > 1919.1.1
 		has_dlc = "No Step Back"
 	}
 	set_oob = "SOV_1936_nsb"
 }
 if = {
-	limit = { has_dlc = "Man the Guns" }
+	limit = { has_dlc = "Man the Guns" has_start_date > 1919.1.1}
 		set_naval_oob = "SOV_1936_naval_mtg"
 	else = {
 		set_naval_oob = "SOV_1936_naval_legacy"

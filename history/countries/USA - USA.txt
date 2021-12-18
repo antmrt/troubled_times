@@ -1,6 +1,14 @@
 ﻿capital = 361
 
-oob = "USA_1936"
+if = {
+	limit = {
+		has_start_date < 1919.1.1
+	}
+	set_oob = "USA_1918"
+	else = {
+		set_oob = "USA_1936"
+	}
+}
 
 starting_train_buffer = 5
 

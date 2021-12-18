@@ -22,9 +22,9 @@ state = {
 			controller = GER
 		}
 		1918.11.11 = {
-			owner = BEL
-			controller = BEL
-			remove_core_of = GER
+			owner = GER
+			controller = GER
+			
 		}
 
 		1941.1.1 = {

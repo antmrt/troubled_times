@@ -1,0 +1,23 @@
+
+capital = 28
+set_research_slots = 2
+set_stability = 0.65
+set_war_support = 0.15
+set_convoys = 10
+
+set_politics = {
+	ruling_party = communism
+	last_election = "1918.11.12"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 40
+	communism = 50
+	neutrality = 10
+}
+
+add_ideas = {
+	limited_conscription
+}

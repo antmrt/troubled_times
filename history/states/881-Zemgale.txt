@@ -9,9 +9,9 @@ state = {
 			industrial_complex = 1
 
 		}
-		add_core_of = LAT add_core_of = RUE add_core_of = WHR
+		add_core_of = LAT add_core_of = RUE add_core_of = WHR add_core_of = UBD
 
-		1918.11.11 = { owner = LAT controller = LAT }
+		1918.11.11 = { owner = UBD controller = UBD }
 		1941.1.1 = {
 			owner = SOV
 			controller = SOV

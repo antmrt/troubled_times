@@ -25,8 +25,8 @@ state = {
 		}
 
 		1918.11.11 = {
-			owner = YUG
-			controller = YUG
+			owner = SER
+			controller = SER
 		}
 
 		1941.1.1 = {

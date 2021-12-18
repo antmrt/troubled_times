@@ -1,0 +1,11 @@
+ideas = {
+	country = {
+		GER_looming_revolution = {
+			picture = generic_army_problems
+			modifier = {
+				stability_factor = -0.2
+
+			}
+		}
+	}
+}

@@ -16,9 +16,9 @@ state = {
 			controller = GER
 		}
 		1918.11.11 = {
-			owner = DEN
+			owner = GER
 			controller = DEN
-			remove_core_of = GER
+		
 		}
 
 		1940.1.1 = {

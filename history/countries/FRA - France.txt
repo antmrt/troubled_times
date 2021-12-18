@@ -1,7 +1,13 @@
 ﻿capital = 16
-
 if = {
 	limit = {
+		has_start_date < 1919.1.1
+	}
+	set_oob = "FRA_1918"
+}
+if = {
+	limit = {
+		has_start_date > 1919.1.1
 		NOT = {
 			has_dlc = "No Step Back"
 		}
@@ -10,6 +16,7 @@ if = {
 }
 if = {
 	limit = {
+		has_start_date > 1919.1.1
 		has_dlc = "No Step Back"
 	}
 	set_oob = "FRA_1936_nsb"
@@ -18,13 +25,23 @@ if = {
 starting_train_buffer = 2
 
 if = {
-	limit = { has_dlc = "Man the Guns" }
-		set_naval_oob = "FRA_1936_naval_mtg"
-		set_war_support = 0.1
-	else = {
-		set_naval_oob = "FRA_1936_naval_legacy"
-		set_war_support = 0.15
+	limit = { has_start_date > 1919.1.1 has_dlc = "Man the Guns" }
+	set_naval_oob = "FRA_1936_naval_mtg"
+	set_war_support = 0.1
+	
+}
+if= {
+	limit = {
+		has_start_date > 1919.1.1
+		NOT = {
+			has_dlc = "Man the Guns"
+		}
+
 	}
+	
+	set_naval_oob = "FRA_1936_naval_legacy"
+	set_war_support = 0.15
+	
 }
 
 set_research_slots = 3

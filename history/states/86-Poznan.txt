@@ -35,9 +35,9 @@ state = {
 			add_core_of = GER
 		}
 		1918.11.11 = {
-			owner = POL
-			controller = POL
-			remove_core_of = GER
+			owner = GER
+			controller = GER
+			
 		}
 		1938.3.12 = {
 			add_claim_by = GER

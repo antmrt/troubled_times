@@ -1,0 +1,77 @@
+leader_traits = {
+	#############################
+	#####OTTOMAN TRAITS##########
+	#############################
+
+	imperial_ottoman_army = {
+		type = all
+		trait_type = personality_trait
+
+		new_commander_weight = {
+			factor = 0  # Scripted starting leaders only
+		}
+	}
+
+	imperial_ottoman_navy = {
+		type = all
+		trait_type = personality_trait
+
+		new_commander_weight = {
+			factor = 0  # Scripted starting leaders only
+		}
+	}
+	
+	#############################
+	#####RUSSIAN TRAITS##########
+	#############################
+
+	imperial_russian_army = {
+		type = all
+		trait_type = personality_trait
+
+		new_commander_weight = {
+			factor = 0  # Scripted starting leaders only
+		}
+	}
+
+	imperial_russian_navy = {
+		type = all
+		trait_type = personality_trait
+
+		new_commander_weight = {
+			factor = 0  # Scripted starting leaders only
+		}
+	}
+
+
+	#############################
+	#####QING TRAITS#############
+	#############################
+
+	qing_army_trait = {
+		type = all
+		trait_type = personality_trait
+
+		new_commander_weight = {
+			factor = 0  # Scripted starting leaders only
+		}
+	}
+
+	qing_navy_trait = {
+		type = all
+		trait_type = personality_trait
+
+		new_commander_weight = {
+			factor = 0  # Scripted starting leaders only
+		}
+	}
+
+	qing_airforce_trait = {
+		type = all
+		trait_type = personality_trait
+
+		new_commander_weight = {
+			factor = 0  # Scripted starting leaders only
+		}
+	}
+}

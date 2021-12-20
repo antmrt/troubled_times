@@ -1,0 +1,13 @@
+BALTIC_soviet_defense = {
+	allowed = {
+		OR = {
+			tag = EST
+			tag = LAT
+			tag = LIT
+		}
+	}
+	priority = 500
+	visible = {
+		date < 1936.1.1
+	}
+}

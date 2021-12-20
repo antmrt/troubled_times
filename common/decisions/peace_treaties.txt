@@ -1,0 +1,314 @@
+ENTENTE_treaty_of_versailles = {
+ 	treaty_of_versailles_timer = {
+		allowed = {
+			OR = {
+				tag = BEL
+				tag = FRA
+				tag = GER
+				tag = ENG
+				tag = USA
+				tag = ITA
+				tag = POL
+				tag = DEN
+
+			}
+		}
+		cost = 20
+		days_mission_timeout = 435
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		activation = {
+			has_global_flag = compiegne_armistice_signed
+		}
+		timeout_effect = {
+			GER = {
+				country_event = {
+					id =  TT_INT_Germany.4
+					days = 1
+				}
+			}
+			FRA = {
+				dismantle_faction = yes
+			}
+		}
+
+		priority = 100
+		is_good = no
+
+	} 
+
+	VERS_increase_war_reparation_amounts = {
+		
+		days_remove = 10
+		allowed = {
+			OR = {
+				tag = BEL
+				tag = FRA
+				tag = ENG
+				tag = USA
+				tag = ITA
+				
+			}
+		}
+		visible = {
+			has_global_flag = compiegne_armistice_signed
+			
+		}
+		available = {
+			NOT = {
+				has_global_flag = GER_war_reparation_increase
+			}
+		}
+		ai_will_do = {
+			factor = 10000
+		}
+		complete_effect = {
+			set_global_flag = {
+				flag = GER_war_reparation_increase
+				value = 1
+				days = 10
+			}
+			if = {
+				limit = {
+					GER = {
+						NOT = {
+							has_variable = war_reparation_amount
+						}
+					}
+				}
+				GER = {set_variable = {war_reparation_amount = 0}}
+			}
+			GER = {
+				add_to_variable = {
+					war_reparation_amount = 1100
+				}
+			}
+		}
+	}
+
+	VERS_question_of_POL_corridor = {
+		
+		ai_will_do = {
+			base = 100
+			modifier = {
+				factor = 0
+				has_global_flag = Historical_POL_border
+				is_historical_focus_on = yes
+			}
+			modifier = {
+				factor = 0
+				has_global_flag = Althist_POL_border
+				is_historical_focus_on = no
+			}
+		}
+		cost = 100
+		allowed = {
+			OR = {
+				tag = BEL
+				tag = FRA
+				tag = ENG
+				tag = USA
+				tag = ITA
+				
+			}
+		}
+		visible = {
+			has_global_flag = compiegne_armistice_signed
+		}
+
+		complete_effect = {
+			country_event = TT_INT_Peace_treaty.1
+		}
+		fire_only_once = yes
+	}
+
+	VERS_border_plebiscite_POL = {
+		allowed = {
+			OR = {
+				tag = BEL
+				tag = FRA
+				tag = ENG
+				tag = USA
+				tag = ITA
+				
+			}
+		}
+		ai_will_do = {
+			base = 100
+			modifier = {
+				factor = 0
+				has_global_flag = POL_border_pleb
+				is_historical_focus_on = yes
+			}
+		}
+		cost = 10
+		
+		visible = {
+			has_global_flag = compiegne_armistice_signed
+		}
+ 
+		complete_effect = {
+			country_event = TT_INT_Peace_treaty.2
+		}
+		fire_only_once = yes
+
+	}
+
+	VERS_border_plebiscite_DEN = {
+		
+		ai_will_do = {
+			base = 100
+			modifier = {
+				factor = 0
+				has_global_flag = DEN_border_pleb
+				is_historical_focus_on = yes
+			}
+		}
+		allowed = {
+			OR = {
+				tag = BEL
+				tag = FRA
+				tag = ENG
+				tag = USA
+				tag = ITA
+				
+			}
+		}
+		cost = 10
+		visible = {
+			has_global_flag = compiegne_armistice_signed
+		}
+ 
+		complete_effect = {
+			country_event = TT_INT_Peace_treaty.3
+		}
+		fire_only_once = yes
+
+	}
+
+	VERS_SAAR_Question = {
+	
+		ai_will_do = {
+			base = 100
+			modifier = {
+				factor = 0
+				has_global_flag = SAAR_occupation
+				is_historical_focus_on = yes
+			}
+		}
+		allowed = {
+			OR = {
+				tag = BEL
+				tag = FRA
+				tag = ENG
+				tag = USA
+				tag = ITA
+				
+			}
+		}
+		visible = {
+			has_global_flag = compiegne_armistice_signed
+		}
+		cost = 25
+		complete_effect = {
+			country_event = TT_INT_Peace_treaty.4
+		}
+		fire_only_once = yes
+	}
+
+	VERS_Rheinland_Question = {
+		allowed = {
+			OR = {
+				tag = BEL
+				tag = FRA
+				tag = ENG
+				tag = USA
+				tag = ITA
+				
+			}
+		}
+		ai_will_do = {
+			base = 100
+			modifier = {
+				factor = 0
+				has_global_flag = RHEINLAND_DMZ_GER
+				is_historical_focus_on = yes
+			}
+			modifier = {
+				factor = 0
+				has_global_flag = Rheinland_occupied
+				is_historical_focus_on = no
+			}
+		}
+		visible = {
+			has_global_flag = compiegne_armistice_signed
+		}
+		cost = 25
+		complete_effect = {
+			country_event = TT_INT_Peace_treaty.5
+		}
+		fire_only_once = yes
+	}
+	VERS_air_restrictions = {
+		allowed = {
+			OR = {
+				tag = BEL
+				tag = FRA
+				tag = ENG
+				tag = USA
+				tag = ITA
+				
+			}
+		}
+		ai_will_do = {
+			base = 100
+			modifier = {
+				factor = 0
+				has_global_flag = tank_restriction_GER
+				is_historical_focus_on = yes
+			}
+		}
+		visible = {
+			has_global_flag = compiegne_armistice_signed
+		}
+		cost = 10
+		complete_effect = {
+			country_event = TT_INT_Peace_treaty.6
+		}
+		fire_only_once = yes
+	}
+
+	VERS_tank_restrictions = {
+		
+		ai_will_do = {
+			base = 100
+			modifier = {
+				factor = 0
+				has_global_flag = tank_restriction_GER
+				is_historical_focus_on = yes
+			}
+		}
+		allowed = {
+			OR = {
+				tag = BEL
+				tag = FRA
+				tag = ENG
+				tag = USA
+				tag = ITA
+				
+			}
+		}
+		visible = {
+			has_global_flag = compiegne_armistice_signed
+		}
+		cost = 10
+		complete_effect = {
+			country_event = TT_INT_Peace_treaty.7
+		}
+		fire_only_once = yes
+	}  
+
+} 

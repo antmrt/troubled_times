@@ -1,0 +1,9 @@
+TT_SOV_russian_civil_war = {
+	allowed = {
+		original_tag = SOV
+	}
+
+	visible = {
+		date < 1936.1.1
+	}
+}

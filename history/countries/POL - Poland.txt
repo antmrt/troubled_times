@@ -1,6 +1,10 @@
 ﻿capital = 10
+1918.1.1 = {
+	set_oob = "POL_1918"
+}
+1936.1.1 = {
+	set_oob= "POL_1936"
 
-oob = "POL_1936"
 if = {
 	limit = { has_dlc = "Man the Guns" }
 		set_naval_oob = "POL_1936_naval_mtg"
@@ -499,7 +503,7 @@ if = {
 		}
 	}
 }
-
+}
 
 # 1939 Start #
 1939.1.1 = {

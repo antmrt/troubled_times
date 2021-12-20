@@ -1,0 +1,14 @@
+characters = {
+	SOV_vladimir_lenin = {
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SOV/INT/Portrait_Russia_Vladimir_Lenin.dds"
+			}
+		}
+		country_leader = {
+			ideology = leninism
+			expire = "1924.1.21"
+			id = -1
+		}
+	}
+}

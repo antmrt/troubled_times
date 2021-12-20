@@ -1,0 +1,9 @@
+TT_POL_SOV_war = {
+	allowed = {
+		tag = POL
+	}
+	visible = {
+		date < 1936.1.1
+	}
+	priority = 500
+}

@@ -1,5 +1,8 @@
 ﻿capital = 107
-
+1918.1.1 = {
+	set_cosmetic_tag = YUG_state_SLO_CRO_SER
+	recruit_character = YUG_peter_i
+}
 if = {
 	limit = {
 		NOT = {
@@ -23,7 +26,7 @@ if = {
 }
 
 set_research_slots = 3
-
+1936.1.1 = {
 recruit_character = YUG_prince_paul
 recruit_character = YUG_milan_stojadinovic
 recruit_character = YUG_milan_grol
@@ -92,7 +95,7 @@ if = {
 		modifier = BFTB_balkan_pact_enemy
 	}
 }
-
+}
 set_technology = {
 	tech_support = 1		
 	tech_engineers = 1

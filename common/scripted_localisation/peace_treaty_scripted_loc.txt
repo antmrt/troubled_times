@@ -1,0 +1,204 @@
+defined_text = {
+	name = GetVersailles_treaty
+
+	text = {
+		trigger = {
+			original_tag = GER
+
+		}
+		localization_key = VERSAILLES_TREATY_GER
+	}
+
+	text = {
+		localization_key = VERSAILLES_TREATY_ENTENTE
+	}
+}
+
+
+defined_text = {
+	name = GetDanzigCorridorSituation
+
+	text = {
+		trigger = {
+			original_tag = GER
+			has_global_flag = Historical_POL_border
+
+		}
+		localization_key = HISTORICAL_POLISH_BORDER_GER
+	}
+
+	text = {
+		trigger = {
+			original_tag = GER
+			has_global_flag = Althist_POL_border
+		}
+		localization_key = ALT_HIST_POLISH_BORDER_GER
+	}
+	text = {
+		trigger = {
+			NOT = {original_tag = GER}
+			has_global_flag = Historical_POL_border
+
+		}
+		localization_key = HISTORICAL_POLISH_BORDER_ENTENTE
+	}
+
+	text = {
+		trigger = {
+			NOT = {original_tag = GER}
+			has_global_flag = Althist_POL_border
+		}
+		localization_key = ALT_HIST_POLISH_BORDER_ENTENTE
+	}
+	text = {
+		localization_key = UNDECIDED
+	}
+}
+
+defined_text = {
+ 	name = GetBorderPlebiscitePOL
+
+ 	text = {
+ 		trigger = {
+ 			
+ 			has_global_flag = POL_border_pleb
+ 		}
+ 		localization_key = POL_border_pleb
+ 	}
+	
+
+ 	
+}
+defined_text = {
+ 	name = GetBorderPlebisciteDEN
+
+ 	text = {
+ 		trigger = {
+ 			
+ 			has_global_flag = DEN_border_pleb
+ 		}
+ 		localization_key = DEN_border_pleb
+ 	}
+
+
+}
+
+defined_text = {
+ 	name = GetSaarSituation
+
+ 	text = {
+ 		trigger = {
+ 			original_tag = GER
+ 			has_global_flag = SAAR_occupation
+ 		}
+ 		localization_key = SAAR_OCCUPATION_GER
+ 	}
+	 text = {
+		trigger = {
+			NOT = {original_tag = GER}
+			has_global_flag = SAAR_occupation
+		}
+		localization_key = SAAR_OCCUPATION_ENTENTE
+	}
+ 	text = {
+ 		localization_key = UNDECIDED
+ 	}
+}
+defined_text = {
+ 	name = GetRheinlandSituation
+
+ 	text = {
+ 		trigger = {
+ 			
+ 			has_global_flag = RHEINLAND_DMZ_GER
+ 		}
+ 		localization_key = RHEINLAND_DMZ_GER
+ 	}
+
+ 	text = {
+ 		trigger = {
+ 			original_tag = GER
+ 			has_global_flag = Rheinland_occupied
+ 		}
+ 		localization_key = RHEINLAND_OCCUPIED_GER
+ 	}
+
+	
+
+	text = {
+		trigger = {
+			NOT = {original_tag = GER}
+			has_global_flag = Rheinland_occupied
+		}
+		localization_key = RHEINLAND_OCCUPIED_ENTENTE
+	}
+ 	text = {
+ 		localization_key = UNDECIDED
+ 	}
+}
+
+defined_text = {
+	name = GetGERTankRestrictions
+
+	text = {
+		trigger = {
+			original_tag = GER
+			has_global_flag = tank_restriction_GER
+		}
+		localization_key = GER_TANK_RESTRICTION
+	}
+	text = {
+		trigger = {
+			original_tag = GER
+			NOT = {has_global_flag = tank_restriction_GER}
+		}
+		localization_key = GER_NO_TANK_RESTRICTION
+	}
+
+	text = {
+		trigger = {
+			NOT = {original_tag = GER}
+			has_global_flag = tank_restriction_GER
+		}
+		localization_key = GER_TANK_RESTRICTION_ENTENTE
+	}
+	text = {
+		trigger = {
+			NOT = {original_tag = GER}
+			NOT = {has_global_flag = tank_restriction_GER}
+		}
+		localization_key = GER_NO_TANK_RESTRICTION_ENTENTE
+	}
+}
+
+defined_text = {
+	name = GetGERAirRestrictions
+	text = {
+		trigger = {
+			original_tag = GER
+			has_global_flag = Air_restriction_GER
+		}
+		localization_key = GER_AIR_RESTRICTION
+	}
+	text = {
+		trigger = {
+			original_tag = GER
+			NOT = {has_global_flag = Air_restriction_GER}
+		}
+		localization_key = GER_NO_AIR_RESTRICTION
+	}
+	text = {
+		trigger = {
+			NOT = {original_tag = GER}
+			has_global_flag = Air_restriction_GER
+		}
+		localization_key = GER_AIR_RESTRICTION_ENTENTE
+	}
+	text = {
+		trigger = {
+			NOT = {original_tag = GER}
+			NOT = {has_global_flag = Air_restriction_GER}
+		}
+		localization_key = GER_NO_AIR_RESTRICTION_ENTENTE
+	}
+}

@@ -1,0 +1,12 @@
+TT_caucasus_war = {
+	available = {
+		OR = {
+			tag = GEO
+			tag = ARM
+			TAG = AZR
+		}
+	}
+	visible = {
+		date < 1936.1.1
+	}
+}

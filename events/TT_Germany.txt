@@ -22,9 +22,25 @@ country_event = {
 			end_puppet = UBD
 			end_puppet = LIT
 			end_puppet = UKR
+			end_puppet = BLR
 			
 		}
+		UBD = {country_event = {id = TT_INT_Germany.3 days = 1}}
 		GER = {country_event = {id = TT_INT_Germany.2 days = 1}}
+		hidden_effect = {
+			SOV = {
+				annex_country = {
+					target = UKR
+				}
+			}
+			UBD = {
+				release = EST
+			}
+			EST = {
+				
+				load_oob = "EST_1918"
+			}
+		}
 	}
 	option = {
 		name = TT_INT_Germany.1.a
@@ -40,12 +56,16 @@ country_event = {
 	title = TT_INT_Germany.2.t
 	fire_only_once = yes
 	is_triggered_only = yes
+	
 	option = {
 		ALS = {
 			transfer_state = 28
 			hidden_effect = {
 				load_oob = "ALS_1918"
 			}
+		}
+		FRA = {
+			country_event = { id = TT_INT_France.1 days = 20 }
 		}
 	}
 	option = {
@@ -57,6 +77,153 @@ country_event = {
 			hidden_effect = {
 				load_oob = "ALS_1918"
 			}
+		}
+		FRA = {
+			country_event = { id = TT_INT_France.1 days = 20 }
+		}
+	}
+}
+
+country_event = {
+	id = TT_INT_Germany.3
+	desc = TT_INT_Germany.3.d
+	title = TT_INT_Germany.3.t
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		EST = {
+			change_tag_from = UBD
+		}
+		hidden_effect = {
+			release = LAT
+			LAT = {
+				load_oob = "LAT_1918"
+			}
+		}
+	}
+
+	option = {
+		LAT = {
+			change_tag_from = UBD
+		}
+		hidden_effect = {
+			release = LAT
+			LAT = {
+				load_oob = "LAT_1918"
+			}
+		}
+	}
+}
+
+country_event = {
+	id = TT_INT_Germany.4
+	desc = TT_INT_Germany.4.d
+	title = TT_INT_Germany.4.t
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		disband_full_army = yes
+
+		country_lock_all_division_template = yes
+
+		if = {
+			limit = {
+				has_global_flag = Historical_POL_border
+			}
+			POL = {
+				transfer_state = 865
+				transfer_state = 86
+				transfer_state = 85
+			}
+			
+		}
+		if = {
+			limit = {
+				has_global_flag = Althist_POL_border
+			}
+			POL = {
+				transfer_state = 865
+				transfer_state = 86
+				transfer_state = 85
+				transfer_state = 5
+				transfer_state = 763
+			}
+		}
+		if = {
+			limit = {
+				has_global_flag = POL_border_pleb
+			}
+			POL = {
+				unlock_decision_tooltip = TT_POL_launch_border_plebiscite
+			}
+		}
+		if = {
+			limit = {
+				has_global_flag = DEN_border_pleb
+			}
+			DEN = {
+				unlock_decision_tooltip = TT_DEN_launch_border_plebiscite
+			}
+		}
+		if = {
+			limit = {
+				has_global_flag = SAAR_occupation
+			}
+			FRA = {
+				transfer_state = 789
+			}
+		}
+		if = {
+			limit = {
+				has_global_flag = RHEINLAND_DMZ_GER
+			}
+			791 = {
+				set_demilitarized_zone = yes
+			}
+			42 = {
+				set_demilitarized_zone = yes
+			}
+			51 = {
+				set_demilitarized_zone = yes
+			}
+			792 = {
+				set_demilitarized_zone = yes
+			}
+			788 = {
+				set_demilitarized_zone = yes
+			}
+			790 = {
+				set_demilitarized_zone = yes
+			}
+		}
+		if = {
+			limit = {
+				has_global_flag = Rheinland_occupied
+			}
+			FRA = {
+				
+				transfer_state = 42
+				transfer_state = 51
+				transfer_state = 792
+				
+				
+			}
+		}
+		if = {
+			limit = {
+				has_global_flag = Air_restriction_GER
+			}
+			add_ideas = GER_versailles_restriction_air
+		}
+		if = {
+			limit = {
+				has_global_flag = tank_restriction_GER
+			}
+			add_ideas = GER_versailles_restriction_tank
 		}
 	}
 }

@@ -1,5 +1,20 @@
 ﻿capital = 2
+1918.1.1 = {
+	recruit_character = ITA_victor_emmanuel_iii_int
 
+
+	set_politics = {
+		ruling_party = neutrality
+		last_election = "1900.1.1"
+		election_frequency = 60
+		elections_allowed = no
+	}
+	set_popularities = {
+		democratic = 22
+		neutrality = 76
+		communism = 2
+	}
+}
 if = {
 	limit = {
 		NOT = {
@@ -140,6 +155,7 @@ if = {
 if = {
 	limit = {
 		has_start_date < 1936.01.02
+		has_start_date > 1919.1.1
 	}
 
 	declare_war_on = {
@@ -314,7 +330,7 @@ if = {
 
 
 set_convoys = 200
-
+1936.1.1 = {
 set_politics = {
 	ruling_party = fascism
 	last_election = "1934.3.26"
@@ -326,7 +342,7 @@ set_popularities = {
 	fascism = 76
 	communism = 2
 }
-
+}
 recruit_character = ITA_palmiro_togliatti
 recruit_character = ITA_victor_emmanuel_iii
 recruit_character = ITA_ferruccio_parri

@@ -1,0 +1,11 @@
+TT_YUG_nation_formation = {
+	allowed = {
+		OR = {
+			TAG = YUG
+			TAG = SER
+		}
+	}
+	visible = {
+		date < 1936.1.1
+	}
+}

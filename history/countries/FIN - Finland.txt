@@ -10,7 +10,12 @@ if = {
 }
 
 set_research_slots = 3
-
+1918.1.1 = {
+	add_ideas = BALTIC_soviet_threat
+}
+1936.1.1 = {
+	remove_ideas = BALTIC_soviet_threat
+}
 recruit_character = FIN_risto_heikki_ryti
 recruit_character = FIN_aimo_aaltonen
 recruit_character = FIN_vilho_annala

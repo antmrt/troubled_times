@@ -1,0 +1,32 @@
+characters = {
+	MNT_nicholas_i = {
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MNT/INT/Portrait_Montenegro_Nicholas_I.dds"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			expire = 1921.3.1
+			id = -1
+		}
+	}
+	YUG_peter_i = {
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/YUG/INT/PeterI.dds"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			expire = "1921.8.16"
+			id = -1
+		}
+
+	}
+
+
+
+
+
+}

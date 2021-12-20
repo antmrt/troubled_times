@@ -1,0 +1,26 @@
+ideas = {
+	hidden_ideas = {
+		
+		BALTIC_soviet_threat = {
+
+			modifier = {
+				send_volunteers_tension = -0.5
+				send_volunteer_divisions_required = -0.5
+				lend_lease_tension = 0
+				request_lease_tension = 0
+				surrender_limit = 1
+				army_core_defence_factor = 0.3
+				army_core_attack_factor = 0.3
+			}
+			rule = {
+				can_send_volunteers = yes
+			}
+			targeted_modifier = {
+				tag = SOV
+				defense_bonus_against = 0.6
+			}
+
+		}
+
+	} 
+}

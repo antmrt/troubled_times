@@ -1,0 +1,61 @@
+TT_YUG_nation_formation = {
+	form_kingdom_serbs_croates_slovenes = {
+
+		fire_only_once = yes
+
+		cost = 50
+
+		complete_effect = {
+			if = {
+				limit = {
+					tag = YUG
+				}
+				MNT = {
+					country_event = {id = TT_INT_Yugoslavia.1 days = 1}
+	
+				}
+				SER = {
+					country_event = {id = TT_INT_Yugoslavia.1 days = 1}
+				}
+			}
+			if = {
+				limit = {
+					tag = SER
+				}
+				MNT = {
+					country_event = {id = TT_INT_Yugoslavia.1 days = 1}
+	
+				}
+				YUG = {
+					country_event = {id = TT_INT_Yugoslavia.1 days = 1}
+				}
+			}
+			if = {
+				limit = {
+					tag = MNT
+				}
+				SER = {
+					country_event = {id = TT_INT_Yugoslavia.1 days = 1}
+	
+				}
+				YUG = {
+					country_event = {id = TT_INT_Yugoslavia.1 days = 1}
+				}
+			}
+
+			YUG = {
+				set_cosmetic_tag = YUG_kingdom_SLO_CRO_SER
+			}
+			
+		}
+
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 100000
+				is_historical_focus_on = yes
+				date > 1918.12.1
+			}
+		}
+	}
+}

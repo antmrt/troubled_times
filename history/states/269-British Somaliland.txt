@@ -13,10 +13,8 @@ state =
 		victory_points = {
 			5068 3
 		}
-		owner = DER
+		owner = ENG
 		add_core_of = SOM
-		add_core_of = SMA
-		add_core_of = DER
 		buildings = {
 			infrastructure = 3
 			10833 = {
@@ -24,11 +22,10 @@ state =
 			}
 		}
 
-		1920.1.1 = { owner = ENG controller = ENG }
+		1918.1.1 = { owner = ENG controller = ENG }
 
 		1960.1.1 = { owner = SOM controller = SOM }
 
-		2001.1.1 = { owner = SMA controller = SMA }
 	}
 	provinces = {
 		1905 5068 8094 10777 10833 10921 12759 12814

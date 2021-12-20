@@ -21,7 +21,12 @@ set_variable = {
 	var = iron_wolf_days_var
 	value = 100
 }
-
+1918.1.1 = {
+	add_ideas = BALTIC_soviet_threat
+}
+1936.1.1 = {
+	remove_ideas = BALTIC_soviet_threat
+}
 recruit_character = LIT_antanas_smetona
 recruit_character = LIT_antanas_snieckus
 recruit_character = LIT_kazys_grinius

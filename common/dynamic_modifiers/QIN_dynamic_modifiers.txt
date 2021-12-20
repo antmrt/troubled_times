@@ -6,3 +6,18 @@ QIN_foreign_influence_zones = {
 	local_intel_to_enemies = 0.2
 	local_resources_factor = 0.3
 }
+
+mobilisation_penalty_modifier = {
+	#negative values
+	army_org_factor = mobilisation_penalty_var
+	land_reinforce_rate = mobilisation_penalty_var
+	industrial_capacity_factory = mobilisation_penalty_var
+
+	#positive values
+	training_time_factor = mobilisation_penalty_var_positive
+	consumer_goods_factor = mobilisation_penalty_var_positive
+}
+
+adding_more_units_dynamic_modifier = {
+	unit_limit_bonus = added_max_divisions
+}

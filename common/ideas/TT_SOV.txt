@@ -1,0 +1,14 @@
+ideas = {
+	country = {
+		TT_SOV_young_nation = {
+			
+			modifier = {
+				army_attack_factor = -0.2
+			}
+
+		}
+
+
+
+	}
+}

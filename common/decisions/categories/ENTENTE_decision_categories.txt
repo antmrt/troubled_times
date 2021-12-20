@@ -1,0 +1,24 @@
+ENTENTE_treaty_of_versailles = {
+	icon = ger_mefo_bills
+
+	allowed = {
+		OR = {
+			tag = FRA
+			tag = ENG
+			tag = GER
+			tag = USA
+		}
+	}
+
+	visible = {
+		has_global_flag = compiegne_armistice_signed
+		NOT = {
+			has_global_flag = treaty_of_versailles
+		}
+	}
+
+	visible_when_empty = yes
+	priority = 500
+
+
+}

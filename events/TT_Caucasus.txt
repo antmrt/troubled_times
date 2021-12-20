@@ -1,0 +1,33 @@
+add_namespace = TT_INT_Caucasus
+
+country_event = {
+	id = TT_INT_Caucasus.1
+	desc = TT_INT_Caucasus.1.d
+	title = TT_INT_Caucasus.1.t
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = TT_INT_Caucasus.1.a
+		white_peace = GEO
+		ai_chance = {
+			base = 10
+		}
+	}
+	option = {
+		name = TT_INT_Caucasus.1.b
+		ai_chance = {
+			base = 10
+			modifier = {
+				factor = 0
+				OR = {
+					is_historical_focus_on = no
+					GEO = {
+						surrender_progress > 0.3
+					}
+				}
+			}
+		}
+	}
+}

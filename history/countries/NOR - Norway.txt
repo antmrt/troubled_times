@@ -8,7 +8,12 @@ if = {
 		set_naval_oob = "NOR_1936_naval_legacy"
 	}
 }
-
+1918.1.1 = {
+	add_ideas = BALTIC_soviet_threat
+}
+1936.1.1 = {
+	remove_ideas = BALTIC_soviet_threat
+}
 recruit_character = NOR_johan_nygaardsvold
 recruit_character = NOR_vidkun_quisling
 recruit_character = NOR_johan_ludwig_mowinckel

@@ -1,0 +1,46 @@
+add_namespace = TT_INT_Yugoslavia
+
+country_event = {
+	id = TT_INT_Yugoslavia.1
+	desc = TT_INT_Yugoslavia.1.d
+	title = TT_INT_Yugoslavia.1.t
+
+	is_triggered_only = yes
+
+	option = {
+		name = TT_INT_Yugoslavia.1.a
+		#accept
+		ai_chance = {
+			base = 10
+
+		}
+		if = {
+			limit = {
+				ROOT = {
+					is_ai = no
+				}
+				YUG = {
+					change_tag_from = ROOT
+				}
+			}
+		}
+		YUG = {
+			annex_country = {
+				target = ROOT
+			}
+		}
+
+	}
+	option = {
+		name = TT_INT_Yugoslavia.1.b
+
+		ai_chance = {
+			base = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+
+}

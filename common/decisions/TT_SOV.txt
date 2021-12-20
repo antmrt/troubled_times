@@ -1,0 +1,178 @@
+TT_SOV_russian_civil_war = {
+	reintegrate_EST = {
+		allowed = {
+			tag = SOV
+		}
+		visible = {
+			country_exists = EST
+			
+		}
+		days_remove = 10
+		war_with_on_remove = EST
+		fire_only_once = yes
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 10000
+				date > 1918.11.22
+				is_historical_focus_on = yes
+			}
+		}
+
+		remove_effect = {
+			declare_war_on = {
+				target = EST
+				type = puppet_wargoal_focus
+			}
+			hidden_effect = {
+				FIN = {
+					add_ai_strategy = {
+						type = send_volunteers_desire
+						id = EST
+						value = 200
+					}
+					add_ai_strategy = {
+						type = protect
+						id = EST
+						value = 200
+					}
+					
+				}
+				SWE = {
+					add_ai_strategy = {
+						type = protect
+						id = EST
+						value = 100
+					}
+				}
+				NOR = {
+					add_ai_strategy = {
+						type = protect
+						id = EST
+						value = 100
+					}
+				}
+			}
+
+		}
+	}
+
+	reintegrate_LAT = {
+		allowed = {
+			tag = SOV
+		}
+		visible = {
+			country_exists = LAT
+			
+		}
+		days_remove = 10
+		war_with_on_remove = LAT
+		fire_only_once = yes
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 10000
+				date > 1918.11.25
+				is_historical_focus_on = yes
+			}
+		}
+
+		remove_effect = {
+			declare_war_on = {
+				target = LAT
+				type = puppet_wargoal_focus 
+			}
+			hidden_effect = {
+				FIN = {
+					add_ai_strategy = {
+						type = send_volunteers_desire
+						id = LAT
+						value = 200
+					}
+					add_ai_strategy = {
+						type = protect
+						id = LAT
+						value = 200
+					}
+					
+				}
+				SWE = {
+					add_ai_strategy = {
+						type = protect
+						id = LAT
+						value = 100
+					}
+				}
+				NOR = {
+					add_ai_strategy = {
+						type = protect
+						id = LAT
+						value = 100
+					}
+				}
+			}
+
+		}
+	}
+
+	reintegrate_LIT = {
+		allowed = {
+			tag = SOV
+		}
+		visible = {
+			country_exists = LIT
+			
+		}
+		days_remove = 10
+		war_with_on_remove = LIT
+		fire_only_once = yes
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 10000
+				date > 1918.11.25
+				is_historical_focus_on = yes
+			}
+		}
+
+		remove_effect = {
+			declare_war_on = {
+				target = LIT
+				type = puppet_wargoal_focus 
+			}
+			hidden_effect = {
+				FIN = {
+					add_ai_strategy = {
+						type = send_volunteers_desire
+						id = LIT
+						value = 200
+					}
+					add_ai_strategy = {
+						type = protect
+						id = LIT
+						value = 200
+					}
+					
+				}
+				SWE = {
+					add_ai_strategy = {
+						type = protect
+						id = LIT
+						value = 100
+					}
+				}
+				NOR = {
+					add_ai_strategy = {
+						type = protect
+						id = LIT
+						value = 100
+					}
+				}
+			}
+
+		}
+	}
+}

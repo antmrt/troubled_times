@@ -7,5 +7,81 @@ ideas = {
 
 			}
 		}
+
+		GER_versailles_restriction_air = {
+			equipment_bonus = {
+				tac_bomber_equipment = {
+					instant = yes
+					build_cost_ic = 10
+				}
+				jet_tac_bomber_equipment = {
+					instant = yes
+					build_cost_ic = 10
+				}
+				heavy_fighter_equipment = {
+					instant = yes
+					build_cost_ic = 10
+				}
+				scout_plane_equipment = {
+					instant = yes
+					build_cost_ic = 10
+				}
+				fighter_equipment = {
+					instant = yes
+					build_cost_ic = 10
+				}
+				cv_fighter_equipment = {
+					instant = yes
+					build_cost_ic = 10
+				}
+				CAS_equipment = {
+					instant = yes
+					build_cost_ic = 10
+				}
+				cv_CAS_equipment = {
+					instant = yes
+					build_cost_ic = 10
+				}
+				nav_bomber_equipment = {
+					instant = yes
+					build_cost_ic = 10
+				}
+				cv_nav_bomber_equipment = {
+					instant = yes
+					build_cost_ic = 10
+				}
+				jet_fighter_equipment = {
+					instant = yes
+					build_cost_ic = 10
+				}
+
+
+			}
+		}
+
+		GER_versailles_restriction_tank = {
+			equipment_bonus = {
+				light_tank_chassis = {
+					instant = yes
+					build_cost_ic = 10
+				}
+				medium_tank_chassis = {
+					instant = yes
+					build_cost_ic = 10
+				}
+				heavy_tank_chassis = {
+					instant = yes
+					build_cost_ic = 10
+				}
+				modern_tank_chassis = {
+					instant = yes
+					build_cost_ic = 10
+				}
+				super_heavy_tank_chassis = {
+					instant = yes
+					build_cost_ic = 10
+				}
+			}
+		}
 	}
 }

@@ -4,14 +4,14 @@ state = {
 
 	history = {
 
-		owner = LIE
+		owner = SWI
 		victory_points = {
 			13233 1
 		}
 		buildings = {
 			infrastructure = 6
 		}
-		add_core_of = LIE
+		add_core_of = SWI
 	}
 
 	provinces = {

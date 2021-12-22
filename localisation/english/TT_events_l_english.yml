@@ -1,0 +1,76 @@
+﻿l_english:
+
+  ### GERMANY
+
+ TT_INT_Germany.1.t:0 "Armistice at Compiègne"
+ TT_INT_Germany.1.d:0 "Representants of our government signed an armistice with our former ennemies. This is the first move towards a peace deal between our factions.The guns finally falled silent today at 11:00, ending a war that killed million of men"
+ TT_INT_Germany.1.a:0 "Peace at Last!"
+
+ TT_INT_Germany.2.t:0 "Alsatian Independance"
+ TT_INT_Germany.2.d:0 "Following our defeat in the war, the Soviet Republic of Workers and Soldiers of Alsace has been proclaimed, it declared itself independent from our Empire. It is yet unknown if the French forces in the Region will take action to cease its existence."
+ TT_INT_Germany.2.a:0 "The Beginning of the End?"
+ TT_INT_Germany.2.b:0 "(Play as Alsace)"
+
+ TT_INT_Germany.3.t:0 "UNited Duchy Breakup"
+ TT_INT_Germany.3.d:0 "Following the German defeat in the War, different regions of our Duchy declared independence from it, there's nothing we can do to stop this situation."
+ TT_INT_Germany.3.a:0 "(Play as Estonia)"
+ TT_INT_Germany.3.b: "(Play as Latvia)"
+ 
+ TT_INT_Germany.4.t:0 "The Versailles Treaty takes Effect"
+ TT_INT_Germany.4.d:0 "Today, the delegation at Versailles handed over the final version of the Peace Treaty of Versailles, we know need to ratify it in order for it to come into effect."
+ TT_INT_Germany.4.a:0 "A Dark day for Germany..."
+
+
+  ### FRANCE
+
+ TT_INT_France.1.t:0 "The Alsatian Question"
+ TT_INT_France.1.d:0 "News report suggests that a Soviet Republic has been declared in Alsace, Military forces took over the Region to fill up the power vacuum that was created by the retreat of German forces, should we send French troops?"
+ TT_INT_France.1.a:0 "We need to take action"
+ TT_INT_France.1.b:0 "So be it."
+
+ TT_INT_France.2.t:0 "French Troops crossing the Border"
+ TT_INT_France.2.d:0 "Reports suggests that French Troops are crossing the Border and marching towards Strasbourg as an attempt to dissolve the newly formed Government.What should be our reaction?"
+ TT_INT_France.2.a:0 "Let them Enter"
+ TT_INT_France.2.b:0 "Open Fire!"
+
+ TT_INT_France.3.t:0 "Alsatians Open Fire on our troops!"
+ TT_INT_France.3.d:0 "Following our decision to enter Alsace-Lorraine to securise the region, Alsatian paramilitary forces open fire on our troops, causing at least 50 dead and 150 wounded. This Act should not remain without intervention."
+ TT_INT_France.3.a:0 "War it is.."
+
+
+  ### VERSAILLES TREATY
+
+ TT_INT_Peace_treaty.1.t: "The Polish Corridor"
+ TT_INT_Peace_treaty.1.d:0 "The Polish People are asking for an access to the Baltic Sea, there are 2 different options, either we grant them access to Danzig, or we give them all of the German lands in the North including Ermland and Königsberg."
+ TT_INT_Peace_treaty.1.a:0 "Grant them access to Danzig"
+ TT_INT_Peace_treaty.1.b:0 "Danzig and Königsberg"
+
+ TT_INT_Peace_treaty.2.t:0 "Polish Borders"
+ TT_INT_Peace_treaty.2.d:0 "It appears that some borders between Poland and Germany are disputed, should we allow the organization of a Plebiscite?"
+ TT_INT_Peace_treaty.2.a:0 "Yes"
+ TT_INT_Peace_treaty.2.b:0 "No"
+
+ TT_INT_Peace_treaty.3.t:0 "Danish Borders"
+ TT_INT_Peace_treaty.3.d:0 "It appears that some borders between Denmark and Germany are disputed, should we allow the organization of a Plebiscite?"
+ TT_INT_Peace_treaty.3.a:0 "Yes"
+ TT_INT_Peace_treaty.3.b:0 "No"
+
+ TT_INT_Peace_treaty.4.t:0 "The Saar Question"
+ TT_INT_Peace_treaty.4.d:0 "To Prevent the Militarisation of the Border, an occupation of the Saar Bassin is possible, this would limit the German presence on the border and act as a buffer should they decide to invade once more."
+ TT_INT_Peace_treaty.4.a:0 "Occupy the Saar"
+ TT_INT_Peace_treaty.4.b:0 "There's no need or it"
+
+ TT_INT_Peace_treaty.5.t:0 "The Rheinland Question"
+ TT_INT_Peace_treaty.5.d:0 "To Prevent a Future invasion, we Could impose a demilitarized zone in the Rheinland. This would forbid the German Military presence in the area."
+ TT_INT_Peace_treaty.5.a:0 "Demilitarize it!"
+ TT_INT_Peace_treaty.5.b:0 "Occupy it!"
+
+ TT_INT_Peace_treaty.6.t:0 "Air Force Restriction"
+ TT_INT_Peace_treaty.6.d:0 "To Prevent Germany from rearming, we need to impose restriction on its airforce size"
+ TT_INT_Peace_treaty.6.a:0 "Impose restrictions"
+ TT_INT_Peace_treaty.6.b:0 "No need"
+ 
+ TT_INT_Peace_treaty.7.t:0 "Tank Production Restrictions"
+ TT_INT_Peace_treaty.7.d:0 "To Prevent Germany from rearming, we need to impose restriction on its production of tanks"
+ TT_INT_Peace_treaty.7.a:0 "Impose restrictions"
+ TT_INT_Peace_treaty.7.b:0 "No need"

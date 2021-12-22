@@ -10,6 +10,7 @@ country_event = {
 
 	option = {
 		#recover Alsace-Lorraine
+		name = TT_INT_France.1.a
 		ALS = {
 			country_event = {id = TT_INT_France.2 days = 1 }
 		}
@@ -19,13 +20,14 @@ country_event = {
 	}
 
 	option = {
+		name = TT_INT_France.1.b
 		#let them be
 
 	}
 }
 
 country_event = {
-	id = TT_INT_France.2
+	id = TT_INT_France.2 
 	desc = TT_INT_France.2.d
 	title = TT_INT_France.2.t
 
@@ -34,6 +36,7 @@ country_event = {
 
 	option = {
 		#Accept
+		name = TT_INT_France.2.a
 		FRA = {
 			annex_country = {
 				target = ALS
@@ -47,7 +50,7 @@ country_event = {
 	}
 	option = {
 		#refuse
-
+		name = TT_INT_France.2.b
 		FRA = {
 			country_event = { id = TT_INT_France.3 days = 1 }
 		}
@@ -71,9 +74,24 @@ country_event = {
 	fire_only_once = yes
 
 	option = {
-		create_wargoal = {
+		name = TT_INT_France.3.a
+		add_manpower = -56
+		declare_war_on = {
 			target = ALS
 			type = annex_everything
 		}
+	}
+}
+country_event = {
+	id = TT_INT_France.4
+	desc = TT_INT_France.4.d
+	title = TT_INT_France.4.t
+
+	is_triggered_only = yes
+
+	option = {
+		transfer_state = 814
+		army_experience = 20
+		add_political_power = 50
 	}
 }

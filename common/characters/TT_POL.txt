@@ -1,0 +1,17 @@
+characters = {
+	POL_jozef_piludski = {
+		name = POL_jozef_piludski
+
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/POL/INT/Poland_JozefPilsudski.dds"
+			}
+		}
+
+		country_leader = {
+			expire = "1922.12.11"
+			ideology = despotism
+			id = -1
+		}
+	}
+}

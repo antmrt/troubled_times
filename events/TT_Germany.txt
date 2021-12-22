@@ -17,20 +17,41 @@ country_event = {
 			}
 			white_peace = GER
 		}
-		GER = {
-			end_puppet = POL
-			end_puppet = UBD
-			end_puppet = LIT
-			end_puppet = UKR
-			end_puppet = BLR
-			
-		}
-		UBD = {country_event = {id = TT_INT_Germany.3 days = 1}}
-		GER = {country_event = {id = TT_INT_Germany.2 days = 1}}
+		
 		hidden_effect = {
+			GER = {
+				end_puppet = POL
+				end_puppet = UBD
+				end_puppet = LIT
+				end_puppet = UKR
+				end_puppet = BLR
+				
+			}
+			UBD = {country_event = {id = TT_INT_Germany.3 days = 1}}
+			GER = {country_event = {id = TT_INT_Germany.2 days = 1}}
+			POL = {
+				declare_war_on = {
+					target = WUK
+					type = annex_everything
+				}
+			}
 			SOV = {
 				annex_country = {
 					target = UKR
+				}
+				
+				every_state = {
+					limit = {
+						is_core_of = UKR
+						is_controlled_by = SOV
+					}
+					force_enable_resistance = {
+						
+						occupier = SOV
+						occupied = UKR
+					}
+					start_resistance = UKR
+					set_resistance = 70
 				}
 			}
 			UBD = {
@@ -58,6 +79,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
+		name = TT_INT_Germany.2.a
 		ALS = {
 			transfer_state = 28
 			hidden_effect = {
@@ -69,6 +91,7 @@ country_event = {
 		}
 	}
 	option = {
+		name = TT_INT_Germany.2.b
 		ALS = {
 			change_tag_from = ROOT
 		}
@@ -93,6 +116,7 @@ country_event = {
 	fire_only_once = yes
 
 	option = {
+		name = TT_INT_Germany.3.a
 		EST = {
 			change_tag_from = UBD
 		}
@@ -105,6 +129,7 @@ country_event = {
 	}
 
 	option = {
+		name = TT_INT_Germany.3.b
 		LAT = {
 			change_tag_from = UBD
 		}
@@ -126,6 +151,7 @@ country_event = {
 	fire_only_once = yes
 
 	option = {
+		name = TT_INT_Germany.4.a
 		disband_full_army = yes
 
 		country_lock_all_division_template = yes

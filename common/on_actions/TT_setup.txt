@@ -24,6 +24,12 @@ on_actions = {
 
 	on_startup = {
 		effect = {
+			every_state = {
+				limit = {
+					is_core_of = RUE
+				}
+				remove_core_of = RUE
+			}
 			every_country = {
 				# unit limit calculations
 				calculate_maximum_divisions = yes

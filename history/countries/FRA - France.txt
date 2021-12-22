@@ -1,17 +1,17 @@
 ﻿capital = 16
 1918.1.1 = {
 	recruit_character = FRA_raymond_poincare
-	create_faction = Entente
+	create_faction = "Entente"
 	add_to_faction = ENG
 	add_to_faction = USA
 	#add_to_faction = FRA
-	add_to_faction = CAN
-	add_to_faction = AST
-	add_to_faction = NZL
-	add_to_faction = SAF
-	add_to_faction = BEL
-	add_to_faction = RAJ		# Must be after puppet
-	add_to_faction = MAL
+	#add_to_faction = CAN
+	#add_to_faction = AST
+	#add_to_faction = NZL
+	#add_to_faction = SAF
+	#add_to_faction = BEL
+	#add_to_faction = RAJ		# Must be after puppet
+	#add_to_faction = MAL
 }
 if = {
 	limit = {

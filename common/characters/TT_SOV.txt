@@ -11,4 +11,16 @@ characters = {
 			id = -1
 		}
 	}
+	WHR_alexander_kolchak = {
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/WHR/INT/Admiral-Alexander_Kolchak.dds"
+			}
+		}
+		country_leader = {
+			ideology = ultranationalism
+			expire = "1920.2.7"
+			id = -1
+		}
+	}
 }

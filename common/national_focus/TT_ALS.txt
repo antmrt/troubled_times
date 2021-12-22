@@ -1,0 +1,138 @@
+focus_tree = {
+	id = TT_ALS
+	country = {
+		factor = 0
+		modifier = {
+			add = 25
+			tag = ALS
+		}
+	}
+	default = no
+
+	focus = {
+		id = TT_INT_ALS_prepare_for_the_worst
+
+		icon = GFX_unknown
+		cost = 1
+		x = 10
+		y = 1
+		completion_reward = {
+			28 = {
+				create_unit = {
+					division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
+					owner = ALS
+				}
+				create_unit = {
+					division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
+					owner = ALS
+				}
+				create_unit = {
+					division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
+					owner = ALS
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = TT_INT_ALS_seize_german_weapons
+		icon = GFX_unknown
+
+		cost = 1
+		x = 11
+		y = 2
+		prerequisite = { focus = TT_INT_ALS_prepare_for_the_worst }
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 5000
+				producer = GER
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 100
+				producer = GER
+			}
+
+		}
+	}
+
+	focus = {
+		id = TT_INT_ALS_begin_negotiation
+		icon = GFX_unknown
+		available = { has_war_with = FRA }
+		cost = 3
+		x = 9
+		y = 2
+		prerequisite = {focus = TT_INT_ALS_prepare_for_the_worst }
+		completion_reward = {
+			FRA = {
+				white_peace = ALS
+			}
+		}
+	}
+	
+	focus = {
+		id = TT_INT_ALS_skirmishes_in_the_vosges
+		icon = GFX_unknown
+
+		cost = 1
+		x = 10
+		y = 3
+		available = {
+			NOT = {has_war_with = FRA}
+		}
+		prerequisite = { focus = TT_INT_ALS_seize_german_weapons }
+		prerequisite = { focus = TT_INT_ALS_begin_negotiation }
+		completion_reward = {
+			
+			start_border_war = {
+				change_state_after_war = no
+				attacker = {
+					state = 28
+					num_provinces = 4
+					on_win = TT_INT_France.4
+				}
+							
+				defender = {
+					state = 814
+					num_provinces = 1
+					
+				}
+			}
+			hidden_effect = {
+				set_border_war_data = {
+					change_state_after_war = no
+					attacker = 28
+					defender = 814
+					attacker_modifier = 1.35
+					defender_modifier = -1.55
+					
+				}
+			}
+		}
+	}
+
+
+	focus = {
+		id = TT_INT_ALS_workers_union
+		icon = GFX_unknown
+
+		cost = 1
+		x = 15
+		y = 1
+		
+		completion_reward = {
+			28 = { 
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+
+		}
+	}
+
+
+}

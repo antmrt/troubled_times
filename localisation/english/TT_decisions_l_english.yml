@@ -39,7 +39,7 @@ GER_TANK_RESTRICTION_ENTENTE:0 "§GRestriction on Tanks§!"
  VERS_tank_restrictions:0 "Include Tank Restriction"
  
  
-
+ public_asks_for_demob:0 "Public Asks for Demobilization"
  mobilisation_penalty_modifier:0 "Above Division Limit"
 
 unit_limit_count:0 "[unit_limit_count_loc]/[?max_divisions|H0]"

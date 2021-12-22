@@ -5,6 +5,8 @@ set_stability = 0.65
 set_war_support = 0.15
 set_convoys = 10
 
+recruit_character = ALS_military_worker_government
+
 set_politics = {
 	ruling_party = communism
 	last_election = "1918.11.12"

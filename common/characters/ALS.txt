@@ -1,2 +1,19 @@
 characters={
+
+	ALS_military_worker_government = {
+		name = ALS_military_worker_government
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ALS/INT/Alsatian_junta.dds"
+			}
+		}
+
+		country_leader = {
+			ideology = revolutionary_socialism
+			expire = "1960.1.1"
+			id = -1
+		}
+
+	}
+
 }

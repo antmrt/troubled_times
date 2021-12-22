@@ -1,0 +1,18 @@
+ideas = {
+	country = {
+		TT_SOV_young_nation = {
+			
+			modifier = {
+				army_attack_factor = -0.2
+			}
+
+		}
+
+		WHR_soviet_civil_war = {
+
+			rule = {
+				can_join_factions = no
+			}
+		}
+	}
+}

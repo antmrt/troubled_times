@@ -1,0 +1,52 @@
+parliament_gui_decision_category = {
+	test_parliament = {
+		visible = {
+			is_debug = yes
+		}
+		available = {
+
+			#Actual Party
+			set_temp_variable = {
+				temp_member = 1
+			}
+
+			#Name display
+			set_temp_variable = {
+				v = 1
+			}
+
+			#Amount to check for
+			set_temp_variable = {
+				temp_seats = 138
+			}
+			has_less_than_number_of_seat = yes
+
+
+
+			#Party 1
+			set_temp_variable = {
+				temp_member1 = 1
+			}
+			set_temp_variable = {
+				v = 1
+			}
+			#Party 2
+			set_temp_variable = {
+				temp_member2 = 2
+			}
+			set_temp_variable = {
+				v2 = 2
+			}
+			has_more_seats_than_party = yes
+
+
+
+		}
+
+		complete_effect = {
+			set_temp_variable = { temp_member = 1 }
+			set_temp_variable = { temp_seats = 5 }
+			modify_parliament_seat = yes
+		}
+	}
+}

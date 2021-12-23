@@ -1,0 +1,38 @@
+﻿l_english:
+
+ # Decisions
+  parliament_gui_decision_category:0 "French Parliament§!"
+
+ # Scripted GUIs
+  parliament_gui_title:0 "Grid Parliament"
+  semicircle_parliament_gui_title:0 "French Parliament"
+  parliament_main_icon_tt:0 "[GetParliamentSeatName] - [GetParliamentPartyName]"
+  parliament_seat_text:0 "Seat [?temp_seat|Y0]"
+  parliament_member_text:0 "[GetParliamentPartyName] - [?parliament_seat_array^parliament_member_index] Seats"
+  parliament_modify_button_tt:0 "§GCtrl+Click§! to add §Y5§! Seats from [GetParliamentPartyName]\n§GShift+Click§! to subtract §Y5§! Seats from [GetParliamentPartyName]"
+
+  party_1_text:0 "SFIC[GetCoalittionName]"
+  party_2_text:0 "PRRRS[GetCoalittionName]"
+  party_3_text:0 "SFIO[GetCoalittionName]"
+  party_4_text:0 "AD[GetCoalittionName]" 
+  party_5_text:0 "PDP[GetCoalittionName]"
+  party_6_text:0 "FR[GetCoalittionName]"
+  party_7_text:0 "Indépendents"
+  party_8_text:0 "AF[GetCoalittionName]"
+
+  party_1_text2:0 "SFIC[GetCoalittionName2]"
+  party_2_text2:0 "PRRRS[GetCoalittionName2]"
+  party_3_text2:0 "SFIO[GetCoalittionName2]"
+  party_4_text2:0 "AD[GetCoalittionName2]" 
+  party_5_text2:0 "PDP[GetCoalittionName2]"
+  party_6_text2:0 "FR[GetCoalittionName2]"
+  party_7_text2:0 "Indépendents"
+  party_8_text2:0 "AF[GetCoalittionName2]"
+
+  has_more_than_number_of_seat_tt:0 "[GetParliamentPartyName] has §Ymore§! than §Y[?temp_seats]§! seats at the parliament"
+  has_less_than_number_of_seat_tt:0 "[GetParliamentPartyName] has §Yless§! than §Y[?temp_seats]§! seats at the parliament"
+
+  has_more_seats_than_party_tt:0 "[GetParliamentPartyName] has §Ymore§! seats at the parliament than [GetParliamentPartyName2]"
+  has_less_seats_than_party_tt:0 "[GetParliamentPartyName] has §Yless§! seats at the parliament than [GetParliamentPartyName2]"
+  FRA_coalition_left_1914:0 " (§RAlliance de la Gauche§!)"
+  FRA_coalition_right_1914:0 " (§CBloc National§!)"

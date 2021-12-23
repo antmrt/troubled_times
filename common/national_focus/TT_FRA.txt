@@ -1,0 +1,30 @@
+focus_tree = {
+	id = TT_France
+	country = { 
+		factor = 0
+		modifier = {
+			add = 25
+			tag = FRA
+		}
+	}
+	
+
+	focus = {
+		id = TT_INT_FRA_Victory_at_last
+
+		x = 10
+		y = 1
+		cost = 2
+		completion_reward = {
+			add_war_support = -0.1
+			add_stability = 0.05
+			add_political_power = 50
+		}
+
+
+	}
+
+
+
+
+}

@@ -28,3 +28,64 @@ has_reached_maximum_divisions = {
 		check_variable = { num_divisions > max_divisions }
 	}
 }
+
+has_more_than_number_of_seat = {
+	custom_trigger_tooltip = {
+		tooltip = has_more_than_number_of_seat_tt
+		subtract_from_temp_variable = {
+			temp_member = 1
+		}
+		check_variable = {
+			parliament_seat_array^temp_member > temp_seats
+		}
+	}
+	
+}
+
+has_less_than_number_of_seat = {
+	custom_trigger_tooltip = {
+		tooltip = has_less_than_number_of_seat_tt
+		subtract_from_temp_variable = {
+			temp_member = 1
+		}
+		check_variable = {
+			parliament_seat_array^temp_member < temp_seats
+		}
+	}
+	
+}
+
+has_more_seats_than_party = {
+	custom_trigger_tooltip = {
+		tooltip = has_more_seats_than_party_tt
+		subtract_from_temp_variable = {
+			temp_member1 = 1
+		}
+		subtract_from_temp_variable = {
+			temp_member2 = 1
+		}
+
+		check_variable = {
+			parliament_seat_array^temp_member1 > parliament_seat_array^temp_member2
+		}
+	}
+
+}
+
+has_less_seats_than_party = {
+	custom_trigger_tooltip = {
+		tooltip = has_less_seats_than_party_tt
+		subtract_from_temp_variable = {
+			temp_member1 = 1
+		}
+		subtract_from_temp_variable = {
+			temp_member2 = 1
+		}
+
+		check_variable = {
+			parliament_seat_array^temp_member1 < parliament_seat_array^temp_member2
+		}
+	}
+
+
+}

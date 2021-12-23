@@ -95,3 +95,23 @@ country_event = {
 		add_political_power = 50
 	}
 }
+
+country_event = {
+	id = TT_INT_France.5
+	desc = TT_INT_France.5.d
+	title = TT_INT_France.5.t
+
+	is_triggered_only = yes
+
+	option = {
+		#Confidence
+		name = TT_INT_France.5.a
+
+
+
+	}
+
+	option = {
+		name = TT_INT_France.5.b
+	}
+}

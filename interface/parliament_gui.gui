@@ -34,6 +34,8 @@ guiTypes = {
 				max_slots_horizontal = 1
 				add_horizontal = no
 			}
+			
+			
 		}
 
 		gridboxtype = {
@@ -56,6 +58,7 @@ guiTypes = {
 			position = { x = 0 y = 0 }
 			pdx_tooltip = "parliament_main_icon_tt"
 		}
+		
     }
 
 	containerWindowType = {

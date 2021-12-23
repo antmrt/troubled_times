@@ -10,3 +10,12 @@
  TT_INT_ALS_skirmishes_in_the_vosges_desc:0 "Some acts of aggressivity have been reported in the Vosges, the French army stationed in the massif has proved its aggressivity towards our regime, we need to fight back."
  TT_INT_ALS_workers_union:0 "The Union of the Workers"
  TT_INT_ALS_workers_union_desc:0 "Uniting all workers in an Union would prove benefic to productivity"
+
+
+ TT_INT_FRA_Victory_at_last:0 "Victory at last!"
+ TT_INT_FRA_Victory_at_last_desc:0 "Millions of dead, but we finally got our victory, it is now time to move on and rebuild the nation"
+ 
+ TT_INT_FRA_Dismantle_union_sacree:0 "Dismantle the Union Sacrée"
+ TT_INT_FRA_Dismantle_union_sacree_desc:0 "The Union Sacrée is a coallition regrouping all parties atthe start of the war, this allowed the government to make the best decisions for our country. With the war over, it is now time to restart the parliamentary talks"
+
+ TT_INT_FRA_Dismantle_union_sacree_tt:0 "§YThe Union Sacrée will be dismantled§!"

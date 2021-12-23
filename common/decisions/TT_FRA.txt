@@ -11,7 +11,7 @@ parliament_gui_decision_category = {
 			}
 
 			#Name display
-			set_temp_variable = {
+			set_temp_variable = {   
 				v = 1
 			}
 
@@ -47,6 +47,109 @@ parliament_gui_decision_category = {
 			set_temp_variable = { temp_member = 1 }
 			set_temp_variable = { temp_seats = 5 }
 			modify_parliament_seat = yes
+		}
+	}
+	invite_SFIC_to_coalition = {
+		cost = 10
+		visible = {
+			has_completed_focus = TT_INT_FRA_Alliance_de_la_gauche
+			NOT = {
+				has_country_flag = SFIC_is_coalition_member
+			}
+		}
+		complete_effect = {
+			set_country_flag = SFIC_is_coalition_member
+		}
+	}
+	invite_PRRRS_to_coalition = {
+		cost = 10
+		visible = {
+			has_completed_focus = TT_INT_FRA_Alliance_de_la_gauche
+			NOT = {
+				has_country_flag = PRRRS_is_coalition_member
+			}
+		}
+		complete_effect = {
+			set_country_flag = PRRRS_is_coalition_member
+		}
+	}
+	invite_SFIO_to_coalition = {
+		cost = 10
+		visible = {
+			has_completed_focus = TT_INT_FRA_Alliance_de_la_gauche
+			NOT = {
+				has_country_flag = SFIO_is_coalition_member
+			}
+		}
+		complete_effect = {
+			set_country_flag = SFIO_is_coalition_member
+		}
+	}
+	invite_AD_to_coalition = {
+		cost = 10
+		visible = {
+			OR = {
+				has_completed_focus = TT_INT_FRA_Alliance_de_la_gauche
+				has_completed_focus = TT_INT_FRA_Bloc_national
+			}
+			NOT = {
+				OR = {
+					has_country_flag = AD_is_coalition_member_right
+					has_country_flag = AD_is_coalition_member_left
+				}
+			}
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					has_completed_focus = TT_INT_FRA_Bloc_national
+				}
+				set_country_flag = AD_is_coalition_member_right
+			}
+			if = {
+				limit = {
+					has_completed_focus = TT_INT_FRA_Alliance_de_la_gauche
+				}
+				set_country_flag = AD_is_coalition_member_left
+			}
+			
+		}
+	}
+
+	invite_FR_to_coalition = {
+		cost = 10
+		visible = {
+			has_completed_focus = TT_INT_FRA_Bloc_national
+			NOT = {
+				has_country_flag = FR_is_coalition_member
+			}
+		}
+		complete_effect = {
+			set_country_flag = FR_is_coalition_member
+		}
+	}
+	invite_AF_to_coalition = {
+		cost = 10
+		visible = {
+			has_completed_focus = TT_INT_FRA_Bloc_national
+			NOT = {
+				has_country_flag = AF_is_coalition_member
+			}
+		}
+		complete_effect = {
+			set_country_flag = AF_is_coalition_member
+		}
+	}
+	invite_PDP_to_coalition = {
+		cost = 10
+		visible = {
+			has_completed_focus = TT_INT_FRA_Bloc_national
+			NOT = {
+				has_country_flag = PDP_is_coalition_member
+			}
+		}
+		complete_effect = {
+			set_country_flag = PDP_is_coalition_member
 		}
 	}
 }

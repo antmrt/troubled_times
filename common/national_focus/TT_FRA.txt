@@ -21,10 +21,106 @@ focus_tree = {
 			add_political_power = 50
 		}
 
+	}
 
+	focus = {
+		id = TT_INT_FRA_Dismantle_union_sacree
+
+		relative_position_id = TT_INT_FRA_Victory_at_last
+		x = 0
+		y = 1
+
+		cost = 3
+		prerequisite = { focus = TT_INT_FRA_Victory_at_last }
+		completion_reward = {
+			custom_effect_tooltip = TT_INT_FRA_Dismantle_union_sacree_tt
+		}
 	}
 
 
+	focus = {
+
+		id = TT_INT_FRA_confidence_vote
+
+		relative_position_id = TT_INT_FRA_Dismantle_union_sacree
+		prerequisite = { focus = TT_INT_FRA_Dismantle_union_sacree }
+		x = 1
+		y = 1
+		cost = 1
+
+		completion_reward = {
+			country_event = {id = TT_INT_France.5}
+		}
+	}
+	
+	focus = {
+		id = TT_INT_FRA_jonart_law
+		prerequisite = { focus = TT_INT_FRA_Dismantle_union_sacree }
+		relative_position_id = TT_INT_FRA_confidence_vote
+		x = -2
+		y = 0
+
+		cost = 5
+
+	}
+
+	focus = {
+		id = TT_INT_FRA_assassination_attempt
+		prerequisite = { focus = TT_INT_FRA_jonart_law }
+		prerequisite = { focus = TT_INT_FRA_confidence_vote }
+		relative_position_id = TT_INT_FRA_jonart_law
+		x = 1
+		y = 1
+		cost = 1
+	}
+
+	focus = {
+		id = TT_INT_FRA_clemenceau_survives
+		relative_position_id = TT_INT_FRA_assassination_attempt
+		prerequisite = { focus = TT_INT_FRA_assassination_attempt }
+		mutually_exclusive = { focus = TT_INT_FRA_clemenceau_dies }
+		x = -1
+		y = 1
+		cost = 2
+	}
+	focus = {
+		id = TT_INT_FRA_clemenceau_dies
+		mutually_exclusive = { focus = TT_INT_FRA_clemenceau_survives }
+		prerequisite = { focus = TT_INT_FRA_assassination_attempt }
+		x = 1
+		y = 1
+		cost = 2
+		relative_position_id = TT_INT_FRA_assassination_attempt
 
 
-}
+	}
+	focus = {
+		id = TT_INT_FRA_credit_national
+		prerequisite = { focus = TT_INT_FRA_clemenceau_dies focus = TT_INT_FRA_clemenceau_survives }
+		x = -1
+		y = 1
+		cost = 2
+		relative_position_id = TT_INT_FRA_clemenceau_dies
+
+
+	}
+
+	focus = {
+		id = TT_INT_FRA_Bloc_national
+		prerequisite = { focus = TT_INT_FRA_clemenceau_survives}
+		x= -1
+		y = 1
+		relative_position_id = TT_INT_FRA_clemenceau_survives
+		cost = 10
+	}
+	focus = {
+		id = TT_INT_FRA_Alliance_de_la_gauche
+		prerequisite = { focus = TT_INT_FRA_clemenceau_dies }
+		x= 1
+		y = 1
+		relative_position_id = TT_INT_FRA_clemenceau_dies
+		cost = 10
+	}
+
+
+} 

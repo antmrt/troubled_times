@@ -141,9 +141,18 @@ defined_text = {
 			check_variable = {
 				v = 4
 			}
-			has_country_flag = AD_is_coalition_member
+			has_country_flag = AD_is_coalition_member_right
 		}
 		localization_key = FRA_coalition_right_1914
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				v = 4
+			}
+			has_country_flag = AD_is_coalition_member_left
+		}
+		localization_key = FRA_coalition_left_1914
 	}
 	text = {
 		trigger = {

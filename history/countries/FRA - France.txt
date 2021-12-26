@@ -323,6 +323,7 @@ if = {
 set_convoys = 300
 
 1936.1.1 = {
+	retire_character = FRA_raymond_poincare
 set_politics = {
 	ruling_party = democratic
 	last_election = "1932.5.1"

@@ -6,7 +6,11 @@ TT_POL_SOV_war = {
 
 		war_with_on_remove = SOV
 		war_with_on_remove = BLR
-
+		available = {
+			NOT = {
+				is_puppet = yes
+			}
+		}
 		remove_effect = {
 			declare_war_on = {
 				target = SOV

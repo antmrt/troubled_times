@@ -859,3 +859,7 @@ ALS = {
 	color = rgb { 255 106 0 }
 	color_ui = rgb { 255 106 0 }
 }
+BAV = {
+	color = rgb { 10  187  255 }
+	color_ui = rgb { 10  180  245 }
+}

@@ -74,3 +74,7 @@
  TT_INT_Peace_treaty.7.d:0 "To Prevent Germany from rearming, we need to impose restriction on its production of tanks"
  TT_INT_Peace_treaty.7.a:0 "Impose restrictions"
  TT_INT_Peace_treaty.7.b:0 "No need"
+
+ TT_FRENCH_REVOLUTION_T:0 "Second French Revolution"
+ BE_LATIN_WARS_A:0 "The End of Democracy"
+ BE_LATIN_WARS_D:0 "This morning, soldiers stormed the parliament in an attempt to end the war, they took over the chamber and declared a new government. Their slogan 'Why fight for the Big?' resonnates in the trenches as millions of soldiers lost their lives to protect the interests of a few"

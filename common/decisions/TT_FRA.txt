@@ -1,3 +1,39 @@
+crisis = {
+
+	TT_FRA_mutinies_in_the_army = {
+		is_good = no
+		days_mission_timeout = 120
+		available = {
+			has_war = no
+		}
+		timeout_effect = {
+			hidden_effect = {
+				disband_twenty_percent_units = yes
+				
+			}
+
+			random_list = {
+				33 = {
+					
+				}
+
+				66 = {
+					country_event = {id = TT_INT_France.6 }
+				}
+
+
+
+			}
+		}
+		fixed_random_seed = no
+		activation = {
+			tag = FRA
+			has_global_flag = WW1_continues
+		}
+	}
+
+}
+
 parliament_gui_decision_category = {
 	test_parliament = {
 		visible = {

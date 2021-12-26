@@ -1,5 +1,10 @@
 ideas = {
 	country = {
+		TT_separate_peace = {
+			rule = {
+				can_join_factions = no
+			}
+		}
 		TT_strikes1 = {
 			picture = FRA_factory_strikes
 			cancel = {

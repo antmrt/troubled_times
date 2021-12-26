@@ -18,6 +18,12 @@ TT_SOV_russian_civil_war = {
 				date > 1918.11.22
 				is_historical_focus_on = yes
 			}
+			modifier = {
+				factor = 0
+				EST = {
+					is_subject_of = GER
+				}
+			}
 		}
 
 		remove_effect = {
@@ -77,6 +83,12 @@ TT_SOV_russian_civil_war = {
 				date > 1918.11.25
 				is_historical_focus_on = yes
 			}
+			modifier = {
+				factor = 0
+				LAT = {
+					is_subject_of = GER
+				}
+			}
 		}
 
 		remove_effect = {
@@ -135,6 +147,12 @@ TT_SOV_russian_civil_war = {
 				add = 10000
 				date > 1918.11.25
 				is_historical_focus_on = yes
+			}
+			modifier = {
+				factor = 0
+				LIT = {
+					is_subject_of = GER
+				}
 			}
 		}
 

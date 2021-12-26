@@ -115,3 +115,25 @@ country_event = {
 		name = TT_INT_France.5.b
 	}
 }
+
+country_event = {
+	id = TT_INT_France.6
+	desc = TT_INT_France.6.d
+	title = TT_INT_France.6.t
+
+	is_triggered_only = yes
+
+	option = {
+		#reach out to germany
+		add_timed_idea = {
+			idea = TT_separate_peace
+			days = 60
+		}
+		set_country_flag = frenc_2_revolution_super_event
+		GER = {
+			country_event = { id = TT_INT_Germany.5 days = 2}
+		}
+		leave_faction = yes
+	}
+
+}

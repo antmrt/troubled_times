@@ -3,3 +3,14 @@ sound = { ### DO NOT MISTAKE SOUND (HERE) FOR SOUNDEFFECTS (ANOTHER FILE)
 	file = "customsound/second_french_revolution.wav" ## location of the sound file
 	always_load = no
 }
+
+sound = {
+	name = "soviet_cw_victory_sound"
+	file = "customsound/Soviet_victory.wav"
+	always_load = no
+}
+sound = {
+	name = "white_army_cw_victory_sound"
+	file = "customsound/White_victory.wav"
+	always_load = no
+}

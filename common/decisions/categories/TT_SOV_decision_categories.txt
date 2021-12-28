@@ -7,3 +7,11 @@ TT_SOV_russian_civil_war = {
 		date < 1936.1.1
 	}
 }
+TT_WHR_russian_civil_war = {
+	allowed = {
+		tag = WHR
+	}
+	visible = {
+		date < 1936.1.1
+	}
+}

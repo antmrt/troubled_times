@@ -11,7 +11,7 @@
  TT_INT_Germany.2.a:0 "The Beginning of the End?"
  TT_INT_Germany.2.b:0 "(Play as Alsace)"
 
- TT_INT_Germany.3.t:0 "UNited Duchy Breakup"
+ TT_INT_Germany.3.t:0 "United Duchy Breakup"
  TT_INT_Germany.3.d:0 "Following the German defeat in the War, different regions of our Duchy declared independence from it, there's nothing we can do to stop this situation."
  TT_INT_Germany.3.a:0 "(Play as Estonia)"
  TT_INT_Germany.3.b: "(Play as Latvia)"
@@ -76,5 +76,9 @@
  TT_INT_Peace_treaty.7.b:0 "No need"
 
  TT_FRENCH_REVOLUTION_T:0 "Second French Revolution"
- BE_LATIN_WARS_A:0 "The End of Democracy"
- BE_LATIN_WARS_D:0 "This morning, soldiers stormed the parliament in an attempt to end the war, they took over the chamber and declared a new government. Their slogan 'Why fight for the Big?' resonnates in the trenches as millions of soldiers lost their lives to protect the interests of a few"
+ TT_FRENCH_REVOLUTION_A:0 "The End of Democracy"
+ TT_FRENCH_REVOLUTION_DESC:0 "This morning, soldiers stormed the parliament in an attempt to end the war, they took over the chamber and declared a new government. Their slogan 'Why fight for the Big?' resonnates in the trenches as millions of soldiers lost their lives to protect the interests of a few"
+
+ TT_SOVIET_VICTORY_CW_T:0 "Red Army Victory"
+ TT_SOVIET_VICTORY_A:0 "Long Live the Revolution!"
+ TT_SOVIET_VICTORY_D:0 ""

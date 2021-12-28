@@ -10,6 +10,9 @@ country_event = {
 
 
 	option = {
+		ai_chance = {
+			base = 2
+		}
 		name = TT_INT_Germany.1.a
 		dismantle_faction = yes
 		set_global_flag = compiegne_armistice_signed
@@ -33,15 +36,21 @@ country_event = {
 			UBD = {country_event = {id = TT_INT_Germany.3 days = 1}}
 			GER = {country_event = {id = TT_INT_Germany.2 days = 1}}
 			POL = {
+				transfer_state = 933
+				transfer_state = 784
+				transfer_state = 95
+				transfer_state = 96
 				declare_war_on = {
 					target = WUK
 					type = annex_everything
 				}
 			}
 			SOV = {
-				annex_country = {
+				declare_war_on = {
 					target = UKR
+					type = civil_war
 				}
+				add_civil_war_target = UKR
 				
 				every_state = {
 					limit = {
@@ -69,6 +78,13 @@ country_event = {
 	}
 
 	option = {
+		ai_chance = {
+			base = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
 		FRA = {
 			set_country_flag = crisis_in_progress
 		}

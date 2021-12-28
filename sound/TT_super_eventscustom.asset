@@ -2,6 +2,10 @@ category = { ### THIS USES SOUND EFFECTS, NOT SOUND
  	name = "TT_Super_Events_Effects"
 	soundeffects = {
 		second_french_revolution
+
+		#RUSSIAN CIVIL WAR
+		soviet_cw_victory
+		white_army_cw_victory
 	}
  	compressor = {
 		enabled = yes

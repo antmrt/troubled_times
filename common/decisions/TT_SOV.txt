@@ -1,3 +1,47 @@
+TT_WHR_russian_civil_war = {
+	entente_weapon_shipment = {
+		days_mission_timeout = 90
+		is_good = yes
+		available = {
+			always = no
+		}
+		timeout_effect = {
+			randomize_temp_variable = {
+				var = infantry_eq
+				distribution = uniform
+				min = 100
+				max = 500
+			}
+			randomize_temp_variable = {
+				var = support_eq
+				distribution = uniform
+				min = 100
+				max = 500
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = var:infantry_eq?782
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = var:support_eq?147
+			}
+		}
+	}
+	launch_offensive = {
+		targeted_modifier = {
+			tag = SOV
+			attack_bonus_against = 3
+		}
+		days_remove = 60
+		days_re_enable = 20
+		ai_will_do = {
+			factor = 10000
+		}
+	}
+}
+
+
 TT_SOV_russian_civil_war = {
 	reintegrate_EST = {
 		allowed = {

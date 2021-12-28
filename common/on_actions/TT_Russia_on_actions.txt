@@ -1,0 +1,47 @@
+on_actions = {
+
+	on_civil_war_end = {
+		effect = {
+			if = {
+				limit = {
+					FROM = {
+						tag = WHR
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = WHR
+					}
+					remove_core_of = WHR
+				}
+				every_country = {
+					limit = {
+						is_ai = no
+					}
+					set_country_flag = soviet_cw_victory_super_event
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						tag = SOV
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = SOV
+					}
+					remove_core_of = SOV
+				}
+				every_country = {
+					limit = {
+						is_ai = no
+					}
+					set_country_flag = white_army_cw_victory_super_event
+				}
+			}
+		}
+	}
+
+
+}

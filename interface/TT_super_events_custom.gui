@@ -1,6 +1,15 @@
 guiTypes = { ######## THE DESCRIPTION AND THE TITLE ARE IN THE LOCALISATION FILE ##########
 ############### THIS FILE DEFINES THE SHAPE, FORM, AND TEXT OF THE GUI FOR THE SUPEREVENT
 	
+
+	# ____  _____ ____ ___  _   _ _   _ ____    _____ ____  _____ _   _  ____ _   _   ____  _______     _____  _    _   _ _____ ___ ___  _   _ 
+	#/ ___|| ____/ ___/ _ \| \ | | \ | |  _ \  |  ___|  _ \| ____| \ | |/ ___| | | | |  _ \| ____\ \   / / _ \| |  | | | |_   _|_ _/ _ \| \ | |
+	#\___ \|  _|| |  | | | |  \| |  \| | | | | | |_  | |_) |  _| |  \| | |   | |_| | | |_) |  _|  \ \ / / | | | |  | | | | | |  | | | | |  \| |
+	# ___) | |__| |__| |_| | |\  | |\  | |_| | |  _| |  _ <| |___| |\  | |___|  _  | |  _ <| |___  \ V /| |_| | |__| |_| | | |  | | |_| | |\  |
+	#|____/|_____\____\___/|_| \_|_| \_|____/  |_|   |_| \_\_____|_| \_|\____|_| |_| |_| \_\_____|  \_/  \___/|_____\___/  |_| |___\___/|_| \_|
+																																			  
+   
+
 	containerWindowType = {
 		name = "TT_2_french_revolution_super_event_custom_window"
 		size = { width = 220 height = 128 }
@@ -51,6 +60,183 @@ guiTypes = { ######## THE DESCRIPTION AND THE TITLE ARE IN THE LOCALISATION FILE
 
 		buttonType = {
 			name = "Option"
+			text = "TT_FRENCH_REVOLUTION_A"  ############## OPTION
+			shortcut = "ESCAPE"
+			position = { x = -110 y = 183 }
+			quadTextureSprite ="GFX_button_221x34"
+			buttonFont = "Bomb_24"
+			Orientation = center
+		}
+
+		iconType = {
+			name ="underlay"
+			spriteType = "GFX_superevent_text_underlay"
+			position = { x= 30 y = -200 }
+			Orientation = lower_left
+			alwaystransparent = yes
+		}
+
+		instantTextBoxType = {
+			name = "text"
+			position = {  x= 20 y = -195 }
+			font = "Bomb_24"
+			text = "TT_FRENCH_REVOLUTION_DESC" ######## HERE GOES THE DESCRIPTION ###########
+			maxWidth = 455
+			maxHeight = 173
+			fixedsize = yes
+			format = left
+			Orientation = lower_left
+		}
+	}
+
+
+
+	
+	# ____   _____     _____ _____ _____  __     _____ ____ _____ ___  ______   __   ______        __
+	#/ ___| / _ \ \   / /_ _| ____|_   _| \ \   / /_ _/ ___|_   _/ _ \|  _ \ \ / /  / ___\ \      / /
+	#\___ \| | | \ \ / / | ||  _|   | |    \ \ / / | | |     | || | | | |_) \ V /  | |    \ \ /\ / / 
+	# ___) | |_| |\ V /  | || |___  | |     \ V /  | | |___  | || |_| |  _ < | |   | |___  \ V  V /  
+	#|____/ \___/  \_/  |___|_____| |_|      \_/  |___\____| |_| \___/|_| \_\|_|    \____|  \_/\_/   
+	
+	containerWindowType = {
+		name = "TT_soviet_cw_victory_super_event_custom_window"
+		size = { width = 220 height = 128 }
+		position = { x=0 y=-210 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		show_sound = soviet_cw_victory ### SOUND EFFECT GOES HERE, MAKE SURE YOU'RE USING SOUND #EFFECT AND NOT SOUND!!!!!
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_1b_no_border"
+		}
+
+		instantTextBoxType = {
+			name = "Title"
+			position = { x = 0 y = 20 }
+			font = "aldrich_18_outline"
+			borderSize = {x = 0 y = 0}
+			text = "TT_SOVIET_VICTORY_CW_T" ###### HERE GOES THE TITLE ########
+			maxWidth = 220
+			maxHeight = 24
+			format = centre
+		}
+
+		iconType = {
+			name ="image"
+			spriteType = "GFX_superevent_soviet_victory"
+			position = { x= -286 y = -18 }
+			Orientation = center
+			alwaystransparent = yes
+		}
+
+	}
+
+	containerWindowType = {
+		name = "TT_super_event_frame_soviet_cw_victory_custom"
+		size = { width = 588 height = 465 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_bigevent_border"
+		}
+
+		buttonType = {
+			name = "Option"
+			text = "TT_SOVIET_VICTORY_A"  ############## OPTION
+			shortcut = "ESCAPE"
+			position = { x = -110 y = 183 }
+			quadTextureSprite ="GFX_button_221x34"
+			buttonFont = "Bomb_24"
+			Orientation = center
+		}
+
+		iconType = {
+			name ="underlay"
+			spriteType = "GFX_superevent_text_underlay"
+			position = { x= 30 y = -200 }
+			Orientation = lower_left
+			alwaystransparent = yes
+		}
+
+		instantTextBoxType = {
+			name = "text"
+			position = {  x= 20 y = -195 }
+			font = "Bomb_24"
+			text = "TT_SOVIET_VICTORY_D" ######## HERE GOES THE DESCRIPTION ###########
+			maxWidth = 455
+			maxHeight = 173
+			fixedsize = yes
+			format = left
+			Orientation = lower_left
+		}
+	}
+   
+
+
+
+	
+	#__        ___   _ ___ _____ _____      _    ____  __  ____   __ __     _____ ____ _____ ___  ______   __   ______        __
+	#\ \      / / | | |_ _|_   _| ____|    / \  |  _ \|  \/  \ \ / / \ \   / /_ _/ ___|_   _/ _ \|  _ \ \ / /  / ___\ \      / /
+	# \ \ /\ / /| |_| || |  | | |  _|     / _ \ | |_) | |\/| |\ V /   \ \ / / | | |     | || | | | |_) \ V /  | |    \ \ /\ / / 
+	#  \ V  V / |  _  || |  | | | |___   / ___ \|  _ <| |  | | | |     \ V /  | | |___  | || |_| |  _ < | |   | |___  \ V  V /  
+	#   \_/\_/  |_| |_|___| |_| |_____| /_/   \_\_| \_\_|  |_| |_|      \_/  |___\____| |_| \___/|_| \_\|_|    \____|  \_/\_/   
+																															   
+	containerWindowType = {
+		name = "TT_white_army_cw_victory_super_event_custom_window"
+		size = { width = 220 height = 128 }
+		position = { x=0 y=-210 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		show_sound = white_army_cw_victory ### SOUND EFFECT GOES HERE, MAKE SURE YOU'RE USING SOUND #EFFECT AND NOT SOUND!!!!!
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_1b_no_border"
+		}
+
+		instantTextBoxType = {
+			name = "Title"
+			position = { x = 0 y = 20 }
+			font = "aldrich_18_outline"
+			borderSize = {x = 0 y = 0}
+			text = "TT_WHITE_ARMY_VICTORY_CW_T" ###### HERE GOES THE TITLE ########
+			maxWidth = 220
+			maxHeight = 24
+			format = centre
+		}
+
+		iconType = {
+			name ="image"
+			spriteType = "GFX_superevent_white_army_victory"
+			position = { x= -286 y = -18 }
+			Orientation = center
+			alwaystransparent = yes
+		}
+
+	}
+
+	containerWindowType = {
+		name = "TT_super_event_frame_white_army_cw_victory_custom"
+		size = { width = 588 height = 465 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_bigevent_border"
+		}
+
+		buttonType = {
+			name = "Option"
 			text = "BE_LATIN_WARS_A"  ############## OPTION
 			shortcut = "ESCAPE"
 			position = { x = -110 y = 183 }
@@ -79,4 +265,9 @@ guiTypes = { ######## THE DESCRIPTION AND THE TITLE ARE IN THE LOCALISATION FILE
 			Orientation = lower_left
 		}
 	}
+
+
+
+
+
 }

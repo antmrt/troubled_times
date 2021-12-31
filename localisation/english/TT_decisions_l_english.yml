@@ -100,4 +100,4 @@ TT_spartakist_control_decision_desc:0 "§Y[FROM.GetName]§! is under §RSpartaki
 TT_republican_control_decision:0 "Republican Control"
 TT_republican_control_decision_desc:0 "§Y[FROM.GetName]§! is under §YRepublican§! Control, \ntheir strengh in this state is §Y[?FROM.Republicanstrengh]§!"
 GER_spartakist_attack:0 "Spartakist Attack in [GER_INT_state_challenged.GetName]"
-GER_republican_attack:0 "Republican Attack in [GER_INT_state_challenged.GetName]" 
+GER_republican_attack:0 "Republican Attack in [GER_INT_state_challenged.GetName]"

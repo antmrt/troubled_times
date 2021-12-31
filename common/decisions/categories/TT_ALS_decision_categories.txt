@@ -1,10 +1,18 @@
 TT_ALS_border_skirmishes = {
 	allowed = {
-		tag = ALS
+		OR = {
+			tag = ALS
+			tag = HUN
+			tag = ROM
+		}
 	}
 
 	visible = {
-		has_completed_focus = TT_INT_ALS_skirmishes_in_the_vosges
+		OR = {
+			has_completed_focus = TT_INT_ALS_skirmishes_in_the_vosges
+			tag = HUN
+			tag = ROM
+		}
 	}
 	priority = 200
 

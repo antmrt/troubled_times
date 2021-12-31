@@ -1,0 +1,6 @@
+TT_HUN_territorial_wars = {
+	allowed = {
+		tag = HUN
+	}
+	priority = 800
+}

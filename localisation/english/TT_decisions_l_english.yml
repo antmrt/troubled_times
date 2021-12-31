@@ -91,3 +91,11 @@ tot_economic_mobilisation_tt:0 "- §YTotal Mobilization§!: §G+375§!"
 foreign_interventionism_unit_bonus_tt:0 "- §YInterventionism§! §G+25§!"
 foreign_warmonger_unit_bonus_tt:0 "- §YWarmonger§! §G+50§!"
 foreign_icandowhatilike_tt:0 "- §YWorld Policeman§! §G+50§!"
+
+
+TT_monarchist_control_decision:0 "Freikorps Control"
+TT_monarchist_control_decision_desc:0 "§Y[FROM.GetName]§! is under §WFreikorps§! Control, \ntheir strengh in this state is §Y[?FROM.Monarchiststrengh]§!"
+TT_spartakist_control_decision:0 "Spartakist Control"
+TT_spartakist_control_decision_desc:0 "§Y[FROM.GetName]§! is under §RSpartakist§! Control, \ntheir strengh in this state is §Y[?FROM.Spartakiststrengh]§!"
+TT_republican_control_decision:0 "Republican Control"
+TT_republican_control_decision_desc:0 "§Y[FROM.GetName]§! is under §YRepublican§! Control, \ntheir strengh in this state is §Y[?FROM.Republicanstrengh]§!"

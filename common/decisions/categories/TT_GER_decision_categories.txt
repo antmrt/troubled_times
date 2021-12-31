@@ -1,0 +1,7 @@
+TT_GER_power_struggle = {
+	allowed = {
+		original_tag = GER
+	}
+	visible_when_empty = yes
+	priority = 250
+}

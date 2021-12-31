@@ -1,4 +1,31 @@
 scripted_gui = {	
+	TT_compiegne_armistice_super_event_custom = {
+		context_type = player_context
+		window_name = "TT_compiegne_armistice_super_event_custom_window"
+
+		visible = {
+			has_country_flag = compiegne_armistice ### this country flag triggers the #superevent
+		}
+
+	}
+	TT_super_event_frame_compiegne_armistice_custom = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME #NAME AS IN THE TNO_SG_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
+		context_type = player_context
+		window_name = "TT_super_event_frame_compiegne_armistice_custom"
+
+		visible = {
+			has_country_flag = compiegne_armistice
+		}
+
+		effects = {
+			Option_click = {
+				clr_country_flag = compiegne_armistice ### this disables the country flag #that fires the superevent (so the superevent actually goes away)
+			}
+		}
+	}
+
+
+
+
 
 	TT_2_french_revolution_super_event_custom = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME NAME AS #IN THE TNO_SG_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
 		context_type = player_context

@@ -33,8 +33,8 @@ state = {
 			controller = AUH
 		}
 		1918.11.11 = {
-			owner = HSR
-			controller = HSR
+			owner = HUN
+			controller = HUN
 		}
 		1920.11.11 = {
 			owner = HUN

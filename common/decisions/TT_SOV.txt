@@ -28,6 +28,21 @@ TT_WHR_russian_civil_war = {
 			}
 		}
 	}
+	WHR_soldiers_deserting = {
+		is_good = no
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+
+		}
+		days_mission_timeout = 60
+		timeout_effect = {
+			disband_twenty_percent_units = yes
+		}
+
+	}
+
 	launch_offensive = {
 		targeted_modifier = {
 			tag = SOV
@@ -43,6 +58,47 @@ TT_WHR_russian_civil_war = {
 
 
 TT_SOV_russian_civil_war = {
+	launch_offensive_SOV = {
+		targeted_modifier = {
+			tag = WHR
+			attack_bonus_against = 3
+		}
+		days_remove = 60
+		days_re_enable = 20
+		ai_will_do = {
+			factor = 10000
+		}
+	}
+	emergency_consciption = {
+		allowed = {
+			tag = SOV
+		}
+		available = {
+			surrender_progress > 0.3
+		}
+		ai_will_do = {
+			factor = 1000000
+		}
+		days_re_enable = 35
+		complete_effect = {
+			set_temp_variable = {div_created = 0}
+			while_loop_effect = {
+				limit = {
+					check_variable = {
+						div_created < 20
+					}
+				}
+		
+				random_owned_state = {
+				create_unit = {
+					division = "name = \"Infantry Division\" division_template = \"Strelkovaya Diviziya\" start_experience_factor = 0.2 start_equipment_factor = 0.2"
+					owner = SOV
+				}
+			}
+			add_to_temp_variable = {div_created = 1}
+			}
+		}
+	}
 	reintegrate_EST = {
 		allowed = {
 			tag = SOV
@@ -60,6 +116,7 @@ TT_SOV_russian_civil_war = {
 			modifier = {
 				add = 10000
 				date > 1918.11.22
+				date < 1920.2.2
 				is_historical_focus_on = yes
 			}
 			modifier = {
@@ -125,6 +182,7 @@ TT_SOV_russian_civil_war = {
 			modifier = {
 				add = 10000
 				date > 1918.11.25
+				date < 1919.8.11
 				is_historical_focus_on = yes
 			}
 			modifier = {
@@ -190,6 +248,7 @@ TT_SOV_russian_civil_war = {
 			modifier = {
 				add = 10000
 				date > 1918.11.25
+				date < 1920.11.1
 				is_historical_focus_on = yes
 			}
 			modifier = {

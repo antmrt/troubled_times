@@ -1,4 +1,35 @@
 BALTIC_soviet_defense = {
+	BALTIC_propose_peace_to_soviets = {
+		visible = {
+			has_war_with = SOV
+			is_puppet = no
+			
+		}
+		cost = 20
+		ai_will_do = {
+			base = 0
+			modifier = {
+				tag = EST
+				date > 1920.2.2
+				add = 1000000
+			}
+			modifier = {
+				tag = LAT
+				date > 1919.8.11
+				add = 1000000
+			}
+			modifier = {
+				tag = LIT
+				date > 1920.11.1
+				add = 1000000
+			}
+		}
+		complete_effect = {
+			SOV = {
+				country_event = {id = TT_INT_Russia.1 days = 1}
+			}
+		}
+	}
 	BALTIC_organize_anti_soviet_forces = {
 		icon = revolt
 		state_target = yes

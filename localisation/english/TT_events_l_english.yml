@@ -77,8 +77,12 @@
 
  TT_FRENCH_REVOLUTION_T:0 "Second French Revolution"
  TT_FRENCH_REVOLUTION_A:0 "The End of Democracy"
- TT_FRENCH_REVOLUTION_DESC:0 "This morning, soldiers stormed the parliament in an attempt to end the war, they took over the chamber and declared a new government. Their slogan 'Why fight for the Big?' resonnates in the trenches as millions of soldiers lost their lives to protect the interests of a few"
+ TT_FRENCH_REVOLUTION_DESC:0 "This morning, soldiers stormed the parliament in an attempt to end the war, they took over the chamber and declared a new government. Their slogan 'Why fight for the Big?' resonates in the trenches as millions of soldiers lost their lives to protect the interests of a few"
 
  TT_SOVIET_VICTORY_CW_T:0 "Red Army Victory"
  TT_SOVIET_VICTORY_A:0 "Long Live the Revolution!"
  TT_SOVIET_VICTORY_D:0 ""
+
+ TT_COMPIEGNE_ARMISTICE_T:0 "Compiegne Armistice"
+ TT_COMPIEGNE_ARMISTICE_DESC:0 "Today, at 11:00, the Armistice took effects and the guns falled silent on the fronts, this day marks the start of a new age, an age of Peace in Europe."
+ TT_COMPIEGNE_ARMISTICE_A:0 "Peace, at last"

@@ -1,0 +1,146 @@
+TT_GER_power_struggle = {
+
+	TT_monarchist_control_decision = {
+		state_target = yes
+		target_array = core_states
+
+		visible = {
+			FROM = {
+				is_controlled_by = GER
+				has_state_flag = monarchist_control
+			}
+		}
+		days_remove = 35
+		icon = GFX_decision_ger_monarchist_control
+		on_map_mode = map_only
+	}
+
+	TT_spartakist_control_decision = {
+		state_target = yes
+		target_array = core_states
+		days_remove = 35
+		visible = {
+			FROM = {
+				is_controlled_by = GER
+				has_state_flag = spartakist_control
+			}
+		}
+		icon = GFX_decision_ger_spartakist_control
+		on_map_mode = map_only
+	}
+
+	TT_republican_control_decision = {
+		state_target = yes
+		target_array = core_states
+		days_remove = 35
+		visible = {
+			FROM = {
+				is_controlled_by = GER
+				NOT = {has_state_flag = spartakist_control}
+				NOT = {has_state_flag = monarchist_control}
+			}
+		}
+		icon = GFX_decision_ger_republican_control
+		on_map_mode = map_only
+		complete_effect = {
+			if = {
+				limit = {
+					has_completed_focus = TT_INT_GER_change_through_reforms
+				}
+				FROM = {
+					add_to_variable = {
+						republicanstrengh = 5
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = TT_INT_GER_change_through_revolution
+				}
+				FROM = {
+					add_to_variable = {
+						republicanstrengh = -5
+					}
+				} 
+				if = {
+					limit = {
+						check_variable = {
+							FROM.republicanstrengh < 0
+						}
+						
+					}
+					FROM = {clr_state_flag = republican_control set_state_flag = spartakist_control}
+					FROM = {
+						set_variable = {
+							republicanstrengh = 0
+						}
+						set_variable = {
+							Spartakiststrengh = 5
+						}
+							
+					}
+				}
+			}
+		}
+	}
+
+	TT_spartakist_uprising_timer = {
+		days_mission_timeout = 300
+		activation = {
+			has_completed_focus = TT_INT_GER_change_through_revolution
+		}
+		fire_only_once = yes
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		fire_only_once = yes
+		timeout_effect = {
+			every_state = {
+				limit = {
+					has_state_flag = spartakist_control
+					is_controlled_by = GER
+				}
+				SPK = {transfer_state = PREV}
+			}
+			SPK = {
+				declare_war_on = {
+					target = GER
+					type = civil_war
+				}
+				hidden_effect = {
+					add_popularity = {
+						ideology = communism
+						popularity = 1
+					}
+				}
+			}
+			GER = {
+				add_civil_war_target = SPK
+			}
+			set_temp_variable = {
+				var = num_SPK_states
+				value = SPK.num_controlled_states
+			}
+			set_temp_variable = {
+				var = total_num_GER_state
+				value = GER.num_controlled_states
+			}
+			add_to_temp_variable = {
+				var = total_num_GER_state
+				value = num_SPK_states
+			}
+			divide_temp_variable = {
+				num_SPK_states = total_num_GER_state
+			}
+			GER = {
+				transfer_units_fraction = {
+					target = SPK
+					size = var:num_SPK_states
+				}
+			}
+		}
+	}
+}
+

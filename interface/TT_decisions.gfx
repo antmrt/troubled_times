@@ -1,0 +1,16 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_decision_ger_monarchist_control"
+		texturefile = "gfx/interface/TT_decisions/decision_monarchist_control.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decision_ger_republican_control"
+		texturefile = "gfx/interface/TT_decisions/decision_republican_control.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_ger_spartakist_control"
+		texturefile = "gfx/interface/TT_decisions/decision_spartakist_control.dds"
+	}
+}

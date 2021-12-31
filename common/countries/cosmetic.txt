@@ -801,6 +801,11 @@ SOV_ROME = {
 	color_ui = rgb { 128 0 128 }
 }
 
+SPK_spartakist_germany = {
+	color = rgb { 206 32 41}
+	color_ui = rgb { 206 32 41}
+}
+
 
 YUG_state_SLO_CRO_SER = {
 	color = rgb { 72 73 126 }

@@ -12,14 +12,145 @@ focus_tree = {
 
 
 
-	 focus = {
+	focus = {
 		 id = TT_INT_GER_bitter_defeat
 		 icon = GFX_unknown
 		 cost = 10
-		 x = 1
+		 x = 10
 		 y = 1
 		 completion_reward = { 
 			 add_political_power = -100
 		 }
-	 }
+	}
+
+	focus = {
+		id = TT_INT_GER_change_through_reforms
+		icon = GFX_unknown
+		cost = 2
+		relative_position_id = TT_INT_GER_bitter_defeat
+		x = -1
+		y = 1
+		mutually_exclusive = {
+			focus = TT_INT_GER_change_through_revolution
+		}
+		prerequisite = {
+			focus = TT_INT_GER_bitter_defeat
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = TT_INT_GER_change_through_revolution
+		icon = GFX_unknown
+		cost = 2
+		relative_position_id = TT_INT_GER_bitter_defeat
+		mutually_exclusive = {
+			focus = TT_INT_GER_change_through_reforms
+		}
+		prerequisite = {
+			focus = TT_INT_GER_bitter_defeat
+		}
+		x = 1
+		y = 1
+	}
+	focus = {
+		id = TT_INT_GER_the_split
+		icon = GFX_unknown
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = TT_INT_GER_change_through_reforms
+		prerequisite = {
+			focus = TT_INT_GER_change_through_reforms focus = TT_INT_GER_change_through_revolution
+		}
+		
+		completion_reward = { }
+	}
+	focus = {
+		id = TT_INT_GER_secure_army_loyalty
+		icon = GFX_unknown
+		cost = 10
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = TT_INT_GER_change_through_reforms
+		}
+		relative_position_id = TT_INT_GER_change_through_reforms
+		completion_reward = { }
+	}
+	focus = {
+		id = TT_INT_GER_call_to_the_freikorps
+		icon = GFX_unknown
+		cost = 10
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = TT_INT_GER_secure_army_loyalty
+		}
+		relative_position_id = TT_INT_GER_secure_army_loyalty
+		completion_reward = { }
+	}
+	focus = {
+		id = TT_INT_GER_disband_the_mutinies
+		icon = GFX_unknown
+		cost = 10
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = TT_INT_GER_secure_army_loyalty
+		}
+		relative_position_id = TT_INT_GER_secure_army_loyalty
+		completion_reward = { }
+	}
+	focus = {
+		id = TT_INT_GER_rally_german_spartakists
+		icon = GFX_unknown
+		cost = 10
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = TT_INT_GER_change_through_revolution
+		}
+		relative_position_id = TT_INT_GER_change_through_revolution
+		completion_reward = { }
+	}
+	focus = {
+		id = TT_INT_GER_bavarian_socialists
+		icon = GFX_unknown
+		relative_position_id = TT_INT_GER_rally_german_spartakists
+		x = 1
+		y = 1
+		cost = 10
+		prerequisite = {
+			focus = TT_INT_GER_rally_german_spartakists
+		}
+		completion_reward = {
+			every_state = {
+				limit = [
+					AND = {
+						is_controlled_by = GER
+						is_core_of = BAV
+					}
+				}
+				clr_state_flag = republican_control 
+				set_state_flag = spartakist_control
+			}
+		}
+	}
+	focus = {
+		id = TT_INT_GER_Ruhr_workers
+		icon = GFX_unknown
+		relative_position_id = TT_INT_GER_rally_german_spartakists
+		x = -1
+		y = 1
+		cost = 10
+		prerequisite = {
+			focus = TT_INT_GER_rally_german_spartakists
+		}
+		completion_reward = {
+			51 = { clr_state_flag = republican_control set_state_flag = spartakist_control }
+			788 = { clr_state_flag = republican_control set_state_flag = spartakist_control }
+		}
+	}
 }

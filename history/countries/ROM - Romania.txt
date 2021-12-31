@@ -1,5 +1,11 @@
 ﻿capital = 46
 
+1918.11.11 = {
+	set_oob = "ROM_1918"
+}
+
+
+1936.1.1 = {
 if = {
 	limit = {
 		NOT = {
@@ -170,7 +176,7 @@ if = {
 		modifier = BFTB_balkan_pact_enemy
 	}
 }
-
+}
 set_convoys = 10
 1939.1.1 = {
 	

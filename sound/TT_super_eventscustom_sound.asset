@@ -14,3 +14,8 @@ sound = {
 	file = "customsound/White_victory.wav"
 	always_load = no
 }
+sound = {
+	name = "compiegne_armistice_sound"
+	file = "customsound/compiegne_armistice.wav"
+	always_load = no
+}

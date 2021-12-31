@@ -1,0 +1,59 @@
+add_namespace = TT_INT_Russia
+
+
+country_event = {
+	id = TT_INT_Russia.1
+	desc = TT_INT_Russia.1.d
+	title = TT_INT_Russia0t
+
+
+	is_triggered_only = yes
+
+	option = {
+		name = TT_INT_Russia.1.a
+
+		FROM = {
+			white_peace = SOV
+		}
+		if = {
+			limit = {
+				FROM = {
+					is_in_faction = yes
+				}
+				
+			}
+			FROM = {
+				leave_faction = yes
+			}
+		}
+		if = {
+			limit = {
+				FROM = {
+					tag = POL
+				}
+			}
+			SOV = {
+				declare_war_on = {
+					target = UKR
+					type = civil_war
+				}
+				add_civil_war_target = UKR
+			}
+			every_state = {
+				limit = {
+					is_core_of = BLR
+					is_owned_by = POL
+					NOT = {
+						is_core_of = POL
+					}
+
+				}
+				SOV = {
+					transfer_state = PREV
+				}
+			}
+		}
+
+	}
+
+}

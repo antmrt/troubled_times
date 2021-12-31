@@ -23,7 +23,15 @@ country_event = {
 			}
 			white_peace = GER
 		}
-		
+		every_country = {
+			limit = {
+				NOT = {
+					tag = GER
+				}
+				is_ai = no
+			}
+			set_country_flag = compiegne_armistice
+		}
 		hidden_effect = {
 			GER = {
 				end_puppet = POL

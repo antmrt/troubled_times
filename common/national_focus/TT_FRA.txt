@@ -231,6 +231,9 @@ focus_tree = {
 		prerequisite = {
 			focus = TT_INT_FRA_russian_civil_war
 		}
+		available = {
+			country_exists = WHR
+		}
 		ai_will_do = {
 			base = 10
 			modifier = {

@@ -37,7 +37,14 @@ focus_tree = {
 			focus = TT_INT_GER_bitter_defeat
 		}
 		completion_reward = {
-
+			random_owned_state = {
+				limit = {
+					has_state_flag = republican_control
+					is_core_of = GER
+				}
+				save_global_event_target_as = GER_INT_state_challenged
+			}
+			activate_decision = GER_spartakist_attack
 		}
 	}
 	focus = {
@@ -50,6 +57,16 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = TT_INT_GER_bitter_defeat
+		}
+		completion_reward = {
+			random_owned_state = {
+				limit = {
+					has_state_flag = spartakist_control
+					is_core_of = GER
+				}
+				save_global_event_target_as = GER_INT_state_challenged
+			}
+			activate_decision = GER_republican_attack
 		}
 		x = 1
 		y = 1
@@ -127,7 +144,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			every_state = {
-				limit = [
+				limit = {
 					AND = {
 						is_controlled_by = GER
 						is_core_of = BAV
@@ -136,9 +153,11 @@ focus_tree = {
 				clr_state_flag = republican_control 
 				set_state_flag = spartakist_control
 			}
+			
 		}
 	}
-	focus = {
+	
+	focus = { 
 		id = TT_INT_GER_Ruhr_workers
 		icon = GFX_unknown
 		relative_position_id = TT_INT_GER_rally_german_spartakists
@@ -152,5 +171,5 @@ focus_tree = {
 			51 = { clr_state_flag = republican_control set_state_flag = spartakist_control }
 			788 = { clr_state_flag = republican_control set_state_flag = spartakist_control }
 		}
-	}
+	} 
 }

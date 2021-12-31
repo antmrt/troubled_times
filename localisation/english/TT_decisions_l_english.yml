@@ -92,10 +92,12 @@ foreign_interventionism_unit_bonus_tt:0 "- §YInterventionism§! §G+25§!"
 foreign_warmonger_unit_bonus_tt:0 "- §YWarmonger§! §G+50§!"
 foreign_icandowhatilike_tt:0 "- §YWorld Policeman§! §G+50§!"
 
-
+TT_GER_power_struggle:0 "Power Struggle"
 TT_monarchist_control_decision:0 "Freikorps Control"
 TT_monarchist_control_decision_desc:0 "§Y[FROM.GetName]§! is under §WFreikorps§! Control, \ntheir strengh in this state is §Y[?FROM.Monarchiststrengh]§!"
 TT_spartakist_control_decision:0 "Spartakist Control"
 TT_spartakist_control_decision_desc:0 "§Y[FROM.GetName]§! is under §RSpartakist§! Control, \ntheir strengh in this state is §Y[?FROM.Spartakiststrengh]§!"
 TT_republican_control_decision:0 "Republican Control"
 TT_republican_control_decision_desc:0 "§Y[FROM.GetName]§! is under §YRepublican§! Control, \ntheir strengh in this state is §Y[?FROM.Republicanstrengh]§!"
+GER_spartakist_attack:0 "Spartakist Attack in [GER_INT_state_challenged.GetName]"
+GER_republican_attack:0 "Republican Attack in [GER_INT_state_challenged.GetName]"

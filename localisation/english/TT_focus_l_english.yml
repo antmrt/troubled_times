@@ -14,8 +14,41 @@
 
  TT_INT_FRA_Victory_at_last:0 "Victory at last!"
  TT_INT_FRA_Victory_at_last_desc:0 "Millions of dead, but we finally got our victory, it is now time to move on and rebuild the nation"
- 
  TT_INT_FRA_Dismantle_union_sacree:0 "Dismantle the Union Sacrée"
  TT_INT_FRA_Dismantle_union_sacree_desc:0 "The Union Sacrée is a coallition regrouping all parties atthe start of the war, this allowed the government to make the best decisions for our country. With the war over, it is now time to restart the parliamentary talks"
-
  TT_INT_FRA_Dismantle_union_sacree_tt:0 "§YThe Union Sacrée will be dismantled§!"
+ TT_INT_FRA_confidence_vote:0 "Confidence vote"
+ TT_INT_FRA_jonart_law:0 "Jonart Law"
+ TT_INT_FRA_assassination_attempt:0 "Assassination Attempt"
+ TT_INT_FRA_clemenceau_survives:0 "Clemenceau Survives"
+ TT_INT_FRA_clemenceau_dies:0 "Clemenceau Dies"
+ TT_INT_FRA_credit_national:0 "Credit National"
+ TT_INT_FRA_Bloc_national:0 "Bloc National"
+ TT_INT_FRA_l'allemagne_paiera:0 "L'allemagne Paiera!"
+ TT_INT_FRA_reactionnary_right:0 "Reactionary Right"
+ TT_INT_FRA_cordon_sanitaire:0 "Cordon Sanitaire"
+ TT_INT_FRA_moderate_right:0 "Moderate Right"
+ TT_INT_FRA_Alliance_de_la_gauche:0 "Alliance de la Gauche"
+ TT_INT_FRA_european_workers:0 "European Workers"
+ TT_INT_FRA_reformist_left:0 "Reformist Left"
+ TT_INT_FRA_reconstruction_funds:0 "Reconstruction Funds"
+ TT_INT_FRA_revolutionary_left:0 "Revolutionary Left"
+ TT_INT_FRA_international_matters:0 "International Matters"
+ TT_INT_FRA_russian_civil_war:0 "Russian Civil War"
+ TT_INT_FRA_direct_intervention:0 "Direct Intervention"
+ TT_INT_FRA_indirect_intervention:0 "Indirect Intervention"
+ TT_INT_FRA_neutral_stance:0 "Neutral Stance"
+
+
+
+
+ TT_INT_GER_bitter_defeat:0 "Bitter Defeat"
+ TT_INT_GER_change_through_reforms:0 "Change through Reforms"
+ TT_INT_GER_change_through_revolution:0 "Change through Revolution"
+ TT_INT_GER_the_split:0 "The Split"
+ TT_INT_GER_secure_army_loyalty:0 "Secure Army Loyalty"
+ TT_INT_GER_call_to_the_freikorps:0 "Call to the Freikorps"
+ TT_INT_GER_disband_the_mutinies:0 "Disband the Mutinies"
+ TT_INT_GER_rally_german_spartakists:0 "Rally German Spartakists"
+ TT_INT_GER_bavarian_socialists:0 "Call to the Bavarian Socialists"
+ TT_INT_GER_Ruhr_workers:0 "Ruhr Workers"

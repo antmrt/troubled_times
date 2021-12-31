@@ -1,7 +1,10 @@
 
 capital = 571
 1918.1.1 = {
-	
+	add_ideas = {
+		TT_WHR_disputed_leadership
+		WHR_soviet_civil_war
+	}
 	set_politics = {
 		ruling_party = fascism
 		last_election = "1900.1.1"
@@ -15,7 +18,7 @@ capital = 571
 	}
 	
 	recruit_character = WHR_alexander_kolchak
-	add_ideas = WHR_soviet_civil_war
+	
 	
 	declare_war_on = {
 		target = GEO

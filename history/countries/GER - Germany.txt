@@ -8,6 +8,7 @@
 		election_frequency = 48
 		elections_allowed = yes
 	}
+	add_ideas = GER_looming_revolution
 	set_popularities = {
 		democratic = 60
 		neutrality = 20
@@ -444,6 +445,7 @@ create_import = {
 	}
 }
 1936.1.1 = {
+	remove_ideas = GER_looming_revolution
 	set_politics = {
 		ruling_party = fascism
 		last_election = "1933.3.5"

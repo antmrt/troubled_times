@@ -1,5 +1,6 @@
 characters = {
 	SOV_vladimir_lenin = {
+		name = SOV_vladimir_lenin
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/SOV/INT/Portrait_Russia_Vladimir_Lenin.dds"
@@ -12,6 +13,7 @@ characters = {
 		}
 	}
 	WHR_alexander_kolchak = {
+		name = WHR_alexander_kolchak
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/WHR/INT/Admiral-Alexander_Kolchak.dds"

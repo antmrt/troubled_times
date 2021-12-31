@@ -1,0 +1,106 @@
+bookmarks = {
+	bookmark = {
+		name = "ARMISTICE_NAME"
+		desc = "ARMISTICE_DESC"
+		date = 1918.11.11.1
+		picture = "GFX_select_date_1900"
+		default_country = "GER"
+		default = no
+		GER = {
+			history = "GER_ARMISTICE_DESC"
+			ideology = neutrality
+			ideas = {
+				GER_looming_revolution
+			}
+			focuses = {
+				
+			}
+		}
+		# AUH = {
+		# 	history = "AUS_ARMISTICE_DESC"
+		# 	ideology = neutrality
+		# 	ideas = {
+				
+		# 	}
+		# 	focuses = {
+				
+		# 	}
+		# }
+		# OTT = {
+		# 	history = "TUR_ARMISTICE_DESC"
+		# 	ideology = neutrality
+		# 	ideas = {
+				
+		# 	}
+		# 	focuses = {
+		# 	}
+		# }
+		# RUE = {
+		# 	history = "SOV_ARMISTICE_DESC"
+		# 	ideology = neutrality
+		# 	ideas = {
+				
+		# 	}
+		# 	focuses = {
+				
+		# 	}
+		# }
+		#ENG = {
+		#	history = "ENG_ARMISTICE_DESC"
+		#	ideology = democratic
+		#	ideas = {
+		#		
+		#	}
+		#	focuses = {
+		#		
+		#	}
+		#}
+		FRA = {
+			history = "FRA_ARMISTICE_DESC"
+			ideology = democratic
+			ideas = {
+				
+			}
+			focuses = {
+			}
+		}
+		#USA = {
+		#	history = "USA_ARMISTICE_DESC"
+		#	ideology = democratic
+		#	ideas = {
+		#		
+		#	}
+		#	focuses = {
+		#	}
+		#}
+		"---" = {
+			history = "OTHER_ARMISTICE_DESC"
+		}
+		#"QIN"={
+		#	minor = yes
+		#	history = "OTHER_ARMISTICE_DESC"
+		#	ideology = neutrality
+		#	ideas = {
+		#		
+		#	}
+		#	focuses = {
+		#		
+		#	}
+		#}
+		#"MOR"={
+		#	minor = yes
+		#	history = "OTHER_ARMISTICE_DESC"
+		#	ideology = neutrality
+		#	ideas = {
+		#		
+		#	}
+		#	focuses = {
+		#		
+		#	}
+		#}
+		effect = {
+			randomize_weather = 22345            # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

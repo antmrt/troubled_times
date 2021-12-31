@@ -2,6 +2,11 @@
 
   ### GERMANY
 
+  ARMISTICE_NAME:0 "Armistice"
+  ARMISTICE_DESC:0 "Exhausted by 4 years of war, many countries in the World are on the brinks of collapse, what will the World look like in the Era to come?"
+
+
+
  TT_INT_Germany.1.t:0 "Armistice at Compiègne"
  TT_INT_Germany.1.d:0 "Representants of our government signed an armistice with our former ennemies. This is the first move towards a peace deal between our factions.The guns finally falled silent today at 11:00, ending a war that killed million of men"
  TT_INT_Germany.1.a:0 "Peace at Last!"

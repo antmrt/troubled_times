@@ -5,6 +5,7 @@
  TT_INT_Germany.1.t:0 "Armistice at Compiègne"
  TT_INT_Germany.1.d:0 "Representants of our government signed an armistice with our former ennemies. This is the first move towards a peace deal between our factions.The guns finally falled silent today at 11:00, ending a war that killed million of men"
  TT_INT_Germany.1.a:0 "Peace at Last!"
+ TT_INT_Germany.1.b:0 "Keep fighting!"
 
  TT_INT_Germany.2.t:0 "Alsatian Independance"
  TT_INT_Germany.2.d:0 "Following our defeat in the war, the Soviet Republic of Workers and Soldiers of Alsace has been proclaimed, it declared itself independent from our Empire. It is yet unknown if the French forces in the Region will take action to cease its existence."
@@ -19,6 +20,10 @@
  TT_INT_Germany.4.t:0 "The Versailles Treaty takes Effect"
  TT_INT_Germany.4.d:0 "Today, the delegation at Versailles handed over the final version of the Peace Treaty of Versailles, we know need to ratify it in order for it to come into effect."
  TT_INT_Germany.4.a:0 "A Dark day for Germany..."
+ 
+ TT_INT_Germany.5.t:0 "Germany to sign Peace trety with the Entente"
+ TT_INT_Germany.5.d:0 "Our Overlord signed a peace treaty with the Entente powers, we should do the same"
+ 
 
 
   ### FRANCE

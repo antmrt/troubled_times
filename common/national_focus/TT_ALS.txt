@@ -74,7 +74,7 @@ focus_tree = {
 	
 	focus = {
 		id = TT_INT_ALS_skirmishes_in_the_vosges
-		icon = GFX_unknown
+		icon = GFX_ALS_skirmishes_in_the_vosges_icon
 
 		cost = 1
 		x = 10

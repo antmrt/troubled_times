@@ -134,7 +134,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TT_INT_GER_bavarian_socialists
-		icon = GFX_unknown
+		icon = GFX_GER_bavarian_socialist_icon
 		relative_position_id = TT_INT_GER_rally_german_spartakists
 		x = 1
 		y = 1

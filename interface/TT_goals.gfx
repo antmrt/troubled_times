@@ -31,5 +31,13 @@ spriteTypes = {
 		name = GFX_FRA_allemagne_paiera_icon
 		textureFile = "gfx/interface/TT_goals/FRA_allemagne_paiera.dds"
 	}
+	spriteType = {
+		name = GFX_ALS_skirmishes_in_the_vosges_icon
+		textureFile = "gfx/interface/TT_goals/ALS_skirmishes_vosges.dds"
+	}
+	spriteType = {
+		name = GFX_GER_bavarian_socialist_icon
+		textureFile = "gfx/interface/TT_goals/GER_bavarian_socialists.dds"
+	}
 	
 }

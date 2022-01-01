@@ -30,10 +30,13 @@ state = {
 		}
 
 		1918.11.11 = {
-			owner = SER
-			controller = SER
+			owner = BUL
+			controller = BUL
 		}
-
+		1936.1.1 = {
+			owner = YUG
+			controller = YUG
+		}
 		1941.1.1 = {
 			owner = BUL
 			controller = BUL

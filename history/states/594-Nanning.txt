@@ -27,7 +27,7 @@ state = {
 		}
 
 		1912.1.1 = { owner = CHI controller = CHI add_core_of = CHI }
-
+		1918.11.11 = {owner = GUC controller = GUC}
 		1933.1.1 = {
 			owner = GXC
 			controller = GXC

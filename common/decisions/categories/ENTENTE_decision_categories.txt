@@ -22,3 +22,14 @@ ENTENTE_treaty_of_versailles = {
 
 
 }
+ENTENTE_treaty_of_neuilly = {
+	icon = ger_mefo_bills
+
+	allowed = {
+		OR = {
+			tag = BUL
+		}
+	}
+
+	priority = 500
+}

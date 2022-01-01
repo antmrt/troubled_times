@@ -46,7 +46,7 @@ TT_YUG_nation_formation = {
 			YUG = {
 				set_cosmetic_tag = YUG_kingdom_SLO_CRO_SER
 			}
-			
+			  
 		}
 
 		ai_will_do = {

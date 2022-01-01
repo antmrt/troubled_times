@@ -16,17 +16,19 @@ country_event = {
 		}
 		if = {
 			limit = {
-				ROOT = {
+				FROM = {
 					is_ai = no
 				}
-				YUG = {
-					change_tag_from = ROOT
-				}
+				
+			}
+			YUG = {
+				change_tag_from = FROM
 			}
 		}
 		YUG = {
 			annex_country = {
-				target = ROOT
+				target = FROM
+				transfer_troops = yes
 			}
 		}
 

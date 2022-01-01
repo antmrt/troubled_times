@@ -863,3 +863,35 @@ BAV = {
 	color = rgb { 10  187  255 }
 	color_ui = rgb { 10  180  245 }
 }
+
+FEN = {
+	color = rgb { 4 79 114 }
+	color_ui = rgb { 4 79 114 }
+}
+ANH = {
+	color = rgb { 115 0 140 }
+	color_ui = rgb { 115 0 140 }
+}
+
+GUI = {
+	color = rgb { 164 254 126 }
+	color_ui = rgb { 164 254 126 }
+}
+
+GUC = {
+	color = rgb { 85 183 254 }
+	color_ui = rgb { 85 183 254 }
+}
+
+ZHI = {
+	color = rgb { 208 56 40 }
+	color_ui = rgb { 208 56 40 }
+}
+HNN = {
+	color = hsv { 0.05 0.3 1 }
+	color_ui = hsv { 0.05 0.25 1.2 }
+}
+SIC = {
+	color = hsv { 0.05 0.3 1 }
+	color_ui = hsv { 0.05 0.25 1.2 }
+}

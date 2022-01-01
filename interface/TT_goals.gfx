@@ -1,0 +1,35 @@
+spriteTypes = {
+	spriteType = {
+		name = GFX_FRA_Union_sacree_icon
+		textureFile = "gfx/interface/TT_goals/FRA_end_union_sacree.dds"
+	}
+	spriteType = {
+		name = GFX_FRA_Jonart_law_icon
+		textureFile = "gfx/interface/TT_goals/FRA_jonart_law.dds"
+	}
+	spriteType = {
+		name = GFX_FRA_assassination_attempt_icon
+		textureFile = "gfx/interface/TT_goals/FRA_assassination_attempt.dds"
+	}
+	spriteType = {
+		name = GFX_FRA_credit_national_icon
+		textureFile = "gfx/interface/TT_goals/FRA_credit_national.dds"
+	}
+	spriteType = {
+		name = GFX_FRA_alliance_de_la_gauche_icon
+		textureFile = "gfx/interface/TT_goals/FRA_alliance_de_la_gauche.dds"
+	}
+	spriteType = {
+		name = GFX_FRA_bloc_national_icon
+		textureFile = "gfx/interface/TT_goals/FRA_bloc_national.dds"
+	}
+	spriteType = {
+		name = GFX_FRA_cordon_sanitaire_icon
+		textureFile = "gfx/interface/TT_goals/FRA_cordon_sanitaire.dds"
+	}
+	spriteType = {
+		name = GFX_FRA_allemagne_paiera_icon
+		textureFile = "gfx/interface/TT_goals/FRA_allemagne_paiera.dds"
+	}
+	
+}

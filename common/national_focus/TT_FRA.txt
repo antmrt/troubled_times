@@ -32,7 +32,7 @@ focus_tree = {
 		relative_position_id = TT_INT_FRA_Victory_at_last
 		x = 0
 		y = 1
-
+		icon = GFX_FRA_Union_sacree_icon
 		cost = 3
 		prerequisite = { focus = TT_INT_FRA_Victory_at_last }
 		completion_reward = {
@@ -58,6 +58,7 @@ focus_tree = {
 	
 	focus = {
 		id = TT_INT_FRA_jonart_law
+		icon = GFX_FRA_Jonart_law_icon
 		prerequisite = { focus = TT_INT_FRA_Dismantle_union_sacree }
 		relative_position_id = TT_INT_FRA_confidence_vote
 		x = -2
@@ -69,6 +70,7 @@ focus_tree = {
 
 	focus = {
 		id = TT_INT_FRA_assassination_attempt
+		icon = GFX_FRA_assassination_attempt_icon
 		prerequisite = { focus = TT_INT_FRA_jonart_law }
 		prerequisite = { focus = TT_INT_FRA_confidence_vote }
 		relative_position_id = TT_INT_FRA_jonart_law
@@ -100,6 +102,7 @@ focus_tree = {
 	focus = {
 		id = TT_INT_FRA_credit_national
 		prerequisite = { focus = TT_INT_FRA_clemenceau_dies focus = TT_INT_FRA_clemenceau_survives }
+		icon = GFX_FRA_credit_national_icon 
 		x = -1
 		y = 1
 		cost = 2
@@ -111,6 +114,7 @@ focus_tree = {
 	focus = {
 		id = TT_INT_FRA_Bloc_national
 		prerequisite = { focus = TT_INT_FRA_clemenceau_survives}
+		icon = GFX_FRA_bloc_national_icon
 		x= -1
 		y = 1
 		relative_position_id = TT_INT_FRA_clemenceau_survives
@@ -119,6 +123,7 @@ focus_tree = {
 	focus = {
 		id = TT_INT_FRA_l'allemagne_paiera
 		prerequisite = { focus = TT_INT_FRA_Bloc_national}
+		icon = GFX_FRA_allemagne_paiera_icon
 		x= -1
 		y = 1
 		relative_position_id = TT_INT_FRA_Bloc_national
@@ -139,6 +144,7 @@ focus_tree = {
 	focus = {
 		id = TT_INT_FRA_cordon_sanitaire
 		prerequisite = { focus = TT_INT_FRA_Bloc_national}
+		icon = GFX_FRA_cordon_sanitaire_icon
 		x= 1
 		y = 1
 		relative_position_id = TT_INT_FRA_Bloc_national
@@ -157,6 +163,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TT_INT_FRA_Alliance_de_la_gauche
+		icon = GFX_FRA_alliance_de_la_gauche_icon
 		prerequisite = { focus = TT_INT_FRA_clemenceau_dies }
 		x= 1
 		y = 1

@@ -40,6 +40,42 @@ on_actions = {
 					set_country_flag = white_army_cw_victory_super_event
 				}
 			}
+
+
+
+			if = {
+				limit = {
+					FROM = {
+						tag = GER
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = GER
+					}
+					remove_core_of = GER
+				}
+				every_country = {
+					limit = {
+						is_ai = no
+					}
+					set_country_flag = spartakist_victory_super_event
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						tag = SPK
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = SPK
+					}
+					remove_core_of = SPK
+				}
+				
+			}
 		}
 	}
 

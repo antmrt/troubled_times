@@ -101,3 +101,20 @@ TT_republican_control_decision:0 "Republican Control"
 TT_republican_control_decision_desc:0 "§Y[FROM.GetName]§! is under §YRepublican§! Control, \ntheir strengh in this state is §Y[?FROM.Republicanstrengh]§!"
 GER_spartakist_attack:0 "Spartakist Attack in [GER_INT_state_challenged.GetName]"
 GER_republican_attack:0 "Republican Attack in [GER_INT_state_challenged.GetName]"
+GER_freikorps_attack:0 "Freikorps attak in [GER_INT_state_challenged2.GetName]"
+
+
+
+
+TT_get_around_boxer_protocols:0 "Weapon Smuggling"
+TT_get_around_boxer_protocols_desc:0 "The Boxer Peace Protocol does not allow us to manufacture weapons. This situation is unbearable, as an empire such as ours, needs weapons for its protection. By smuggling weapons, we might be able to stockpile equipment in secret, However, we need to make sure this remains unremarked by the Foreign Powers\n\n Foreign Suspicion is [QIN_GetForeignSuspicion]\n\n§gIf the Foreign Suspicion is too High, this might trigger an Foreign Intervention to enforce the Treaty§!\n[GetInvestigationStatus]"
+investigation_is_underway:0 "§RAn Investigation is Underway§!"
+no_investigation_underway:0 "§GNo Investigation is Underway§!"
+TT_warlords_smuggle_weapons:0 "Smuggle Weapons at the eyes of the Foreigners"
+boxer_protocols_weapons_malus_negated_tt:0 "Weapon Production will §Ynot§! be affected by the Boxer Protocols, Daily Foreign Suspicion: §R+1.00§!"
+QIN_low_foreign_suspicion:0 "§GLow§! ([?foreign_suspicion_level]%)"
+QIN_medium_foreign_suspicion:0 "§YMedium§! ([?foreign_suspicion_level]%)"
+QIN_high_foreign_suspicion:0 "§OHigh§! ([?foreign_suspicion_level]%)"
+QIN_extreme_foreign_suspicion:0 "§RExtreme§! ([?foreign_suspicion_level]%)"
+boxer_protocols:0 "Boxer Protocols"
+boxer_protocols_visible:0 "Boxer Protocols"

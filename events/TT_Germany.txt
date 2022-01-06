@@ -33,7 +33,37 @@ country_event = {
 			set_country_flag = compiegne_armistice
 		}
 		hidden_effect = {
+			
+			762 = { clr_state_flag = republican_control set_variable = {republicanstrengh = 0} set_state_flag = monarchist_control set_variable = { monarchiststrengh = 10 } }
+			67  = { clr_state_flag = republican_control set_variable = {republicanstrengh = 0} set_state_flag = monarchist_control set_variable = { monarchiststrengh = 12 } }
+			801= { clr_state_flag = republican_control set_variable = {republicanstrengh = 0} set_state_flag = monarchist_control set_variable = { monarchiststrengh = 10 } }
+			86 = { clr_state_flag = republican_control set_variable = {republicanstrengh = 0} set_state_flag = monarchist_control set_variable = { monarchiststrengh = 10 } }
+			5  = { clr_state_flag = republican_control set_variable = {republicanstrengh = 0} set_state_flag = monarchist_control set_variable = { monarchiststrengh = 17 } }
+			763 = { clr_state_flag = republican_control set_variable = {republicanstrengh = 0} set_state_flag = monarchist_control set_variable = { monarchiststrengh = 8 } }
+			865  = { clr_state_flag = republican_control set_variable = {republicanstrengh = 0} set_state_flag = monarchist_control set_variable = { monarchiststrengh = 15 } }
+			63  = { clr_state_flag = republican_control set_variable = {republicanstrengh = 0} set_state_flag = monarchist_control set_variable = { monarchiststrengh = 23 } }
+
 			GER = {
+				random_owned_state = {
+					limit = {
+						has_state_flag = republican_control
+						is_core_of = GER
+					}
+					save_global_event_target_as = GER_INT_state_challenged
+				}
+				activate_decision = GER_spartakist_attack
+				random_owned_state = {
+					limit = {
+						has_state_flag = republican_control
+						is_core_of = GER
+					}
+					save_global_event_target_as = GER_INT_state_challenged2
+				}
+				activate_decision = GER_freikorps_attack
+				add_days_mission_timeout = {
+					mission = GER_freikorps_attack
+					days = -5
+				}
 				end_puppet = POL
 				end_puppet = UBD
 				end_puppet = LIT
@@ -72,6 +102,10 @@ country_event = {
 					}
 					start_resistance = UKR
 					set_resistance = 70
+				}
+				set_truce = {
+					target = UKR
+					days = 90
 				}
 			}
 			UBD = {

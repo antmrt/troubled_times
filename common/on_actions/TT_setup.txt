@@ -21,7 +21,44 @@ on_actions = {
 			}
 		}
 	}
-
+	on_daily = {
+		effect = {
+			if = {
+				limit = {
+					ROOT = {has_idea = boxer_protocols}
+					
+				}
+				if = {
+					limit = {
+						ROOT = {has_decision = TT_warlords_smuggle_weapons}
+					}
+					ROOT = {
+						add_to_variable = {
+							foreign_suspicion_level = 1
+						}
+					}
+				}
+				if = {
+					limit = {
+						ROOT = {NOT = {has_decision = TT_warlords_smuggle_weapons}}
+					}
+					ROOT = {
+						subtract_from_variable = {
+							foreign_suspicion_level = 0.5
+						}
+					}
+				}
+				ROOT = {
+					clamp_variable = {
+						var = foreign_suspicion_level
+						min = 0
+						max = 100
+					}
+				}
+				
+			}
+		}
+	}
 	on_startup = {
 		effect = {
 			every_state = {
@@ -33,6 +70,24 @@ on_actions = {
 			every_country = {
 				# unit limit calculations
 				calculate_maximum_divisions = yes
+			}
+
+			if = {
+				limit = {
+					has_start_date < 1919.1.1
+				}
+				every_country = {
+					limit = {
+						is_chinese_warlord = yes
+					}
+					set_variable ={
+						foreign_suspicion_level = 0
+					}
+					add_ideas = boxer_protocols
+					add_ideas = boxer_protocols_visible
+					country_lock_all_division_template = yes
+					
+				}
 			}
 		}
 	}

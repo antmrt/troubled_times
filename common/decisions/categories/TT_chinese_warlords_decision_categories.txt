@@ -1,0 +1,12 @@
+TT_get_around_boxer_protocols = {
+	priority = 200
+	allowed = {
+	}
+	visible = {
+		has_idea = boxer_protocols
+	}
+}
+
+TT_warlord_wars = {
+	priority = 199
+}

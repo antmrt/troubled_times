@@ -37,14 +37,7 @@ focus_tree = {
 			focus = TT_INT_GER_bitter_defeat
 		}
 		completion_reward = {
-			random_owned_state = {
-				limit = {
-					has_state_flag = republican_control
-					is_core_of = GER
-				}
-				save_global_event_target_as = GER_INT_state_challenged
-			}
-			activate_decision = GER_spartakist_attack
+			
 		}
 	}
 	focus = {
@@ -130,7 +123,16 @@ focus_tree = {
 			focus = TT_INT_GER_change_through_revolution
 		}
 		relative_position_id = TT_INT_GER_change_through_revolution
-		completion_reward = { }
+		completion_reward = { 
+			random_owned_state = {
+				limit = {
+					has_state_flag = spartakist_control
+				}
+				add_to_variable = {
+					spartakiststrengh = 5
+				}
+			}
+		}
 	}
 	focus = {
 		id = TT_INT_GER_bavarian_socialists
@@ -152,6 +154,7 @@ focus_tree = {
 				}
 				clr_state_flag = republican_control 
 				set_state_flag = spartakist_control
+				
 			}
 			
 		}

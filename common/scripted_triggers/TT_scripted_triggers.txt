@@ -1,3 +1,21 @@
+is_chinese_warlord = {
+	OR = {
+		tag = YUN
+		tag = FEN
+		tag = GUI
+		tag = GUC
+		tag = SIC
+		tag = GXC
+		tag = XSM
+		tag = SIK
+		tag = MAN
+		tag = MEN
+		tag = SHX
+		tag = PRC
+		tag = ZHI
+		tag = ANH
+	}
+}
 needs_army_reduction_for_manpower = {
 	#first check the number of units a country's factories can support
 	set_temp_variable = { num_supported_units = 0 }

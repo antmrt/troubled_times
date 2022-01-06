@@ -19,3 +19,14 @@ sound = {
 	file = "customsound/compiegne_armistice.wav"
 	always_load = no
 }
+sound = {
+	name = "spartakist_victory_sound"
+	file = "customsound/spartakist_victory.wav"
+	always_load = no
+}
+sound = {
+	name = "freikorps_victory_sound"
+	file = "customsound/freikorps_victory.wav"
+	always_load = no
+}
+

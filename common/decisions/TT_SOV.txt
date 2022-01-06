@@ -31,10 +31,20 @@ TT_WHR_russian_civil_war = {
 	WHR_soldiers_deserting = {
 		is_good = no
 		available = {
-			hidden_trigger = {
-				always = no
+			SOV = {
+				has_capitulated = yes
 			}
 
+		}
+		activation = {
+			OR = {
+				NOT = {
+					country_exists = SOV
+				}
+				SOV = {
+					has_capitulated = no
+				}
+			}
 		}
 		days_mission_timeout = 60
 		timeout_effect = {

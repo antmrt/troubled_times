@@ -10,7 +10,7 @@ TT_GER_power_struggle = {
 				has_state_flag = monarchist_control
 			}
 		}
-		days_remove = 35
+		days_remove = 20
 		icon = GFX_decision_ger_monarchist_control
 		on_map_mode = map_only
 	}
@@ -18,7 +18,7 @@ TT_GER_power_struggle = {
 	TT_spartakist_control_decision = {
 		state_target = yes
 		target_array = core_states
-		days_remove = 35
+		days_remove = 20
 		visible = {
 			FROM = {
 				is_controlled_by = GER
@@ -27,6 +27,46 @@ TT_GER_power_struggle = {
 		}
 		icon = GFX_decision_ger_spartakist_control
 		on_map_mode = map_only
+		remove_effect = {
+			if = {
+				limit = {
+					has_completed_focus = TT_INT_GER_change_through_revolution
+				}
+				FROM = {
+					add_to_variable = {
+						spartakiststrengh = 5
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = TT_INT_GER_change_through_reforms
+				}
+				FROM = {
+					add_to_variable = {
+						spartakiststrengh = -5
+					}
+				} 
+				if = {
+					limit = {
+						check_variable = {
+							FROM.spartakiststrengh < 0
+						}
+						
+					}
+					FROM = {clr_state_flag = spartakist_control set_state_flag = republican_control}
+					FROM = {
+						set_variable = {
+							spartakiststrengh = 0
+						}
+						set_variable = {
+							republicanstrengh = 5
+						}
+							
+					}
+				}
+			}
+		}
 	}
 
 	TT_republican_control_decision = {
@@ -42,7 +82,7 @@ TT_GER_power_struggle = {
 		}
 		icon = GFX_decision_ger_republican_control
 		on_map_mode = map_only
-		complete_effect = {
+		remove_effect = {
 			if = {
 				limit = {
 					has_completed_focus = TT_INT_GER_change_through_reforms
@@ -144,7 +184,7 @@ TT_GER_power_struggle = {
 	}
 
 	GER_spartakist_attack = {
-		days_mission_timeout = 35
+		days_mission_timeout = 20
 
 		available = {
 			hidden_trigger = {
@@ -159,6 +199,16 @@ TT_GER_power_struggle = {
 			has_completed_focus = TT_INT_GER_change_through_reforms
 		}
 		timeout_effect = {
+			random_list = {
+				1 = {
+					activate_mission = TT_spartakist_uprising_timer
+				}
+
+				99 = {
+
+				}
+
+			}
 			event_target:GER_INT_state_challenged = {
 				if = {
 					limit = {
@@ -185,13 +235,41 @@ TT_GER_power_struggle = {
 						Spartakiststrengh = 5
 					}
 				}
+				if = {
+					limit = {
+						has_state_flag = monarchist_control
+					}
+					add_to_variable = {
+						monarchiststrengh = -5
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							monarchiststrengh < 0
+						}
+						
+					}
+					clr_state_flag = monarchist_control
+					set_state_flag = spartakist_control
+					
+					set_variable = {
+						monarchiststrengh = 0
+					}
+					set_variable = {
+						Spartakiststrengh = 5
+					}
+				}
+				if = {
+					limit ={
+						has_state_flag = spartakist_control
+					}
+					add_to_variable = { spartakiststrengh = 5}
+				}
 			}
 			random_owned_state = {
 				limit = {
-					has_state_flag = republican_control
-					NOT = {
-						has_state_flag = spartakist_control
-					}
+					is_core_of = GER
 				}
 				save_global_event_target_as = GER_INT_state_challenged
 			}
@@ -253,33 +331,185 @@ TT_GER_power_struggle = {
 			activate_decision = GER_republican_attack
 		}
 	}
+	GER_freikorps_attack = {
+		days_mission_timeout = 20
+
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		
+		cancel_trigger = {
+			has_war_with = SPK
+		}
+		activation = {
+			has_completed_focus = TT_INT_GER_change_through_reforms
+		}
+		timeout_effect = {
+			
+			event_target:GER_INT_state_challenged2 = {
+				if = {
+					limit = {
+						has_state_flag = republican_control
+					}
+					add_to_variable = {
+						republicanstrengh = -5
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							republicanstrengh < 0
+						}
+						
+					}
+					clr_state_flag = republican_control
+					set_state_flag = monarchist_control
+					
+					set_variable = {
+						republicanstrengh = 0
+					}
+					set_variable = {
+						monarchiststrengh = 5
+					}
+				}
+				if = {
+					limit = {
+						has_state_flag = spartakist_control
+					}
+					add_to_variable = {
+						spartakiststrengh = -5
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							spartakiststrengh < 0
+						}
+						
+					}
+					clr_state_flag = spartakist_control
+					set_state_flag = monarchist_control
+					
+					set_variable = {
+						spartakiststrengh = 0
+					}
+					set_variable = {
+						monarchiststrengh = 5
+					}
+				}
+				if = {
+					limit ={
+						has_state_flag = monarchist_control
+					}
+					add_to_variable = { monarchiststrengh = 5}
+				}
+			}
+
+
+			if = {
+
+
+				limit = {
+					ROOT = {
+						has_completed_focus = TT_INT_GER_call_to_the_freikorps
+					}
+				}
+				random_owned_state = {
+					limit = {
+						is_core_of = GER
+						has_state_flag = spartakist_control
+					}
+					save_global_event_target_as = GER_INT_state_challenged2
+				}
+				activate_decision = GER_freikorps_attack
+			}
+			if = {
+				limit = {
+					ROOT = {
+						NOT = {
+							has_completed_focus = TT_INT_GER_call_to_the_freikorps
+						}
+					}
+				}
+				random_owned_state = {
+					limit = {
+						is_core_of = GER
+					}
+					save_global_event_target_as = GER_INT_state_challenged2
+				}
+				activate_decision = GER_freikorps_attack
+			}
+			
+		}
+	}
 
 	GER_rally_german_spartakist_mission = {
 		days_mission_timeout = 70
-
+		fire_only_once = yes
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
 		activation = {
-			always = no
+			has_completed_focus = TT_INT_GER_change_through_reforms
 		}
 		timeout_effect = {
 			activate_mission = GER_bavarian_socialists_mission
+			random_owned_state = {
+				limit = {
+					has_state_flag = spartakist_control
+				}
+				add_to_variable = {
+					spartakiststrengh = 5
+				}
+			}
 		}
 	}
 
 	GER_bavarian_socialists_mission = {
 		days_mission_timeout = 70
+		fire_only_once = yes
 		activation = {
 			always = no
 		}
-
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
 		timeout_effect = {
 			activate_mission = GER_ruhr_workers_mission
+			every_state = {
+				limit = {
+					AND = {
+						is_controlled_by = GER
+						is_core_of = BAV
+					}
+				}
+				clr_state_flag = republican_control 
+				set_state_flag = spartakist_control
+				
+			}
 		}
 	}
 
 	GER_ruhr_workers_mission = {
 		days_mission_timeout = 70
+		fire_only_once = yes
 		activation = {
 			always = no
+		}
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		timeout_effect = {
+			51 = { clr_state_flag = republican_control set_state_flag = spartakist_control }
+			788 = { clr_state_flag = republican_control set_state_flag = spartakist_control }
 		}
 	}
 }

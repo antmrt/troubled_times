@@ -6,9 +6,9 @@ set_research_slots = 2
 
 set_stability = 0.5
 set_war_support = 0.3
-
+give_military_access = ANH
 set_convoys = 10
-
+oob = "YUN_1936"
 add_ideas = {
 	#laws
 	limited_exports

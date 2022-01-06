@@ -45,3 +45,27 @@ soundeffect = {
 	max_audible_behaviour = fail
 	volume = 1.5
 }
+
+soundeffect = {
+	name = spartakist_victory
+	loop = no
+	sounds = {
+		sound = spartakist_victory_sound
+		}
+	is3d = no
+	max_audible = 1
+	max_audible_behaviour = fail
+	volume = 1.5
+}
+
+soundeffect = {
+	name = freikorps_victory
+	loop = no
+	sounds = {
+		sound = freikorps_victory_sound
+		}
+	is3d = no
+	max_audible = 1
+	max_audible_behaviour = fail
+	volume = 1.5
+}

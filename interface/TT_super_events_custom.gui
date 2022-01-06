@@ -355,8 +355,177 @@ guiTypes = { ######## THE DESCRIPTION AND THE TITLE ARE IN THE LOCALISATION FILE
 		}
 	}
 
+	
+	# ____  ____   _    ____ _____  _    _  _____ ____ _____  __     _____ ____ _____ ___  ______   __
+	#/ ___||  _ \ / \  |  _ \_   _|/ \  | |/ /_ _/ ___|_   _| \ \   / /_ _/ ___|_   _/ _ \|  _ \ \ / /
+	#\___ \| |_) / _ \ | |_) || | / _ \ | ' / | |\___ \ | |    \ \ / / | | |     | || | | | |_) \ V / 
+	# ___) |  __/ ___ \|  _ < | |/ ___ \| . \ | | ___) || |     \ V /  | | |___  | || |_| |  _ < | |  
+	#|____/|_| /_/   \_\_| \_\|_/_/   \_\_|\_\___|____/ |_|      \_/  |___\____| |_| \___/|_| \_\|_|  
+																									 
+	containerWindowType = {
+		name = "TT_spartakist_victory_super_event_custom_window"
+		size = { width = 220 height = 128 }
+		position = { x=0 y=-210 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		show_sound = spartakist_victory ### SOUND EFFECT GOES HERE, MAKE SURE YOU'RE USING SOUND #EFFECT AND NOT SOUND!!!!!
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_1b_no_border"
+		}
+
+		instantTextBoxType = {
+			name = "Title"
+			position = { x = 0 y = 20 }
+			font = "aldrich_18_outline"
+			borderSize = {x = 0 y = 0}
+			text = "TT_SPARTAKIST_VICTORY_T" ###### HERE GOES THE TITLE ########
+			maxWidth = 220
+			maxHeight = 24
+			format = centre
+		}
+
+		iconType = {
+			name ="image"
+			spriteType = "GFX_superevent_white_army_victory"
+			position = { x= -286 y = -18 }
+			Orientation = center
+			alwaystransparent = yes
+		}
+
+	}
+
+	containerWindowType = {
+		name = "TT_super_event_frame_spartakist_victory_custom"
+		size = { width = 588 height = 465 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_bigevent_border"
+		}
+
+		buttonType = {
+			name = "Option"
+			text = "BE_LATIN_WARS_A"  ############## OPTION
+			shortcut = "ESCAPE"
+			position = { x = -110 y = 183 }
+			quadTextureSprite ="GFX_button_221x34"
+			buttonFont = "Bomb_24"
+			Orientation = center
+		}
+
+		iconType = {
+			name ="underlay"
+			spriteType = "GFX_superevent_text_underlay"
+			position = { x= 30 y = -200 }
+			Orientation = lower_left
+			alwaystransparent = yes
+		}
+
+		instantTextBoxType = {
+			name = "text"
+			position = {  x= 20 y = -195 }
+			font = "Bomb_24"
+			text = "BE_LATIN_WARS_D" ######## HERE GOES THE DESCRIPTION ###########
+			maxWidth = 455
+			maxHeight = 173
+			fixedsize = yes
+			format = left
+			Orientation = lower_left
+		}
+	}
 
 
+	# _____ ____  _____ ___ _  _____  ____  ____  ____   __     _____ ____ _____ ___  ______   __
+	#|  ___|  _ \| ____|_ _| |/ / _ \|  _ \|  _ \/ ___|  \ \   / /_ _/ ___|_   _/ _ \|  _ \ \ / /
+	#| |_  | |_) |  _|  | || ' / | | | |_) | |_) \___ \   \ \ / / | | |     | || | | | |_) \ V / 
+	#|  _| |  _ <| |___ | || . \ |_| |  _ <|  __/ ___) |   \ V /  | | |___  | || |_| |  _ < | |  
+	#|_|   |_| \_\_____|___|_|\_\___/|_| \_\_|   |____/     \_/  |___\____| |_| \___/|_| \_\|_|  
+			
+	containerWindowType = {
+		name = "TT_freikorps_victory_super_event_custom_window"
+		size = { width = 220 height = 128 }
+		position = { x=0 y=-210 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		show_sound = freikorps_victory ### SOUND EFFECT GOES HERE, MAKE SURE YOU'RE USING SOUND #EFFECT AND NOT SOUND!!!!!
 
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_1b_no_border"
+		}
+
+		instantTextBoxType = {
+			name = "Title"
+			position = { x = 0 y = 20 }
+			font = "aldrich_18_outline"
+			borderSize = {x = 0 y = 0}
+			text = "TT_FREIKORPS_VICTORY_T" ###### HERE GOES THE TITLE ########
+			maxWidth = 220
+			maxHeight = 24
+			format = centre
+		}
+
+		iconType = {
+			name ="image"
+			spriteType = "GFX_superevent_white_army_victory"
+			position = { x= -286 y = -18 }
+			Orientation = center
+			alwaystransparent = yes
+		}
+
+	}
+
+	containerWindowType = {
+		name = "TT_super_event_frame_freikorps_victory_custom"
+		size = { width = 588 height = 465 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_bigevent_border"
+		}
+
+		buttonType = {
+			name = "Option"
+			text = "TT_FREIKORPS_VICTORY_A"  ############## OPTION
+			shortcut = "ESCAPE"
+			position = { x = -110 y = 183 }
+			quadTextureSprite ="GFX_button_221x34"
+			buttonFont = "Bomb_24"
+			Orientation = center
+		}
+
+		iconType = {
+			name ="underlay"
+			spriteType = "GFX_superevent_text_underlay"
+			position = { x= 30 y = -200 }
+			Orientation = lower_left
+			alwaystransparent = yes
+		}
+
+		instantTextBoxType = {
+			name = "text"
+			position = {  x= 20 y = -195 }
+			font = "Bomb_24"
+			text = "TT_FREIKORPS_VICTORY_D" ######## HERE GOES THE DESCRIPTION ###########
+			maxWidth = 455
+			maxHeight = 173
+			fixedsize = yes
+			format = left
+			Orientation = lower_left
+		}
+	}
+   
 
 }

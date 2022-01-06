@@ -6,7 +6,8 @@ recruit_character = GUC_johannes_taylor
 recruit_character = GUC_marcus_brown
 recruit_character = GUC_bob_brown
 
- 
+oob = "YUN_1936"
+
 capital = 325
 if = {
 	limit = {
@@ -57,6 +58,9 @@ create_corps_commander = {
 		ideology = despotism
 		expire = "1901.11.7"
 	}
+}
+1918.11.11 = {
+	declare_war_on = {target = GXC type = annex_everything}
 }
 1936.1.1 = {
 	set_technology = {

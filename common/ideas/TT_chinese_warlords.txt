@@ -1,0 +1,39 @@
+ideas = {
+	hidden_ideas = {
+		
+		boxer_protocols = {
+			allowed = {
+				always = no
+
+			}
+			cancel = {
+				date > 1922.1.1
+			}
+			modifier = {
+				industrial_capacity_factory = -500
+				industrial_capacity_dockyard = -500
+			}
+		}
+	}
+	country = {
+		boxer_protocols_visible = {
+			picture = generic_army_problems
+			allowed = {
+				always = no
+			}
+			cancel = {
+				date > 1922.1.1
+			}
+			on_add = {
+				country_lock_all_division_template = yes
+			}
+			on_remove = {
+				country_lock_all_division_template = no
+			}
+			modifier = {
+				custom_modifier_tooltip = no_army_production
+			}
+		}
+	}
+
+}

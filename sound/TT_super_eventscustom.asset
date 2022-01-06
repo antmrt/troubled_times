@@ -7,6 +7,11 @@ category = { ### THIS USES SOUND EFFECTS, NOT SOUND
 		#RUSSIAN CIVIL WAR
 		soviet_cw_victory
 		white_army_cw_victory
+
+
+		# GERMAN REVOLUTION
+		spartakist_victory
+		freikorps_victory
 	}
  	compressor = {
 		enabled = yes

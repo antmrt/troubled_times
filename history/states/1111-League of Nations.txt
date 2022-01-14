@@ -14,16 +14,7 @@ state = {
 
 		add_core_of = SWI
 
-		1920.1.20 = {
-			add_core_of = LON
-			owner = LON
-			controller = LON
-		}
-		1946.4.18 = {
-			remove_core_of = LON
-			owner = SWI
-			controller = SWI
-		}
+		
 
 	}
 

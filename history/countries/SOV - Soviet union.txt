@@ -5,9 +5,11 @@
 1918.1.1 = {
 	add_ideas = TT_SOV_young_nation
 	recruit_character = SOV_vladimir_lenin
+	set_cosmetic_tag = Russian_SFSR
 }
 1936.1.1 = {
 	remove_ideas = TT_SOV_young_nation
+	drop_cosmetic_tag = yes
 }
 if = {
 	limit = {

@@ -7,7 +7,6 @@ state = {
 
 	history =
 	{
-		add_core_of = SEY
 		owner = ENG
 		buildings = {
 			infrastructure = 3
@@ -16,8 +15,6 @@ state = {
 			}
 		}
 		1976.1.1 = {
-			owner = SEY
-			controller = SEY
 		}
 	}
 

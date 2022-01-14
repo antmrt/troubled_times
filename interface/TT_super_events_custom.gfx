@@ -16,6 +16,11 @@ spriteTypes = { ##### THIS FILE DEFINES THE PICTURE FOR EACH SUPER EVENT
 		name = "GFX_superevent_compiegne_armistice"
 		textureFile = "gfx//interface//super_events//compiegne_armistice.tga"
 	} 
+	spriteType = { 
+		name = "GFX_superevent_freikorps_victory"
+		textureFile = "gfx//interface//super_events//freikorps_victory.tga"
+	} 
+	
 	corneredTileSpriteType = {
 		name = "GFX_tiled_window_bigevent_border"
 		size= { x=192 y=243 }

@@ -57,10 +57,106 @@ on_actions = {
 				}
 				
 			}
+			if = {
+				limit = {
+					has_dynamic_modifier = { modifier = TEST_foreign_industry_dynamic_modifier}
+				}
+				multiply_variable = {
+					daily_deaths = disease_progression_rate
+				}
+				# for_each_loop = {
+				# 	array = core_states
+				# 	ROOT = {
+				# 		add_to_variable = {
+				# 			total_pop_k = state_population_k
+				# 		}
+				# 	}
+				# }
+
+				set_variable = {
+					daily_deaths_max = 150000
+					#total_pop_k
+				}
+				divide_variable = {
+					daily_deaths_max = 10
+				}
+
+				clamp_variable = {
+					var = daily_deaths
+					min = 0
+					max = daily_deaths_max
+				}
+				#set_variable = {
+				#	monthly_pop_death_influenza = -1
+				#}
+				if = {  
+					limit = {
+						has_decision = distribute_masks
+					}
+					subtract_from_variable = {
+						disease_progression_rate = 0.00002
+					}
+				}
+				set_temp_variable = {
+					daily_deaths_temp = daily_deaths
+				}
+				multiply_temp_variable = {
+					daily_deaths_temp = -1.5
+				}
+				divide_temp_variable = {
+					daily_deaths_temp = 100
+				}
+				add_manpower = var:daily_deaths_temp
+			}
+			if = {
+				limit = {
+					check_variable = { daily_deaths = 0 }
+					has_country_flag = had_influenza_epidemic
+				}
+				remove_dynamic_modifier = { modifier = TEST_foreign_industry_dynamic_modifier }
+				set_country_flag = influenza_over
+			}
+			if = {
+				limit = {
+					ROOT = {
+						NOT = {
+							has_dynamic_modifier = { modifier = TEST_foreign_industry_dynamic_modifier}
+							has_country_flag = influenza_over
+						}
+					}
+				}
+				if = {
+					limit = {
+						any_neighbor_country = {
+							has_dynamic_modifier = { modifier = TEST_foreign_industry_dynamic_modifier}
+							check_variable = {
+								daily_deaths > 25
+							}
+						}
+					}
+					random_list = {
+						20 = {
+	
+						}
+						1 = {
+							set_variable = {daily_deaths = 0.1}
+							set_variable = { disease_progression_rate = 1.2}
+							add_dynamic_modifier = { modifier = TEST_foreign_industry_dynamic_modifier}
+							log = "[GetDateText]: [Root.GetName]: First Influenza Case"
+							set_country_flag = had_influenza_epidemic
+						}
+					}
+				}
+			}
+			
 		}
 	}
 	on_startup = {
 		effect = {
+
+			
+
+
 			every_state = {
 				limit = {
 					is_core_of = RUE

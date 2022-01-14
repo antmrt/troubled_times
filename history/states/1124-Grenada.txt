@@ -7,13 +7,10 @@ state = {
 
 	history = {
 		owner = ENG
-		add_core_of = GRN
 		buildings = {
 			infrastructure = 4
 		}
 		1974.1.1 = {
-			owner = GRN
-			controller = GRN
 		}
 		victory_points = {
 			11106 3

@@ -3,7 +3,7 @@ state = {
 	name = "STATE_1082"
 
 	history = {
-		add_core_of = VIN add_core_of = VIE
+		add_core_of = VIN 
 		owner = FRA
 
 		buildings = {
@@ -16,10 +16,7 @@ state = {
 
 		1949.1.1 = {
 
-			VIE = {
-				set_province_controller = 1300
-				set_province_controller = 4334
-			}
+			
 
 		}
 
@@ -29,7 +26,7 @@ state = {
 
 		1954.1.1 = { owner = VIN controller = VIN }
 
-		1976.1.1 = { owner = VIE controller = VIE }
+		1976.1.1 = {   }
 
 	}
 

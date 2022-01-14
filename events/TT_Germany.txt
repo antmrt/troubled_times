@@ -13,6 +13,7 @@ country_event = {
 		ai_chance = {
 			base = 2
 		}
+		complete_national_focus = TT_INT_GER_bitter_defeat
 		name = TT_INT_Germany.1.a
 		dismantle_faction = yes
 		set_global_flag = compiegne_armistice_signed
@@ -219,7 +220,12 @@ country_event = {
 		disband_full_army = yes
 
 		country_lock_all_division_template = yes
-
+		hidden_effect = {
+			GER = {
+				load_oob = ""
+				load_oob = "GER_1919"
+			}
+		}
 		if = {
 			limit = {
 				has_global_flag = Historical_POL_border
@@ -318,22 +324,93 @@ country_event = {
 	}
 }
 
+#country_event = {
+#	id = TT_INT_Germany.5
+#	desc = TT_INT_Germany.5.d
+#	title = TT_INT_Germany.5.t
+
+#	is_triggered_only = yes
+	
+#	option = {
+#		every_country = {
+#			limit = {
+#				OR = {
+#					is_subject_of = GER
+#					tag = GER
+#				}
+#			}
+#			white_peace = FRA
+#		}
+#	}
+#}
+
+
 country_event = {
-	id = TT_INT_Germany.5
-	desc = TT_INT_Germany.5.d
-	title = TT_INT_Germany.5.t
+	id = TT_INT_Germany.6
+	desc = TT_INT_Germany.6.d
+	title = TT_INT_Germany.6.t
 
 	is_triggered_only = yes
 
-	option = {
-		every_country = {
-			limit = {
-				OR = {
-					is_subject_of = GER
-					tag = GER
+	immediate = {
+		hidden_effect = {
+			every_state = {
+				limit = {
+					is_controlled_by = GER
+					is_core_of = GER
+					is_core_of = BAV
+					has_state_flag = spartakist_control
+				} 
+
+				BAV = {
+					transfer_state = PREV
+				
+				}
+				
+				GER = { 
+					transfer_units_fraction = {
+						target = BAV
+						size = 0.001
+					}
+				}
+				
+				GER = {
+					declare_war_on = {
+						target = BAV
+						type = civil_war
+					}
+					add_civil_war_target = BAV
+
 				}
 			}
-			white_peace = FRA
 		}
 	}
-}
+	
+	option = {
+		name = TT_INT_Germany.6.a
+		trigger = {
+			has_war_with = BAV
+		}
+		
+	}
+	option = {
+		name = TT_INT_Germany.6.c
+		trigger = {
+			has_war_with = SPK
+			has_completed_focus = TT_INT_GER_change_through_revolution
+		}
+	}
+	option = {
+		name = TT_INT_Germany.6.b
+		trigger = {
+			NOT = {
+				OR = {
+					has_war_with = BAV
+					has_war_with = SPK
+				}
+			}
+		}
+	}
+	
+	
+} 

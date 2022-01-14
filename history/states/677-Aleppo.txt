@@ -16,11 +16,8 @@ state={
 
 		}
 		add_core_of = SYR
-		add_core_of = UAR
+		
 		add_core_of = OTT
-		add_core_of = SIG
-		add_core_of = ROJ
-		add_core_of = ISS
 		1910.1.1 = {
 			owner = OTT
 			controller = OTT
@@ -32,8 +29,6 @@ state={
 
 		}
 		1941.1.1 = {
-			owner = VIF
-			controller = VIF
 			add_claim_by = FRA
 
 		}
@@ -49,8 +44,8 @@ state={
 
 		}
 		1958.1.1 = {
-			owner = UAR
-			controller = UAR
+			
+			
 
 		}
 		1971.1.1 = {
@@ -59,16 +54,8 @@ state={
 
 		}
 		2016.1.1 = {
-			owner = SIG
-			controller = SIG
-			ROJ = {
-				set_province_controller = 12473
-
-			}
-			ISS = {
-				set_province_controller = 7671
-
-			}
+			
+			
 			SYR = {
 				set_province_controller = 10087
 				set_province_controller = 1088

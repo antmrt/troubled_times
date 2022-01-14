@@ -15,7 +15,7 @@ state = {
 			}
 
 		}
-		add_core_of = GRE add_core_of = GRC  add_core_of = OTT
+		add_core_of = GRE   add_core_of = OTT
 		1910.1.1 = {
 			owner = OTT
 			controller = OTT
@@ -41,8 +41,7 @@ state = {
 		}
 
 		1949.1.1 = {
-			owner = GRC
-			controller = GRC
+		
 		}
 
 		1950.1.1 = {

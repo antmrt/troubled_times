@@ -1,0 +1,15 @@
+TT_influenza_epidemic = {
+
+	visible = {
+		OR = {
+			is_debug = yes
+		has_dynamic_modifier = {
+			modifier = TEST_foreign_industry_dynamic_modifier
+		}
+	}
+	}
+	priority = 200
+
+
+
+}

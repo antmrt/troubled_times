@@ -1,3 +1,101 @@
+TT_influenza_epidemic = {
+
+
+	distribute_masks = {
+
+		days_remove = 10
+
+		modifier = {
+			custom_modifier_tooltip = distributing_masks_tt
+		}
+		
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 10 
+				check_variable = {
+					daily_deaths > 10
+				}
+			}
+			modifier = {
+				factor = 10
+				check_variable = {
+					daily_deaths > 100
+				}
+			}
+			modifier = {
+				factor = 10
+				check_variable = {
+					daily_deaths > 1000
+				}
+			}
+		}
+
+
+
+	}
+	setup_quarantines = {
+		days_remove = 40
+		visible = {
+			check_variable = {
+				daily_deaths > 500
+			}
+		}
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 10 
+				check_variable = {
+					daily_deaths > 10
+				}
+			}
+			modifier = {
+				factor = 10
+				check_variable = {
+					daily_deaths > 100
+				}
+			}
+			modifier = {
+				factor = 10
+				check_variable = {
+					daily_deaths > 1000
+				}
+			}
+		}
+		remove_effect = {
+			subtract_from_variable = {
+				disease_progression_rate = 0.05
+				tooltip = disease_progression_rate_tt
+			}
+		}
+
+	}
+	remove_influenza = {
+		complete_effect = {
+			every_country = {
+				limit = {
+					has_dynamic_modifier = { modifier = TEST_foreign_industry_dynamic_modifier}
+				}
+				add_manpower = 1000000
+				set_variable = {daily_deaths = 0.1}
+				set_variable = { disease_progression_rate = 1.2 }
+				remove_dynamic_modifier = { modifier = TEST_foreign_industry_dynamic_modifier}
+			}
+			
+		}
+	}
+	launch_epidemic = {
+		complete_effect = {
+			set_variable = {daily_deaths = 0.1}
+			set_variable = { disease_progression_rate = 1.2 }
+			add_dynamic_modifier = { modifier = TEST_foreign_industry_dynamic_modifier}
+		}
+	}
+
+
+
+}
+
 demobilization = {
 	public_asks_for_demob = {
 		days_mission_timeout = 60

@@ -26,12 +26,6 @@ state = {
 			controller = BEL
 		}
 
-		1993.11.1 = {
-			add_core_of = EUR
-			owner = EUR
-			controller = EUR
-		}
-
 	}
 
 	provinces = {

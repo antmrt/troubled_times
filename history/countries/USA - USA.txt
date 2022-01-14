@@ -9,7 +9,13 @@ if = {
 		set_oob = "USA_1936"
 	}
 }
-
+1918.1.1 = {
+	set_popularities = {
+		democratic = 99
+		communism = 1
+	}
+	recruit_character = USA_woodrow_wilson
+}
 starting_train_buffer = 5
 
 if = {

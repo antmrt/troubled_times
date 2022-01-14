@@ -202,3 +202,111 @@ defined_text = {
 		localization_key = GER_NO_AIR_RESTRICTION_ENTENTE
 	}
 }
+
+
+
+#SAINT-GERMAIN TREATY
+defined_text = {
+	name = GetSaint_Germain_treaty
+
+	text = {
+		trigger = {
+			original_tag = AUS
+
+		}
+		localization_key = SAINT_GERMAIN_TREATY_AUS
+	}
+
+	text = {
+		localization_key = SAINT_GERMAIN_TREATY_ENTENTE
+	}
+}
+
+defined_text = {
+	name = Get_Anshluss_situation
+
+
+	text = {
+		trigger = {
+			original_tag = AUS
+			has_global_flag = south_german_republic
+		}
+		localization_key = SOUTH_GERMAN_REPUBLIC_AUS
+	}
+
+	text = {
+		trigger = {
+			original_tag = AUS
+			has_global_flag = anschluss_allowed
+		}
+		localization_key = ANSCHLUSS_AUS
+	}
+
+	text = {
+		trigger = {
+			original_tag = AUS
+			has_global_flag = anschluss_rejected
+		}
+		locaization_key = NO_ANSCHLUSS_AUS
+	}
+	text = {
+		trigger = {
+			NOT = {original_tag = AUS}
+			has_global_flag = south_german_republic
+		}
+		localization_key = SOUTH_GERMAN_REPUBLIC_ENTENTE
+	}
+
+	text = {
+		trigger = {
+			NOT = {original_tag = AUS}
+			has_global_flag = anschluss_allowed
+		}
+		localization_key = ANSCHLUSS_ENTENTE
+	}
+
+	text = {
+		trigger = {
+			NOT = {original_tag = AUS}
+			has_global_flag = anschluss_rejected
+		}
+		localization_key = NO_ANSCHLUSS_AUS
+	}
+}
+
+defined_text = {
+	name = Get_Austrian_responsability
+
+
+	text = {
+		trigger = {
+			original_tag = AUS
+			has_global_flag = AUS_not_responsible
+		}
+		localization_key = NOT_RESPONSIBLE_AUS
+	}
+
+	text = {
+		trigger = {
+			original_tag = AUS
+			has_global_flag = AUS_responsible
+		}
+		localization_key = RESPONSIBLE_AUS
+	}
+
+	text = {
+		trigger = {
+			NOT = {original_tag = AUS}
+			has_global_flag = AUS_not_responsible
+		}
+		localization_key = NOT_RESPONSIBLE_ENTENTE
+	}
+
+	text = {
+		trigger = {
+			NOT = {original_tag = AUS}
+			has_global_flag = AUS_responsible
+		}
+		localization_key = RESPONSIBLE_ENTENTE
+	}
+}

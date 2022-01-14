@@ -6,7 +6,6 @@ state = {
 
 	history = {
 		owner = ENG
-		add_core_of = NAU
 		buildings = {
 			infrastructure = 3
 			13038 = {
@@ -17,7 +16,6 @@ state = {
 			13038 1
 		}
 
-		1969.1.1 = { owner = NAU controller = NAU }
 	}
 
 	provinces = {

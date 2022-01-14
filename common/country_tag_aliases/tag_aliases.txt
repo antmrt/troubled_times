@@ -98,6 +98,15 @@ SOP = {
 	original_tag = SOV
 	has_cosmetic_tag = SOV_PROVISIONAL
 }
+SPK = {
+	original_tag = GER
+	has_cosmetic_tag = SPK_spartakist_germany
+}
+FRK = {
+	original_tag = GER
+	has_cosmetic_tag = FRK_freikorps_germany
+}
+
 SOU = { #Tag for Stalinist SOV with other options in case it doesn't exist. 
 	original_tag = SOV
 	country_score = {

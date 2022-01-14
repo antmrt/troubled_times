@@ -1,5 +1,81 @@
 TT_GER_power_struggle = {
 
+	
+	tt_test_freikorps = {
+		complete_effect = {
+			FRK = {
+			
+				recruit_character = FRK_freikorps_junta
+				retire_country_leader = yes
+				load_focus_tree ={ tree = TT_GER keep_completed = no}
+				unlock_national_focus = TT_INT_GER_bitter_defeat
+				unlock_national_focus = TT_INT_GER_change_through_reforms
+			}
+			every_owned_state = {
+				limit = {
+					has_state_flag = monarchist_control
+				}
+				FRK = {
+					transfer_state = PREV
+					
+				}
+			}
+			FRK = {
+				
+				declare_war_on = {
+					target = GER
+					type = civil_war
+				}
+				hidden_effect = {
+					add_popularity = {
+						ideology = neutrality
+						popularity = 1
+					}
+				}
+			}
+			GER = {
+				add_civil_war_target = FRK
+			}
+			set_temp_variable = {
+				var = num_FRK_states
+				value = event_target:FRA_attacker_state.num_controlled_states
+			}
+			set_temp_variable = {
+				var = num_FRK_states
+				value = FRK.num_controlled_states
+			}
+			set_temp_variable = {
+				var = total_num_GER_state
+				value = GER.num_controlled_states
+			}
+			add_to_temp_variable = {
+				var = total_num_GER_state
+				value = num_FRK_states
+			}
+			divide_temp_variable = {
+				num_FRK_states = total_num_GER_state
+			}
+			GER = {
+				transfer_units_fraction = {
+					target = FRK
+					size = var:num_FRK_states
+				}
+			}
+			if = {
+				limit = {
+					country_exists = SPK
+				}
+				FRK = {
+					declare_war_on = {
+						target = SPK
+						type = civil_war
+					}
+					add_civil_war_target = SPK
+				}
+			}
+
+		}
+	}
 	TT_monarchist_control_decision = {
 		state_target = yes
 		target_array = core_states
@@ -129,7 +205,7 @@ TT_GER_power_struggle = {
 		activation = {
 			has_completed_focus = TT_INT_GER_change_through_revolution
 		}
-		fire_only_once = yes
+		
 		available = {
 			hidden_trigger = {
 				always = no
@@ -145,6 +221,16 @@ TT_GER_power_struggle = {
 				SPK = {transfer_state = PREV}
 			}
 			SPK = {
+				if = {
+					limit = {
+						country_exists = FRK
+					}
+					declare_war_on = {
+						target = FRK
+						type = civil_war
+					}
+					add_civil_war_target = FRK
+				}
 				declare_war_on = {
 					target = GER
 					type = civil_war
@@ -446,7 +532,7 @@ TT_GER_power_struggle = {
 	}
 
 	GER_rally_german_spartakist_mission = {
-		days_mission_timeout = 70
+		days_mission_timeout = 21
 		fire_only_once = yes
 		available = {
 			hidden_trigger = {
@@ -462,6 +548,7 @@ TT_GER_power_struggle = {
 				limit = {
 					has_state_flag = spartakist_control
 				}
+
 				add_to_variable = {
 					spartakiststrengh = 5
 				}
@@ -491,6 +578,9 @@ TT_GER_power_struggle = {
 				}
 				clr_state_flag = republican_control 
 				set_state_flag = spartakist_control
+				add_to_variable = {
+					Spartakiststrengh = 10
+				}
 				
 			}
 		}

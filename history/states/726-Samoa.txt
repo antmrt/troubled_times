@@ -4,7 +4,6 @@ state = {
 
 	history = {
 		owner = ENG
-		add_core_of = SMO
 
 		victory_points = {
 			7290 1
@@ -24,7 +23,6 @@ state = {
 			controller = NZL
 		}
 
-		1962.1.1 = { owner = SMO controller = SMO }
 
 	}
 

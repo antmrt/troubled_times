@@ -15,13 +15,13 @@ state = {
 			air_base = 1
 
 		}
-		add_core_of = PRU add_core_of = MTA add_core_of = SHP
+		add_core_of = PRU  
 		victory_points = {
 			2210 1
 		}
 
 		1990.1.1 = {
-			owner = SHP
+			
 
 			PRU = {
 				set_province_controller = 2182

@@ -1,9 +1,16 @@
 ﻿l_english:
+
+ distributing_masks_tt:0 "Influenza Progression Rate §G-0.002§!"
+ TT_influenza_epidemic:0 "Influenza Epidemic"
+ TT_influenza_epidemic_desc:0 "The 1918 Influenza Epidemic, also called the Spanish Flu, is still present in our country and still claims lives\n\n §gEpidemic Progression Rate: §R[?disease_progression_rate]§!"
+ distribute_masks:0 "Distribute Masks" 
+ disease_progression_rate_tt:0 "Influenza Progression Rate §G-$RIGHT$§!" 
+ 
  ENTENTE_treaty_of_versailles:0 "Treaty of Versailles"
  ENTENTE_treaty_of_versailles_desc:0 "[GetVersailles_treaty]"
  VERSAILLES_TREATY_GER:0 "The Victors of the war are negotiating in Versailles about our fate, as we speak, the conditions of the treaty are the following:\n\n§g-War Reparations: §Y[?GER.war_reparation_amount]§! §Wtons of gold§!\n§g-Danzig Corridor: [GetDanzigCorridorSituation]\n-Border Plebiscite: [GetBorderPlebiscitePOL] [GetBorderPlebisciteDEN]\n-Saargebiet: [GetSaarSituation]\n-Rheinland: [GetRheinlandSituation]\n-Miltiary Restrictions: [GetGERTankRestrictions], [GetGERAirRestrictions]"
  
- VERSAILLES_TREATY_ENTENTE:0 "As Victors of the war, we have to negociate about the fate of Germany, as we speak, the conditions of the treaty are the following:\n\n§g-War Reparations: §Y[?GER.war_reparation_amount]§! §Wtons of gold§!\n§g-Danzig Corridor: [GetDanzigCorridorSituation]\n-Border Plebiscite: [GetBorderPlebiscitePOL] [GetBorderPlebisciteDEN]\n-Saargebiet: [GetSaarSituation]\n-Rheinland: [GetRheinlandSituation]\n-Miltiary Restrictions: [GetGERTankRestrictions], [GetGERAirRestrictions]"
+ VERSAILLES_TREATY_ENTENTE:0 "As Victors of the war, we have to negociate about the fate of §YGermany§!, as we speak, the conditions of the treaty are the following:\n\n§g-War Reparations: §Y[?GER.war_reparation_amount]§! §Wtons of gold§!\n§g-Danzig Corridor: [GetDanzigCorridorSituation]\n-Border Plebiscite: [GetBorderPlebiscitePOL] [GetBorderPlebisciteDEN]\n-Saargebiet: [GetSaarSituation]\n-Rheinland: [GetRheinlandSituation]\n-Miltiary Restrictions: [GetGERTankRestrictions], [GetGERAirRestrictions]"
  GER_TANK_RESTRICTION:0 "§RRestriction on Tanks§!"
  GER_NO_TANK_RESTRICTION:0 "§GNo Restriction on Tanks§!"
  GER_AIR_RESTRICTION:0 "§RRestriction on Airforce§!"
@@ -38,7 +45,26 @@ GER_TANK_RESTRICTION_ENTENTE:0 "§GRestriction on Tanks§!"
  VERS_air_restrictions:0 "Include Air Restrictions"
  VERS_tank_restrictions:0 "Include Tank Restriction"
  
+
+ ENTENTE_treaty_of_Saint_Germain_desc:0 "[GetSaint_Germain_treaty]" 
+ ENTENTE_treaty_of_Saint_Germain:0 "Treaty of Saint-Germain"
+ SAINT_GERMAIN_TREATY_ENTENTE:0 "As Victors of the war, we have to negociate about the fate of §YAustria§!, as we speak, the conditions of the treaty are the following:\n\n§g-German Unification: [Get_Anshluss_situation]"
+
+ SAINT_GERMAIN_TREATY_AUS:0 "The Victors of the war are negotiating in Versailles about our fate, as we speak, the conditions of the treaty are the following:\n\n§g-German Unification: [Get_Anshluss_situation] \n§g-Responsability of the War: [Get_Austrian_responsability]"
  
+ NOT_RESPONSIBLE_AUS:0 "§GNot Responsible§!"
+ RESPONSIBLE_AUS:0 "§RResponsible§!"
+ NOT_RESPONSIBLE_ENTENTE:0 "§RNot Responsible§!"
+ RESPONSIBLE_ENTENTE:0 "§GResponsible§!"
+
+
+ SOUTH_GERMAN_REPUBLIC_AUS:0 "§YFormation of the South German Republic§!"
+ SOUTH_GERMAN_REPUBLIC_ENTENTE:0 "§OFormation of the South German Republic§!"
+ ANSCHLUSS_AUS:0 "§GAnschluss Allowed§!"
+ ANSCHLUSS_ENTENTE:0 "§RAnschluss Allowed§!"
+ NO_ANSCHLUSS_AUS:0 "§RAnschluss Rejected§!"
+ NO_ANSCHLUSS_ENTENTE:0 "§GAnschluss Rejected§!"
+
  public_asks_for_demob:0 "Public Asks for Demobilization"
  mobilisation_penalty_modifier:0 "Above Division Limit"
 

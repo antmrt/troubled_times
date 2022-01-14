@@ -1,0 +1,16 @@
+defined_text = {
+	name = GetBavarian_Event_desc
+
+	text = {
+		trigger = {
+			has_war_with = BAV
+		}
+		localization_key = bavarian_soviet_republic_proclaimed_desc
+	}
+	text = {
+		localization_key = bavarian_soviet_republic_crushed_desc
+	}
+
+
+
+}

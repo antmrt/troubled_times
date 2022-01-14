@@ -29,8 +29,12 @@
  TT_INT_Germany.5.t:0 "Germany to sign Peace trety with the Entente"
  TT_INT_Germany.5.d:0 "Our Overlord signed a peace treaty with the Entente powers, we should do the same"
  
-
-
+ TT_INT_Germany.6.t:0 "Bavarian Soviet Republic"
+ TT_INT_Germany.6.d:"[GetBavarian_Event_desc]"
+ bavarian_soviet_republic_crushed_desc:0 "This afternoon, communist partisans stormed the Bavarian parliament, however, a Freikorp regiment stationned in the area prevented the revolution from taking place. Sources state that these partisans tried to declare the Bavarian Soviet Republic"
+ bavarian_soviet_republic_proclaimed_desc:0 "This afternoon, communist partisans stormed the Bavarian parliament,They took control of the building and they declared the Bavarian Soviet Republic"
+ TT_INT_Germany.6.a:0 "Ennemies Within..."
+ TT_INT_Germany.6.b:0 "Something terrible was prevented..."
   ### FRANCE
 
  TT_INT_France.1.t:0 "The Alsatian Question"
@@ -96,3 +100,8 @@
  TT_COMPIEGNE_ARMISTICE_T:0 "Compiegne Armistice"
  TT_COMPIEGNE_ARMISTICE_DESC:0 "Today, at 11:00, the Armistice took effects and the guns falled silent on the fronts, this day marks the start of a new age, an age of Peace in Europe."
  TT_COMPIEGNE_ARMISTICE_A:0 "Peace, at last"
+
+ TT_FREIKORPS_VICTORY_T:0 "Freikorps Victory"
+ TT_FREIKORPS_VICTORY_A:0 "Die Grenze Brennt"
+ TT_FREIKORPS_VICTORY_D:0 "After a long War against the Spartacists and the Republicans, the Freikorps finally took control of Germany, shootings still take places, as the last pockets of resistance fall silent."
+

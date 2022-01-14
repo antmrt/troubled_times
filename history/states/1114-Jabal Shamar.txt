@@ -6,7 +6,6 @@ state = {
 	}
 
 	history = {
-		owner = JBS
 		buildings = {
 			infrastructure = 1
 			arms_factory = 1
@@ -17,11 +16,8 @@ state = {
 			2057 5
 		}
 		add_core_of = SAU
-		add_core_of = JBS
 
 		1910.1.1 = {
-			owner = JBS
-			controller = JBS
 		}
 
 		1918.1.1 = {

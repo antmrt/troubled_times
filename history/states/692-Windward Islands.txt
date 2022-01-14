@@ -5,7 +5,6 @@ state = {
 	state_category = small_island
 
 	history = {
-		add_core_of = STV
 		owner = ENG
 		buildings = {
 			infrastructure = 4
@@ -14,8 +13,6 @@ state = {
 			379 3
 		}
 		1979.1.1 = {
-			owner = STV
-			controller = STV
 		}
 	}
 

@@ -11,7 +11,7 @@ state = {
 		victory_points = {
 			13295 1
 		}
-		add_core_of = KOR add_core_of = DPK
+		add_core_of = KOR 
 
 		1911.1.1 = {
 			owner = JAP
@@ -19,8 +19,8 @@ state = {
 		}
 
 		1946.1.1 = {
-			owner = DPK
-			controller = DPK
+			
+			
 		}
 
 	}

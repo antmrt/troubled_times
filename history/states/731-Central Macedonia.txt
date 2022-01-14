@@ -21,7 +21,7 @@ state = {
 			}
 
 		}
-		add_core_of = GRE add_core_of = GRC  add_core_of = OTT
+		add_core_of = GRE   add_core_of = OTT
 		add_claim_by = BUL
 		1910.1.1 = {
 			owner = OTT
@@ -46,11 +46,7 @@ state = {
 
 		1949.1.1 = {
 
-			GRC = {
-				set_province_controller = 9837
-				set_province_controller = 3844
-				set_province_controller = 3526
-			}
+			
 
 		}
 

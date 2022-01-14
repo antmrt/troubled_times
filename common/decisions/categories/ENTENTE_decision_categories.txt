@@ -33,3 +33,20 @@ ENTENTE_treaty_of_neuilly = {
 
 	priority = 500
 }
+
+ENTENTE_treaty_of_Saint_Germain = {
+	icon = ger_mefo_bills
+	allowed = {
+		OR = {
+			tag = FRA
+			tag = ENG
+			tag = AUS
+			tag = CZE
+			tag = YUG
+			tag = SER
+			tag = ITA
+			tag = USA
+		}
+	}
+	priority = 499
+}

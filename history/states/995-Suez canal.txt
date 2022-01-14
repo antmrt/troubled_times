@@ -19,14 +19,14 @@ state = {
 		victory_points = {
 			4073 3
 		}
-		add_core_of = EGY add_core_of = UAR
+		add_core_of = EGY 
 
 		1957.1.1 = { owner = EGY controller = EGY }
 
 
 		1958.1.1 = {
-			owner = UAR
-			controller = UAR
+			
+			
 		}
 
 		1971.1.1 = {

@@ -16,7 +16,7 @@ state = {
 			air_base = 3
 
 		}
-		add_core_of = GRE add_core_of = GRC
+		add_core_of = GRE 
 
 		1941.1.1 = {
 			owner = ITA
@@ -35,10 +35,7 @@ state = {
 
 		1949.1.1 = {
 
-			GRC = {
-				set_province_controller = 11786
-				set_province_controller = 11895
-			}
+			
 
 		}
 

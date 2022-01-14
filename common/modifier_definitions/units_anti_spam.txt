@@ -15,3 +15,9 @@ unit_limit_bonus = {
 	value_type = number
 	precision = 0
 }
+
+daily_disease_deaths = {
+	value_type = number
+	precision = 0
+	color_type = bad
+}

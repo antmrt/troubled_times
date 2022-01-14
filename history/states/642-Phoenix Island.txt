@@ -7,7 +7,6 @@ state = {
 
 	history = {
 		owner = USA
-		add_core_of = KIR
 		buildings = {
 			infrastructure = 3
 			13050 = {
@@ -15,7 +14,6 @@ state = {
 			}
 		}
 
-		1980.1.1 = { owner = KIR controller = KIR }
 	}
 
 	provinces = {

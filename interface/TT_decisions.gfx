@@ -13,4 +13,20 @@ spriteTypes = {
 		name = "GFX_decision_ger_spartakist_control"
 		texturefile = "gfx/interface/TT_decisions/decision_spartakist_control.dds"
 	}
+	spriteType = {
+		name = "GFX_decision_st_germain_requested_by_AUS"
+		texturefile = "gfx/interface/TT_decisions/decision_austrian_control.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_st_germain_requested_by_ITA"
+		texturefile = "gfx/interface/TT_decisions/decision_ita_control.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_czechoslovak_control"
+		texturefile = "gfx/interface/TT_decisions/decision_cze_control.dds"
+	}
+	spriteType = {
+		name = GFX_decision_st_germain_requested_by_YUG
+		texturefile = "gfx/interface/TT_decisions/decision_yugoslav_control.dds"
+	}
 }

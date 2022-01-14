@@ -1,0 +1,21 @@
+characters = {
+	USA_woodrow_wilson = {
+		name = USA_woodrow_wilson
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/USA/INT/USA_WoodrowWilson.dds"
+			}
+		}
+		country_leader = {
+			id = -1
+			expire = 1924.1.1
+			ideology = conservatism
+		}
+
+
+	}
+	
+
+
+
+}

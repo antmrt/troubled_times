@@ -6,7 +6,7 @@ state = {
 	}
 
 	history = {
-		add_core_of = VIN add_core_of = VIE
+		add_core_of = VIN 
 		owner = FRA
 		victory_points = {
 			4401 3
@@ -27,7 +27,7 @@ state = {
 
 		1954.1.1 = { owner = VIN controller = VIN }
 
-		1976.1.1 = { owner = VIE controller = VIE }
+		1976.1.1 = {   }
 
 	}
 

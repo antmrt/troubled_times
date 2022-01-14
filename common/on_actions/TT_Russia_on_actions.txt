@@ -45,37 +45,60 @@ on_actions = {
 
 			if = {
 				limit = {
-					FROM = {
-						tag = GER
+
+					ROOT = {
+						tag = SPK
 					}
+					
+				}
+				SPK = {
+					set_capital = { state = 1105}
 				}
 				every_state = {
 					limit = {
-						is_core_of = GER
+						is_core_of = FROM
 					}
-					remove_core_of = GER
+					remove_core_of = FROM
 				}
+				
 				every_country = {
 					limit = {
 						is_ai = no
 					}
 					set_country_flag = spartakist_victory_super_event
 				}
+				
+				
 			}
+
 			if = {
 				limit = {
-					FROM = {
-						tag = SPK
+
+					ROOT = {
+						tag = FRK
 					}
+					
+				}
+				FRK = {
+					set_capital = { state = 1105}
 				}
 				every_state = {
 					limit = {
-						is_core_of = SPK
+						is_core_of = FROM
 					}
-					remove_core_of = SPK
+					remove_core_of = FROM
 				}
 				
+				every_country = {
+					limit = {
+						is_ai = no
+					}
+					set_country_flag = freikorps_victory_super_event
+				}
+				
+				
 			}
+			
 		}
 	}
 

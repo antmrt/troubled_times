@@ -1,4 +1,18 @@
 characters={
+	FRK_freikorps_junta = {
+		name = FRK_freikorps_junta
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/GER/INT/freikorps_junta.dds"
+			}
+		}
+		
+		country_leader = {
+			ideology = authoritarian_democracy
+			expire = "1980.1.1"
+			id = -1
+		} 
+	}
 	GER_friedrich_ebert = {
 		name = GER_friedrich_ebert
 		portraits = {

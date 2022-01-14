@@ -14,11 +14,7 @@ state = {
 
 		add_core_of = USA
 
-		1945.10.24 = {
-			add_core_of = UNA
-			owner = UNA
-			controller = UNA
-		}
+	
 
 	}
 

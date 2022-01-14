@@ -30,7 +30,7 @@ state = {
 
 		}
 		add_core_of = ITA 
-		add_core_of = RSI
+		
 		add_core_of = GDT
 		1939.1.1 = {
 			buildings = {
@@ -42,15 +42,15 @@ state = {
 		}
 
 		1944.1.1 = {
-			owner = RSI
-			controller = RSI
-			add_core_of = RSI
+			
+			
+			
 		}
 
 		1945.1.1 = {
 			owner = ITA
 			controller = ITA
-			#remove_core_of = RSI
+			
 		}
 
 	}

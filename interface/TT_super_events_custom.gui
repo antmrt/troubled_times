@@ -475,13 +475,13 @@ guiTypes = { ######## THE DESCRIPTION AND THE TITLE ARE IN THE LOCALISATION FILE
 
 		iconType = {
 			name ="image"
-			spriteType = "GFX_superevent_white_army_victory"
+			spriteType = "GFX_superevent_freikorps_victory"
 			position = { x= -286 y = -18 }
 			Orientation = center
 			alwaystransparent = yes
 		}
-
-	}
+ 
+	} 
 
 	containerWindowType = {
 		name = "TT_super_event_frame_freikorps_victory_custom"

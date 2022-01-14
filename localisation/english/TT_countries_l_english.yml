@@ -3747,9 +3747,12 @@
  ZHI_ADJ:0 "Chinese"
  ZHI:0 "Zhili Clique"
 
+ Russian_SFSR:0 "Russian SFSR"
+ 
+
  YUG_state_SLO_CRO_SER:0 "State of Slovenes, Croats and Serbs"
  YUG_kingdom_SLO_CRO_SER:0 "Kingdom of Serbs, Croats and Slovenes"
 
-
+ FRK_freikorps_germany:0 "Freikorps Regierung"
  SPK_spartakist_germany:0 "Spartakist Germany"
  

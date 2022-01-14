@@ -805,7 +805,15 @@ SPK_spartakist_germany = {
 	color = rgb { 206 32 41}
 	color_ui = rgb { 206 32 41}
 }
+FRK_freikorps_germany = {
+	color = rgb {75 75 75}
+	color_ui = rgb {75 75 75}
+}
+Russian_SFSR = {
 
+	color = rgb { 197 0 2 }
+	color_ui = rgb { 197 0 2 }
+}
 
 YUG_state_SLO_CRO_SER = {
 	color = rgb { 72 73 126 }

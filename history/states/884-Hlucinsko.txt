@@ -9,7 +9,7 @@ state = {
 			infrastructure = 6
 		}
 		add_core_of = CZE
-		add_core_of = CZR
+		
 		add_core_of = MRV
 		add_core_of = AUH
 		1910.1.1 = {
@@ -19,6 +19,7 @@ state = {
 		1918.11.11 = {
 			owner = CZE
 			controller = CZE
+			set_state_flag = st_germain_requested_by_CZE
 		}
 
 		1938.9.30 = {
@@ -32,8 +33,8 @@ state = {
 		}
 
 		1993.1.1 = {
-			owner = CZR
-			controller = CZR
+			
+			
 		}
 	}
 

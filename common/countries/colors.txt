@@ -851,10 +851,6 @@ UBD = {
 	color = rgb { 94 101 104 }
 	color_ui = rgb { 94 101 104 }
 }
-BLR = {
-	color = rgb { 180 220 190 }
-	color_ui = rgb { 180 220 190 }
-}
 ALS = {
 	color = rgb { 255 106 0 }
 	color_ui = rgb { 255 106 0 }

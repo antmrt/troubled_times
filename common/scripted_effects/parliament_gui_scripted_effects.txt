@@ -80,8 +80,10 @@ reload_parliament_gui = {
 
 # Bonus code for adding/subtracting seats
 modify_parliament_seat = {
+	set_temp_variable = {v = temp_member}
+	custom_effect_tooltip = get_parliament_modification_tt
 	subtract_from_temp_variable = { temp_member = 1 }
-
+	
 	# check to see if result overflows
 	set_temp_variable = { temp = parliament_seat_array^temp_member }
 	add_to_temp_variable = { temp = temp_seats }

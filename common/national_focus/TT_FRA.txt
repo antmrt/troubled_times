@@ -65,6 +65,14 @@ focus_tree = {
 		y = 0
 
 		cost = 5
+		completion_reward = {
+			every_owned_state = {
+				limit = {
+					is_core_of = ALG
+				}
+				add_compliance = 5
+			}
+		}
 
 	}
 
@@ -186,6 +194,21 @@ focus_tree = {
 		y = 1
 		mutually_exclusive = { focus = TT_INT_FRA_revolutionary_left }
 		relative_position_id = TT_INT_FRA_european_workers
+		cost = 10
+		completion_reward = {
+			
+			set_temp_variable = { temp_member = 3 }
+			set_temp_variable = { temp_seats = -5 }
+			modify_parliament_seat = yes
+		
+		}
+	}
+	focus = {
+		id = TT_INT_FRA_1920_elections
+		prerequisite = { focus = TT_INT_FRA_reformist_left focus = TT_INT_FRA_moderate_right }
+		relative_position_id = TT_INT_FRA_reformist_left
+		x = -1
+		y = 1
 		cost = 10
 	}
 	focus = {

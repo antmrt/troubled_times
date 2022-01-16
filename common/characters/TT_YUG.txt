@@ -1,5 +1,6 @@
 characters = {
 	MNT_nicholas_i = {
+		name = MNT_nicholas_i
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/MNT/INT/Portrait_Montenegro_Nicholas_I.dds"
@@ -12,6 +13,7 @@ characters = {
 		}
 	}
 	YUG_peter_i = {
+		name = YUG_peter_i
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/YUG/INT/PeterI.dds"

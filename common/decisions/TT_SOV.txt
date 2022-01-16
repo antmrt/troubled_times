@@ -1,9 +1,48 @@
 TT_WHR_russian_civil_war = {
+	WHR_UKR_question = {
+		visible = {
+			is_debug = yes
+		}
+		allowed = {
+			NOT = {
+				country_exists = SOV
+			}
+		}
+		complete_effect = {
+
+		}
+	}
+
+	WHR_POL_question = {
+		allowed = {
+			NOT = {
+				country_exists = SOV
+			}
+		}
+		visible = {
+			is_debug = yes
+		}
+		complete_effect = {
+
+		}
+
+
+	}
 	entente_weapon_shipment = {
 		days_mission_timeout = 90
 		is_good = yes
 		available = {
-			always = no
+			OR = {
+				NOT = {
+					country_exists = SOV
+				}
+				SOV = {
+					has_capitulated = yes
+				}
+			}
+		}
+		activation = {
+			country_exists = SOV
 		}
 		timeout_effect = {
 			randomize_temp_variable = {
@@ -30,20 +69,39 @@ TT_WHR_russian_civil_war = {
 	}
 	WHR_soldiers_deserting = {
 		is_good = no
-		available = {
-			SOV = {
-				has_capitulated = yes
+		visible = {
+			NOT = {
+				OR = {
+					NOT = {
+						country_exists = SOV
+					}
+					SOV = {
+						has_capitulated = yes
+					}
+					NOT = {
+						has_idea = TT_WHR_disputed_leadership
+					}
+				}
 			}
-
 		}
-		activation = {
+		available = {
 			OR = {
 				NOT = {
 					country_exists = SOV
 				}
 				SOV = {
-					has_capitulated = no
+					has_capitulated = yes
 				}
+				NOT = {
+					has_idea = TT_WHR_disputed_leadership
+				}
+			}
+
+		}
+		activation = {
+			AND = {
+				country_exists = SOV
+				has_idea = TT_WHR_disputed_leadership
 			}
 		}
 		days_mission_timeout = 60
@@ -53,7 +111,10 @@ TT_WHR_russian_civil_war = {
 
 	}
 
-	launch_offensive = {
+	WHR_launch_offensive = {
+		visible = {
+			country_exists = SOV
+		}
 		targeted_modifier = {
 			tag = SOV
 			attack_bonus_against = 3
@@ -68,7 +129,7 @@ TT_WHR_russian_civil_war = {
 
 
 TT_SOV_russian_civil_war = {
-	launch_offensive_SOV = {
+	SOV_launch_offensive = {
 		targeted_modifier = {
 			tag = WHR
 			attack_bonus_against = 3
@@ -79,7 +140,7 @@ TT_SOV_russian_civil_war = {
 			factor = 10000
 		}
 	}
-	emergency_consciption = {
+	SOV_emergency_consciption = {
 		allowed = {
 			tag = SOV
 		}
@@ -89,19 +150,20 @@ TT_SOV_russian_civil_war = {
 		ai_will_do = {
 			factor = 1000000
 		}
-		days_re_enable = 35
+		days_re_enable = 45
 		complete_effect = {
+			add_stability = -0.1
 			set_temp_variable = {div_created = 0}
 			while_loop_effect = {
 				limit = {
 					check_variable = {
-						div_created < 20
+						div_created < 15
 					}
 				}
 		
 				random_owned_state = {
 				create_unit = {
-					division = "name = \"Infantry Division\" division_template = \"Strelkovaya Diviziya\" start_experience_factor = 0.2 start_equipment_factor = 0.2"
+					division = "name = \"Infantry Division\" division_template = \"Strelkovaya Diviziya\" start_experience_factor = 0.1 start_equipment_factor = 0.1"
 					owner = SOV
 				}
 			}

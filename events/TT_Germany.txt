@@ -33,7 +33,78 @@ country_event = {
 			}
 			set_country_flag = compiegne_armistice
 		}
+		add_named_threat = { 
+			threat = -25 
+			name = "Compiegne Armistice"
+		}
 		hidden_effect = {
+			USA = {
+				add_ideas = TT_red_scare 
+				add_ai_strategy = {
+					type = send_volunteers_desire
+					id = WHR
+					value = 2000
+				}
+			}
+			FRA = {
+				add_ideas = TT_red_scare 
+				add_ai_strategy = {
+					type = send_volunteers_desire
+					id = WHR
+					value = 2000
+				}
+			}
+			CZE = {
+				add_ideas = TT_red_scare 
+				add_ai_strategy = {
+					type = send_volunteers_desire
+					id = WHR
+					value = 2000
+				}
+			}
+			ENG = {
+				add_ideas = TT_red_scare 
+				add_ai_strategy = {
+					type = send_volunteers_desire
+					id = WHR
+					value = 2000
+				}
+			}
+			JAP = {
+				add_ideas = TT_red_scare 
+				add_ai_strategy = {
+					type = send_volunteers_desire
+					id = WHR
+					value = 2000
+				}
+			}
+			WHR = {
+				add_ai_strategy = {
+					type = befriend
+					id = FRA
+					value = 2000
+				}
+				add_ai_strategy = {
+					type = befriend
+					id = CZE
+					value = 2000
+				}
+				add_ai_strategy = {
+					type = befriend
+					id = USA
+					value = 2000
+				}
+				add_ai_strategy = {
+					type = befriend
+					id = ENG
+					value = 2000
+				}
+				add_ai_strategy = {
+					type = befriend
+					id = JAP
+					value = 2000
+				}
+			}
 			
 			762 = { clr_state_flag = republican_control set_variable = {republicanstrengh = 0} set_state_flag = monarchist_control set_variable = { monarchiststrengh = 10 } }
 			67  = { clr_state_flag = republican_control set_variable = {republicanstrengh = 0} set_state_flag = monarchist_control set_variable = { monarchiststrengh = 12 } }

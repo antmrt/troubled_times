@@ -46,6 +46,37 @@ guiTypes = {
 			max_slots_vertical = 8
 			add_horizontal = no
 		}
+
+		containerWindowType = {
+			name = "president_du_conseil_container"
+			position = { x = 300 y = 255 }
+			size = { width = 130 height = 145 }
+			clipping = yes
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_tiled_window_thin_border2"
+			}
+
+			instantTextboxType = {
+				name = "president_du_conseil_text"
+				position = { x = 4 y = 0 }
+				font = "hoi_16mbs"
+				maxWidth = 125
+				maxHeight = 16
+				format = left
+				text = "Président du Conseil"
+			}
+			
+			iconType = {
+				name = "president_du_conseil"
+				position = { x = 25 y = 20 }
+				spriteType = "GFX_president_du_conseil_portrait"
+				pdx_tooltip = "president_du_conseil_tt"
+				pdx_tooltip_delayed = "president_du_conseil_trait_tt" 
+			} 
+		}
+
+
     }
 
 	containerWindowType = {

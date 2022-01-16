@@ -11,7 +11,6 @@ state = {
 	}
 
 	history = {
-		owner = SRE
 		buildings = {
 			infrastructure = 5
 			arms_factory = 1
@@ -22,7 +21,6 @@ state = {
 			10400 10
 		}
 		add_core_of = SAF
-		add_core_of = SRE
 
 		1910.1.1 = { owner = SAF controller = SAF }
 

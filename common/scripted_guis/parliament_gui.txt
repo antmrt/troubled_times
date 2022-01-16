@@ -44,6 +44,9 @@ scripted_gui = {
 			parliament_member_icon = {
 				frame = v
 			}
+			president_du_conseil = {
+				image = "[Get_President_du_conseil_portrait]"
+			}
 		}
 	}
 }

@@ -2,7 +2,7 @@ TT_SOV_russian_civil_war = {
 	allowed = {
 		original_tag = SOV
 	}
-
+	priority = 200
 	visible = {
 		date < 1936.1.1
 	}
@@ -11,6 +11,7 @@ TT_WHR_russian_civil_war = {
 	allowed = {
 		tag = WHR
 	}
+	priority = 200
 	visible = {
 		date < 1936.1.1
 	}

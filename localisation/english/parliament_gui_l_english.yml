@@ -36,3 +36,5 @@
   has_less_seats_than_party_tt:0 "[GetParliamentPartyName] has §Yless§! seats at the parliament than [GetParliamentPartyName2]"
   FRA_coalition_left_1914:0 " (§RAlliance de la Gauche§!)"
   FRA_coalition_right_1914:0 " (§CBloc National§!)"
+ 
+  get_parliament_modification_tt:0 "§Y[GetParliamentPartyName]§!: [?temp_seats|+0]§! §!seats in the parliament"

@@ -1,5 +1,6 @@
 ﻿capital = 16
 1918.1.1 = {
+	set_country_flag = clemenceau_president_du_conseil 
 	recruit_character = FRA_raymond_poincare
 	create_faction = "Entente"
 	add_to_faction = ENG

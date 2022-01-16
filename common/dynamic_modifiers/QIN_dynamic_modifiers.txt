@@ -31,3 +31,13 @@ TEST_foreign_industry_dynamic_modifier = { #Used as National Spirit
 	daily_disease_deaths = daily_deaths
 	monthly_population = monthly_pop_death_influenza
 }
+
+TT_HUN_army_defection = {
+	enable = {
+		always = yes
+	}
+
+	icon = GFX_idea_man_five_year_plan_industry
+
+	defence = HUN_army_defection_defence
+}

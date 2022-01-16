@@ -12,11 +12,8 @@ state = {
 			4893 1
 		}
 		add_core_of = AFG
-		add_core_of = TAL
 
 		1996.1.1 = {
-			owner = TAL
-			controller = TAL
 		}
 
 		2002.1.1 = {

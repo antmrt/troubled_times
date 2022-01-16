@@ -1,5 +1,25 @@
 ideas = {
 	country = {
+
+		HUN_will_of_the_people = {
+			cancel = {
+				has_war = no
+			}
+			modifier = {
+				offence = 0.3
+				defence = 0.3
+			}
+		}
+		TT_communist_resistance = {
+
+
+			modifier = {
+				communism_drift = 0.3
+				
+			}
+
+
+		}
 		TT_separate_peace = {
 			rule = {
 				can_join_factions = no

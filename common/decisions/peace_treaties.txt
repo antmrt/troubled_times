@@ -429,7 +429,46 @@ ENTENTE_treaty_of_Saint_Germain = {
 		
 	}       
 	anschluss_decision = {
-		
+		visible = {
+			NOT = {
+				tag = AUS
+			}
+		}
+		ai_will_do = {
+			base = 100
+			modifier = {
+				factor = 0
+				OR = {
+					
+					has_global_flag = anschluss_rejected
+					has_global_flag = south_german_republic
+					has_global_flag = anschluss_allowed
+						
+				}
+			}
+			
+		}
+		complete_effect = {
+			country_event = {
+				id = TT_INT_Peace_treaty.9
+			}
+		}
+	}
+
+	St_Germain_side_with_participant = {
+
+		visible = {
+			NOT = {
+				tag = AUS
+			}
+		}
+
+		complete_effect = {
+			country_event = {
+				id = TT_INT_Peace_treaty.8  
+			}
+		}
+
 	}
 	St_germain_state_decisions_aus = {
 		cost = 10
@@ -455,8 +494,11 @@ ENTENTE_treaty_of_Saint_Germain = {
 				}
 				
 				NOT = {
-					ROOT = {
-						tag = AUS
+					OR = {
+						ROOT = {
+							tag = AUS
+						}
+						has_country_flag = side_with_AUS
 					}
 				}
 			}
@@ -471,10 +513,49 @@ ENTENTE_treaty_of_Saint_Germain = {
 		}
 		remove_effect = {
 			
-				
-			FROM = {
-				clr_state_flag = st_germain_requested_by_AUS
-				set_state_flag = st_germain_requested_by_@ROOT
+			if = {
+				limit = {
+					OR = {
+						tag = ITA
+						tag = AUS
+						tag = YUG
+						tag = CZE
+					}
+				}
+				FROM = {
+					clr_state_flag = st_germain_requested_by_AUS
+					set_state_flag = st_germain_requested_by_@ROOT
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = side_with_YUG
+				}
+
+				FROM = {
+					clr_state_flag = st_germain_requested_by_AUS
+					set_state_flag = st_germain_requested_by_YUG
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = side_with_ITA
+				}
+
+				FROM = {
+					clr_state_flag = st_germain_requested_by_AUS
+					set_state_flag = st_germain_requested_by_ITA
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = side_with_CZE
+				}
+
+				FROM ={
+					clr_state_flag = st_germain_requested_by_AUS
+					set_state_flag = st_germain_requested_by_CZE
+				}
 			}
 			
 		}
@@ -503,8 +584,11 @@ ENTENTE_treaty_of_Saint_Germain = {
 				}
 				
 				NOT = {
-					ROOT = {
-						tag = YUG
+					OR = {
+						ROOT = {
+							tag = YUG
+						}
+						has_country_flag = side_with_YUG
 					}
 				}
 			}
@@ -519,10 +603,49 @@ ENTENTE_treaty_of_Saint_Germain = {
 		}
 		remove_effect = {
 			
-				
-			FROM = {
-				clr_state_flag = st_germain_requested_by_YUG
-				set_state_flag = st_germain_requested_by_@ROOT
+			if = {
+				limit = {
+					OR = {
+						tag = ITA
+						tag = AUS
+						tag = YUG
+						tag = CZE
+					}
+				}
+				FROM = {
+					clr_state_flag = st_germain_requested_by_YUG
+					set_state_flag = st_germain_requested_by_@ROOT
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = side_with_AUS
+				}
+
+				FROM = {
+					clr_state_flag = st_germain_requested_by_YUG
+					set_state_flag = st_germain_requested_by_AUS
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = side_with_ITA
+				}
+
+				FROM ={
+					clr_state_flag = st_germain_requested_by_YUG
+					set_state_flag = st_germain_requested_by_ITA
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = side_with_CZE
+				}
+
+				FROM = {
+					clr_state_flag = st_germain_requested_by_YUG
+					set_state_flag = st_germain_requested_by_CZE
+				}
 			}
 			
 		}
@@ -549,8 +672,11 @@ ENTENTE_treaty_of_Saint_Germain = {
 					}
 				}
 				NOT = {
-					ROOT = {
-						tag = ITA
+					OR = {
+						ROOT = {
+							tag = ITA
+						}
+						has_country_flag = side_with_ITA
 					}
 				}
 			}
@@ -565,9 +691,49 @@ ENTENTE_treaty_of_Saint_Germain = {
 		}
 		remove_effect = {
 		
-			FROM = {
-				clr_state_flag = st_germain_requested_by_ITA
-				set_state_flag = st_germain_requested_by_@ROOT
+			if = {
+				limit = {
+					OR = {
+						tag = ITA
+						tag = AUS
+						tag = YUG
+						tag = CZE
+					}
+				}
+				FROM = {
+					clr_state_flag = st_germain_requested_by_ITA
+					set_state_flag = st_germain_requested_by_@ROOT
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = side_with_YUG
+				}
+
+				FROM = {
+					clr_state_flag = st_germain_requested_by_ITA
+					set_state_flag = st_germain_requested_by_YUG
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = side_with_AUS
+				}
+
+				FROM = {
+					clr_state_flag = st_germain_requested_by_ITA
+					set_state_flag = st_germain_requested_by_AUS
+				}	
+			}
+			if = {
+				limit = {
+					has_country_flag = side_with_CZE
+				}
+
+				FROM = {
+					clr_state_flag = st_germain_requested_by_ITA
+					set_state_flag = st_germain_requested_by_CZE
+				}
 			}
 			
 		}
@@ -594,8 +760,11 @@ ENTENTE_treaty_of_Saint_Germain = {
 					}
 				}
 				NOT = {
-					ROOT = {
-						tag = CZE
+					OR = {
+						ROOT = {
+							tag = CZE
+						}
+						has_country_flag = side_with_CZE
 					}
 				}
 			}
@@ -610,11 +779,50 @@ ENTENTE_treaty_of_Saint_Germain = {
 		}
 		remove_effect = {
 		
-			FROM = {
-				clr_state_flag = st_germain_requested_by_CZE
-				set_state_flag = st_germain_requested_by_@ROOT
+			if = {
+				limit = {
+					OR = {
+						tag = ITA
+						tag = AUS
+						tag = YUG
+						tag = CZE
+					}
+				}
+				FROM = {
+					clr_state_flag = st_germain_requested_by_CZE
+					set_state_flag = st_germain_requested_by_@ROOT
+				}
 			}
-			
+			if = {
+				limit = {
+					has_country_flag = side_with_AUS
+				}
+
+				FROM = {
+					clr_state_flag = st_germain_requested_by_CZE
+					set_state_flag = st_germain_requested_by_AUS
+				}	
+			}
+			if = {
+				limit = {
+					has_country_flag = side_with_ITA
+				}
+
+				FROM = {
+					clr_state_flag = st_germain_requested_by_CZE
+					set_state_flag = st_germain_requested_by_ITA
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = side_with_YUG
+				}
+
+				FROM = {
+					clr_state_flag = st_germain_requested_by_CZE
+					set_state_flag = st_germain_requested_by_YUG
+				}
+			}
 		}
 	}
 }

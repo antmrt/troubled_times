@@ -17,12 +17,7 @@ state = {
 
 		}
 		add_core_of = YEM
-		add_core_of = SYE
 
-		1967.1.1 = {
-			owner = SYE
-			controller = SYE
-		}
 
 		1991.1.1 = {
 			owner = YEM

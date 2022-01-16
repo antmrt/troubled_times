@@ -21,6 +21,18 @@ on_actions = {
 			}
 		}
 	}
+	on_daily_HUN = {
+		effect = {
+			if = {
+				limit = {
+					has_war_with = ROM
+					ruling_party = communism
+				}
+				subtract_from_variable = {HUN_army_defection_defence= 0.005}
+				
+			}
+		}
+	}
 	on_daily = {
 		effect = {
 			if = {
@@ -155,7 +167,17 @@ on_actions = {
 		effect = {
 
 			
-
+			if = {
+				limit = {
+					has_start_date < 1919.1.1
+				}
+				GER = {
+					add_named_threat = {
+						threat = 90
+						name = "Great War"
+					}
+				}
+			}
 
 			every_state = {
 				limit = {

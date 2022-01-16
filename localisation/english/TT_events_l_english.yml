@@ -7,6 +7,7 @@
 
 
 
+
  TT_INT_Germany.1.t:0 "Armistice at Compiègne"
  TT_INT_Germany.1.d:0 "Representants of our government signed an armistice with our former ennemies. This is the first move towards a peace deal between our factions.The guns finally falled silent today at 11:00, ending a war that killed million of men"
  TT_INT_Germany.1.a:0 "Peace at Last!"
@@ -88,6 +89,21 @@
  TT_INT_Peace_treaty.7.d:0 "To Prevent Germany from rearming, we need to impose restriction on its production of tanks"
  TT_INT_Peace_treaty.7.a:0 "Impose restrictions"
  TT_INT_Peace_treaty.7.b:0 "No need"
+
+  # SAINT GERMAIN TREATY
+
+ TT_INT_Peace_treaty.8.t:0 "Territorial Discussion"
+ TT_INT_Peace_treaty.8.desc:0 "We need to choose with wich country to discuss aboiut the different provinces in the Balkans, which borders should we redraw?"
+ TT_INT_Peace_treaty.8.a:0 "The Austrian ones"
+ TT_INT_Peace_treaty.8.b:0 "The Czechs ones"
+ TT_INT_Peace_treaty.8.c:0 "The Yugoslavs ones"
+ TT_INT_Peace_treaty.8.d:0 "The Italian ones"
+
+ TT_INT_Peace_treaty.9.t:0 "The German Question"
+ TT_INT_Peace_treaty.9.d:0 "The Right to Self Determination of Peoples allows for the Germans in Austria to choose and join [GER.GetName], however, this will obviously strenghten the Germans. We need to prevent such a thing from happening."
+ TT_INT_Peace_treaty.9.a:0 "They will not join [GER.GetName]."
+ TT_INT_Peace_treaty.9.b:0 "Form an Independent South German Republic"
+ TT_INT_Peace_treaty.9.c:0 "Allow the Right to Self Determination"
 
  TT_FRENCH_REVOLUTION_T:0 "Second French Revolution"
  TT_FRENCH_REVOLUTION_A:0 "The End of Democracy"

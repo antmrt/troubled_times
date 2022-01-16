@@ -1,0 +1,202 @@
+focus_tree = {
+	id = TT_HUN
+	country = {
+		factor = 0
+		modifier = {
+			add = 25
+			tag = HUN
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 50 y = 1500 }
+	focus = {
+		id = TT_INT_HUN_lost_lands
+		icon = GFX_unknown
+		cost = 10
+		x = 10
+		y = 1
+		available = {
+		 always = no
+		}
+		completion_reward = { 
+		 add_political_power = -100
+		 add_ideas = TT_communist_resistance
+		}
+	}
+
+	focus = {
+		id = TT_INT_HUN_unopular_government
+		icon = GFX_unknown
+		cost = 5
+		relative_position_id = TT_INT_HUN_lost_lands
+		x = 0
+		y = 1
+		completion_reward = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = -0.1
+			}
+		}
+		prerequisite = {
+			focus = TT_INT_HUN_lost_lands
+		}
+	}
+
+	focus = {
+		id = TT_INT_HUN_talks_with_communists
+		icon = GFX_unknown
+		cost = 5
+		relative_position_id = TT_INT_HUN_unopular_government
+		x = 2
+		y = 1
+		prerequisite = {
+			focus = TT_INT_HUN_unopular_government
+		}
+		mutually_exclusive = {
+			focus = TT_INT_HUN_anything_but_the_reds
+		}
+		ai_will_do = {
+			base = 10
+			
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+		}
+	}
+	focus = {
+		id = TT_INT_HUN_peasant_support
+		icon = GFX_unknown
+		cost = 2
+		relative_position_id = TT_INT_HUN_talks_with_communists
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = TT_INT_HUN_talks_with_communists
+		}
+		
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+		}
+	}
+	focus = {
+		id = TT_INT_HUN_army_support
+		icon = GFX_unknown
+		cost = 2
+		relative_position_id = TT_INT_HUN_talks_with_communists
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = TT_INT_HUN_talks_with_communists
+		}
+		
+		completion_reward = {
+			
+			add_dynamic_modifier = { modifier = TT_HUN_army_defection }
+			random_owned_state = {
+				create_unit = {
+					division = "name = \"Infantry Division\" division_template = \"Gyalogdandár\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
+    owner = HUN
+				}
+			}
+			random_owned_state = {
+				create_unit = {
+					division = "name = \"Infantry Division\" division_template = \"Gyalogdandár\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
+    owner = HUN
+				}
+			}
+			random_owned_state = {
+				create_unit = {
+					division = "name = \"Infantry Division\" division_template = \"Gyalogdandár\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
+    owner = HUN
+				}
+			}
+			random_owned_state = {
+				create_unit = {
+					division = "name = \"Infantry Division\" division_template = \"Gyalogdandár\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
+    owner = HUN
+				}
+			}
+		}
+	}
+	focus = {
+		id = TT_INT_HUN_proclaim_HSR
+		icon = GFX_unknown
+		cost =4
+		relative_position_id = TT_INT_HUN_army_support
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = TT_INT_HUN_army_support
+		}
+		prerequisite = {
+			focus = TT_INT_HUN_peasant_support
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = no
+					
+			}
+		}
+	}
+	focus = {
+		id = TT_INT_HUN_recover_alfold
+		icon = GFX_unknown
+		cost = 2
+		relative_position_id = TT_INT_HUN_proclaim_HSR
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = TT_INT_HUN_proclaim_HSR
+		}
+		
+		will_lead_to_war_with = YUG
+		will_lead_to_war_with = ROM
+		will_lead_to_war_with = CZE
+		completion_reward = {
+			create_wargoal = {
+				target = ROM
+				type = take_core_state
+				generator = { 154 }
+			}
+			
+		}
+	}
+	focus = {
+		id = TT_INT_HUN_anything_but_the_reds
+		icon = GFX_unknown
+		cost = 5
+		relative_position_id = TT_INT_HUN_unopular_government
+		x = -2
+		y = 1
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}	
+		}
+		prerequisite = {
+			focus = TT_INT_HUN_unopular_government
+		}
+		mutually_exclusive = {
+			focus = TT_INT_HUN_talks_with_communists
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = -0.05
+			}
+		}
+	}
+}

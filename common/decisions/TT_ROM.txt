@@ -1,0 +1,87 @@
+TT_HUN_territorial_wars = {
+
+	tt_launch_offensive = {
+		fire_only_once = yes
+		visible = {
+			
+		}
+		allowed = {
+			tag = ROM
+		}
+		war_with_on_complete = HUN
+
+		complete_effect = {
+			ROM = {
+				transfer_state = 154
+			}
+			CZE = {
+				add_ai_strategy = {
+					type = prepare_for_war
+					id = HUN
+					value = 200
+				}
+			}
+			HUN = {
+				complete_national_focus = TT_INT_HUN_lost_lands
+				
+				add_ai_strategy = {
+					type = prepare_for_war
+					id = YUG
+					value = 200
+				}
+				
+				add_ai_strategy = {
+					type = prepare_for_war
+					id = ROM
+					value = 200
+				}
+			}
+			
+		}
+		
+		ai_will_do = {
+			factor = 10000
+		}
+
+
+	}
+
+	join_ROM = {
+
+		visible = {
+			ROM = {
+				has_war_with = HUN
+			}
+		}
+		allowed = {
+			OR = {
+				tag = YUG
+				tag = CZE
+			}
+		}
+		war_with_on_complete = HUN
+		cost = 20
+		complete_effect = {
+			add_to_war = { 
+				targeted_alliance = ROM 
+				enemy = HUN 
+				hostility_reason = asked_to_join
+			}
+		}
+		ai_will_do = {
+			factor = 10000
+			modifier = {
+				factor = 0
+				check_variable = {
+					num_divisions < 10
+				}
+			}
+		}
+
+
+
+	}
+
+
+
+}

@@ -52,6 +52,33 @@ defined_text = {
 	
 }
 defined_text = {
+	name = Get_President_du_conseil_portrait
+	text = {
+		trigger = {
+			has_country_flag = clemenceau_president_du_conseil
+		}
+		localization_key = "GFX_clemenceau_president_du_conseil_portrait"
+	}
+}
+defined_text = {
+	name = Get_President_du_conseil_name
+	text = {
+		trigger = {
+			has_country_flag = clemenceau_president_du_conseil
+		}
+		localization_key = TT_FRA_Georges_clemenceau
+	}
+}
+defined_text = {
+	name = Get_President_du_conseil_traits
+	text = {
+		trigger = {
+			has_country_flag = clemenceau_president_du_conseil
+		}
+		localization_key = TT_FRA_dislikes_germany
+	}
+}
+defined_text = {
 	name = GetParliamentPartyName2 #without coalition
 	text = {
 		trigger = {

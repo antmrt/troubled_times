@@ -15,7 +15,7 @@ crisis = {
 			random_list = {
 				33 = {
 					
-				}
+				}       
 
 				66 = {
 					country_event = {id = TT_INT_France.6 }
@@ -27,7 +27,7 @@ crisis = {
 		}
 		fixed_random_seed = no
 		activation = {
-			tag = FRA
+			tag = FRA  
 			has_global_flag = WW1_continues
 		}
 	}
@@ -42,7 +42,7 @@ parliament_gui_decision_category = {
 		available = {
 
 			#Actual Party
-			set_temp_variable = {
+			set_temp_variable = { 
 				temp_member = 1
 			}
 

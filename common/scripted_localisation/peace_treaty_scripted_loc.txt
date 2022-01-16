@@ -270,7 +270,7 @@ defined_text = {
 			NOT = {original_tag = AUS}
 			has_global_flag = anschluss_rejected
 		}
-		localization_key = NO_ANSCHLUSS_AUS
+		localization_key = NO_ANSCHLUSS_ENTENTE
 	}
 }
 

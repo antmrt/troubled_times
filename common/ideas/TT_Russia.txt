@@ -1,5 +1,14 @@
 ideas = {
 	country = {
+		TT_red_scare = {
+			rule = {
+				can_send_volunteers = yes
+			}
+			modifier = {
+				send_volunteer_divisions_required = -0.5
+			}
+		}
+
 		TT_SOV_young_nation = {
 			
 			modifier = {

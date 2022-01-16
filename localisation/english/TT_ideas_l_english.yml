@@ -1,5 +1,7 @@
 ﻿l_english:
-
+ disband_full_army_tt:0 "§RAll of your army will be disbanded§!"
+ disband_twenty_percent_units_tt:0 "§R20% of your army will be disbanded§!"
+ TT_communist_resistance:0 "Communist Opposition"
  idea_causes_desertion_tt:0 "§RThis National Spirit causes Desertion§!"
  TT_WHR_disputed_leadership:0 "Disputed Leadership"
  WHR_soviet_civil_war:0 "Russian Civil War"

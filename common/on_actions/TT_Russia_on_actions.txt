@@ -33,6 +33,21 @@ on_actions = {
 					}
 					remove_core_of = SOV
 				}
+				if = {
+					limit = {
+						country_exists = UKR
+					}
+					every_owned_state = {
+						limit = {
+							is_core_of = UKR
+						}
+						UKR = {
+							transfer_state = PREV
+						}
+					}
+
+				}
+				
 				every_country = {
 					limit = {
 						is_ai = no

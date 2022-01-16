@@ -9,7 +9,7 @@ state = {
 
 		}
 		add_core_of = IRQ add_core_of = OTT
-		add_core_of = ISS
+		
 		1910.1.1 = {
 			owner = OTT
 			controller = OTT
@@ -23,10 +23,7 @@ state = {
 		1946.1.1 = { owner = IRQ controller = IRQ }
 
 		2016.1.1 = {
-			ISS = {
-				set_province_controller = 12413
-				set_province_controller = 13283
-			}
+			
 		}
 
 		2020.1.1 = { owner = IRQ controller = IRQ }

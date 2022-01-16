@@ -1,6 +1,11 @@
 TT_HUN_territorial_wars = {
 	allowed = {
-		tag = HUN
+		OR = {
+			tag = HUN
+			tag = ROM
+			tag = CZE
+			tag = YUG
+		}
 	}
 	priority = 800
 }

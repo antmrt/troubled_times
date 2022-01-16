@@ -1,0 +1,40 @@
+characters = {
+
+	HUN_Bela_kun = {
+		name = HUN_Bela_kun
+
+		country_leader = {
+			ideology = leninism
+			expire = "1938.8.29"
+			id = -1
+
+		}
+
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/HUN/INT/Communist_Leader_Bela_Kun.dds"
+			}
+		}
+
+	}
+
+	HUN_Mihaly_Karolyi = {
+		name = HUN_Mihaly_Karolyi
+
+		country_leader = {
+			ideology = centrism
+			expire = "1955.3.19"
+			id = -1
+
+		}
+
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/HUN/INT/"
+			}
+		}
+	}
+
+
+
+}

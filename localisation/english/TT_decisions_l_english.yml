@@ -1,4 +1,14 @@
 ﻿l_english:
+ 
+
+ treaty_of_saint_germain_timer:0 "Treaty Discussion"
+ anschluss_decision:0 "The German People"
+
+ St_Germain_side_with_participant:0 "Territorial Discussion"
+ St_germain_state_decisions_aus:0 "[FROM.GetName] is requested by [AUS.GetName]"
+ St_germain_state_decisions_yug:0 "[FROM.GetName] is requested by [YUG.GetName]"
+ St_germain_state_decisions_ita:0 "[FROM.GetName] is requested by [ITA.GetName]"
+ St_germain_state_decisions_cze:0 "[FROM.GetName] is requested by [CZE.GetName]"
 
  distributing_masks_tt:0 "Influenza Progression Rate §G-0.002§!"
  TT_influenza_epidemic:0 "Influenza Epidemic"
@@ -129,8 +139,48 @@ GER_spartakist_attack:0 "Spartakist Attack in [GER_INT_state_challenged.GetName]
 GER_republican_attack:0 "Republican Attack in [GER_INT_state_challenged.GetName]"
 GER_freikorps_attack:0 "Freikorps attak in [GER_INT_state_challenged2.GetName]"
 
+GER_rally_german_spartakist_mission:0 "Rally German Spartakists"
+GER_bavarian_socialists_mission:0 "Call to the Bavarian Socialists"
+GER_ruhr_workers_mission:0 "Ruhr Workers"
+TT_spartakist_uprising_timer:0 "Spartakist Uprising"
+
+ TT_HUN_dismantle_impending_coup:0 "Dismantle the Impending Coup"
+ TT_HUN_territorial_wars:0 "Territorial Wars"
+ TT_HUN_form_slovakian_soviet_republic:0 "Form the Slovakian Soviet Republic"
 
 
+ TT_WHR_russian_civil_war:0 "The Russian Civil War"
+ WHR_soldiers_deserting:0 "Soldiers Deserting"
+ entente_weapon_shipment:0 "Entente Weapon Shipment"
+ WHR_launch_offensive:0 "Launch offensive"
+
+ TT_SOV_russian_civil_war:0 "The Russian Civil War"
+ SOV_launch_offensive:0 "Launch Offensive"
+ SOV_emergency_consciption:0 "Emergency Conscription"
+ reintegrate_EST:0 "reintegrate Estonia"
+ reintegrate_LAT:0 "reintegrate Latvia"
+ reintegrate_LIT:0 "reintegrate Lithuania"
+
+ BALTIC_soviet_defense:0 "Soviet Defense"
+ BALTIC_propose_peace_to_soviets:0 "Propose Peace to [SOV.GetName]"
+ BALTIC_organize_anti_soviet_forces:0 "Organize Anti Bolchevik Forces"
+ BALTIC_ask_for_material:0 "Request Material"
+ BALTIC_last_defense:0 "Last Defense againt the Reds"
+
+
+ TT_FRA_mutinies_in_the_army:0 "Mutinies in the Army"
+ invite_SFIC_to_coalition:0 "Invite SFIC to Coalition"
+ invite_PRRRS_to_coalition:0 "Invite PRRRS to Coalition"
+ invite_SFIO_to_coalition:0 "Invite SFIO to Coalition"
+ invite_AD_to_coalition:0 "Invite AD to Coalition"
+ invite_FR_to_coalition:0 "Invite FR to Coalition"
+ invite_AF_to_coalition:0 "Invite AF to Coalition"
+ invite_PDP_to_coalition:0 "Invite PDP to Coalition"
+
+ president_du_conseil_tt:0 "[Get_President_du_conseil_name]"
+ TT_FRA_Georges_clemenceau:0 "Georges Clemenceau"
+ president_du_conseil_trait_tt:0 "[Get_President_du_conseil_traits]"
+ TT_FRA_dislikes_germany:0 "§gDislikes Germany§!"
 
 TT_get_around_boxer_protocols:0 "Weapon Smuggling"
 TT_get_around_boxer_protocols_desc:0 "The Boxer Peace Protocol does not allow us to manufacture weapons. This situation is unbearable, as an empire such as ours, needs weapons for its protection. By smuggling weapons, we might be able to stockpile equipment in secret, However, we need to make sure this remains unremarked by the Foreign Powers\n\n Foreign Suspicion is [QIN_GetForeignSuspicion]\n\n§gIf the Foreign Suspicion is too High, this might trigger an Foreign Intervention to enforce the Treaty§!\n[GetInvestigationStatus]"

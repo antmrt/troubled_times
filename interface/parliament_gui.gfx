@@ -12,4 +12,9 @@ spriteTypes = {
 		name = "GFX_clemenceau_president_du_conseil_portrait"
 		texturefile = "gfx/leaders/FRA/INT/FM_Georges_Clemenceau.dds"
 	}
+	spriteType = {
+		name = "GFX_foch_president_du_conseil_portrait"
+		texturefile = "gfx/leaders/FRA/INT/FM_Ferdinand_Foch.dds"
+	}
+		
 }

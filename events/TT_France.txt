@@ -127,13 +127,44 @@ country_event = {
 		#reach out to germany
 		add_timed_idea = {
 			idea = TT_separate_peace
-			days = 60
+			days = 365
 		}
 		set_country_flag = frenc_2_revolution_super_event
 		GER = {
 			country_event = { id = TT_INT_Germany.5 days = 2}
 		}
-		leave_faction = yes
+		leave_faction = yes 
+		clr_country_flag = clemenceau_president_du_conseil 
+		set_country_flag = foch_president_du_conseil
+		clear_parliament_gui_arrays = yes
+		
+		set_global_flag = FRA_2nde_revolution_lost_ww1
+
+
+		add_to_array = { parliament_seat_array = 0 } # SFIC
+		add_to_array = { parliament_seat_array = 0 } # PRRRS-PRS
+		add_to_array = { parliament_seat_array = 0 } # SFIO
+		add_to_array = { parliament_seat_array = 0 } # AD
+		add_to_array = { parliament_seat_array = 0 } # PDP
+		add_to_array = { parliament_seat_array = 0 } # FR
+		add_to_array = { parliament_seat_array = 200 } # INDEP
+		add_to_array = { parliament_seat_array = 0 } #AF
+
+		# parliament_member_array stores the list of parties
+		# This basically assigns an id for each party, so Party A = 1, Party B = 2, etc. (must start from 1 and is in order)
+		add_to_array = { parliament_member_array = 1 } # SFIC
+		add_to_array = { parliament_member_array = 2 } # PRRRS
+		add_to_array = { parliament_member_array = 3 } # SFIO
+		add_to_array = { parliament_member_array = 4 } # AD
+		add_to_array = { parliament_member_array = 5 } # PDP
+		add_to_array = { parliament_member_array = 6 } # FR
+		add_to_array = { parliament_member_array = 7 } # INDEP 
+		add_to_array = { parliament_member_array = 8 } # AF
+		# Set up the positions of the dots for the semicircle parliament
+		parliament_gui_positions = yes
+
+		# Modify what shows up in the gui
+		reload_parliament_gui = yes
 	}
 
 }

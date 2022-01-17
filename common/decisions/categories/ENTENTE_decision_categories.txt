@@ -48,5 +48,25 @@ ENTENTE_treaty_of_Saint_Germain = {
 			tag = USA
 		}
 	}
+	visible = {
+		NOT = {
+			tag = FRA
+			has_global_flag = FRA_2nde_revolution_lost_ww1
+		}
+	}
 	priority = 499
+}
+
+CP_treaty_of_frankfurt = {
+	icon = ger_mefo_bills
+	allowed = {
+		OR = {
+			tag = FRA
+			tag = GER
+		}
+	}
+	visible = {
+		has_global_flag = FRA_2nde_revolution_lost_ww1
+	}
+	priority = 500
 }

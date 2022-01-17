@@ -3,6 +3,7 @@ focus_tree = {
 	country = { 
 		factor = 0
 		modifier = {
+			date < 1936.1.1
 			add = 25
 			tag = FRA
 		}
@@ -25,7 +26,105 @@ focus_tree = {
 		}
 
 	}
+	focus = {
+		id = TT_INT_FRA_unexpected_defeat
 
+		x = 30
+		y = 1
+		cost = 2
+		available = {
+			has_global_flag = FRA_2nde_revolution_lost_ww1
+		}
+		completion_reward = {
+			add_war_support = -0.1
+			add_stability = -0.05
+			add_political_power = -150
+		}
+
+	}
+
+	focus = {
+		id = TT_INT_FRA_grant_power_to_foch
+
+		relative_position_id = TT_INT_FRA_unexpected_defeat
+		x = 0
+		y = 1
+
+		prerequisite = { focus = TT_INT_FRA_unexpected_defeat }
+	}
+	focus = {
+		id = TT_INT_FRA_Frankfurt_conference
+		relative_position_id = TT_INT_FRA_grant_power_to_foch
+
+		x = -1
+		y = 1
+
+		prerequisite = {
+			focus = TT_INT_FRA_grant_power_to_foch
+		}
+	}
+	focus = {
+		id = TT_INT_FRA_calm_the_mob
+		relative_position_id = TT_INT_FRA_grant_power_to_foch
+
+		x = 1
+		y = 1
+
+		prerequisite = {
+			focus = TT_INT_FRA_grant_power_to_foch
+		}
+	}
+	focus = {
+		id = TT_INT_FRA_the_aftermath 
+		relative_position_id = TT_INT_FRA_calm_the_mob
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = TT_INT_FRA_calm_the_mob
+		}
+		prerequisite = {
+			focus = TT_INT_FRA_Frankfurt_conference
+		}
+	}
+	focus = {
+		id= TT_INT_FRA_nationalist_union
+		relative_position_id = TT_INT_FRA_the_aftermath
+		x = -1
+		y = 1
+		mutually_exclusive = { focus = TT_INT_FRA_syndicalist_union }
+		prerequisite = {
+			focus = TT_INT_FRA_the_aftermath
+		}
+	}
+	focus = {
+		id= TT_INT_FRA_syndicalist_union
+		relative_position_id = TT_INT_FRA_the_aftermath
+		x = 1
+		y = 1
+		mutually_exclusive = { focus = TT_INT_FRA_nationalist_union }
+		prerequisite = {
+			focus = TT_INT_FRA_the_aftermath
+		}
+	}
+	focus = {
+		id = TT_INT_FRA_act_on_the_strikes
+		relative_position_id = TT_INT_FRA_syndicalist_union
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = TT_INT_FRA_syndicalist_union
+			focus = TT_INT_FRA_nationalist_union
+		}
+	}
+	focus = {
+		id = TT_INT_FRA_secure_army_loyalty
+		relative_position_id = TT_INT_FRA_act_on_the_strikes
+		x = -2
+		y = 0
+		prerequisite = {
+			focus = TT_INT_FRA_nationalist_union
+		}
+	}
 	focus = {
 		id = TT_INT_FRA_Dismantle_union_sacree
 
@@ -232,7 +331,7 @@ focus_tree = {
 	focus = {
 		id = TT_INT_FRA_international_matters
 		
-		x = 30
+		x = 40
 		y = 1
 		cost = 1
 	}

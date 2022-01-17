@@ -5,6 +5,7 @@ focus_tree = {
 		modifier = {
 			add = 25
 			tag = HUN
+			date < 1936.1.1
 		}
 	}
 	default = no

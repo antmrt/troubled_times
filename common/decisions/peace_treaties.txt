@@ -1,3 +1,213 @@
+CP_treaty_of_frankfurt = {
+	treaty_of_frankfurt_timer = {
+		allowed = {
+			OR = {
+				tag = GER
+				tag = FRA
+			}
+		}
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		days_mission_timeout = 180
+		priority = 200
+		activation = {
+			has_global_flag = FRA_2nde_revolution_lost_ww1
+		}
+		fire_only_once = yes
+
+		timeout_effect = {
+			every_state = {
+				limit = {
+					has_state_flag = requested_by_GER
+				}
+				GER = {
+					transfer_state = PREV
+				}
+			}
+			if = {
+				limit = {
+					has_global_flag = French_border_demilitarized
+				}
+				every_state = {
+					limit = {
+						any_neighbor_state = { is_owned_by = GER }
+						is_owned_by = FRA
+						is_on_continent = europe
+					}
+					set_demilitarized_zone = yes
+				}
+				if = {
+					limit = {
+						785 = {
+							is_demilitarized_zone = yes
+						}
+						815 = {
+							is_demilitarized_zone = yes
+						}
+						817 = {
+							is_demilitarized_zone = yes
+						}
+					}
+					18 = {
+						set_demilitarized_zone = yes
+					}
+				}
+				if = {
+					limit = {
+						785 = {
+							is_demilitarized_zone = yes
+						}
+					}
+					818 = {set_demilitarized_zone = yes}
+				}
+			}
+			if = {
+				limit = {
+					has_global_flag = French_army_restrictions
+				}
+				set_temp_variable = { disband_amount = 0.4 }
+				disband_percent_army = yes
+			}
+		}
+
+	}
+	treaty_of_frankfurt_requested_states_FRA = {
+		allowed = {
+			OR = {
+				tag = GER
+				tag = FRA
+			}
+		}
+		state_target = yes
+		icon = GFX_decision_french_control
+		on_map_mode = map_only
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1000
+
+				#GER takes colonies
+				FROM = {
+					NOT = {
+						is_core_of = FRA	
+					}
+				}
+
+
+			}
+			modifier = {
+				add = 10
+				FROM = {
+					OR = {
+						state = 814
+						state = 29
+						state = 1089
+						state = 816
+					}
+				}
+			}
+		}
+		target_trigger = {
+			FROM = {
+				OR = {
+					state = 898
+					state = 814
+					state = 816
+					state = 1089
+					state = 29
+					state = 815
+					state = 817
+					state = 818
+					state = 785
+					state = 18
+					state = 17
+					state = 772
+					state = 539
+					state = 897
+					state = 896
+					state = 895
+					state = 773
+					state = 660
+					state = 899
+					state = 774
+					state = 1081
+					state = 741
+					state = 1085
+					state = 1084
+					state = 286
+					state = 1077
+					state = 1083
+					state = 1082
+					state = 1075
+					state = 1076
+					state = 1079
+					state = 1080
+					state = 1078
+					state = 1074
+					state = 671
+					state = 670
+					state = 1073
+					state = 728
+				}
+				NOT = {
+					has_state_flag = requested_by_GER
+				}
+			}
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					NOT = {
+						original_tag = FRA
+					}
+				}
+				FROM = {set_state_flag = requested_by_GER}
+			}
+		}
+
+	}
+	treaty_of_frankfurt_requested_states_GER = {
+		on_map_mode = map_only
+		allowed = {
+			OR = {
+				tag = GER
+				tag = FRA
+			}
+		}
+		state_target = yes
+		icon = GFX_decision_ger_republican_control
+
+		target_trigger = {
+			FROM = {
+				has_state_flag = requested_by_GER
+			}
+		}
+	}
+
+
+	treaty_of_frankfurt_army_question = {
+
+		allowed = {
+			tag = GER
+		}
+
+		visible = {
+			tag = GER
+		}
+
+		complete_effect = {
+			set_global_flag = French_border_demilitarized
+			custom_effect_tooltip = demilitarize_french_border
+		}
+
+
+	}
+
+}
+
 ENTENTE_treaty_of_versailles = {
  	treaty_of_versailles_timer = {
 		allowed = {
@@ -367,6 +577,10 @@ ENTENTE_treaty_of_Saint_Germain = {
 			hidden_trigger = {
 				always = no
 			}
+		}
+		visible = {
+			
+			
 		}
 		timeout_effect = {
 			every_state = {

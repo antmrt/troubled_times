@@ -33,7 +33,201 @@ crisis = {
 	}
 
 }
+category_test_decisions = {
+	test_wp = {
+		complete_effect = {
+			every_state = {
+				limit = {
+					is_core_of = FRA
+					is_controlled_by = SYF
+				}
+				SYF = {
+					transfer_state = PREV
+				}
+			}
+			every_state = {
+				limit = {
+					is_owned_by = FRA
+				}
+				FRA = {
+					transfer_state = PREV
+				}
+			}
+			white_peace = SYF
+			SYF = {set_capital = {state = 459}}
+		}
+	}
+	test_transfer_to_algeria = {
+		complete_effect = {
+			459 = {
+				add_core_of = FRA
 
+			}
+			set_capital = {state = 459}
+		}
+	}
+	test_parliament_syf = {
+		complete_effect = {
+			clear_parliament_gui_arrays = yes
+			add_to_array = { parliament_seat_array = 0 } # SFIC
+			add_to_array = { parliament_seat_array = 42 } # PRRRS-PRS
+			add_to_array = { parliament_seat_array = 42 } # SFIO
+			add_to_array = { parliament_seat_array = 42 } # AD
+			add_to_array = { parliament_seat_array = 0 } # PDP
+			add_to_array = { parliament_seat_array = 65 } # FR
+			add_to_array = { parliament_seat_array = 9 } # INDEP
+			add_to_array = { parliament_seat_array = 0 } #AF
+
+			# parliament_member_array stores the list of parties
+			# This basically assigns an id for each party, so Party A = 1, Party B = 2, etc. (must start from 1 and is in order)
+			add_to_array = { parliament_member_array = 1 } # SFIC
+			add_to_array = { parliament_member_array = 2 } # PRRRS
+			add_to_array = { parliament_member_array = 3 } # SFIO
+			add_to_array = { parliament_member_array = 4 } # AD
+			add_to_array = { parliament_member_array = 5 } # PDP
+			add_to_array = { parliament_member_array = 6 } # FR
+			add_to_array = { parliament_member_array = 7 } # INDEP
+			add_to_array = { parliament_member_array = 8 } # AF
+			# Set up the positions of the dots for the semicircle parliament
+			parliament_gui_positions = yes
+
+			# Modify what shows up in the gui
+			reload_parliament_gui = yes
+		}
+	}
+	test_1 = {
+		complete_effect = {
+			set_temp_variable = {
+				temp_remove = parliament_seat_array^3
+			}
+			
+			multiply_temp_variable = {
+				temp_remove = -1
+			}
+			
+			set_temp_variable = { temp_member = 4 }
+			set_temp_variable = { temp_seats = temp_remove }
+			modify_parliament_seat = yes
+			set_temp_variable = {
+				temp_remove = parliament_seat_array^4
+			}
+			
+			multiply_temp_variable = {
+				temp_remove = -1
+			}
+			set_temp_variable = { temp_member = 5 }
+			set_temp_variable = { temp_seats = temp_remove }
+			modify_parliament_seat = yes
+			set_temp_variable = {
+				temp_remove = parliament_seat_array^5
+			}
+			
+			multiply_temp_variable = {
+				temp_remove = -1
+			}
+			set_temp_variable = { temp_member = 6 }
+			set_temp_variable = { temp_seats = temp_remove }
+			modify_parliament_seat = yes
+			set_temp_variable = {
+				temp_remove = parliament_seat_array^6
+			}
+			
+			multiply_temp_variable = {
+				temp_remove = -1
+			}
+			set_temp_variable = { temp_member = 7 }
+			set_temp_variable = { temp_seats = temp_remove }
+			modify_parliament_seat = yes
+			set_temp_variable = {
+				temp_remove = parliament_seat_array^7
+			}
+			
+			multiply_temp_variable = {
+				temp_remove = -1
+			}
+			set_temp_variable = { temp_member = 8 }
+			set_temp_variable = { temp_seats = temp_remove }
+			modify_parliament_seat = yes
+			
+		}
+	}
+	test_syndicalist_france = {
+		complete_effect = {
+			SYF = {
+				add_to_array = { parliament_seat_array = 0 } # SFIC
+				add_to_array = { parliament_seat_array = 42 } # PRRRS-PRS
+				add_to_array = { parliament_seat_array = 42 } # SFIO
+				add_to_array = { parliament_seat_array = 42 } # AD
+				add_to_array = { parliament_seat_array = 0 } # PDP
+				add_to_array = { parliament_seat_array = 65 } # FR
+				add_to_array = { parliament_seat_array = 9 } # INDEP
+				add_to_array = { parliament_seat_array = 0 } #AF
+
+				# parliament_member_array stores the list of parties
+				# This basically assigns an id for each party, so Party A = 1, Party B = 2, etc. (must start from 1 and is in order)
+				add_to_array = { parliament_member_array = 1 } # SFIC
+				add_to_array = { parliament_member_array = 2 } # PRRRS
+				add_to_array = { parliament_member_array = 3 } # SFIO
+				add_to_array = { parliament_member_array = 4 } # AD
+				add_to_array = { parliament_member_array = 5 } # PDP
+				add_to_array = { parliament_member_array = 6 } # FR
+				add_to_array = { parliament_member_array = 7 } # INDEP
+				add_to_array = { parliament_member_array = 8 } # AF
+				# Set up the positions of the dots for the semicircle parliament
+				parliament_gui_positions = yes
+
+				# Modify what shows up in the gui
+				reload_parliament_gui = yes
+			}
+			set_cosmetic_tag = NATIONALIST_FRANCE
+
+			every_state = {
+				limit = {
+					is_core_of = FRA
+					NOT = {
+						OR = {
+							state = 820
+							state = 31
+							state = 22
+							state = 21
+							state = 821
+							state = 822
+							state = 823
+							state = 32
+							state = 735
+							state = 825
+							state = 25
+							state = 26
+							state = 20
+							state = 19
+							state = 23
+							state = 14
+							state = 1
+						}
+					}
+				}
+				SYF = {
+					transfer_state = PREV
+				}
+			}
+			FRA = {
+				add_ideas = TT_fanitic_resistance
+			}
+			transfer_units_fraction = {
+				target = SYF
+				size = 0.65
+			}
+			SYF = {
+				declare_war_on = {
+					target = FRA
+					type = civil_war
+				}
+				
+			}
+			
+		}
+	}
+}
 parliament_gui_decision_category = {
 	test_parliament = {
 		visible = {

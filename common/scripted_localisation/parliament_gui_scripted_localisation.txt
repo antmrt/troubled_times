@@ -59,6 +59,12 @@ defined_text = {
 		}
 		localization_key = "GFX_clemenceau_president_du_conseil_portrait"
 	}
+	text = {
+		trigger = {
+			has_country_flag = foch_president_du_conseil
+		}
+		localization_key = "GFX_foch_president_du_conseil_portrait"
+	}
 }
 defined_text = {
 	name = Get_President_du_conseil_name
@@ -68,6 +74,12 @@ defined_text = {
 		}
 		localization_key = TT_FRA_Georges_clemenceau
 	}
+	text = {
+		trigger = {
+			has_country_flag = foch_president_du_conseil
+		}
+		localization_key = TT_FRA_Foch
+	}
 }
 defined_text = {
 	name = Get_President_du_conseil_traits
@@ -76,6 +88,12 @@ defined_text = {
 			has_country_flag = clemenceau_president_du_conseil
 		}
 		localization_key = TT_FRA_dislikes_germany
+	}
+	text = {
+		trigger = {
+			has_country_flag = foch_president_du_conseil
+		}
+		localization_key = TT_FRA_hates_germany
 	}
 }
 defined_text = {

@@ -3748,11 +3748,17 @@
  ZHI:0 "Zhili Clique"
 
  Russian_SFSR:0 "Russian SFSR"
- 
+ Russian_SFSR_DEF:0 "Russian SFSR"
 
  YUG_state_SLO_CRO_SER:0 "State of Slovenes, Croats and Serbs"
  YUG_kingdom_SLO_CRO_SER:0 "Kingdom of Serbs, Croats and Slovenes"
 
  FRK_freikorps_germany:0 "Freikorps Regierung"
  SPK_spartakist_germany:0 "Spartakist Germany"
+  
+ SYNDICALIST_FRANCE:0 "Syndicalist France"
+ SYNDICALIST_FRANCE_DEF:0 "Syndicalist France"
+
+ NATIONALIST_FRANCE:0 "Nationalist France"
+ NATIONALIST_FRANCE_DEF:0 "Nationalist France"
  

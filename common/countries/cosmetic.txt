@@ -823,3 +823,11 @@ YUG_kingdom_SLO_CRO_SER = {
 	color = rgb { 72 73 126 }
 	color_ui = rgb { 94 95 164 }
 }
+SYNDICALIST_FRANCE = {
+	color = rgb { 116 73 255 }
+	color_ui = rgb { 116 73 255 }
+}
+NATIONALIST_FRANCE = {
+	color = rgb { 25 77 181 }
+	color_ui = rgb { 25 77 181 }
+}

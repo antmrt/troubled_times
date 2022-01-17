@@ -1,0 +1,18 @@
+characters = {
+
+	JAP_taisho_tenno = {
+		name = JAP_taisho_tenno
+
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/JAP/INT/Portrait_Japan_Emperor_Taisho.dds"
+			}
+		}
+		country_leader = {
+			id = -1
+			ideology = paternal_autocrat
+			expire = "1926.12.25"
+		}
+	}
+
+}

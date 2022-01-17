@@ -29,4 +29,8 @@ spriteTypes = {
 		name = GFX_decision_st_germain_requested_by_YUG
 		texturefile = "gfx/interface/TT_decisions/decision_yugoslav_control.dds"
 	}
+	spriteType = {
+		name = "GFX_decision_french_control"
+		texturefile = "gfx/interface/TT_decisions/decision_french_control.dds"
+	}
 }

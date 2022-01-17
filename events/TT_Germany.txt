@@ -1,13 +1,12 @@
 add_namespace = TT_INT_Germany
 
 country_event = {
-	id = TT_INT_Germany.1 
+	id = TT_INT_Germany.1
 	desc = TT_INT_Germany.1.d
 	title = TT_INT_Germany.1.t
 
 	fire_only_once = yes
 	is_triggered_only = yes
-
 
 	option = {
 		ai_chance = {
@@ -395,25 +394,24 @@ country_event = {
 	}
 }
 
-#country_event = {
-#	id = TT_INT_Germany.5
-#	desc = TT_INT_Germany.5.d
-#	title = TT_INT_Germany.5.t
+country_event = {
+	id = TT_INT_Germany.5
+	desc = TT_INT_Germany.5.d
+	title = TT_INT_Germany.5.t
+	is_triggered_only = yes
 
-#	is_triggered_only = yes
-	
-#	option = {
-#		every_country = {
-#			limit = {
-#				OR = {
-#					is_subject_of = GER
-#					tag = GER
-#				}
-#			}
-#			white_peace = FRA
-#		}
-#	}
-#}
+	option = {
+		every_country = {
+			limit = {
+				OR = {
+					is_subject_of = GER
+					tag = GER
+				}
+			}
+			white_peace = FRA
+		}
+	}
+}
 
 
 country_event = {

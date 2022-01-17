@@ -2,6 +2,7 @@ version="1"
 tags={
 	"Alternative History"
 }
+picture="thumbnail.png"
 name="Troubled Times"
 replace_path="map/strategicregions"
 replace_path="map/supplyareas"

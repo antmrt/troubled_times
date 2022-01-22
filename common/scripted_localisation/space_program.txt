@@ -1,0 +1,24 @@
+defined_text = {
+    name = GetClaimStatus
+	text = {
+		trigger = {
+			has_variable = global.moon_control_1
+		}
+		localization_key = claimed_by_tt
+	}
+    text = {
+		trigger = {
+			NOT = {
+				has_variable = global.moon_control_1
+			}
+		}
+		localization_key = not_claimed_tt
+	}
+}
+defined_text = {
+	name = GetSiteRessources
+
+	text = {
+		localization_key = water_ice
+	}
+}

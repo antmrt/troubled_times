@@ -1,0 +1,21 @@
+scripted_gui = {
+    space_program_ui = {
+        context_type = player_context
+        window_name = "space_program_ui_window"
+
+        visible = {
+            has_country_flag = show_space_program
+        }
+
+        effects = {
+
+            exit_click = {
+                clr_country_flag = show_space_program
+            }
+
+
+        }  
+    }
+
+
+}

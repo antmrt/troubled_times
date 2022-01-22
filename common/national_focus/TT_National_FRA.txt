@@ -1,0 +1,22 @@
+focus_tree = {
+    id = FRA_National
+    country = {
+        factor = 0
+    }
+
+    focus = {
+        id = TT_NFR_great_fight
+
+        x = 1
+        y = 1
+
+        cost = 3
+
+        completion_reward = {
+            add_ideas = TT_fanitic_resistance
+        }
+    }
+
+
+
+}

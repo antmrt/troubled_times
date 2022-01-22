@@ -1,0 +1,10 @@
+﻿l_english:
+
+ outpost_tt:0 "Build an Outpost"
+ additional_info_tt:0 "Site information: [GetClaimStatus] \nSite ressources : [GetSiteRessources]" 
+
+ not_claimed_tt:0 "This Site is not Claimed by any Country"
+ claimed_by_tt:0 "Claimed by [?global.moon_control_1.GetNameWithFlag]"
+ water_ice:0 "§CWater Ice §!"
+ unknown_resources:0 "§g<Unknown>§!"
+ dded:0 "[ROOT.GetName]"

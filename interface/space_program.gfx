@@ -1,0 +1,106 @@
+spriteTypes = {
+    spriteType = {
+        name = "GFX_moon_map"
+        texturefile = "gfx/interface/space_program/moonmap.dds"
+    }
+    spriteType = {
+        name = "GFX_moon_map1"
+        texturefile = "gfx/interface/space_program/moonmap_1.dds"
+    }
+    spriteType = {
+        name = "GFX_moon_map2"
+        texturefile = "gfx/interface/space_program/moonmap_2.dds"
+    }
+    spriteType = {
+        name = "GFX_moon_map3"
+        texturefile = "gfx/interface/space_program/moonmap_3.dds"
+    }
+    spriteType = {
+        name = "GFX_moon_map4"
+        texturefile = "gfx/interface/space_program/moonmap_4.dds"
+    }
+    spriteType = {
+        name = "GFX_moon_map5"
+        texturefile = "gfx/interface/space_program/moonmap_5.dds"
+    }
+    spriteType = {
+        name = "GFX_moon_map6"
+        texturefile = "gfx/interface/space_program/moonmap_6.dds"
+    }
+    spriteType = {
+        name = "GFX_moon_map7"
+        texturefile = "gfx/interface/space_program/moonmap_7.dds"
+    }
+    spriteType = {
+        name = "GFX_moon_map8"
+        texturefile = "gfx/interface/space_program/moonmap_8.dds"
+    }
+    spriteType = {
+        name = "GFX_moon_map9"
+        texturefile = "gfx/interface/space_program/moonmap_9.dds"
+    }
+    spriteType = {
+        name = "GFX_moon_map10"
+        texturefile = "gfx/interface/space_program/moonmap_10.dds"
+    }
+    spriteType = {
+        name = "GFX_moon_map11"
+        texturefile = "gfx/interface/space_program/moonmap_11.dds"
+    }
+    spriteType = {
+        name = "GFX_moon_map12"
+        texturefile = "gfx/interface/space_program/moonmap_12.dds"
+    }
+    spriteType = {
+        name = "GFX_moon_map13"
+        texturefile = "gfx/interface/space_program/moonmap_13.dds"
+    }
+    spriteType = {
+        name = "GFX_moon_map14"
+        texturefile = "gfx/interface/space_program/moonmap_14.dds"
+    }
+    spriteType = {
+        name = "GFX_moon_map15"
+        texturefile = "gfx/interface/space_program/moonmap_15.dds"
+    }
+    spriteType = {
+        name = "GFX_moon_map16"
+        texturefile = "gfx/interface/space_program/moonmap_16.dds"
+    }
+    spriteType = {
+        name = "GFX_moon_map17"
+        texturefile = "gfx/interface/space_program/moonmap_17.dds"
+    }
+    spriteType = {
+        name = "GFX_moon_map18"
+        texturefile = "gfx/interface/space_program/moonmap_18.dds"
+    }
+    spriteType = {
+        name = "GFX_moon_map19"
+        texturefile = "gfx/interface/space_program/moonmap_19.dds"
+    }
+    spriteType = {
+        name = "GFX_moon_map20"
+        texturefile = "gfx/interface/space_program/moonmap_20.dds"
+    }
+     spriteType = {
+        name = "GFX_moon_map21"
+        texturefile = "gfx/interface/space_program/moonmap_21.dds"
+    }
+    spriteType = {
+        name = "GFX_moon_map22"
+        texturefile = "gfx/interface/space_program/moonmap_22.dds"
+    }
+    spriteType = {
+        name = "GFX_moon_map23"
+        texturefile = "gfx/interface/space_program/moonmap_23.dds"
+    }
+    spriteType = {
+        name = "GFX_moon_map24"
+        texturefile = "gfx/interface/space_program/moonmap_24.dds"
+    }
+    spriteType = {
+        name = "GFX_moon_map25"
+        texturefile = "gfx/interface/space_program/moonmap_25.dds"
+    }
+}

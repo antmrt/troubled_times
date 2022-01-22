@@ -146,6 +146,11 @@
 		george_v
 	}
 	# DIPLOMACY
+	
+}
+
+1918.11.11 = {
+	set_oob = "ENG_1918"
 	if = {
 		limit = {
 			OR = {
@@ -194,10 +199,6 @@
 
 		add_to_tech_sharing_group = commonwealth_research
 	}
-}
-
-1918.11.11 = {
-	set_oob = "ENG_1918"
 }
 
 starting_train_buffer = 4

@@ -34,7 +34,26 @@
 
   has_more_seats_than_party_tt:0 "[GetParliamentPartyName] has §Ymore§! seats at the parliament than [GetParliamentPartyName2]"
   has_less_seats_than_party_tt:0 "[GetParliamentPartyName] has §Yless§! seats at the parliament than [GetParliamentPartyName2]"
-  FRA_coalition_left_1914:0 " (§RAlliance de la Gauche§!)"
+  FRA_coalition_left_1914:0 " (§RCartel de la Gauche§!)"
   FRA_coalition_right_1914:0 " (§CBloc National§!)"
  
   get_parliament_modification_tt:0 "§Y[GetParliamentPartyName]§!: [?temp_seats|+0]§! §!seats in the parliament"
+
+
+ TT_FRA_Painleve:0 "Paul Painlevé"
+ TT_FRA_president_du_conseil_change:0 "The §YPresident du Conseil§! will change"
+ TT_FRA_add_survivor_trait:0 "§YClemenceau§! gains §gSurvivor§! trait"
+
+  president_du_conseil_tt:0 "[Get_President_du_conseil_name]"
+ TT_FRA_Georges_clemenceau:0 "Georges Clemenceau"
+ TT_FRA_Foch:0 "Ferdinand Foch"
+ president_du_conseil_trait_tt:0 "[Get_President_du_conseil_traits]"
+ TT_FRA_dislikes_germany:0 "§gDislikes Germany§!: As former Minister of War during the Great War, Clemenceau has a strong resentment against the Germans"
+
+ TT_FRA_dislikes_germany_survivor:0 "§gDislikes Germany§!: As former Minister of War during the Great War, Clemenceau has a strong resentment against the Germans\n\n§gSurvivor§!: Clemenceau survived an assassination attempt by an anarchist, he got shot several times but miraculously survived, he really is the '§YTiger§!'"
+
+ TT_FRA_hates_germany:0 "§gHates Germany\nPopular General§!\n\nAs a General during the War, Foch developped a connection with his soldiers, he knows their struggle. The War also made him hate Germany, in his eyes, the Germans are only a barbaric People, thirsty for Blood.[Get_additional_president_du_conseil_traits]"
+ Foch_additional_info:0 " However, with the failure of the French Army, he know needs to negotiate with the Germans on the Peace terms."
+
+ Bloc_national_formation_tt:0 "The §CBloc National§! will form"
+ Cartel_de_la_gauche_formation_tt:0 "The §RCartel de la Gauche§! will form"

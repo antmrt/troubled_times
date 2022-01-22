@@ -51,6 +51,10 @@
  TT_INT_France.3.t:0 "Alsatians Open Fire on our troops!"
  TT_INT_France.3.d:0 "Following our decision to enter Alsace-Lorraine to securise the region, Alsatian paramilitary forces open fire on our troops, causing at least 50 dead and 150 wounded. This Act should not remain without intervention."
  TT_INT_France.3.a:0 "War it is.."
+ 
+ TT_INT_France.5.t:0 "Confidence vote"
+ TT_INT_France.5.d:0 "With the change in government, a confidence vote is being held at the parliament, this vote will allow the newly formed government to enact laws."
+ TT_INT_France.5.a:0 "The Government gets Confidence"
 
 
   ### VERSAILLES TREATY

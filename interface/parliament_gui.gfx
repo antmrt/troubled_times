@@ -16,5 +16,9 @@ spriteTypes = {
 		name = "GFX_foch_president_du_conseil_portrait"
 		texturefile = "gfx/leaders/FRA/INT/FM_Ferdinand_Foch.dds"
 	}
-		
+	spriteType = {
+		name = "GFX_painleve_president_du_conseil_portrait"
+		texturefile = "gfx/leaders/FRA/INT/FM_Paul_Painleve.dds"
+	}
+	
 }

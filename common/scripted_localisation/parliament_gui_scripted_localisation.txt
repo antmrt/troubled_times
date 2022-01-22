@@ -65,6 +65,12 @@ defined_text = {
 		}
 		localization_key = "GFX_foch_president_du_conseil_portrait"
 	}
+	text = {
+		trigger = {
+			has_country_flag = painleve_president_du_conseil
+		}
+		localization_key = "GFX_painleve_president_du_conseil_portrait"
+	}
 }
 defined_text = {
 	name = Get_President_du_conseil_name
@@ -80,15 +86,29 @@ defined_text = {
 		}
 		localization_key = TT_FRA_Foch
 	}
+	text = {
+		trigger = {
+			has_country_flag = painleve_president_du_conseil
+		}
+		localization_key = TT_FRA_Painleve
+	}
 }
 defined_text = {
 	name = Get_President_du_conseil_traits
 	text = {
 		trigger = {
 			has_country_flag = clemenceau_president_du_conseil
+			has_completed_focus = TT_INT_FRA_clemenceau_survives
+		}
+		localization_key = TT_FRA_dislikes_germany_survivor
+	}
+	text = {
+		trigger = {
+			has_country_flag = clemenceau_president_du_conseil
 		}
 		localization_key = TT_FRA_dislikes_germany
 	}
+	
 	text = {
 		trigger = {
 			has_country_flag = foch_president_du_conseil

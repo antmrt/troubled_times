@@ -106,14 +106,14 @@ country_event = {
 	option = {
 		#Confidence
 		name = TT_INT_France.5.a
-
+		add_political_power = 10
 
 
 	}
 
-	option = {
-		name = TT_INT_France.5.b
-	}
+	#option = {
+	#	name = TT_INT_France.5.b
+	#}
 }
 
 country_event = {

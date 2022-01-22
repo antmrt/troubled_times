@@ -194,6 +194,9 @@ focus_tree = {
 		x = -1
 		y = 1
 		cost = 2
+		completion_reward = {
+			custom_effect_tooltip = TT_FRA_add_survivor_trait
+		}
 	}
 	focus = {
 		id = TT_INT_FRA_clemenceau_dies
@@ -203,7 +206,11 @@ focus_tree = {
 		y = 1
 		cost = 2
 		relative_position_id = TT_INT_FRA_assassination_attempt
-
+		completion_reward = {
+			clr_country_flag = clemenceau_president_du_conseil
+			set_country_flag = painleve_president_du_conseil
+			custom_effect_tooltip = TT_FRA_president_du_conseil_change
+		}
 
 	}
 	focus = {
@@ -226,7 +233,14 @@ focus_tree = {
 		y = 1
 		relative_position_id = TT_INT_FRA_clemenceau_survives
 		cost = 10
-	}
+		completion_reward = {
+			custom_effect_tooltip = Bloc_national_formation_tt
+			unlock_decision_tooltip = invite_AD_to_coalition
+			unlock_decision_tooltip = invite_FR_to_coalition
+			unlock_decision_tooltip = invite_AF_to_coalition
+			unlock_decision_tooltip = invite_PDP_to_coalition
+		}
+	} 
 	focus = {
 		id = TT_INT_FRA_l'allemagne_paiera
 		prerequisite = { focus = TT_INT_FRA_Bloc_national}
@@ -276,6 +290,14 @@ focus_tree = {
 		y = 1
 		relative_position_id = TT_INT_FRA_clemenceau_dies
 		cost = 10
+		completion_reward = {
+			custom_effect_tooltip = Cartel_de_la_gauche_formation_tt
+			unlock_decision_tooltip = invite_SFIC_to_coalition
+			unlock_decision_tooltip = invite_PRRRS_to_coalition
+			unlock_decision_tooltip = invite_SFIO_to_coalition
+			unlock_decision_tooltip = invite_AD_to_coalition
+
+		}
 	}
 
 	focus = {

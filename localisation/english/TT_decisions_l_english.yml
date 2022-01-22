@@ -189,13 +189,7 @@ TT_spartakist_uprising_timer:0 "Spartakist Uprising"
  invite_AF_to_coalition:0 "Invite AF to Coalition"
  invite_PDP_to_coalition:0 "Invite PDP to Coalition"
 
- president_du_conseil_tt:0 "[Get_President_du_conseil_name]"
- TT_FRA_Georges_clemenceau:0 "Georges Clemenceau"
- TT_FRA_Foch:0 "Ferdinand Foch"
- president_du_conseil_trait_tt:0 "[Get_President_du_conseil_traits]"
- TT_FRA_dislikes_germany:0 "§gDislikes Germany§!: As former Minister of War during the Great War, Clemenceau has a strong resentment against the Germans"
- TT_FRA_hates_germany:0 "§gHates Germany\nPopular General§!\n\nAs a General during the War, Foch developped a connection with his soldiers, he knows their struggle. The War also made him hate Germany, in his eyes, the Germans are only a barbaric People, thirsty for Blood.[Get_additional_president_du_conseil_traits]"
- Foch_additional_info:0 " However, with the failure of the French Army, he know needs to negotiate with the Germans on the Peace terms."
+
  demilitarize_french_border:0 "Adds '§GBorder Demilitarized§!' to the Treaty"
 
 TT_get_around_boxer_protocols:0 "Weapon Smuggling"

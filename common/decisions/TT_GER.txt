@@ -1,3 +1,48 @@
+TT_european_reconstruction = {
+
+	TT_prepare_payment_for_TAG = {
+		visible = {
+			original_tag = GER
+		}
+		icon = generic_construction
+		days_remove = 30
+		remove_effect = {
+			FROM = {
+				add_to_variable = {
+					available_funds = 1
+				}
+				custom_effect_tooltip = add_1_funds_tt
+			}
+		}
+		complete_effect = {
+			ROOT = {
+				random_owned_state = {
+					limit = {
+						industrial_complex > 0
+					}
+					remove_building = {
+						type = industrial_complex
+						level = 1
+					}
+				}
+				
+			}
+			FROM = {
+				activate_mission = TT_GER_reparation_payment
+			}
+		}
+		target_trigger = {
+			FROM = {
+				OR = {
+					tag = BEL
+					tag = FRA
+					tag = ENG
+				}
+			}
+		}
+	}
+}
+
 TT_GER_power_struggle = {
 
 	

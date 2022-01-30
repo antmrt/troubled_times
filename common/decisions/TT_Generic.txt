@@ -96,6 +96,134 @@ TT_influenza_epidemic = {
 
 }
 
+TT_european_reconstruction = {
+	TT_reparation_conference = {
+		days_mission_timeout = 15
+		is_good = yes
+		activation = {
+			FRA = {
+				has_completed_focus = TT_INT_FRA_create_reparation_comitee
+			}
+		}
+		timeout_effect = {
+			if = {
+				limit = {
+					ROOT = {
+						tag = FRA
+					}
+				}
+				GER = {
+					add_political_power = -25
+				}
+			}
+			
+		}
+		priority = 10
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+	}
+	TT_GER_reparation_payment = {
+		fire_only_once = yes
+		priority = 10
+		is_good = yes
+		days_mission_timeout = 30
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		} 
+		activation = {
+			always = no
+		}
+		timeout_effect = {
+			custom_effect_tooltip = add_1_funds_tt
+			
+		}
+	}
+	TT_rebuild_in_STATE = {
+		icon = generic_construction
+		state_target = yes
+		target_trigger = {
+			FROM = {
+				is_controlled_by = ROOT
+			}
+			FROM = {
+				has_dynamic_modifier = {
+					modifier = TT_ravaged_lands
+				}
+			}
+		} 
+		complete_effect = {
+			subtract_from_variable = {
+				available_funds = 1
+			}
+		}
+		
+		days_remove = 150
+		
+		remove_effect = {
+			remove_dynamic_modifier = {
+				modifier = TT_ravaged_lands
+			}
+		}
+		available = {
+			ROOT = {
+				
+				custom_trigger_tooltip = {
+					tooltip = has_available_funds
+					check_variable = {
+						available_funds > 0
+					}
+				}
+			}
+		}
+	}
+}
+TT_european_workers_program_category = {
+	TT_join_european_worker_program = {
+		visible = {
+			NOT = {
+				has_dynamic_modifier = {
+					modifier = TT_european_workers_program
+				}
+			}
+		}
+		cost = 25
+		complete_effect = {
+			add_to_variable = {
+				global.european_workers_strengh = 0.02
+			}
+			add_dynamic_modifier = {
+				modifier = TT_european_workers_program
+			}
+		}
+	}
+
+	TT_leave_european_worker_program = {
+		visible = {
+			has_dynamic_modifier = {
+				modifier = TT_european_workers_program
+			}
+			NOT = {
+				tag = FRA
+			}
+
+		}
+		cost = 25
+		complete_effect = {
+			subtract_from_variable = {
+				global.european_workers_strengh = 0.02
+			}
+			remove_dynamic_modifier = {
+				modifier = TT_european_workers_program
+			}
+		}
+	}
+
+}
 demobilization = {
 	public_asks_for_demob = {
 		days_mission_timeout = 60

@@ -1,4 +1,21 @@
 defined_text = {
+	name = GetEuropeanReconstruction
+	text = {
+		trigger = {
+			original_tag = GER
+		}
+		localization_key = TT_european_reconstruction_GER_desc
+	}
+	text = {
+		trigger = {
+			NOT = {
+				original_tag = GER
+			}
+		}
+		localization_key = TT_european_reconstruction_ENTENTE_desc
+	}
+}
+defined_text = {
 	name = Get_additional_president_du_conseil_traits 
 
 	text = {

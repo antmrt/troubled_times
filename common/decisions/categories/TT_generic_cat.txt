@@ -1,3 +1,45 @@
+TT_european_workers_program_category = {
+	visible = {
+		FRA = {
+			has_completed_focus = TT_INT_FRA_european_workers
+		}
+		ROOT = {
+			capital_scope = {
+				is_on_continent = europe
+			}
+		}
+	}
+}
+TT_european_reconstruction = {
+	icon = generic_economy
+	visible = {
+		ROOT = {
+			capital_scope = {
+				is_on_continent = europe
+			}
+			NOT = {
+				has_war_with = GER
+			}
+		}
+	}
+	priority = 150
+	on_map_area = {
+		icon = map_icon_strip_localisation
+		state = 6
+		state = 1089
+		state = 34
+		state = 815
+		state = 1113
+		state = 816
+		state = 817
+		state = 18
+		state = 814
+		state = 813
+		state = 785
+		state = 29
+		zoom = 100
+	}
+}
 TT_influenza_epidemic = {
 
 	visible = {

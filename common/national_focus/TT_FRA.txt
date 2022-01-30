@@ -228,6 +228,10 @@ focus_tree = {
 		y = 1
 		cost = 2
 		relative_position_id = TT_INT_FRA_clemenceau_dies
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 75
+		}
 
 
 	}
@@ -334,6 +338,22 @@ focus_tree = {
 		y = 1
 		relative_position_id = TT_INT_FRA_Alliance_de_la_gauche
 		cost = 10
+		completion_reward = {
+			set_variable = {
+				global.european_workers_strengh = 0.1
+			}
+			add_dynamic_modifier = {
+				modifier = TT_european_workers_program
+			}
+			every_country = {
+				limit = {
+					capital_scope = {
+						is_on_continent = europe
+					}
+				}
+				unlock_decision_category_tooltip = TT_european_workers_program_category
+			}
+		}
 	}
 	focus = {
 		id = TT_INT_FRA_reformist_left
@@ -406,6 +426,12 @@ focus_tree = {
 		y = 1
 		relative_position_id = TT_INT_FRA_Alliance_de_la_gauche
 		cost = 10
+		completion_reward = {
+			custom_effect_tooltip = add_2_funds_tt
+			add_to_variable = {
+				available_funds = 2 
+			}
+		}
 	}
 	focus = {
 		id = TT_INT_FRA_revolutionary_left
@@ -469,7 +495,19 @@ focus_tree = {
 		y = 1
 		cost = 1
 	}
+	focus = {
+		id = TT_INT_FRA_polish_brothers
 
+		relative_position_id = TT_INT_FRA_international_matters
+		x = 0
+		y = 1
+		cost = 5
+		available = {
+			POL = {
+				has_war = no
+			}
+		}
+	}
 	focus = {
 		id = TT_INT_FRA_russian_civil_war
 		x = -3

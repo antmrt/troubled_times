@@ -1,5 +1,17 @@
 ﻿l_english:
-
+ TT_european_reconstruction:0 "Reconstruction"
+ TT_european_reconstruction_desc:0 "[GetEuropeanReconstruction]"
+ TT_GER_reparation_payment:0 "German Reparation Payment"
+ TT_european_reconstruction_ENTENTE_desc:0 "Our Lands have been devastated by the chaos of war, it is now time to rebuild. However, it is a lenghty and costly process. \n\n - We currently have §Y[?available_funds]§! funds for §YReconstruction Programs§!."
+ TT_european_reconstruction_GER_desc:0 "The Entente Power decided to make us pay for the damages of the Great War. As losers of this war, we need to Pay for them to rebuild their Industry. \n\n§gNot Paying might trigger an §OEntente intervention§!."
+ TT_prepare_payment_for_TAG:0 "Prepare [FROM.GetAdjective] Payment"
+ TT_rebuild_in_STATE:0 "Launch Reconstruction in [FROM.GetName]"
+ TT_reparation_conference:0 "Reparation Conference"
+ add_2_funds_tt:0 "Adds §Y2§! funds for §YReconstruction Programs§!"
+ add_1_funds_tt:0 "Adds §Y1§! funds for §YReconstruction Programs§!"
+ has_available_funds:0 "has at least §Y1§! fund available"
+ TT_european_workers_program_category:0 "European Worker Program"
+ TT_european_workers_program_category_desc:0 "Initiated by the Franch, this program aims at sharing manpower for the reconstruction of Europe. Not only does it allow for reconstruction, but it also gives a job to demobilized Soldiers. By encouraging colaboration between the Nations of Europe, it is also an attempt to preserve peace.\n\n§gEvery Participant receives a building bonus, every additional participant add 2% to the bonus to all member.§!"
  TT_FRA_deschanel_sanity:0 "Deschanel's Sanity" 
  TT_FRA_sanity:0 "Our President is under stress, some worry about his mental Health, his current condition is [Get_Mental_health]"
  good_mental_health:0 "§GGood§! ([?insanity_amount])"

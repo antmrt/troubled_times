@@ -25,6 +25,14 @@ state = {
 		add_core_of = WLL
 		1918.11.11 = {
 			controller = GER
+			add_dynamic_modifier = {
+				modifier = TT_ravaged_lands
+			}
+		}
+		1936.1.1 = {
+			remove_dynamic_modifier = {
+				modifier = TT_ravaged_lands
+			}
 		}
 		1941.1.1 = {
 			owner = GER

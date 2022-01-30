@@ -13,7 +13,16 @@ state = {
 		victory_points = {
 			6545 1
 		}
-
+		1918.1.1 = {
+			add_dynamic_modifier = {
+				modifier = TT_ravaged_lands
+			}
+		}
+		1936.1.1 = {
+			remove_dynamic_modifier = {
+				modifier = TT_ravaged_lands
+			}
+		}
 		1941.1.1 = { owner = GER controller = GER }
 		1945.1.1 = { owner = FRA controller = FRA }
 

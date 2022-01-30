@@ -316,26 +316,48 @@ calculate_mobilisation_penalty = {
 increase_strikes = {
 	if = {
 		limit = {
+			has_idea = TT_strikes5
+		}
+		add_political_power = -50
+		add_stability = -0.1
+	}
+	if = {
+		limit = {
 			has_idea = TT_strikes4
 		}
-		add_ideas = TT_strikes5
+		swap_ideas = {
+			add_idea = TT_strikes5
+			remove_idea = TT_strikes4 
+		}
 	}
 	else_if = {
 		limit = {
 			has_idea = TT_strikes3
 		}
-		add_ideas = TT_strikes4
+		swap_ideas = {
+			add_idea = TT_strikes4
+			remove_idea = TT_strikes3
+		}
 	}
 	else_if = {
 		limit = {
 			has_idea = TT_strikes2
+		}
+		swap_ideas = {
+			add_idea = TT_strikes3
+			remove_idea = TT_strikes2
 		}
 	}
 	else_if = {
 		limit = {
 			has_idea = TT_strikes1
 		}
-		add_ideas = TT_strikes2
+		swap_ideas = {
+			add_idea = TT_strikes2
+			remove_idea = TT_strikes1
+		}
+		
+		
 
 	}
 	else = {

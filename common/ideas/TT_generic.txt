@@ -80,6 +80,7 @@ ideas = {
 			}
 		}
 		TT_strikes3 = {
+			picture = FRA_factory_strikes
 			cancel = {
 				NOT = {
 					has_reached_maximum_divisions = yes
@@ -96,6 +97,7 @@ ideas = {
 			}
 		}
 		TT_strikes4 = {
+			picture = FRA_factory_strikes
 			cancel = {
 				NOT = {
 					has_reached_maximum_divisions = yes
@@ -109,6 +111,23 @@ ideas = {
 				production_factory_max_efficiency_factor = -0.4
 				production_oil_factor = -0.4
 				drift_defence_factor = -0.20
+			}
+		}
+		TT_strikes5 = {
+			picture = FRA_factory_strikes
+			cancel = {
+				NOT = {
+					has_reached_maximum_divisions = yes
+				}
+			}
+			modifier = {
+				political_power_factor = -0.8
+				production_speed_buildings_factor = -0.8
+				stability_weekly = -0.008
+				war_support_weekly = -0.008
+				production_factory_max_efficiency_factor = -0.8
+				production_oil_factor = -0.8
+				drift_defence_factor = -0.40
 			}
 		}
 	}

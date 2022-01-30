@@ -1,0 +1,66 @@
+defined_text = {
+    name = GetAnarchistLoyalty
+    
+    text = {
+        trigger = {
+            has_country_flag = Anarchists_neutralized
+        }
+        localization_key = NEUTRALIZED
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                anarchist_loyalty < 33
+            }
+        }
+        localization_key = DISLOYAL
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                anarchist_loyalty > 33
+                anarchist_loyalty < 66
+            }
+        }
+        localization_key = NEUTRAL
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                anarchist_loyalty > 66
+                
+            }
+        } 
+        localization_key = LOYAL
+    }
+}
+
+defined_text = {
+    name = GetGreenArmyLoyalty
+    text = {
+        trigger = {
+            check_variable = {
+                green_army_loyalty < 33
+            }
+        }
+        localization_key = DISLOYAL
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                green_army_loyalty > 33
+                green_army_loyalty < 66
+            }
+        }
+        localization_key = NEUTRAL
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                green_army_loyalty > 66
+                
+            }
+        } 
+        localization_key = LOYAL
+    }
+}

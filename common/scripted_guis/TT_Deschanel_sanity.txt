@@ -1,0 +1,15 @@
+scripted_gui = {
+	deschanel_sanity_meter = {
+		context_type = decision_category
+		window_name = "deschanel_sanity_meter_container"
+
+
+		properties = {
+			
+			sanity_arrow_icon = {
+				x = sanity_arrow_position
+				y = 50
+			}
+		}
+	}
+}

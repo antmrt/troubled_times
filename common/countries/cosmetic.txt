@@ -831,3 +831,7 @@ NATIONALIST_FRANCE = {
 	color = rgb { 25 77 181 }
 	color_ui = rgb { 25 77 181 }
 }
+ANARCHIST_UKRAINE = {
+	color = rgb { 0 19 127 }
+	color_ui = rgb { 0 19 127 }
+}

@@ -29,6 +29,16 @@ state={
 			air_base = 10
 			
 		}
+		1918.1.1 = {
+			add_dynamic_modifier = {
+				modifier = TT_ravaged_lands
+			}
+		}
+		1936.1.1 = {
+			remove_dynamic_modifier = {
+				modifier = TT_ravaged_lands
+			}
+		}
 		add_core_of = FRA
 		1939.1.1 = {
 			buildings = {

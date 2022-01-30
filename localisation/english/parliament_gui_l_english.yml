@@ -39,6 +39,8 @@
  
   get_parliament_modification_tt:0 "§Y[GetParliamentPartyName]§!: [?temp_seats|+0]§! §!seats in the parliament"
 
+ TT_FRA_Millerand:0 "Alexandre Millerand"
+ 
 
  TT_FRA_Painleve:0 "Paul Painlevé"
  TT_FRA_president_du_conseil_change:0 "The §YPresident du Conseil§! will change"

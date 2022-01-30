@@ -1,4 +1,30 @@
 characters={
+	FRA_georges_clemenceau = {
+		name = FRA_georges_clemenceau
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/INT/France_Georges_Clemenceau.dds"
+			}
+		}
+	}
+	FRA_alexandre_millerand = {
+		name = FRA_alexandre_millerand
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/INT/President_Alexandre_Millerand.dds"
+			}
+		}
+	}
+	
+	FRA_paul_deschanel = {
+		name = FRA_paul_deschanel
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/INT/France_PaulDeschanel.dds"
+			}
+		}
+		
+	}
 	FRA_raymond_poincare = {
 		name = FRA_raymond_poincare
 		portraits = {

@@ -12,16 +12,23 @@ ideas = {
 				army_core_defence_factor = 0.3
 				army_core_attack_factor = 0.3
 				ai_focus_defense_factor = 0.5
+				ai_focus_aggressive_factor = -2
 			}
 			rule = {
 				can_send_volunteers = yes
 			}
-			targeted_modifier = {
-				tag = SOV
-				defense_bonus_against = 0.6
-			}
+			
 
 		}
 
 	} 
+	country = {
+		political_disorder = {
+			targeted_modifier = {
+				tag = SOV
+				defense_bonus_against = -0.2
+				attack_bonus_against = -0.2
+			}
+		}
+	}
 }

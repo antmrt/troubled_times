@@ -19,6 +19,7 @@ CP_treaty_of_frankfurt = {
 		fire_only_once = yes
 
 		timeout_effect = {
+			set_global_flag = frankfurt_over
 			every_state = {
 				limit = {
 					has_state_flag = requested_by_GER
@@ -234,6 +235,7 @@ ENTENTE_treaty_of_versailles = {
 			has_global_flag = compiegne_armistice_signed
 		}
 		timeout_effect = {
+			set_global_flag = versailles_over
 			GER = {
 				country_event = {
 					id =  TT_INT_Germany.4
@@ -244,7 +246,7 @@ ENTENTE_treaty_of_versailles = {
 				dismantle_faction = yes
 			}
 		}
-
+		fire_only_once = yes
 		priority = 100
 		is_good = no
 
@@ -538,6 +540,7 @@ ENTENTE_treaty_of_neuilly = {
 		is_good = no
 		fire_only_once = yes
 		timeout_effect = {
+			set_global_flag = neuilly_over
 			if = {
 				limit = {
 					country_exists = SER
@@ -582,7 +585,20 @@ ENTENTE_treaty_of_Saint_Germain = {
 			
 			
 		}
+		ai_will_do = {
+			base = 1000
+			modifier = {
+				factor = 0
+				OR = {
+					has_global_flag = south_german_republic
+					has_global_flag = anschluss_allowed
+					has_global_flag = anschluss_rejected
+				}
+			}
+		}
+		fire_only_once = yes
 		timeout_effect = {
+			set_global_flag = saint_germain_over
 			every_state = {
 				limit = {
 					has_state_flag = st_germain_requested_by_@ROOT
@@ -660,9 +676,17 @@ ENTENTE_treaty_of_Saint_Germain = {
 						
 				}
 			}
+			modifier = {
+				add = 100
+				has_global_flag = south_german_republic
+				is_historical_focus_on = yes
+			}
 			
 		}
 		complete_effect = {
+			clr_global_flag = anschluss_allowed
+			clr_global_flag = south_german_republic
+			clr_global_flag = anschluss_rejected
 			country_event = {
 				id = TT_INT_Peace_treaty.9
 			}
@@ -676,7 +700,11 @@ ENTENTE_treaty_of_Saint_Germain = {
 				tag = AUS
 			}
 		}
-
+		available = { 
+			NOT = {
+				has_country_flag = request_in_progress
+			}
+		}
 		complete_effect = {
 			country_event = {
 				id = TT_INT_Peace_treaty.8  
@@ -723,6 +751,15 @@ ENTENTE_treaty_of_Saint_Germain = {
 		target_trigger = {
 			FROM = {
 				has_state_flag = st_germain_requested_by_AUS
+			}
+		}
+		complete_effect = {
+			ROOT = {
+				set_country_flag = {
+					flag = request_in_progress
+					days = 20
+					value = 1
+				}
 			}
 		}
 		remove_effect = {
@@ -815,6 +852,15 @@ ENTENTE_treaty_of_Saint_Germain = {
 				has_state_flag = st_germain_requested_by_YUG
 			}
 		}
+		complete_effect = {
+			ROOT = {
+				set_country_flag = {
+					flag = request_in_progress
+					days = 20
+					value = 1
+				}
+			}
+		}
 		remove_effect = {
 			
 			if = {
@@ -903,6 +949,15 @@ ENTENTE_treaty_of_Saint_Germain = {
 				has_state_flag = st_germain_requested_by_ITA
 			}
 		}
+		complete_effect = {
+			ROOT = {
+				set_country_flag = {
+					flag = request_in_progress
+					days = 20
+					value = 1
+				}
+			}
+		}
 		remove_effect = {
 		
 			if = {
@@ -989,6 +1044,15 @@ ENTENTE_treaty_of_Saint_Germain = {
 		target_trigger = {
 			FROM = {
 				has_state_flag = st_germain_requested_by_CZE
+			}
+		}
+		complete_effect = {
+			ROOT = {
+				set_country_flag = {
+					flag = request_in_progress
+					days = 20
+					value = 1
+				}
 			}
 		}
 		remove_effect = {

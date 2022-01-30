@@ -168,3 +168,115 @@ country_event = {
 	}
 
 }
+country_event = {
+	id = TT_INT_France.7
+	desc = TT_INT_France.7.d
+	title = TT_INT_France.7.t
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		ai_chance = {
+			base = 10
+		}
+
+		name = TT_INT_France.7.a
+		add_country_leader_role = {
+			Character = FRA_paul_deschanel
+			clr_country_flag = clemenceau_president_du_conseil
+			set_country_flag = millerand_president_du_conseil
+			custom_effect_tooltip = TT_FRA_president_du_conseil_change
+			set_variable = { insanity_amount = 5 }
+			calculate_sanity_arrow_position = yes
+			country_leader = {
+				ideology = liberalism
+				expire="1934.10.15"
+				id = -1
+			}
+		}
+		retire_country_leader = yes
+
+	}
+	option = {
+		trigger = {
+			NOT = {
+				has_completed_focus = TT_INT_FRA_clemenceau_dies
+			}
+		}
+		ai_chance = {
+			base = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		name = TT_INT_France.7.b
+		clr_country_flag = clemenceau_president_du_conseil
+		set_country_flag = millerand_president_du_conseil
+		custom_effect_tooltip = TT_FRA_president_du_conseil_change
+		add_country_leader_role = {
+			Character = FRA_georges_clemenceau
+				
+			country_leader = {
+				ideology = liberalism
+				expire="1934.10.15"
+				id = -1
+			}
+		}
+		retire_country_leader = yes
+
+	}
+}
+
+country_event = {
+	id = TT_INT_France.8
+	desc = TT_INT_France.8.d
+	title = TT_INT_France.8.t
+
+	trigger = {
+		tag = FRA
+		check_variable = {
+			insanity_amount > 60
+		}
+	}
+	fire_only_once = yes
+
+	option = {
+		name = TT_INT_France.8.a
+		add_to_variable = {
+			insanity_amount = 5
+
+		}
+		calculate_sanity_arrow_position = yes
+		custom_effect_tooltip = sanity_worsens
+		activate_mission = public_questions_deschanelssanity
+	}
+}
+
+country_event = {
+	id = TT_INT_France.9
+	desc = TT_INT_France.9.d
+	title = TT_INT_France.9.t
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = TT_INT_France.9.a
+		add_country_leader_role = {
+			Character = FRA_alexandre_millerand
+				
+			country_leader = {
+				ideology = liberalism
+				expire="1934.10.15"
+				id = -1
+			}
+		}
+		retire_country_leader = yes
+	}
+	option = {
+		name = TT_INT_France.9.b
+		set_country_flag = deschanel_mad
+	}
+}

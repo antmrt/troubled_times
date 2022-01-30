@@ -20,9 +20,12 @@ create_dynamic_country = {
 		communism = 10
 	}
 	
-	
+	set_variable = { insanity_amount = 5 }
 	set_country_flag = clemenceau_president_du_conseil 
 	recruit_character = FRA_raymond_poincare
+	recruit_character = FRA_paul_deschanel
+	recruit_character = FRA_georges_clemenceau
+	recruit_character = FRA_alexandre_millerand
 	create_faction = "Entente"
 	add_to_faction = ENG
 	add_to_faction = USA

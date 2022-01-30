@@ -7,14 +7,14 @@ TT_WHR_russian_civil_war = {
 			NOT = {
 				country_exists = SOV
 			}
-		}
+		} 
 		complete_effect = {
 
 		}
 	}
 
-	WHR_POL_question = {
-		allowed = {
+	WHR_POL_question = { 
+		allowed = { 
 			NOT = {
 				country_exists = SOV
 			}
@@ -179,7 +179,7 @@ TT_SOV_russian_civil_war = {
 			country_exists = EST
 			
 		}
-		days_remove = 10
+		days_remove = 20
 		war_with_on_remove = EST
 		fire_only_once = yes
 
@@ -187,7 +187,7 @@ TT_SOV_russian_civil_war = {
 			base = 0
 			modifier = {
 				add = 10000
-				date > 1918.11.22
+				date > 1918.11.12
 				date < 1920.2.2
 				is_historical_focus_on = yes
 			}
@@ -198,7 +198,19 @@ TT_SOV_russian_civil_war = {
 				}
 			}
 		}
-
+		complete_effect = {
+			add_ai_strategy = {
+				type = prepare_for_war
+				id = EST
+				value = 2000
+			}
+			add_ai_strategy = {
+				type = conquer
+				id = EST
+				value = 200
+			}
+			
+		}
 		remove_effect = {
 			declare_war_on = {
 				target = EST
@@ -245,7 +257,7 @@ TT_SOV_russian_civil_war = {
 			country_exists = LAT
 			
 		}
-		days_remove = 10
+		days_remove = 20
 		war_with_on_remove = LAT
 		fire_only_once = yes
 
@@ -253,7 +265,7 @@ TT_SOV_russian_civil_war = {
 			base = 0
 			modifier = {
 				add = 10000
-				date > 1918.11.25
+				date > 1918.11.15
 				date < 1919.8.11
 				is_historical_focus_on = yes
 			}
@@ -264,7 +276,18 @@ TT_SOV_russian_civil_war = {
 				}
 			}
 		}
-
+		complete_effect = {
+			add_ai_strategy = {
+				type = prepare_for_war
+				id = LAT
+				value = 2000
+			}
+			add_ai_strategy = {
+				type = conquer
+				id = LAT
+				value = 200
+			}
+		}
 		remove_effect = {
 			declare_war_on = {
 				target = LAT
@@ -311,7 +334,7 @@ TT_SOV_russian_civil_war = {
 			country_exists = LIT
 			
 		}
-		days_remove = 10
+		days_remove = 20
 		war_with_on_remove = LIT
 		fire_only_once = yes
 
@@ -319,7 +342,7 @@ TT_SOV_russian_civil_war = {
 			base = 0
 			modifier = {
 				add = 10000
-				date > 1918.11.25
+				date > 1918.11.15
 				date < 1920.11.1
 				is_historical_focus_on = yes
 			}
@@ -330,7 +353,18 @@ TT_SOV_russian_civil_war = {
 				}
 			}
 		}
-
+		complete_effect = {
+			add_ai_strategy = {
+				type = prepare_for_war
+				id = LIT
+				value = 2000
+			}
+			add_ai_strategy = {
+				type = conquer
+				id = LIT
+				value = 200
+			}
+		}
 		remove_effect = {
 			declare_war_on = {
 				target = LIT

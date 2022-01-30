@@ -1,0 +1,32 @@
+guiTypes = {
+	containerWindowType = {
+		name = "deschanel_sanity_meter_container"
+		position = { x =0 y = 0 }
+		size = { width = 400 height = 400 }
+		iconType = {
+			name = "sanity_scale_icon"
+			spriteType = "GFX_sanity_scale"
+			position = { x= 20 y = 50}
+			alwaystransparent = yes
+
+			
+		}
+		instantTextBoxType = {
+			name = "sanity_scale_tooltip"
+			position = { x= 20 y = 50}
+
+			pdx_tooltip = "TT_FRA_sanity"
+			maxwidth = 452
+			maxHeight = 38
+		}
+		iconType = {
+			name = "sanity_arrow_icon"
+			spriteType = "GFX_sanity_arrow"
+			position = { x= 0 y =80}
+			alwaystransparent = yes
+			 
+		}
+		
+		
+	}
+}

@@ -33,6 +33,27 @@ on_actions = {
 			}
 		}
 	}
+	on_daily_FRA = {
+		effect = {
+			if = {
+				limit = {
+					has_country_leader = {
+						name = "Paul Deschanel"
+						ruling_only = yes
+					}
+				}
+				add_to_variable = {
+					insanity_amount = 0.3 
+				}
+				clamp_variable = {
+					var = insanity_amount
+					min = 5
+					max = 100
+				}
+				calculate_sanity_arrow_position = yes
+			}
+		}
+	}
 	on_daily = {
 		effect = {
 			if = {

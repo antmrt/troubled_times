@@ -140,7 +140,12 @@ SYF = {
 	has_cosmetic_tag = SYNDICALIST_FRANCE
 }
 
+AUK = {
+	original_tag = UKR
+	has_cosmetic_tag = ANARCHIST_UKRAINE
 
+
+}
 # operative operation target
 # only set for majors who has agency
 # set on on_weekly

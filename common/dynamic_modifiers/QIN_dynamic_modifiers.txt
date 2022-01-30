@@ -41,3 +41,25 @@ TT_HUN_army_defection = {
 
 	defence = HUN_army_defection_defence
 }
+
+TT_european_workers_program = {
+	enable = {
+		always = yes
+
+	}
+	icon = GFX_idea_man_five_year_plan_industry
+
+	state_production_speed_industrial_complex_factor = global.european_workers_strengh
+	custom_modifier_tooltip = every_participant_adds_2_tt
+
+}
+
+TT_ravaged_lands = {
+	icon = GFX_ravaged_lands_icon
+	state_production_speed_buildings_factor = -0.25
+	local_building_slots_factor = -0.25
+	local_resources_factor = -0.3
+	army_speed_factor_for_controller = -0.5
+	disable_strategic_redeployment = 1
+	local_factories = -1
+}

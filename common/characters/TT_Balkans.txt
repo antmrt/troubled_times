@@ -30,7 +30,7 @@ characters = {
 
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/HUN/INT/"
+				large = "gfx/leaders/HUN/INT/mihaly_karolyi.dds"
 			}
 		}
 	}

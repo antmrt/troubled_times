@@ -45,27 +45,8 @@ units = {
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
 	}
-	division = {
-		name = "3. Pikhotni Dyviziya 'Iron'"
-		location = 9461
-		division_template = "Pikhotna Dyviziya"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
-	}
-	division = {
-		name = "4. Pikhotni Dyviziya 'Kiev'"
-		location = 3421
-		division_template = "Pikhotna Dyviziya"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
-	}
-	division = {
-		name = "5. Pikhotni Dyviziya 'Kherson'"
-		location = 570
-		division_template = "Pikhotna Dyviziya"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
-	}
+	
+	
 	division = {
 		name = "6-ya Pikhotni Dyviziya"
 		location = 3409

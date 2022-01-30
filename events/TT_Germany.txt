@@ -339,7 +339,7 @@ country_event = {
 			limit = {
 				has_global_flag = SAAR_occupation
 			}
-			FRA = {
+			var:28.owner = {
 				transfer_state = 789
 			}
 		}
@@ -370,7 +370,7 @@ country_event = {
 			limit = {
 				has_global_flag = Rheinland_occupied
 			}
-			FRA = {
+			var:28.owner = {
 				
 				transfer_state = 42
 				transfer_state = 51
@@ -449,7 +449,16 @@ country_event = {
 						type = civil_war
 					}
 					add_civil_war_target = BAV
-
+					add_ai_strategy = {
+						type = consider_weak
+						id = BAV
+						value = 200
+					}
+					add_ai_strategy = {
+						type = invade
+						id = BAV
+						value = 200
+					}
 				}
 			}
 		}

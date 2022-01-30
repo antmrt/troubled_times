@@ -1,9 +1,19 @@
+TT_SOV_shifting_alliances = {
+	allowed = {
+		original_tag = SOV
+		is_debug = yes
+	}
+
+	priority = 199
+	scripted_gui = SOV_civil_war_factions
+	visible_when_empty = yes
+}
 TT_SOV_russian_civil_war = {
 	allowed = {
 		original_tag = SOV
 	}
 	priority = 200
-	visible = {
+	visible = { 
 		date < 1936.1.1
 	}
 }

@@ -1,5 +1,17 @@
 spriteTypes = {
 	spriteType = {
+		name = "GFX_ravaged_lands_icon"
+		texturefile = "gfx/interface/modifiers_ravaged_lands.dds"
+	}
+	spriteType = {
+		name = "GFX_Green_ARMY_faction_SOV"
+		texturefile = "gfx/interface/TT_decisions/decision_faction_SOV_Green_Army.dds"
+	} 
+	spriteType = {
+		name = "GFX_Anarchist_faction_SOV"
+		texturefile = "gfx/interface/TT_decisions/decision_faction_SOV_Anarchists.dds"
+	}
+	spriteType = {
 		name = "GFX_decision_ger_monarchist_control"
 		texturefile = "gfx/interface/TT_decisions/decision_monarchist_control.dds"
 	}
@@ -32,5 +44,13 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_decision_french_control"
 		texturefile = "gfx/interface/TT_decisions/decision_french_control.dds"
+	}
+	spriteType = {
+		name = "GFX_sanity_scale"
+		texturefile = "gfx/interface/TT_Deschanel_sanity/sanity_meter.dds"
+	}
+	spriteType = {
+		name = "GFX_sanity_arrow"
+		texturefile = "gfx/interface/TT_Deschanel_sanity/sanity_arrow.dds"
 	}
 }

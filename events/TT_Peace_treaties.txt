@@ -276,7 +276,7 @@ country_event = {
 	option = {
 		name = TT_INT_Peace_treaty.9.a
 		set_global_flag = anschluss_rejected
-		ai_will_do = {
+		ai_chance = {
 			base = 10
 
 		} 
@@ -284,7 +284,7 @@ country_event = {
 	option = {
 		name = TT_INT_Peace_treaty.9.b
 		set_global_flag = south_german_republic
-		ai_will_do = {
+		ai_chance = {
 			base = 10
 			modifier = {
 				factor = 0
@@ -295,7 +295,7 @@ country_event = {
 	option = {
 		name = TT_INT_Peace_treaty.9.c
 		set_global_flag = anschluss_allowed
-		ai_will_do = {
+		ai_chance = {
 			base = 10
 			modifier = {
 				factor = 0

@@ -37,20 +37,6 @@ units = {
 		start_equipment_factor = 0.9
 	}
 	division = {
-		name = "Latvijas Neatkariga Brigade"
-		location = 222
-		division_template = "Kajnieku Brigade"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.9
-	}
-	division = {
-		name = "Lieven Savrupiba"
-		location = 9275
-		division_template = "Kajnieku Brigade"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.9
-	}
-	division = {
 		name = "2. Latviesu Cesu Pulka"
 		location = 6459
 		division_template = "Kajnieku Pulk"

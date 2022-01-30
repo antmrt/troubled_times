@@ -10,9 +10,11 @@ if = {
 }
 1918.1.1 = {
 	add_ideas = BALTIC_soviet_threat
+	add_ideas = political_disorder
 }
 1936.1.1 = {
 	remove_ideas = BALTIC_soviet_threat
+	remove_ideas = political_disorder
 }
 add_ideas = {
 	limited_conscription

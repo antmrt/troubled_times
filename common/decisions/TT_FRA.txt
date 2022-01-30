@@ -1,19 +1,51 @@
-crisis = {
+TT_FRA_deschanel_sanity = {
+	tesyt_ssaniny = {
+		complete_effect = {
+			set_variable ={
 
-	TT_FRA_mutinies_in_the_army = {
+			insanity_amount = 50 
+			}    
+			calculate_sanity_arrow_position = yes   
+		}   
+	} 
+
+	public_questions_deschanelssanity = {
 		is_good = no
+
 		days_mission_timeout = 120
+
+		activation = {
+			always = no
+		}
+		fire_only_once = yes
 		available = {
-			has_war = no
+			NOT  = {
+				has_country_leader = {
+					name = "Paul Deschanel"
+				}
+			}
 		}
 		timeout_effect = {
-			hidden_effect = {
-				disband_twenty_percent_units = yes
-				
+			country_event = TT_INT_France.9
+		}
+	}
+}     
+crisis = {  
+   
+	TT_FRA_mutinies_in_the_army = {
+		is_good = no
+		days_mission_timeout = 120  
+		available = {  
+			has_war = no 
+		} 
+		timeout_effect = {
+			hidden_effect = { 
+				disband_twenty_percent_units = yes  
+				  
 			}
 
 			random_list = {
-				33 = {
+				33 = { 
 					
 				}       
 

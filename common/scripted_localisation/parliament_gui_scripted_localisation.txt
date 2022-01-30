@@ -71,6 +71,13 @@ defined_text = {
 		}
 		localization_key = "GFX_painleve_president_du_conseil_portrait"
 	}
+	text = {
+		trigger = {
+			has_country_flag = millerand_president_du_conseil
+		}
+		localization_key = "GFX_millerand_president_du_conseil_portrait"
+	}
+	
 }
 defined_text = {
 	name = Get_President_du_conseil_name
@@ -92,6 +99,13 @@ defined_text = {
 		}
 		localization_key = TT_FRA_Painleve
 	}
+	text = {
+		trigger = {
+			has_country_flag = millerand_president_du_conseil
+		}
+		localization_key = TT_FRA_Millerand
+	}
+
 }
 defined_text = {
 	name = Get_President_du_conseil_traits
@@ -326,5 +340,39 @@ defined_text = {
 			check_variable = { temp_seat > 0 }
 		}
 		localization_key = parliament_seat_text
+	}
+}
+
+defined_text = {
+	name = Get_Mental_health
+	text = {
+		trigger = {
+			check_variable = {
+				insanity_amount < 33
+			}
+		}
+		localization_key = good_mental_health
+	}
+
+	text = {
+		trigger = {
+			check_variable = {
+				insanity_amount < 66
+
+			}
+			check_variable = {
+				insanity_amount > 32
+			}
+		}
+		localization_key = average_mental_health
+	}
+
+	text = {
+		trigger = {
+			check_variable = {
+				insanity_amount > 65
+			}
+		}
+		localization_key = bad_mental_health
 	}
 }

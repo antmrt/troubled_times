@@ -1,0 +1,25 @@
+parliament_gui_decision_category = {
+	icon = usa_congress
+
+	# picture = 
+
+	allowed = { original_tag = FRA }
+
+	priority = 1000
+
+	scripted_gui = parliament_gui 
+	visible_when_empty = yes
+}
+TT_FRA_deschanel_sanity = {
+	visible_when_empty = yes
+	priority = 500
+	scripted_gui = deschanel_sanity_meter   
+	allowed = {
+		tag = FRA
+	}
+	visible = {
+		has_country_leader = {
+			name = "Paul Deschanel"
+		}
+	}
+}     

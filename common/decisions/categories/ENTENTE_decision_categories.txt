@@ -13,6 +13,9 @@ ENTENTE_treaty_of_versailles = {
 	visible = {
 		has_global_flag = compiegne_armistice_signed
 		NOT = {
+			has_global_flag = versailles_over
+		}
+		NOT = {
 			has_global_flag = treaty_of_versailles
 		}
 	}
@@ -30,7 +33,11 @@ ENTENTE_treaty_of_neuilly = {
 			tag = BUL
 		}
 	}
-
+	visible = {
+		NOT = {
+			has_global_flag = neuilly_over
+		}
+	}
 	priority = 500
 }
 
@@ -50,8 +57,13 @@ ENTENTE_treaty_of_Saint_Germain = {
 	}
 	visible = {
 		NOT = {
-			tag = FRA
-			has_global_flag = FRA_2nde_revolution_lost_ww1
+			AND = {
+				tag = FRA
+				has_global_flag = FRA_2nde_revolution_lost_ww1
+			}
+		}
+		NOT = {
+			has_global_flag = saint_germain_over
 		}
 	}
 	priority = 499
@@ -67,6 +79,9 @@ CP_treaty_of_frankfurt = {
 	}
 	visible = {
 		has_global_flag = FRA_2nde_revolution_lost_ww1
+		NOT = {
+			has_global_flag = frankfurt_over
+		}
 	}
 	priority = 500
 }

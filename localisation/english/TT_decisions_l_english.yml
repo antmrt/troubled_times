@@ -1,9 +1,14 @@
 ﻿l_english:
- 
 
+ TT_FRA_deschanel_sanity:0 "Deschanel's Sanity" 
+ TT_FRA_sanity:0 "Our President is under stress, some worry about his mental Health, his current condition is [Get_Mental_health]"
+ good_mental_health:0 "§GGood§! ([?insanity_amount])"
+ average_mental_health:0 "§OQuestionable§! ([?insanity_amount])"
+ bad_mental_health:0 "§RBad§! ([?insanity_amount])"
+ public_questions_deschanelssanity:0 "The President's Sanity"
  treaty_of_saint_germain_timer:0 "Treaty Discussion"
  anschluss_decision:0 "The German People"
-
+ request_in_progress:0 "A Territorial Request is Underway"
  St_Germain_side_with_participant:0 "Territorial Discussion"
  St_germain_state_decisions_aus:0 "[FROM.GetName] is requested by [AUS.GetName]"
  St_germain_state_decisions_yug:0 "[FROM.GetName] is requested by [YUG.GetName]"
@@ -165,6 +170,24 @@ TT_spartakist_uprising_timer:0 "Spartakist Uprising"
  WHR_soldiers_deserting:0 "Soldiers Deserting"
  entente_weapon_shipment:0 "Entente Weapon Shipment"
  WHR_launch_offensive:0 "Launch offensive"
+
+ TT_SOV_shifting_alliances:0 "Shifting Alliances"
+ TT_SOV_shifting_alliances_desc:0 "The struggle in this war, causes several factions to fight for Power, what mmight be allies today, could become ennemies in the future. \n\n§gThe different factions are the following :§!"
+
+ AUK_name_text:0 "Anarchists"
+ SOV_anarchist_loyalty_status:0 "[GetAnarchistLoyalty]"
+
+ SOV_Green_Army_loyalty_status:0 "[GetGreenArmyLoyalty]"
+ SOV_Green_Army_loyalty_status_breakdown:0 "def"
+ DISLOYAL:0 "§RDISLOYAL§!"
+ NEUTRAL:0 "§ONEUTRAL§!"
+ LOYAL:0 "§GLOYAL§!"
+ NEUTRALIZED:0 "§gNEUTRALIZED§!"
+
+ Green_ARMY_name_text:0 "Green Army"
+ SOV_GREEN_ARMY_TOOLTIP:0 "The §YGreen Army§! is an Alliance of Peasants refusing Conscription and requisitions from the Government.\nThe §YGreen Army§! will cause for Peasants Uprising if they are disloyal towards the government."
+
+
 
  TT_SOV_russian_civil_war:0 "The Russian Civil War"
  SOV_launch_offensive:0 "Launch Offensive"

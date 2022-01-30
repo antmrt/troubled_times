@@ -1,4 +1,33 @@
 # The following scripted effect sets-up the parliament at game start.
+calculate_sanity_arrow_position = {
+	set_temp_variable = {
+		max_pixel = 452
+	}
+	set_temp_variable = {
+		min_pixel = 7
+	}
+	subtract_from_temp_variable = {
+		max_pixel = min_pixel
+	}
+	set_temp_variable = {
+		diff = max_pixel
+	}
+	add_to_temp_variable = {
+		diff = 7
+	}
+	divide_temp_variable = {
+		diff = 100
+	}
+	multiply_temp_variable = {
+		diff = insanity_amount
+	}
+	add_to_temp_variable = {
+		diff = min_pixel
+	}
+	set_variable = {
+		sanity_arrow_position = diff
+	}
+}
 parliament_gui_initial = {
 	# Put simply an array stores a list of things, used here to store the list of parties and list of seats.
 

@@ -1,4 +1,5 @@
 ﻿l_english:
+ TT_ravaged_lands:0 "Ravaged Lands"
  disband_full_army_tt:0 "§RAll of your army will be disbanded§!"
  disband_twenty_percent_units_tt:0 "§R20% of your army will be disbanded§!"
  TT_communist_resistance:0 "Communist Opposition"
@@ -7,3 +8,8 @@
  WHR_soviet_civil_war:0 "Russian Civil War"
  TT_SOV_young_nation:0 "Young Nation"
  GER_looming_revolution:0 "Looming Revolution"
+ TT_strikes1:0 "Strikes"
+ TT_strikes2:0 "Strikes"
+ TT_strikes3:0 "Widespread Strikes"
+ TT_strikes4:0 "Widespread Strikes"
+ TT_strikes5:0 "General Strike"

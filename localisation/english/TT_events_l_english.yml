@@ -55,8 +55,21 @@
  TT_INT_France.5.t:0 "Confidence vote"
  TT_INT_France.5.d:0 "With the change in government, a confidence vote is being held at the parliament, this vote will allow the newly formed government to enact laws."
  TT_INT_France.5.a:0 "The Government gets Confidence"
+ 
+ TT_INT_France.7.t:0 "1920 Elections"
+ TT_INT_France.7.d:0 "The 1920 Presidential election took place, the different candidates have  really close results. However, with great surprise, the winner of this election is:"
+ TT_INT_France.7.a:0 "Paul Deschanel"
+ TT_INT_France.7.b:0 "Georges Clemenceau"
 
+ TT_INT_France.8.t:0 "Paul Deschanel fell from a train"
+ TT_INT_France.8.d:0 "Paul Deschanel, our President, fell from a night train in the neighborhood of Montargis. He was recognized by a worker in the area and was transported to a small house.This incident sheds light on the Mental condition of our President. Many political figures critizise the Press, because of their misinformation about the incident."
+ TT_INT_France.8.a:0 "Is he okay?"
 
+ TT_INT_France.9.t:0 "A New Presidency?"
+ TT_INT_France.9.d:0 "Worried about the Mental Health of our current President, some political figures are inciting him to retire, they are calling for a ne election to take place."
+ TT_INT_France.9.a:0 "Millerand takes his Place"
+ TT_INT_France.9.b:0 "Deschanel stay President"
+  
   ### VERSAILLES TREATY
 
  TT_INT_Peace_treaty.1.t: "The Polish Corridor"

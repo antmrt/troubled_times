@@ -6,6 +6,11 @@
 	add_ideas = TT_SOV_young_nation
 	recruit_character = SOV_vladimir_lenin
 	set_cosmetic_tag = Russian_SFSR
+
+	declare_war_on = {
+		target = UKR
+		type = civil_war
+	}
 }
 1936.1.1 = {
 	remove_ideas = TT_SOV_young_nation

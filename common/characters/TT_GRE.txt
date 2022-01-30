@@ -1,0 +1,17 @@
+characters = {
+	TT_GRE_eleftherios_venizelos = {
+		name = GRE_eleftherios_venizelos
+
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/GRE/INT/Eleftherios_Venizelos.dds"
+			}
+		}
+		country_leader={
+			ideology=nonaligned_liberalism
+			
+			expire="1936.3.18"
+			id=-1
+		}
+	}
+}

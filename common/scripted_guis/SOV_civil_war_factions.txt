@@ -1,0 +1,6 @@
+scripted_gui = {
+	SOV_civil_war_factions = {
+		context_type = decision_category
+		window_name = "SOV_civil_war_gui"
+	} 
+} 

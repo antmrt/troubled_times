@@ -1,4 +1,17 @@
 technologies = {
+	@1922 = 2
+	@19221 = 1
+	@19222 = 4
+	@1936 = 7
+	@19361 = 1
+	@19362 = 6
+	@1940 = 13
+	@19401 = 14
+	@19402 = 12
+	@1942 = 16
+	@1944 = 19
+	@19441 = 20
+	@19442 = 18
 
 #   ###  ##  #  # ###      ## #  # ### ###   ##
 #    #  #    #  #  #      #   #  #  #  #  # #
@@ -45,7 +58,7 @@ technologies = {
 
 		folder = {
 			name = mtgnavalfolder
-			position = { x = 0 y = 2 }
+			position = { x = 0 y = @1922 }
 		}
 
 		ai_will_do = {
@@ -82,7 +95,7 @@ technologies = {
 
 		folder = {
 			name = mtgnavalfolder
-			position = { x = 0 y = 7 }
+			position = { x = 0 y = @1936 }
 		}
 
 		ai_will_do = {
@@ -127,7 +140,7 @@ technologies = {
 
 		folder = {
 			name = mtgnavalfolder
-			position = { x = 0 y = 13 }
+			position = { x = 0 y = @1940 }
 		}
 
 		ai_will_do = {
@@ -164,7 +177,7 @@ technologies = {
 
 		folder = {
 			name = mtgnavalfolder
-			position = { x = 0 y = 19 }
+			position = { x = 0 y = @1944 }
 		}
 
 		ai_will_do = {
@@ -196,7 +209,7 @@ technologies = {
 
 		folder = {
 			name = mtgnavalfolder
-			position = { x = 1 y = 2 }
+			position = { x = 1 y = @1922 }
 		}
 
 		ai_will_do = {
@@ -246,7 +259,7 @@ technologies = {
 
 		folder = {
 			name = mtgnavalfolder
-			position = { x = 1 y = 4 }
+			position = { x = 1 y = @19222 }
 		}
 
 		ai_will_do = {
@@ -291,7 +304,7 @@ technologies = {
 
 		folder = {
 			name = mtgnavalfolder
-			position = { x = 1 y = 7 }
+			position = { x = 1 y = @1936 }
 		}
 
 		ai_will_do = {
@@ -335,7 +348,7 @@ technologies = {
 
 		folder = {
 			name = mtgnavalfolder
-			position = { x = 1 y = 13 }
+			position = { x = 1 y = @1940 }
 		}
 
 		ai_will_do = {
@@ -376,7 +389,7 @@ technologies = {
 
 		folder = {
 			name = mtgnavalfolder
-			position = { x = 1 y = 19 }
+			position = { x = 1 y = @1944 }
 		}
 
 		ai_will_do = {
@@ -416,7 +429,7 @@ technologies = {
 
 		folder = {
 			name = mtgnavalfolder
-			position = { x = 2 y = 1 }
+			position = { x = 2 y = @19221 }
 		}
 
 		ai_will_do = {
@@ -453,7 +466,7 @@ technologies = {
 
 		folder = {
 			name = mtgnavalfolder
-			position = { x = 2 y = 6 }
+			position = { x = 2 y = @19362 }
 		}
 
 		ai_will_do = {
@@ -513,7 +526,7 @@ technologies = {
 
 		folder = {
 			name = mtgnavalfolder
-			position = {  x = -1 y = 2 }
+			position = {  x = -1 y = @1922 }
 		}
 
 		ai_will_do = {
@@ -561,7 +574,7 @@ technologies = {
 
 		folder = {
 			name = mtgnavalfolder
-			position = {  x = -1 y = 7 }
+			position = {  x = -1 y = @1936 }
 		}
 
 		ai_will_do = {
@@ -603,7 +616,7 @@ technologies = {
 
 		folder = {
 			name = mtgnavalfolder
-			position = {  x = -1 y = 13 }
+			position = {  x = -1 y = @1940 }
 		}
 
 		ai_will_do = {
@@ -640,7 +653,7 @@ technologies = {
 
 		folder = {
 			name = mtgnavalfolder
-			position = {  x = -1 y = 19 }
+			position = {  x = -1 y = @1944 }
 		}
 
 		ai_will_do = {
@@ -679,7 +692,7 @@ technologies = {
 
 		folder = {
 			name = mtgnavalfolder
-			position = {  x = 0 y = 1 }
+			position = {  x = 0 y = @19361 }
 		}
 
 		ai_will_do = {
@@ -728,7 +741,7 @@ technologies = {
 
 		folder = {
 			name = mtgnavalfolder
-			position = {  x = 0 y = 6 }
+			position = {  x = 0 y = @19362 }
 		}
 
 		ai_will_do = {
@@ -777,7 +790,7 @@ technologies = {
 
 		folder = {
 			name = mtgnavalfolder
-			position = {  x = 0 y = 12 }
+			position = {  x = 0 y = @19402 }
 		}
 
 		ai_will_do = {
@@ -820,7 +833,7 @@ technologies = {
 
 		folder = {
 			name = mtgnavalfolder
-			position = {  x = 0 y = 18 }
+			position = {  x = 0 y = @19442 }
 		}
 
 		ai_will_do = {
@@ -879,7 +892,7 @@ technologies = {
 
 		folder = {
 			name = mtgnavalfolder
-			position = {  x = -1 y = 2 }
+			position = {  x = -1 y = @1922 }
 		}
 
 		ai_will_do = {
@@ -929,7 +942,7 @@ technologies = {
 
 		folder = {
 			name = mtgnavalfolder
-			position = {  x = -1 y = 7 }
+			position = {  x = -1 y = @1936 }
 		}
 		sub_technologies = {
 			ship_hull_super_heavy
@@ -1011,7 +1024,7 @@ technologies = {
 
 		folder = {
 			name = mtgnavalfolder
-			position = {  x = -1 y = 13 }
+			position = {  x = -1 y = @1940 }
 		}
 
 		ai_will_do = {
@@ -1048,7 +1061,7 @@ technologies = {
 
 		folder = {
 			name = mtgnavalfolder
-			position = {  x = -1 y = 19 }
+			position = {  x = -1 y = @1944 }
 		}
 
 		ai_will_do = {
@@ -1097,7 +1110,7 @@ technologies = {
 
 		folder = {
 			name = mtgnavalfolder
-			position = {  x = 0 y = 6 }
+			position = {  x = 0 y = @19362 }
 		}
 
 		ai_will_do = {
@@ -1142,7 +1155,7 @@ technologies = {
 
 		folder = {
 			name = mtgnavalfolder
-			position = {  x = 0 y = 12 }
+			position = {  x = 0 y = @19402 }
 		}
 
 		ai_will_do = {
@@ -1199,7 +1212,7 @@ early_ship_hull_carrier = {
 
 		folder = {
 			name = mtgnavalfolder
-			position = {  x = -1 y = 2 }
+			position = {  x = -1 y = @1922 }
 		}
 
 		ai_will_do = {
@@ -1240,7 +1253,7 @@ early_ship_hull_carrier = {
 
 		folder = {
 			name = mtgnavalfolder
-			position = {  x = -1 y = 7 }
+			position = {  x = -1 y = @1936 }
 		}
 
 		ai_will_do = {
@@ -1376,7 +1389,7 @@ early_ship_hull_carrier = {
 
 		folder = {
 			name = mtgnavalfolder
-			position = { x = 0 y = 1 }
+			position = { x = 0 y = @19221 }
 		}
 
 		ai_will_do = {
@@ -1437,7 +1450,7 @@ early_ship_hull_carrier = {
 
 		folder = {
 			name = mtgnavalfolder
-			position = { x = 2 y = 6 }
+			position = { x = 2 y = @19362 }
 		}
 
 		ai_will_do = {
@@ -1488,7 +1501,7 @@ early_ship_hull_carrier = {
 		}
 		folder = {
 			name = mtgnavalfolder
-			position = { x = 2 y = 16 }
+			position = { x = 2 y = @1942 }
 		}
 
 		ai_will_do = {
@@ -1528,7 +1541,7 @@ early_ship_hull_carrier = {
 
 		folder = {
 			name = mtgnavalfolder
-			position = { x = 3 y = 14 }
+			position = { x = 3 y = @19401 }
 		}
 
 		ai_will_do = {
@@ -1572,7 +1585,7 @@ early_ship_hull_carrier = {
 
 		folder = {
 			name = mtgnavalfolder
-			position = { x = 0 y = 6 }
+			position = { x = 0 y = @19362 }
 		}
 
 		ai_will_do = {
@@ -1611,7 +1624,7 @@ early_ship_hull_carrier = {
 
 		folder = {
 			name = mtgnavalfolder
-			position = { x = 0 y = 14 }
+			position = { x = 0 y = @19401 }
 		}
 
 		ai_will_do = {
@@ -1644,7 +1657,7 @@ early_ship_hull_carrier = {
 
 		folder = {
 			name = mtgnavalfolder
-			position = { x = 0 y = 20 }
+			position = { x = 0 y = @19441 }
 		}
 
 		ai_will_do = {
@@ -1683,7 +1696,7 @@ early_ship_hull_carrier = {
 
 		folder = {
 			name = mtgnavalfolder
-			position = {  x = -2 y = 2 }
+			position = {  x = -2 y = @1922 }
 		}
 
 		ai_will_do = {
@@ -1728,7 +1741,7 @@ early_ship_hull_carrier = {
 
 		folder = {
 			name = mtgnavalfolder
-			position = {  x = -2 y = 7 }
+			position = {  x = -2 y = @1936 }
 		}
 
 		ai_will_do = {
@@ -1969,7 +1982,7 @@ early_ship_hull_carrier = {
 
 		folder = {
 			name = mtgnavalfolder
-			position = { x = 0 y = 1 }
+			position = { x = 0 y = @19221 }
 		}
 
 		ai_will_do = {
@@ -2641,7 +2654,7 @@ early_ship_hull_carrier = {
 
 		folder = {
 			name = mtgnavalfolder
-			position = { x = 0 y = 1 }
+			position = { x = 0 y = @19221 }
 		}
 
 		ai_will_do = {
@@ -3037,7 +3050,7 @@ early_ship_hull_carrier = {
 
 		folder = {
 			name = mtgnavalfolder
-			position = { x = 0 y = 1 }
+			position = { x = 0 y = @19221 }
 		}
 
 		ai_will_do = {
@@ -3085,7 +3098,7 @@ early_ship_hull_carrier = {
 
 		folder = {
 			name = mtgnavalfolder
-			position = { x = 4 y = 1 }
+			position = { x = 4 y = @19221 }
 		}
 
 		ai_will_do = {
@@ -3387,7 +3400,7 @@ early_ship_hull_carrier = {
 
 		folder = {
 			name = mtgnavalfolder
-			position = { x = 0 y = 1 }
+			position = { x = 0 y = @19221 }
 		}
 
 		ai_will_do = {

@@ -39,5 +39,13 @@ spriteTypes = {
 		name = GFX_GER_bavarian_socialist_icon
 		textureFile = "gfx/interface/TT_goals/GER_bavarian_socialists.dds"
 	}
+	spriteType = {
+		name = GFX_FRA_ruhr_occupation_icon
+		textureFile = "gfx/interface/TT_goals/FRA_ruhr_occupation.dds"
+	}
+	spriteType = {
+		name = GFX_FRA_polish_brothers_icon
+		textureFile = "gfx/interface/TT_goals/FRA_polish_brothers.dds"
+	}
 	
 }

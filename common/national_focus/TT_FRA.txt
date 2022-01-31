@@ -116,7 +116,7 @@ focus_tree = {
 			focus = TT_INT_FRA_nationalist_union
 		}
 	}
-	focus = {
+	focus = { 
 		id = TT_INT_FRA_secure_army_loyalty
 		relative_position_id = TT_INT_FRA_act_on_the_strikes
 		x = -2
@@ -497,7 +497,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TT_INT_FRA_polish_brothers
-
+		icon = GFX_FRA_polish_brothers_icon
 		relative_position_id = TT_INT_FRA_international_matters
 		x = 0
 		y = 1
@@ -545,6 +545,7 @@ focus_tree = {
 		relative_position_id = TT_INT_FRA_german_situation
 		x = -2
 		y = 1
+		icon = GFX_FRA_ruhr_occupation_icon
 		prerequisite = {
 			focus = TT_INT_FRA_german_situation
 		}
@@ -584,7 +585,7 @@ focus_tree = {
 		} 
 	}
 	focus = {
-		id = TT_INT_FRA_direct_intervention
+		id = TT_INT_FRA_direct_intervention 
 		x = 2
 		y = 1
 		relative_position_id = TT_INT_FRA_russian_civil_war

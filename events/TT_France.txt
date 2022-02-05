@@ -280,3 +280,34 @@ country_event = {
 		set_country_flag = deschanel_mad
 	}
 }
+
+country_event = {
+	id = TT_INT_France.10
+	desc = TT_INT_France.10.d
+	title = TT_INT_France.10.t
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+
+
+	option = {
+		name = TT_INT_France.10.a
+		ai_chance = {
+			base = 10
+		}
+		complete_national_focus = TT_INT_FRA_clemenceau_survives
+	}
+
+	option = {
+		name = TT_INT_France.10.b
+		ai_chance = {
+			base = 0
+			modifier = {
+				is_historical_focus_on = no
+				add = 10
+			}
+		}
+		complete_national_focus = TT_INT_FRA_clemenceau_dies
+	}
+}

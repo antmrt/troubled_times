@@ -152,5 +152,29 @@ scripted_gui = {
 			}
 		}
 	}
+
+	TT_syndicalist_victory_super_event_custom = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME NAME AS #IN THE TNO_SG_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
+		context_type = player_context
+		window_name = "TT_syndicalist_victory_super_event_custom_window"
+
+		visible = {
+			has_country_flag = syndicalist_victory_super_event ### this country flag triggers the #superevent
+		}
+	}
+
+	TT_super_event_frame_syndicalist_victory_custom = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME #NAME AS IN THE TNO_SG_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
+		context_type = player_context
+		window_name = "TT_super_event_frame_syndicalist_victory_custom"
+
+		visible = {
+			has_country_flag = syndicalist_victory_super_event
+		}
+
+		effects = {
+			Option_click = {
+				clr_country_flag = syndicalist_victory_super_event ### this disables the country flag #that fires the superevent (so the superevent actually goes away)
+			}
+		}
+	}
 }
 #set_country_flag big_event_custom_latin_wars ## quick command for testing

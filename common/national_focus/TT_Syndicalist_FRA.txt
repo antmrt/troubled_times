@@ -31,17 +31,39 @@ focus_tree = {
 
         available = {
            
-            NOT = {
-                any_state = {
-                 is_in_home_area = yes
-                 is_controlled_by = FRA
+            all_core_state = {
+                OR = {
+                    NOT = {is_controlled_by = FRA}
+                    state = 1
                 }
             }
 
         }
 
         completion_reward = {
+            every_state = {
+				limit = {
+					is_core_of = FRA
+					OR = {
+						is_controlled_by = FRA
+						is_controlled_by = SYF
+					}
+					NOT = {
+						state = 459
 
+					}
+					NOT = {
+						state = 1
+					}
+				}
+				SYF = {
+					transfer_state = PREV
+				}
+                
+			}
+			
+			white_peace = FRA
+            set_capital = {state = 16}
         }
     }
 }

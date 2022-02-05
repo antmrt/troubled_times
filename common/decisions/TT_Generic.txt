@@ -94,6 +94,59 @@ TT_influenza_epidemic = {
 
 
 
+
+}
+
+category_test_decisions = {
+
+	open_space_program = {
+		visible = {
+			is_debug = yes
+		}
+		complete_effect = {
+			set_country_flag = show_space_program
+		}
+	}
+	test_space_claim = {
+		visible = {
+			is_debug = yes
+		}
+
+		complete_effect = {
+			set_variable = {
+				global.moon_control^1 = USA
+			}
+			set_variable = {
+				global.moon_control^2 = ITA
+			}
+			
+			#set_variable = { 
+			#	moon_zone = 1
+			#}
+			#set_temp_variable = {
+			#	temp_claimer_id = ROOT
+			#}
+			#modify_moon_claim = yes
+
+			#set_variable = { 
+			#	moon_zone = 2
+			#}
+			#set_temp_variable = {
+			#	temp_claimer_id = ITA
+			#}
+			#modify_moon_claim = yes
+		}
+	}
+	clear_moon_claim = {
+		visible = {
+			is_debug = yes
+		}
+		complete_effect = {
+			
+			clear_variable = moon_control^1
+		}
+	}
+
 }
 
 TT_european_reconstruction = {

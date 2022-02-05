@@ -13,7 +13,33 @@ scripted_gui = {
                 clr_country_flag = show_space_program
             }
 
-
+            moon_1_click = {
+                set_variable = { 
+                    global.moon_zone = 1
+                }
+                set_temp_variable = {
+                    temp_claimer_id = ROOT
+                }
+                modify_moon_claim = yes
+            }
+            moon_2_click = {
+                set_variable = { 
+                    global.moon_zone = 2
+                }
+                set_temp_variable = {
+                    temp_claimer_id = ROOT
+                }
+                modify_moon_claim = yes
+            }
+            moon_3_click = {
+                set_variable = { 
+                    global.moon_zone = 3
+                }
+                set_temp_variable = {
+                    temp_claimer_id = ROOT
+                }
+                modify_moon_claim = yes
+            }
         }  
     }
 

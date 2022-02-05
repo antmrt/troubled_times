@@ -1,4 +1,12 @@
 characters={
+	FRA_ferdinand_foch = {
+		name = FRA_ferdinand_foch
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/INT/General_Ferdinand_Foch.dds"
+			}
+		}
+	}
 	FRA_georges_clemenceau = {
 		name = FRA_georges_clemenceau
 		portraits = {

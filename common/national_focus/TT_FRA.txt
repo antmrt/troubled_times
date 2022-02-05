@@ -51,6 +51,19 @@ focus_tree = {
 		y = 1
 
 		prerequisite = { focus = TT_INT_FRA_unexpected_defeat }
+		cost = 2
+		completion_reward = {
+			add_country_leader_role = {
+				Character = FRA_ferdinand_foch
+				
+				Country_leader = {
+			  		ideology = liberalism
+				  	expire = “1965.1.1.1”
+				 
+				}
+			}
+			retire_country_leader = yes
+		}
 	}
 	focus = {
 		id = TT_INT_FRA_Frankfurt_conference
@@ -184,6 +197,9 @@ focus_tree = {
 		x = 1
 		y = 1
 		cost = 1
+		completion_reward = {
+			country_event = TT_INT_France.10
+		}
 	}
 
 	focus = {
@@ -260,6 +276,14 @@ focus_tree = {
 		y = 1
 		relative_position_id = TT_INT_FRA_Bloc_national
 		cost = 10
+		completion_reward = {
+			GER = {
+				add_opinion_modifier = {
+					modifier = sanctions_relations
+					target = FRA
+				}
+			}
+		}
 	}
 	focus = {
 		id = TT_INT_FRA_reactionnary_right
@@ -312,6 +336,13 @@ focus_tree = {
 			focus =TT_INT_FRA_reactionnary_right
 		}
 		cost = 10
+		completion_reward = {
+			
+			set_temp_variable = { temp_member = 6 }
+			set_temp_variable = { temp_seats = 5 }
+			modify_parliament_seat = yes
+		
+		}
 	}
 	focus = {
 		id = TT_INT_FRA_Alliance_de_la_gauche
@@ -394,6 +425,10 @@ focus_tree = {
 		relative_position_id = TT_INT_FRA_1920_elections
 		x = -1
 		y = 1
+		cost = 10
+		completion_reward = {
+			activate_mission = TT_reparation_conference
+		}
 	}
 
 	focus = {
@@ -404,6 +439,10 @@ focus_tree = {
 		relative_position_id = TT_INT_FRA_1920_elections
 		x = 1
 		y = 1
+		cost = 5
+		completion_reward = {
+			decrease_inflation_level = yes
+		}
 	}
 
 	focus = {
@@ -417,6 +456,15 @@ focus_tree = {
 		relative_position_id = TT_INT_FRA_create_reparation_comitee
 		x = 1
 		y = 1
+		cost = 5
+		completion_reward ={
+			BEL = {
+				add_opinion_modifier = {
+					modifier = offered_support
+					target = FRA
+				}
+			}
+		}
 	}
 
 	focus = {
@@ -494,6 +542,9 @@ focus_tree = {
 		x = 40
 		y = 1
 		cost = 1
+		completion_reward = {
+			add_political_power = 25
+		}
 	}
 	focus = {
 		id = TT_INT_FRA_polish_brothers

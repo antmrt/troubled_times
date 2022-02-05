@@ -23,3 +23,8 @@ TT_FRA_deschanel_sanity = {
 		}
 	}
 }     
+TT_FRA_spring_uprising = {
+	allowed = {
+		original_tag = FRA
+	}
+}

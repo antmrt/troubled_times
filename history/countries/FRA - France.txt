@@ -37,7 +37,7 @@ create_dynamic_country = {
 	#add_to_faction = BEL
 	#add_to_faction = RAJ		# Must be after puppet
 	#add_to_faction = MAL
-
+	add_ideas = TT_hyper_inflation_1
 	set_oob = "FRA_1918"
 }
 starting_train_buffer = 2

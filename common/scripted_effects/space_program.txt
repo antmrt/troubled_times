@@ -1,0 +1,9 @@
+modify_moon_claim = {
+	set_variable = {
+		global.moon_control^moon_zone = temp_claimer_id
+	}
+	set_temp_variable = {
+		v = moon_zone
+	}
+
+}

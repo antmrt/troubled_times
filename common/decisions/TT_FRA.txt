@@ -1,3 +1,4 @@
+
 TT_FRA_deschanel_sanity = {
 	tesyt_ssaniny = {
 		complete_effect = {
@@ -80,27 +81,7 @@ category_test_decisions = {
 		}
 	}
 	test_wp = {
-		complete_effect = {
-			every_state = {
-				limit = {
-					is_core_of = FRA
-					is_controlled_by = SYF
-				}
-				SYF = {
-					transfer_state = PREV
-				}
-			}
-			every_state = {
-				limit = {
-					is_owned_by = FRA
-				}
-				FRA = {
-					transfer_state = PREV
-				}
-			}
-			white_peace = SYF
-			SYF = {set_capital = {state = 459}}
-		}
+		
 	}
 	test_transfer_to_algeria = {
 		complete_effect = {
@@ -115,13 +96,13 @@ category_test_decisions = {
 		complete_effect = {
 			SYF = {
 				clear_parliament_gui_arrays = yes
-				add_to_array = { parliament_seat_array = 0 } # SFIC
-				add_to_array = { parliament_seat_array = 42 } # PRRRS-PRS
-				add_to_array = { parliament_seat_array = 42 } # SFIO
-				add_to_array = { parliament_seat_array = 42 } # AD
+				add_to_array = { parliament_seat_array = 50 } # SFIC
+				add_to_array = { parliament_seat_array = 100 } # PRRRS-PRS
+				add_to_array = { parliament_seat_array = 50 } # SFIO
+				add_to_array = { parliament_seat_array = 0 } # AD
 				add_to_array = { parliament_seat_array = 0 } # PDP
-				add_to_array = { parliament_seat_array = 65 } # FR
-				add_to_array = { parliament_seat_array = 9 } # INDEP
+				add_to_array = { parliament_seat_array = 0 } # FR
+				add_to_array = { parliament_seat_array = 0 } # INDEP
 				add_to_array = { parliament_seat_array = 0 } #AF
 
 				# parliament_member_array stores the list of parties
@@ -259,13 +240,22 @@ category_test_decisions = {
 					transfer_state = PREV
 				}
 			}
+			every_state = {
+				limit = {
+					is_controlled_by = FRA
+					NOT = {
+						is_core_of = FRA
+					}
+				}
+				add_compliance = -50
+			}
 			FRA = {
 				dismantle_faction = yes
 				load_focus_tree = FRA_National
 			}
 			transfer_units_fraction = {
 				target = SYF
-				size = 0.65
+				size = 0.75
 			}
 			SYF = {
 				declare_war_on = {

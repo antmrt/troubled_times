@@ -43,12 +43,14 @@ guiTypes = {
 				position = {x = 121 y = 0}
 				spriteType = "GFX_moon_map2"
                 pdx_tooltip = "outpost_tt"
+				pdx_tooltip_delayed = "additional_info_tt"
 			}
              buttonType = {
 				name = "moon_3"
 				position = {x = 242 y = 0}
 				spriteType = "GFX_moon_map3"
                 pdx_tooltip = "outpost_tt"
+				pdx_tooltip_delayed = "additional_info_tt"
 			}
              buttonType = {
 				name = "moon_4"

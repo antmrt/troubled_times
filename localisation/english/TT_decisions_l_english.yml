@@ -1,4 +1,5 @@
 ﻿l_english:
+
  TT_european_reconstruction:0 "Reconstruction"
  TT_european_reconstruction_desc:0 "[GetEuropeanReconstruction]"
  TT_GER_reparation_payment:0 "German Reparation Payment"
@@ -11,7 +12,7 @@
  add_1_funds_tt:0 "Adds §Y1§! funds for §YReconstruction Programs§!"
  has_available_funds:0 "has at least §Y1§! fund available"
  TT_european_workers_program_category:0 "European Worker Program"
- TT_european_workers_program_category_desc:0 "Initiated by the Franch, this program aims at sharing manpower for the reconstruction of Europe. Not only does it allow for reconstruction, but it also gives a job to demobilized Soldiers. By encouraging colaboration between the Nations of Europe, it is also an attempt to preserve peace.\n\n§gEvery Participant receives a building bonus, every additional participant add 2% to the bonus to all member.§!"
+ TT_european_workers_program_category_desc:0 "Initiated by the French, this program aims at sharing manpower for the reconstruction of Europe. Not only does it allow for reconstruction, but it also gives a job to demobilized Soldiers. By encouraging colaboration between the Nations of Europe, it is also an attempt to preserve peace.\n\n§gEvery Participant receives a building bonus, every additional participant add 2% to the bonus to all member.§!"
  TT_FRA_deschanel_sanity:0 "Deschanel's Sanity" 
  TT_FRA_sanity:0 "Our President is under stress, some worry about his mental Health, his current condition is [Get_Mental_health]"
  good_mental_health:0 "§GGood§! ([?insanity_amount])"
@@ -95,6 +96,8 @@ GER_TANK_RESTRICTION_ENTENTE:0 "§GRestriction on Tanks§!"
  treaty_of_frankfurt_timer:0 "Treaty Discussion"
  CP_treaty_of_frankfurt:0 "Treaty of Frankfurt"
  CP_treaty_of_frankfurt_desc:0 "[GetFrankfurt_treaty]"
+ treaty_of_frankfurt_requested_states_FRA:0 "Requested States"
+ treaty_of_frankfurt_requested_states_GER:0 "Requested States"
  
  FRANKFURT_TREATY_FRA:0 "The Victors of the war are negotiating in Frankfurt about our fate, as we speak, the conditions of the treaty are the following:\n\n§g- Borders with Germany: [GetFrenchBorder_status]\n- Army Restrictions: [GetFrenchArmy_restriction] \n- Territorial losses: §RSee Map§!"
  FRANKFURT_TREATY_GER:0 "As Victors of the war, we have to negociate about the fate of §YFrance§!, as we speak, the conditions of the treaty are the following:\n\n§g- Borders with Germany: [GetFrenchBorder_status]\n- Army Restrictions: [GetFrenchArmy_restriction] \n- Territorial gains: §GSee Map§!"

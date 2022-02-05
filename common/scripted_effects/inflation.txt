@@ -1,0 +1,154 @@
+increase_inflation_level = {
+	if = {
+		limit = {
+			NOT = {
+				OR = {
+					has_idea = TT_hyper_inflation_1
+					has_idea = TT_hyper_inflation_2
+					has_idea = TT_hyper_inflation_3
+					has_idea = TT_hyper_inflation_4
+					has_idea = TT_hyper_inflation_5
+					has_idea = TT_hyper_inflation_6
+					has_idea = TT_hyper_inflation_7
+					has_idea = TT_hyper_inflation_8
+				}
+			}
+		}
+		add_ideas = TT_hyper_inflation_1
+	}
+	else_if = {
+		limit = {
+			has_idea = TT_hyper_inflation_1
+		}
+		swap_ideas = {
+			add_idea = TT_hyper_inflation_2
+			remove_idea = TT_hyper_inflation_1
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = TT_hyper_inflation_2
+		}
+		swap_ideas = {
+			add_idea = TT_hyper_inflation_3
+			remove_idea = TT_hyper_inflation_2
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = TT_hyper_inflation_3
+		}
+		swap_ideas = {
+			add_idea = TT_hyper_inflation_4
+			remove_idea = TT_hyper_inflation_3
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = TT_hyper_inflation_4
+		}
+		swap_ideas = {
+			add_idea = TT_hyper_inflation_5
+			remove_idea = TT_hyper_inflation_4
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = TT_hyper_inflation_5
+		}
+		swap_ideas = {
+			add_idea = TT_hyper_inflation_6
+			remove_idea = TT_hyper_inflation_5
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = TT_hyper_inflation_6
+		}
+		swap_ideas = {
+			add_idea = TT_hyper_inflation_7
+			remove_idea = TT_hyper_inflation_6
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = TT_hyper_inflation_7
+		}
+		swap_ideas = {
+			add_idea = TT_hyper_inflation_8
+			remove_idea = TT_hyper_inflation_7
+		}
+	}
+}
+
+decrease_inflation_level = {
+	if = {
+		limit = {
+			has_idea = TT_hyper_inflation_1
+		}
+		remove_ideas = TT_hyper_inflation_1
+	}
+	else_if = {
+		limit = {
+			has_idea = TT_hyper_inflation_2
+		}
+		swap_ideas = {
+			add_idea = TT_hyper_inflation_1
+			remove_idea = TT_hyper_inflation_2
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = TT_hyper_inflation_3
+		}
+		swap_ideas = {
+			add_idea = TT_hyper_inflation_2
+			remove_idea = TT_hyper_inflation_3
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = TT_hyper_inflation_4
+		}
+		swap_ideas = {
+			add_idea = TT_hyper_inflation_3
+			remove_idea = TT_hyper_inflation_4
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = TT_hyper_inflation_5
+		}
+		swap_ideas = {
+			add_idea = TT_hyper_inflation_4
+			remove_idea = TT_hyper_inflation_5
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = TT_hyper_inflation_6
+		}
+		swap_ideas = {
+			add_idea = TT_hyper_inflation_5
+			remove_idea = TT_hyper_inflation_6
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = TT_hyper_inflation_7
+		}
+		swap_ideas = {
+			add_idea = TT_hyper_inflation_6
+			remove_idea = TT_hyper_inflation_7
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = TT_hyper_inflation_8
+		}
+		swap_ideas = {
+			add_idea = TT_hyper_inflation_7
+			remove_idea = TT_hyper_inflation_8 
+		}
+	}
+}

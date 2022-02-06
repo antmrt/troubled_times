@@ -1,3 +1,18 @@
+
+d_OTT_dmz = {
+
+	every_state = {
+		limit = {
+			is_owned_by = OTT
+			NOT = {
+				is_core_of = TUR
+			}
+		}
+		set_demilitarized_zone = yes
+	}
+
+
+}
 disband_percent_army = {
 	custom_effect_tooltip = disband_percent_army_tt
 	hidden_effect = {

@@ -9,8 +9,7 @@ ideas = {
 				lend_lease_tension = 0
 				request_lease_tension = 0
 				surrender_limit = 1
-				army_core_defence_factor = 0.3
-				army_core_attack_factor = 0.3
+				
 				ai_focus_defense_factor = 0.5
 				ai_focus_aggressive_factor = -2
 			}

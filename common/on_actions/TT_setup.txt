@@ -19,6 +19,13 @@ on_actions = {
 				}
 				country_event = kr.political.122
 			}
+			if = {
+				limit = {
+					has_idea = TT_armistice_of_moudros
+				}
+				d_OTT_dmz = yes
+				
+			}
 		}
 	}
 	on_daily_HUN = {

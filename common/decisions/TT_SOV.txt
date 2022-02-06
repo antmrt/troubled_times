@@ -2,11 +2,12 @@ TT_WHR_russian_civil_war = {
 	WHR_UKR_question = {
 		visible = {
 			is_debug = yes
-		}
-		allowed = {
 			NOT = {
 				country_exists = SOV
 			}
+		}
+		allowed = {
+			tag = WHR
 		} 
 		complete_effect = {
 
@@ -15,12 +16,13 @@ TT_WHR_russian_civil_war = {
 
 	WHR_POL_question = { 
 		allowed = { 
-			NOT = {
-				country_exists = SOV
-			}
+			tag = WHR
 		}
 		visible = {
 			is_debug = yes
+			NOT = {
+				country_exists = SOV
+			}
 		}
 		complete_effect = {
 
@@ -212,6 +214,13 @@ TT_SOV_russian_civil_war = {
 			
 		}
 		remove_effect = {
+			EST = {
+				set_country_flag = {
+					flag = war_just_started
+					value = 1
+					days = 20
+				}
+			}
 			declare_war_on = {
 				target = EST
 				type = puppet_wargoal_focus
@@ -289,6 +298,13 @@ TT_SOV_russian_civil_war = {
 			}
 		}
 		remove_effect = {
+			LAT = {
+				set_country_flag = {
+					flag = war_just_started
+					value = 1
+					days = 20
+				}
+			}
 			declare_war_on = {
 				target = LAT
 				type = puppet_wargoal_focus 
@@ -366,6 +382,7 @@ TT_SOV_russian_civil_war = {
 			}
 		}
 		remove_effect = {
+			
 			declare_war_on = {
 				target = LIT
 				type = puppet_wargoal_focus 

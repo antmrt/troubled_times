@@ -1,0 +1,25 @@
+BALTIC_initial_soviet_offensive = {
+    allowed = {
+        OR = {
+            tag = LAT
+            tag = LIT
+            tag = EST
+        }
+    }
+    enable = {
+        NOT = {
+            has_war_with = SOV
+        }
+    }
+    ai_strategy = {
+		type = front_unit_request
+		TAG = SOV
+		value = -6000
+	}
+    ai_strategy = {
+		type = prepare_for_war
+		id = SOV
+		value = -1000
+	}
+
+}

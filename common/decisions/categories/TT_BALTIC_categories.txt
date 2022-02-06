@@ -8,6 +8,20 @@ BALTIC_soviet_defense = {
 	}
 	priority = 500
 	visible = {
-		date < 1936.1.1
+		date < 1936.1.1 
+	}
+}
+BALTIC_Aligment = {
+	scripted_gui = Baltic_aligment_gui 
+	visible_when_empty = yes
+	priority = 1000
+	allowed = {
+		OR = {
+			original_tag = LAT
+			original_tag = EST
+		}
+	}
+	visible = {
+		is_debug = yes
 	}
 }

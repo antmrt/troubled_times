@@ -1,0 +1,51 @@
+GER_end_of_WW1 = {
+    allowed = {
+        original_tag = GER
+    }
+    enable = {
+        has_war_with = FRA
+        date < 1919.1.1
+        is_historical_focus_on = yes
+    }
+    abort_when_not_enabled = yes
+
+    ai_strategy = {
+		type = front_unit_request
+		tag = FRA
+		value = -30
+	}
+    ai_strategy = {
+		type = front_unit_request
+		state = 28
+		value = 10
+	}
+}
+
+GER_bavarian_socialists ={
+    allowed = {
+        original_tag = GER
+
+    }
+    enable = {
+        has_war_with = BAV
+        BAV = {
+            is_civil_war_target = yes
+        }
+    }
+    abort_when_not_enabled = yes
+     ai_strategy = {
+		type = front_unit_request
+		tag = BAV
+		value = 30
+	}
+    ai_strategy = {
+		type = front_control
+
+		tag = BAV
+
+		ordertype = front
+		execute_order = yes
+        execution_type = rush
+	}
+
+}

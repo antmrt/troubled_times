@@ -1,0 +1,7 @@
+ideas = {
+	country = {
+		TT_armistice_of_moudros = {
+
+		}
+	}
+}

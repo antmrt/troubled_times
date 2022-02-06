@@ -4,23 +4,6 @@ division_template = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-		infantry = { x = 1 y = 2 }
-	}
-	support = {
-		recon = { x = 0 y = 0 }
-	}
-}
-division_template = {
-	name = "Brigaad"
-	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
-	}
-	support = {
-		recon = { x = 0 y = 0 }
 	}
 }
 division_template = {
@@ -39,21 +22,21 @@ units = {
 	division = {
 		name = "1. Diviis"
 		location = 592
-		division_template = "Jalaväediviisi"
+		division_template = "Regiment"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.9
 	}
 	division = {
 		name = "2. Diviis"
 		location = 592
-		division_template = "Jalaväediviisi"
+		division_template = "Regiment"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.9
 	}
 	division = {
 		name = "3. Diviis"
 		location = 592
-		division_template = "Jalaväediviisi"
+		division_template = "Regiment"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.9
 	}

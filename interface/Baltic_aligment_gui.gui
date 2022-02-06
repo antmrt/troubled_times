@@ -1,0 +1,13 @@
+guiTypes = {
+    containerWindowType = {
+        name = "Baltic_aligment_gui_container"
+        position = { x = 0 y = 0 }
+        size = { width = 400 height = 400 }
+
+        iconType = {
+            name = "Blatic_aligment_wheel"
+            position = { x = 0 y = 0 }
+            spriteType = "GFX_baltic_wheel"
+        }
+    }
+}

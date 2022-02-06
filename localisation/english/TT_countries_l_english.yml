@@ -3746,6 +3746,10 @@
  ZHI_DEF:0 "Zhili Clique"
  ZHI_ADJ:0 "Chinese"
  ZHI:0 "Zhili Clique"
+ OTT:0 "Ottoman Empire"
+ OTT_DEF:0 "Ottoman Empire"
+ OTT_ADJ:0 "Ottoman"
+
 
  Russian_SFSR:0 "Russian SFSR"
  Russian_SFSR_DEF:0 "Russian SFSR"

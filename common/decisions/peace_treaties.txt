@@ -208,7 +208,23 @@ CP_treaty_of_frankfurt = {
 	}
 
 }
-
+ENTENTE_treaty_of_sevres = {
+	treaty_of_sevres_timer = {
+		allowed = {
+			OR = {
+				tag = FRA
+				tag = ENG
+				tag = OTT
+			}
+		}		
+		days_mission_timeout = 638
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+	}
+}
 ENTENTE_treaty_of_versailles = {
  	treaty_of_versailles_timer = {
 		allowed = {

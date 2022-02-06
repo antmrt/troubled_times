@@ -1,0 +1,20 @@
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_chemical_research_medium"
+		texturefile = "gfx/interface/technologies/ww1/engineering/chemical_research.dds"
+	}	
+	SpriteType = {
+		name = "GFX_chemical_research2_medium"
+		texturefile = "gfx/interface/technologies/ww1/engineering/chemical_research2.dds"
+	}	
+	SpriteType = {
+		name = "GFX_chemical_research3_medium"
+		texturefile = "gfx/interface/technologies/ww1/engineering/chemical_research3.dds"
+	}	
+	SpriteType = {
+		name = "GFX_RON_Late_Telegraph_medium"
+		texturefile = "gfx/interface/technologies/DNC_Tech_Expansion/RON_Late_Telegraph.dds"
+	}
+
+	
+}

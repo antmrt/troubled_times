@@ -1,0 +1,6 @@
+scripted_gui = {
+    Baltic_aligment_gui = {
+        context_type = decision_category
+        window_name = "Baltic_aligment_gui_container"
+    }
+} 

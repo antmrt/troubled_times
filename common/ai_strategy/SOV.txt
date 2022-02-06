@@ -1,0 +1,172 @@
+SOV_WHR_civil_war = {
+    allowed = {
+        tag = SOV
+    }
+    enable = {
+        has_war_with = WHR
+    }
+
+    abort_when_not_enabled = yes
+     ai_strategy = {
+		type = front_control
+
+		tag = WHR
+        ratio = 0.6
+		ordertype = front
+		execute_order = yes
+        execution_type = rush
+	}
+    ai_strategy = {
+        type = build_army
+        id = infantry
+        value = 1000
+    }
+    ai_strategy = {
+		type = prepare_for_war
+		id = POL
+		value = 100
+	}
+    ai_strategy = {
+		type = prepare_for_war
+		id = EST
+		value = 100
+	}
+    ai_strategy = {
+		type = front_unit_request
+		tag = LIT
+		value = 5
+	}
+    ai_strategy = {
+		type = prepare_for_war
+		id = LAT
+		value = 100
+	}
+    ai_strategy = {
+		type = front_unit_request
+		tag = LAT
+		value = 5
+	}
+    ai_strategy = {
+		type = front_unit_request
+		tag = EST
+		value = 5
+	}
+    ai_strategy = {
+		type = prepare_for_war
+		id = LIT
+		value = 100
+	}
+    ai_strategy = {
+		type = front_unit_request
+		tag = WHR
+		value = 50
+	}
+    ai_strategy = {
+        type = force_build_armies
+        value = 1000
+    }
+}
+
+SOV_1919_POL_war = {
+    allowed = {
+        tag = SOV
+    }
+    enable = {
+        has_war_with = POL
+    }
+    abort_when_not_enabled = yes
+
+   ai_strategy = {
+		type = front_control
+
+		tag = POL
+        ratio = 0.6
+		ordertype = front
+		execute_order = yes
+        execution_type = rush_weak
+	}
+    ai_strategy = {
+		type = front_unit_request
+		tag = POL
+		value = 50
+	}
+    ai_strategy = {
+		type = front_unit_request
+		tag = LIT
+		value = -50
+	}
+    ai_strategy = {
+		type = front_unit_request
+		tag = LAT
+		value = -50
+	}
+    ai_strategy = {
+		type = front_unit_request
+		tag = EST
+		value = -50
+	}
+    ai_strategy = {
+        type = force_build_armies
+        value = 1000
+    }
+    
+}
+SOV_1919_Baltic_wars = {
+    allowed = {
+        tag = SOV
+    }
+    enable = {
+        OR = {
+            has_war_with = EST
+            has_war_with = LAT
+            has_war_with = LIT
+        }
+        NOT = {
+            has_war_with = POL
+        }
+    }
+    abort_when_not_enabled = yes
+    ai_strategy = {
+		type = front_control
+
+		tag = EST
+
+		ordertype = front
+		execute_order = yes
+        execution_type = rush_weak
+	}
+    ai_strategy = {
+		type = front_control
+
+		tag = LAT
+        ratio = 0.6
+		ordertype = front
+		execute_order = yes
+        execution_type = rush_weak
+	}
+    ai_strategy = {
+		type = front_control
+
+		tag = LIT
+        ratio = 0.6
+		ordertype = front
+		execute_order = yes
+        execution_type = rush_weak
+	}
+    ai_strategy = {
+		type = front_unit_request
+		tag = LIT
+		value = 5
+	}
+    ai_strategy = {
+		type = front_unit_request
+		tag = LAT
+		value = 5
+	}
+    ai_strategy = {
+		type = front_unit_request
+		tag = EST
+		value = 5
+	}
+
+}

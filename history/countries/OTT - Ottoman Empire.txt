@@ -26,26 +26,26 @@ set_popularities = {
 	democratic = 42
 }
 
-create_country_leader = {
-	name = "Abdul Hamid II"
-	picture = "gfx/leaders/OTT/DNC/OTT_Abdul_Hamid_II.dds"
-	expire = "2060.1.1"
-	ideology = despotism
-}
+# create_country_leader = {
+# 	name = "Abdul Hamid II"
+# 	picture = "gfx/leaders/OTT/DNC/OTT_Abdul_Hamid_II.dds"
+# 	expire = "2060.1.1"
+# 	ideology = despotism
+# }
 
-create_country_leader = {
-	name = "Abdul Hamid II"
-	picture = "gfx/leaders/OTT/DNC/OTT_Abdul_Hamid_II.dds"
-	expire = "2060.1.1"
-	ideology = emiratism
-}
+# create_country_leader = {
+# 	name = "Abdul Hamid II"
+# 	picture = "gfx/leaders/OTT/DNC/OTT_Abdul_Hamid_II.dds"
+# 	expire = "2060.1.1"
+# 	ideology = emiratism
+# }
 
-create_country_leader = {
-	name = "Enver Pasha"
-	picture = "gfx/leaders/OTT/DNC/Enver_Pasha.dds"
-	expire = "2060.1.1"
-	ideology = ottomanism
-}
+# create_country_leader = {
+# 	name = "Enver Pasha"
+# 	picture = "gfx/leaders/OTT/DNC/Enver_Pasha.dds"
+# 	expire = "2060.1.1"
+# 	ideology = ottomanism
+# }
 
 if = {
 	limit = {
@@ -383,27 +383,7 @@ if = {
 		democratic = 42
 	}
 
-	create_country_leader = {
-		name = "Mehmed V"
-		desc = "POLITICS_MEHMED_V_DESC"
-		picture = "gfx/leaders/OTT/WW1/Portrait_Turkey_Mehmed_V.dds"
-		expire = "1918.7.3"
-		ideology = despotism
-		traits = {
-			cornered_fox
-		}
-	}
-
-	create_country_leader = {
-		name = "Mehmed V"
-		desc = "POLITICS_MEHMED_V_DESC"
-		picture = "gfx/leaders/OTT/WW1/Portrait_Turkey_Mehmed_V.dds"
-		expire = "1918.7.3"
-		ideology = emiratism
-		traits = {
-			cornered_fox
-		}
-	}
+	
 
 	set_technology = {
 		tech_support = 1
@@ -456,4 +436,11 @@ if = {
 
 1914.1.1 = {
 	oob = "TUR_1914"
+}
+
+1918.1.1 = {
+	recruit_character = OTT_mehmed_vi
+	oob = "TUR_1918"
+	d_OTT_dmz = yes
+	add_ideas = TT_armistice_of_moudros
 }

@@ -1,0 +1,77 @@
+SYF_crush_nationalists = {
+    allowed = {
+        tag = SYF
+    }
+    enable = {
+        has_war_with = FRA
+        tag = SYF
+    }
+    abort_when_not_enabled = yes
+
+    ai_strategy = {
+        type = ignore_army_incompetence
+        
+        value = 200
+    }
+    ai_strategy = {
+		type = front_control
+
+		area = mainland_europe
+
+		ordertype = front
+		execute_order = yes
+        execution_type = rush
+	}
+}
+
+FRA_move_to_algeria = {
+	allowed = {
+		tag = FRA
+	}
+	enable = {
+		has_war_with = SYF
+        has_completed_focus = TT_NFR_transfer_government
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = put_unit_buffers
+
+		order_id = 2
+
+		
+		states = {
+			459
+			460
+			513
+            458
+		}
+
+		ratio = 1
+
+		area = africa
+
+		subtract_invasions_from_need = yes
+	}
+    ai_strategy = {
+		type = front_unit_request
+		area = africa
+		value = 6000
+	}
+    ai_strategy = {
+		type = front_unit_request
+		area = europe
+		value = -6000
+	}
+	ai_strategy = {
+		type = area_priority
+		id = africa
+		value = 600
+	}
+    ai_strategy = {
+		type = area_priority
+		id = europe
+		value = -600
+	}
+}

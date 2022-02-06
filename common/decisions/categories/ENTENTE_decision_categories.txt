@@ -68,7 +68,17 @@ ENTENTE_treaty_of_Saint_Germain = {
 	}
 	priority = 499
 }
-
+ENTENTE_treaty_of_sevres = {
+	icon = ger_mefo_bills
+	allowed = {
+		OR = {
+			tag = FRA
+			tag = ENG
+			tag = OTT
+		}
+	}
+	priority = 500
+}
 CP_treaty_of_frankfurt = {
 	icon = ger_mefo_bills
 	allowed = {

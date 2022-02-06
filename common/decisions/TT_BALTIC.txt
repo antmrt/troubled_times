@@ -10,6 +10,18 @@ BALTIC_soviet_defense = {
 		ai_will_do = {
 			base = 0
 			modifier = {
+				add = 1000000
+				all_core_state = {
+					
+					NOT = {
+						is_controlled_by = SOV
+					}
+				}
+				NOT = {
+					has_country_flag = war_just_started
+				}
+			}
+			modifier = {
 				tag = EST
 				date > 1920.2.2
 				add = 1000000

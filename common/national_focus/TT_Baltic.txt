@@ -1,0 +1,88 @@
+focus_tree = {
+    id = BALTIC_focus 
+    country = {
+        factor = 0
+        modifier = {
+            add = 25
+            OR = {
+                tag = EST
+                tag = LAT
+            }
+        }
+    }
+
+    focus = {
+        id = BALTIC_new_government
+
+        x = 20
+        y = 1
+        cost = 2
+        completion_reward = {
+            add_political_power = 20
+        }
+    }
+
+    focus = {
+        id = BALTIC_SOV_threats
+        relative_position_id = BALTIC_new_government
+        x = 0
+        y = 1
+        completion_reward = {
+            add_war_support = 0.05
+        }
+        cost = 1
+        prerequisite = {
+            focus = BALTIC_new_government
+        }
+    }
+    focus = {
+        id = BALTIC_embrace_bolchevism
+        relative_position_id = BALTIC_SOV_threats
+        x = -2
+        y = 1
+        cost = 1
+        prerequisite = {
+            focus = BALTIC_SOV_threats
+        }
+        mutually_exclusive = {
+            focus = BALTIC_no_need_for_help
+        }
+        mutually_exclusive = {
+            focus = BALTIC_call_for_freikorps_help
+        }
+    }
+    focus = {
+        id = BALTIC_call_for_freikorps_help
+        relative_position_id = BALTIC_SOV_threats
+        x = 2
+        y = 1
+        cost = 1
+        prerequisite = {
+            focus = BALTIC_SOV_threats
+
+        }
+        mutually_exclusive = {
+            focus = BALTIC_no_need_for_help
+        }
+        mutually_exclusive = {
+            focus = BALTIC_embrace_bolchevism
+        }
+    }
+
+    focus = {
+        id = BALTIC_no_need_for_help
+        relative_position_id = BALTIC_SOV_threats
+        x = 0
+        y = 1
+        cost = 1
+        prerequisite = {
+            focus = BALTIC_SOV_threats
+        }
+        mutually_exclusive = {
+            focus = BALTIC_call_for_freikorps_help
+        }
+        mutually_exclusive = {
+            focus = BALTIC_embrace_bolchevism
+        }
+    }
+}

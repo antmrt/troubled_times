@@ -36,11 +36,8 @@ focus_tree = {
         completion_reward = {
             set_capital = { state = 459 }
 
-            add_ai_stategy = {
-                type = area_priority
-                value = 2000
-                id = africa
-            }
+            
+           
         }
     }
 

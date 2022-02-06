@@ -1,0 +1,9 @@
+SpriteTypes = {
+
+    SpriteType = {
+        name = "GFX_baltic_wheel"
+        texturefile = "gfx/interface/Baltics/wheel.dds"
+    }
+
+}
+

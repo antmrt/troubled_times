@@ -216,11 +216,61 @@ ENTENTE_treaty_of_sevres = {
 				tag = ENG
 				tag = OTT
 			}
-		}		
+		}
+		fire_only_once = yes
 		days_mission_timeout = 638
 		available = {
 			hidden_trigger = {
 				always = no
+			}
+		}
+		timeout_effect = {
+			OTT = {
+				release = YEM
+				release = IRQ
+				remove_ideas = TT_armistice_of_moudros
+			}
+			FRA = {
+				transfer_state = 553
+				transfer_state = 677
+				transfer_state = 554
+				transfer_state = 630
+				transfer_state = 877
+				transfer_state = 1040
+				transfer_state = 350
+				transfer_state = 680
+			}
+			GRE = {
+				transfer_state = 341
+				transfer_state = 339
+
+			}
+			ARM = {
+				transfer_state = 1001
+				transfer_state = 354
+				transfer_state = 955
+				transfer_state = 353
+			}
+			ENG = {
+				transfer_state = 1120
+				transfer_state = 454
+				transfer_state = 1121
+				transfer_state = 455
+				transfer_state = 947
+			}
+			SAU = {
+				transfer_state = 679
+			}
+			hidden_effect = {
+				every_state = {
+					limit = {
+						OR = {
+							is_core_of = OTT
+							is_core_of = IRQ
+						}
+					}
+					set_demilitarized_zone = no
+				}
 			}
 		}
 	}

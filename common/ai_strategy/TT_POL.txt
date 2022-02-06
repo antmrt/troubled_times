@@ -1,3 +1,21 @@
+POL_prepare_for_german_border_wars = {
+	allowed = {
+		tag = POL
+	}
+	enable = {
+		NOT = {
+			is_subject_of = GER
+		}
+		
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = prepare_for_war
+		id = GER
+		value = 100
+	}
+}
+
 POL_vistula_defence = {
     allowed = {
         tag = POL

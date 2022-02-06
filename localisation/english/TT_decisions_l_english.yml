@@ -107,6 +107,10 @@ GER_TANK_RESTRICTION_ENTENTE:0 "§GRestriction on Tanks§!"
  FRENCH_ARMY_RESTRICTION_GER:0 "§G40% Army Demobilization§!"
  FRENCH_ARMY_RESTRICTION_FRA:0 "§R40% Army Demobilization§!"
 
+ ENTENTE_treaty_of_sevres:0 "Treaty of Sevres"
+ ENTENTE_treaty_of_sevres_desc:0 "§gThis is still WIP, however, this should act historically§!"
+ treaty_of_sevres_timer:0 "Treaty Discussion"
+
  public_asks_for_demob:0 "Public Asks for Demobilization"
  mobilisation_penalty_modifier:0 "Above Division Limit"
 

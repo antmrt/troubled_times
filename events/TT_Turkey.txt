@@ -1,0 +1,16 @@
+add_namespace = TT_Turkey
+
+country_event = {
+	id = TT_Turkey.1
+	desc = TT_Turkey.1.d
+	title = TT_Turkey.1.t
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		retire_country_leader = yes
+
+		
+	}
+}

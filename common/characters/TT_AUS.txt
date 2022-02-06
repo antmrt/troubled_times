@@ -1,0 +1,15 @@
+characters = {
+	TT_AUS_Karl_Renner = {
+		name = AUS_Karl_Renner
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/AUS/Karl_Renner_ww1.dds"
+			}
+		}
+		country_leader = {
+			ideology = nonaligned_socialdemocracy
+			id = -1
+			expire = "1951.1.1"
+		}
+	}
+}

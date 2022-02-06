@@ -1,0 +1,97 @@
+focus_tree = {
+	id = TT_Austria
+	country = {
+		base = 0
+		modifier = {
+			tag = AUS
+			add = 25
+		}
+	}
+
+	focus = {
+		id = TT_AUS_Republic_of_Deutschosterreich
+		x = 1
+		y = 1
+		completion_reward = {
+			add_political_power = 50
+
+		}
+
+		cost = 0
+	}
+
+	focus = {
+		id = TT_AUS_strong_right_wing_government
+		relative_position_id = TT_AUS_Republic_of_Deutschosterreich
+		x = 2
+		y = 1
+		cost = 5
+		prerequisite = {
+			focus = TT_AUS_Republic_of_Deutschosterreich
+		}
+		mutually_exclusive = {
+			focus = TT_AUS_democratic_government
+		}
+		mutually_exclusive = {
+			focus = TT_AUS_republic_of_the_workers
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.025
+			}
+			
+			add_popularity = {
+				ideology = neutralisty
+				popularity = 0.025
+			}
+			
+		}
+	}
+
+	focus = {
+		id = TT_AUS_republic_of_the_workers
+		relative_position_id = TT_AUS_Republic_of_Deutschosterreich
+		x = -2
+		y = 1
+		cost = 5
+		prerequisite = {
+			focus = TT_AUS_Republic_of_Deutschosterreich
+		}
+		mutually_exclusive = {
+			focus = TT_AUS_democratic_government
+		}
+		mutually_exclusive = {
+			focus = TT_AUS_strong_right_wing_government
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+		}
+	}
+
+	focus = {
+		id = TT_AUS_democratic_government
+		relative_position_id = TT_AUS_Republic_of_Deutschosterreich
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = {
+			focus = TT_AUS_Republic_of_Deutschosterreich
+		}
+		mutually_exclusive = {
+			focus = TT_AUS_strong_right_wing_government
+		}
+		mutually_exclusive = {
+			focus = TT_AUS_republic_of_the_workers
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}
+		}
+	}
+}

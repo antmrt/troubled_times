@@ -16,5 +16,81 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/DNC_Tech_Expansion/RON_Late_Telegraph.dds"
 	}
 
+	SpriteType = {
+		name = "GFX_RON_Electrical_Engineering_medium"
+		texturefile = "gfx/interface/technologies/electronic_mechanical_engineering.dds"
+	}
+	SpriteType = {
+		name = "GFX_ww1_electronic_mechanical_engineering_medium"
+		texturefile = "gfx/interface/technologies/electronic_mechanical_engineering.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_ww1_radio_medium"
+		texturefile = "gfx/interface/technologies/radio.dds"
+	}	
+
 	
-}
+
+	#KiS
+	SpriteType = {
+		name = "GFX_ww1_radio2_medium"
+		texturefile = "gfx/interface/technologies/ww1/engineering/radio2.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_radio3_medium"
+		texturefile = "gfx/interface/technologies/ww1/engineering/radio3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_supertech1_medium"
+		texturefile = "gfx/interface/technologies/ww1/engineering/supertech1.dds"
+	}
+	SpriteType = {
+		name = "GFX_supertech2_medium"
+		texturefile = "gfx/interface/technologies/ww1/engineering/supertech2.dds"
+	}
+
+
+	SpriteType = {
+		name = "GFX_early_infantry_weapons4_medium"
+		texturefile = "gfx/interface/technologies/early_infantry_weapons4.dds"
+	}
+	SpriteType = {
+		name = "GFX_early_infantry_equip3_medium"
+		texturefile = "gfx/interface/technologies/early_infantry_equip3.dds"
+	}
+	SpriteType = {
+		name = "GFX_interwars_infantry_equip_medium"
+		texturefile = "gfx/interface/technologies/interwars_infantry_equip.dds"
+	}
+	SpriteType = {
+		name = "GFX_interwars_infantry_equip2_medium"
+		texturefile = "gfx/interface/technologies/interwars_infantry_equip2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_interwar_support_weapons_medium"
+		texturefile = "gfx/interface/technologies/interwar_support_weapons.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_interwar_support_weapons2_medium"
+		texturefile = "gfx/interface/technologies/interwar_support_weapons2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_interwar_support_weapons3_medium"
+		texturefile = "gfx/interface/technologies/interwar_support_weapons3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_interwar_support_weapons4_medium"
+		texturefile = "gfx/interface/technologies/interwar_support_weapons4.dds"
+	}
+	SpriteType = {
+		name = "GFX_modern_support_weapons_medium"
+		texturefile = "gfx/interface/technologies/modern_support_weapons.dds"
+	}
+} 

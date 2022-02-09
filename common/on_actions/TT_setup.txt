@@ -1,4 +1,14 @@
 on_actions = {
+	on_weekly_FRA = {
+		effect = {
+			if = {
+				limit = {
+					has_completed_focus = TT_INT_FRA_Dismantle_union_sacree
+				}
+				FRA_calculate_parliament = yes
+			}
+		}
+	}
 	on_weekly = {
 		effect = {
 			# unit limit calculations

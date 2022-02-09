@@ -230,7 +230,15 @@ TT_spartakist_uprising_timer:0 "Spartakist Uprising"
  invite_FR_to_coalition:0 "Invite FR to Coalition"
  invite_AF_to_coalition:0 "Invite AF to Coalition"
  invite_PDP_to_coalition:0 "Invite PDP to Coalition"
-
+ 
+ SFIC_secures_seats:0 "The SFIC secures seats in the parliament"
+ PRRRS_secures_seats:0 "The PRRRS secures seats in the parliament"
+ SFIO_secures_seats:0 "The SFIO secures seats in the parliament"
+ AD_secures_seats:0 "The AD secures seats in the parliament"
+ PDP_secures_seats:0 "The PDP secures seats in the parliament"
+ FR_secures_seats:0 "The FR secures seats in the parliament"
+ INDEP_secures_seats0 "Independents secures seats in the parliament"
+ AF_secures_seats:0 "The AF secures seats in the parliament"
 
  demilitarize_french_border:0 "Adds '§GBorder Demilitarized§!' to the Treaty"
 

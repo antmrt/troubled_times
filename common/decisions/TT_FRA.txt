@@ -246,9 +246,11 @@ category_test_decisions = {
 				dismantle_faction = yes
 				load_focus_tree = FRA_National
 			}
-			transfer_units_fraction = {
-				target = SYF
-				size = 0.75
+			FRA = {
+				transfer_units_fraction = {
+					target = SYF
+					size = 0.75
+				}
 			}
 			SYF = {
 				declare_war_on = {
@@ -262,6 +264,221 @@ category_test_decisions = {
 	}
 }
 parliament_gui_decision_category = {
+	TT_FRA_parliament_election = {
+		activation = {
+			always = no
+		}
+		days_mission_timeout = 120
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+
+	}
+	SFIC_secures_seats = {
+		days_mission_timeout = 35
+		activation = {
+			always = no
+			#activated via on_weekly_FRA
+		}
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+
+		timeout_effect = {
+			randomize_temp_variable = {
+				var = temp_seats1
+				distribution = uniform
+				min = 1
+				max = 5
+			}
+			round_temp_variable = temp_seats1
+			set_temp_variable = { temp_member = 1 }
+			set_temp_variable = { temp_seats = temp_seats1?1 }
+			modify_parliament_seat = yes
+		}
+
+	}
+	PRRRS_secures_seats = {
+		days_mission_timeout = 35
+		activation = {
+			always = no
+			#activated via on_weekly_FRA
+		}
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+
+		timeout_effect = {
+			randomize_temp_variable = {
+				var = temp_seats1
+				distribution = uniform
+				min = 1
+				max = 5
+			}
+			round_temp_variable = temp_seats1
+			set_temp_variable = { temp_member = 2 }
+			set_temp_variable = { temp_seats = temp_seats1?1 }
+			modify_parliament_seat = yes
+		}
+
+	}
+	SFIO_secures_seats = {
+		days_mission_timeout = 35
+		activation = {
+			always = no
+			#activated via on_weekly_FRA
+		}
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+
+		timeout_effect = {
+			randomize_temp_variable = {
+				var = temp_seats1
+				distribution = uniform
+				min = 1
+				max = 5
+			}
+			round_temp_variable = temp_seats1
+			set_temp_variable = { temp_member = 3 }
+			set_temp_variable = { temp_seats = temp_seats1?1 }
+			modify_parliament_seat = yes
+		}
+	}
+	AD_secures_seats = {
+		days_mission_timeout = 35
+		activation = {
+			always = no
+			#activated via on_weekly_FRA
+		}
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+
+		timeout_effect = {
+			randomize_temp_variable = {
+				var = temp_seats1
+				distribution = uniform
+				min = 1
+				max = 5
+			}
+			round_temp_variable = temp_seats1
+			set_temp_variable = { temp_member = 4 }
+			set_temp_variable = { temp_seats = temp_seats1?1 }
+			modify_parliament_seat = yes
+		}
+	}
+	PDP_secures_seats = {
+		days_mission_timeout = 35
+		activation = {
+			always = no
+			#activated via on_weekly_FRA
+		}
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+
+		timeout_effect = {
+			randomize_temp_variable = {
+				var = temp_seats1
+				distribution = uniform
+				min = 1
+				max = 5
+			}
+			round_temp_variable = temp_seats1
+			set_temp_variable = { temp_member = 5 }
+			set_temp_variable = { temp_seats = temp_seats1?1 }
+			modify_parliament_seat = yes
+		}
+	}
+	FR_secures_seats = {
+		days_mission_timeout = 35
+		activation = {
+			always = no
+			#activated via on_weekly_FRA
+		}
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+
+		timeout_effect = {
+			randomize_temp_variable = {
+				var = temp_seats1
+				distribution = uniform
+				min = 1
+				max = 5
+			}
+			round_temp_variable = temp_seats1
+			set_temp_variable = { temp_member = 6 }
+			set_temp_variable = { temp_seats = temp_seats1?1 }
+			modify_parliament_seat = yes
+		}
+	}
+	INDEP_secures_seats = {
+		days_mission_timeout = 35
+		activation = {
+			always = no
+			#activated via on_weekly_FRA
+		}
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+
+		timeout_effect = {
+			randomize_temp_variable = {
+				var = temp_seats1
+				distribution = uniform
+				min = 1
+				max = 5
+			}
+			round_temp_variable = temp_seats1
+			set_temp_variable = { temp_member = 7 }
+			set_temp_variable = { temp_seats = temp_seats1?1 }
+			modify_parliament_seat = yes
+		}
+	}
+	AF_secures_seats = {
+		days_mission_timeout = 35
+		activation = {
+			always = no
+			#activated via on_weekly_FRA
+		}
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+
+		timeout_effect = {
+			randomize_temp_variable = {
+				var = temp_seats1
+				distribution = uniform
+				min = 1
+				max = 5
+			}
+			round_temp_variable = temp_seats1
+			set_temp_variable = { temp_member = 8 }
+			set_temp_variable = { temp_seats = temp_seats1?1 }
+			modify_parliament_seat = yes
+		}
+	}
+
 	test_parliament = {
 		visible = {
 			is_debug = yes

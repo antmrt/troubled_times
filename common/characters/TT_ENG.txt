@@ -1,0 +1,19 @@
+characters = {
+	TT_ENG_David_lloyd_george = {
+		name = ENG_David_lloyd_george
+
+
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ENG/Lloyd_Georges.dds"
+			}
+		}
+		country_leader={
+			ideology=liberalism
+			
+			expire="1945.3.26"
+			id=-1
+		}
+
+	}
+}

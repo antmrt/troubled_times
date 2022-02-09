@@ -28,6 +28,126 @@ calculate_sanity_arrow_position = {
 		sanity_arrow_position = diff
 	}
 }
+FRA_calculate_parliament = {
+	if = {
+		limit = {
+			SFIC_has_less_than_historical_number_of_seats = yes
+		}
+		random_list = {
+			33 = {
+				activate_mission = SFIC_secures_seats
+			}
+			66 = {
+
+			}
+		}
+		
+	}
+	if = {
+		limit = {
+			PRRRS_has_less_than_historical_number_of_seats = yes
+		}
+		random_list = {
+			33 = {
+				activate_mission = PRRRS_secures_seats
+			}
+			66 = {
+
+			}
+		}
+		
+	}
+
+	if = {
+		limit = {
+			SFIO_has_less_than_historical_number_of_seats = yes
+		}
+		random_list = {
+			66 = {
+
+			}
+			33 = {
+				activate_mission = SFIO_secures_seats
+			}
+		}
+		
+	}
+
+	if = {
+		limit = {
+			AD_has_less_than_historical_number_of_seats = yes
+		}
+		random_list = {
+			33 = {
+				activate_mission = AD_secures_seats
+			}
+		}
+		
+	}
+
+	if = {
+		limit = {
+			PDP_has_less_than_historical_number_of_seats = yes
+		}
+		random_list = {
+			33 = {
+				activate_mission = PDP_secures_seats
+			}
+			66 = {
+
+			}
+		}
+		
+	}
+
+	if = {
+		limit = {
+			FR_has_less_than_historical_number_of_seats = yes
+		}
+		random_list = {
+			33 = {
+				activate_mission = FR_secures_seats
+			}
+			66 = {
+
+			}
+		}
+	}
+
+	if = {
+		limit = {
+			INDEP_has_less_than_historical_number_of_seats = yes
+		}
+		random_list = {
+			33 = {
+				activate_mission = INDEP_secures_seats
+			}
+			66 = {
+
+			}
+		}
+	}
+
+	if = {
+		limit = {
+			AF_has_less_than_historical_number_of_seats = yes
+		}
+		random_list = {
+			33 = {
+				activate_mission = AF_secures_seats
+			}
+			66 = {
+
+			}
+		}
+	}
+
+
+
+
+
+
+}
 parliament_gui_initial = {
 	# Put simply an array stores a list of things, used here to store the list of parties and list of seats.
 

@@ -42,7 +42,7 @@ focus_tree = {
 			}
 			
 			add_popularity = {
-				ideology = neutralisty
+				ideology = neutrality
 				popularity = 0.025
 			}
 			
@@ -59,7 +59,7 @@ focus_tree = {
 			focus = TT_AUS_Republic_of_Deutschosterreich
 		}
 		mutually_exclusive = {
-			focus = TT_AUS_democratic_government
+			focus = TT_AUS_democratic_government 
 		}
 		mutually_exclusive = {
 			focus = TT_AUS_strong_right_wing_government
@@ -71,7 +71,23 @@ focus_tree = {
 			}
 		}
 	}
-
+	focus = {
+		id = TT_AUS_organise_famine
+		relative_position_id = TT_AUS_republic_of_the_workers
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = {
+			focus = TT_AUS_republic_of_the_workers
+		}
+		completion_reward = {
+			add_stability = -0.1
+			add_popularity = {
+				ideology = communism
+				popularity = 0.1
+			}
+		}
+	}
 	focus = {
 		id = TT_AUS_democratic_government
 		relative_position_id = TT_AUS_Republic_of_Deutschosterreich
@@ -85,7 +101,7 @@ focus_tree = {
 			focus = TT_AUS_strong_right_wing_government
 		}
 		mutually_exclusive = {
-			focus = TT_AUS_republic_of_the_workers
+			focus = TT_AUS_republic_of_the_workers 
 		}
 		completion_reward = {
 			add_popularity = {

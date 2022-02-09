@@ -225,6 +225,7 @@ ENTENTE_treaty_of_sevres = {
 			}
 		}
 		timeout_effect = {
+			set_global_flag = treaty_of_sevres_signed
 			OTT = {
 				release = YEM
 				release = IRQ
@@ -273,6 +274,57 @@ ENTENTE_treaty_of_sevres = {
 				}
 			}
 		}
+	}
+
+	revise_treaty_of_sevres = {
+		allowed = {
+			tag = OTT
+		}
+		visible = {
+			has_global_flag = treaty_of_sevres_signed
+		}
+
+		days_remove = 10
+
+		complete_effect = {
+			every_state = {
+				limit = {
+					is_controlled_by = OTT
+				}
+				TUR = {
+					transfer_state = PREV
+				}
+				TUR = {
+					change_tag_from = OTT
+					load_oob = "TUR_1919"
+				}
+			}
+		}
+		remove_effect = {
+			declare_war_on = {
+				target = GRE
+				type = take_state
+				generator = { 339 341 }
+			}
+			declare_war_on = {
+				target = FRA
+				type = take_state
+				generator = {}
+			}
+
+			declare_war_on = {
+				target = FRA
+				type = take_state
+				generator = { 350 }
+			}
+
+			declare_war_on = {
+				target = ARM
+				type = take_state
+				generator = { 1001 354 955 353 }
+			}
+		}
+
 	}
 }
 ENTENTE_treaty_of_versailles = {

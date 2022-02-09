@@ -1,0 +1,17 @@
+characters = {
+	TT_ROM_Constantin_Coanda = {
+		name = TT_ROM_Constantin_Coanda
+
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ROM/Constantin_Coanda.dds"
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			expire = "1935.1.1"
+			id = -1
+		}
+
+	}
+}

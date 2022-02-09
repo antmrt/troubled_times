@@ -1,0 +1,10 @@
+ideas = {
+	country = {
+		TT_AUS_famine_risk = {
+
+			picture = raj_risk_of_famine
+
+
+		}
+	}
+}

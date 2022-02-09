@@ -1,6 +1,15 @@
 ﻿capital = 613 # Nanjing
 
 oob = "CHI_1936"
+
+1918.11.11 = {
+	oob = "CHI_1919"
+	declare_war_on = {
+		target = GXC
+		type = civil_war
+	}
+}
+
 if = {
 	limit = { has_dlc = "Man the Guns" }
 		set_naval_oob = "CHI_1936_naval_mtg"

@@ -1,7 +1,12 @@
 ﻿capital = 594
 
-oob = "GXC_1936"
+1918.1.1 = {
+	
+}
 
+1936.1.1 = {
+	oob = "GXC_1936"
+}
 set_stability = 0.6
 set_war_support = 0.4
 # Starting tech

@@ -8,9 +8,9 @@ characters = {
 			}
 		}
 		country_leader={
-			ideology=nonaligned_liberalism
+			ideology= liberalism
 			
-			expire="1936.3.18"
+			expire="1945.3.26"
 			id=-1
 		}
 	}

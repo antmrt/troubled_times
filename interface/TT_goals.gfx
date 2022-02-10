@@ -44,8 +44,36 @@ spriteTypes = {
 		textureFile = "gfx/interface/TT_goals/FRA_ruhr_occupation.dds"
 	}
 	spriteType = {
-		name = GFX_FRA_polish_brothers_icon
-		textureFile = "gfx/interface/TT_goals/FRA_polish_brothers.dds"
+		name = GFX_FRA_confidence_vote_icon
+		textureFile = "gfx/interface/TT_goals/FRA_confidence_vote.dds"
 	}
-	
-}
+	spriteType = {
+		name = GFX_revolutionary_left_icon
+		textureFile = "gfx/interface/TT_goals/FRA_revolutionary_left.dds"
+	}
+	spriteType = {
+		name = GFX_FRA_reconstruction_funds_icon
+		textureFile = "gfx/interface/TT_goals/FRA_reconstruction_funds.dds"
+	}
+	spriteType = {
+		name = GFX_FRA_european_workers_icon
+		textureFile = "gfx/interface/TT_goals/FRA_european_workers.dds"
+	} 
+
+	spriteType = {
+		name = GFX_FRA_inflation_measures_icon
+		textureFile = "gfx/interface/TT_goals/FRA_inflation_measures.dds"
+	}
+	spriteType = {
+		name = GFX_FRA_clemenceau_survives_icon 
+		textureFile = "gfx/interface/TT_goals/FRA_clemenceau_survives.dds"
+	}	   
+	spriteType = {
+		name = GFX_FRA_clemenceau_dies_icon 
+		textureFile = "gfx/interface/TT_goals/FRA_clemenceau_dies.dds"
+	}
+	spriteType = {
+		name = GFX_FRA_Victory_at_last_icon 
+		textureFile = "gfx/interface/TT_goals/FRA_Victory_at_last.dds"
+	}
+} 

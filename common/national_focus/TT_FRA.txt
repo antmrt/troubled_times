@@ -16,6 +16,7 @@ focus_tree = {
 		x = 20
 		y = 1
 		cost = 2
+		icon = GFX_FRA_Victory_at_last_icon 
 		available = {
 			has_global_flag = compiegne_armistice_signed
 		}
@@ -156,7 +157,7 @@ focus_tree = {
 	focus = {
 
 		id = TT_INT_FRA_confidence_vote
-
+		icon = GFX_FRA_confidence_vote_icon
 		relative_position_id = TT_INT_FRA_Dismantle_union_sacree
 		prerequisite = { focus = TT_INT_FRA_Dismantle_union_sacree }
 		x = 1
@@ -207,6 +208,7 @@ focus_tree = {
 		relative_position_id = TT_INT_FRA_assassination_attempt
 		prerequisite = { focus = TT_INT_FRA_assassination_attempt }
 		mutually_exclusive = { focus = TT_INT_FRA_clemenceau_dies }
+		icon = GFX_FRA_clemenceau_survives_icon
 		x = -1
 		y = 1
 		cost = 2
@@ -218,6 +220,7 @@ focus_tree = {
 		id = TT_INT_FRA_clemenceau_dies
 		mutually_exclusive = { focus = TT_INT_FRA_clemenceau_survives }
 		prerequisite = { focus = TT_INT_FRA_assassination_attempt }
+		icon = GFX_FRA_clemenceau_dies_icon
 		x = 1
 		y = 1
 		cost = 2
@@ -369,6 +372,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = TT_INT_FRA_Alliance_de_la_gauche
 		cost = 10
+		icon = GFX_FRA_european_workers_icon
 		completion_reward = {
 			set_variable = {
 				global.european_workers_strengh = 0.1
@@ -406,6 +410,7 @@ focus_tree = {
 		id = TT_INT_FRA_1920_elections
 		prerequisite = { focus = TT_INT_FRA_reformist_left focus = TT_INT_FRA_moderate_right }
 		relative_position_id = TT_INT_FRA_reformist_left
+		icon = GFX_FRA_confidence_vote_icon
 		x = -1
 		y = 1
 		cost = 10
@@ -436,6 +441,7 @@ focus_tree = {
 		prerequisite = {
 			focus = TT_INT_FRA_1920_elections
 		}
+		icon = GFX_FRA_inflation_measures_icon
 		relative_position_id = TT_INT_FRA_1920_elections
 		x = 1
 		y = 1
@@ -472,6 +478,7 @@ focus_tree = {
 		prerequisite = { focus = TT_INT_FRA_Alliance_de_la_gauche }
 		x= 1
 		y = 1
+		icon = GFX_FRA_reconstruction_funds_icon
 		relative_position_id = TT_INT_FRA_Alliance_de_la_gauche
 		cost = 10
 		completion_reward = {
@@ -486,6 +493,7 @@ focus_tree = {
 		prerequisite = { focus = TT_INT_FRA_european_workers focus = TT_INT_FRA_reconstruction_funds}
 		x= 0
 		y = 1
+		icon = GFX_revolutionary_left_icon
 		mutually_exclusive= { focus = TT_INT_FRA_reformist_left }
 		relative_position_id = TT_INT_FRA_reconstruction_funds
 		cost = 10

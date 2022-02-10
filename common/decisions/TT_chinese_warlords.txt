@@ -16,13 +16,16 @@ TT_get_around_boxer_protocols = {
 					check_variable = {
 						foreign_suspicion_level > 20
 					}
-
+					
 				}
 			}
 		}
 		cost = 20
+		complete_effect = {
+			country_lock_all_division_template = no
+		}
 		remove_effect = {
-
+			country_lock_all_division_template = yes
 		}
 		modifier = {
 			hidden_modifier = {
@@ -31,12 +34,7 @@ TT_get_around_boxer_protocols = {
 			custom_modifier_tooltip = boxer_protocols_weapons_malus_negated_tt
 	
 		}
-		complete_effect = {
-			country_lock_all_division_template = no
-		}
-		remove_effect = {
-			country_lock_all_division_template = yes
-		}
+		
 	}
 	TT_reorganise_conscription = {
 		fire_only_once = yes
@@ -58,8 +56,148 @@ TT_get_around_boxer_protocols = {
 TT_warlord_wars = {
 
 	
+	TT_ANH_ZHI_peace = {
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		days_mission_timeout = 10
+		fire_only_once = yes
+		activation = {
+			ZHI = {
+				has_war_with = ANH
+			}
+			OR = {
+				ZHI = {
+					controls_state = 606
+					controls_state = 749
+					controls_state = 596
+					controls_state = 595
+					controls_state = 750
+				}
+				ANH = {
+					surrender_progress > 0.4
+				}
+			}
+		}
+		timeout_effect = {
+			if = {
+				limit = {
+					FEN = {
+						has_war_with = ANH
 
+					}
+					FEN = {
+						transfer_state = 610
+						transfer_state = 611
+						transfer_state = 612
+						transfer_state = 746
+						transfer_state = 621
+						white_peace = ANH
+					}
+				}
+			}
+			ZHI = {
+				transfer_state = 606
+				transfer_state = 749
+				transfer_state = 750
+				transfer_state = 744
+				transfer_state = 622
+				transfer_state = 597
+				transfer_state = 1027
+				transfer_state = 614
+				transfer_state = 608 
+				transfer_state = 1126
+				white_peace = ANH
+			}
 
+		}
+	}
+	TT_FEN_join_ANH_ZHI_war = {
+		allowed = {
+			tag = FEN
+			
+		}
+		available = {
+			ZHI = {
+				has_war_with = ANH
+			}
+		}
+		ai_will_do = {
+			factor = 10000
+		}
+		days_remove = 10
+		complete_effect = {
+			add_ai_strategy = {
+				id = ANH
+				type = prepare_for_war
+				value = 100
+			}
+			ANH = {
+				add_ai_strategy = {
+					id = ANH
+					type = prepare_for_war
+					value = 100
+				}
+			}
+		}
+		remove_effect = {
+			add_to_war = { 
+				targeted_alliance = ZHI 
+				enemy = ANH
+				hostility_reason = asked_to_join
+			}
+		}
+
+	}
+	TT_lauch_ANH_ZHI_war = {
+		allowed = {
+			tag = ZHI
+		} 
+		fire_only_once = yes
+		ai_will_do = {
+			base = 0
+			modifier = {
+				date > 1920.6.14
+				add = 1000000
+				
+			}
+		}
+		complete_effect = {
+			ZHI = {
+				add_ai_strategy = {
+					type = prepare_for_war
+					id = ANH
+					value = 1000
+				}
+				add_ai_strategy = {
+					type = force_build_armies
+					value = 1000
+				}
+				
+			}
+		}
+		remove_effect = {
+			create_wargoal = {
+				target = ANH
+				type = take_state
+				generator = {
+					606
+					749
+					596
+					595
+					750
+				}
+			}
+		}
+		war_with_on_remove = ANH
+		days_remove = 30
+	}
+
+	TT_launch_ZHI_FEN_WAR = {
+
+	}
 
 	TT_root_out_resistance_in_STATE = {
 
@@ -67,6 +205,7 @@ TT_warlord_wars = {
 			is_chinese_warlord = yes
 
 		}
+		icon = revolt
 		state_target = yes
 		cost = 50
 		target_trigger = {
@@ -81,7 +220,13 @@ TT_warlord_wars = {
 			}
 		}
 		days_remove = 35
-
+		ai_will_do = {
+			base = 50
+			modifier = {
+				factor = 100000
+				has_political_power > 100
+			}
+		}
 		remove_effect = {
 			FROM = {
 				add_core_of = ROOT

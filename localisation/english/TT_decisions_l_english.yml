@@ -1,4 +1,22 @@
 ﻿l_english:
+ TT_get_around_boxer_protocols:0 "Weapon Smuggling"
+ TT_get_around_boxer_protocols_desc:0 "The Boxer Peace Protocol does not allow us to manufacture weapons. This situation is unbearable, as an empire such as ours, needs weapons for its protection. By smuggling weapons, we might be able to stockpile equipment in secret, However, we need to make sure this remains unremarked by the Foreign Powers\n\n Foreign Suspicion is [GetForeignSuspicion]\n\n§gIf the Foreign Suspicion is too High, this might trigger an Foreign Intervention to enforce the Treaty§!\n[GetInvestigationStatus]"
+ investigation_is_underway:0 "§RAn Investigation is Underway§!"
+ no_investigation_underway:0 "§GNo Investigation is Underway§!"
+ TT_warlords_smuggle_weapons:0 "Smuggle Weapons at the eyes of the Foreigners"
+ boxer_protocols_weapons_malus_negated_tt:0 "Weapon Production will §Ynot§! be affected by the Boxer Protocols, Daily Foreign Suspicion: §R+1.00§!"
+ low_foreign_suspicion:0 "§GLow§! ([?foreign_suspicion_level]%)"
+ medium_foreign_suspicion:0 "§YMedium§! ([?foreign_suspicion_level]%)"
+ high_foreign_suspicion:0 "§OHigh§! ([?foreign_suspicion_level]%)"
+ extreme_foreign_suspicion:0 "§RExtreme§! ([?foreign_suspicion_level]%)"
+ boxer_protocols:0 "Boxer Protocols"
+ boxer_protocols_visible:0 "Boxer Protocols"
+ 
+ TT_warlord_wars:0 "Warlord Wars"
+ TT_root_out_resistance_in_STATE:0 "Root out resistance in [FROM.GetName]"
+ TT_lauch_ANH_ZHI_war:0 "Prepare for war against [ANH.GetName]"
+ TT_ANH_ZHI_peace:0 "[ANH.GetName]-[ZHI.GetName] Peace Treaty"
+ TT_FEN_join_ANH_ZHI_war:0 "Join [ZHI.GetName]" 
 
  TT_european_reconstruction:0 "Reconstruction"
  TT_european_reconstruction_desc:0 "[GetEuropeanReconstruction]"
@@ -231,6 +249,15 @@ TT_spartakist_uprising_timer:0 "Spartakist Uprising"
  invite_AF_to_coalition:0 "Invite AF to Coalition"
  invite_PDP_to_coalition:0 "Invite PDP to Coalition"
  
+ FRA_attack_SFIC:0 "Attack the SFIC"
+ FRA_attack_PRRRS:0 "Attack the PRRRS"
+ FRA_attack_SFIO:0 "Attack the SFIO"
+ FRA_attack_AD:0 "Attack the AD"
+ FRA_attack_PDP:0 "Attack the PDP"
+ FRA_attack_FR:0 "Attack the FR"
+ FRA_attack_INDEP:0 "Attack the Independents"
+ FRA_attack_AF:0 "Attack AF"
+
  SFIC_secures_seats:0 "The SFIC secures seats in the parliament"
  PRRRS_secures_seats:0 "The PRRRS secures seats in the parliament"
  SFIO_secures_seats:0 "The SFIO secures seats in the parliament"
@@ -242,17 +269,8 @@ TT_spartakist_uprising_timer:0 "Spartakist Uprising"
 
  demilitarize_french_border:0 "Adds '§GBorder Demilitarized§!' to the Treaty"
 
-TT_get_around_boxer_protocols:0 "Weapon Smuggling"
-TT_get_around_boxer_protocols_desc:0 "The Boxer Peace Protocol does not allow us to manufacture weapons. This situation is unbearable, as an empire such as ours, needs weapons for its protection. By smuggling weapons, we might be able to stockpile equipment in secret, However, we need to make sure this remains unremarked by the Foreign Powers\n\n Foreign Suspicion is [QIN_GetForeignSuspicion]\n\n§gIf the Foreign Suspicion is too High, this might trigger an Foreign Intervention to enforce the Treaty§!\n[GetInvestigationStatus]"
-investigation_is_underway:0 "§RAn Investigation is Underway§!"
-no_investigation_underway:0 "§GNo Investigation is Underway§!"
-TT_warlords_smuggle_weapons:0 "Smuggle Weapons at the eyes of the Foreigners"
-boxer_protocols_weapons_malus_negated_tt:0 "Weapon Production will §Ynot§! be affected by the Boxer Protocols, Daily Foreign Suspicion: §R+1.00§!"
-QIN_low_foreign_suspicion:0 "§GLow§! ([?foreign_suspicion_level]%)"
-QIN_medium_foreign_suspicion:0 "§YMedium§! ([?foreign_suspicion_level]%)"
-QIN_high_foreign_suspicion:0 "§OHigh§! ([?foreign_suspicion_level]%)"
-QIN_extreme_foreign_suspicion:0 "§RExtreme§! ([?foreign_suspicion_level]%)"
-boxer_protocols:0 "Boxer Protocols"
-boxer_protocols_visible:0 "Boxer Protocols"
+ 
+
+
 
 

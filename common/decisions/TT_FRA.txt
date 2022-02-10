@@ -479,6 +479,150 @@ parliament_gui_decision_category = {
 		}
 	}
 
+	FRA_attack_SFIC = {
+		days_remove = 20
+		visible = {
+			set_temp_variable = { 
+				temp_member = 1
+			}
+			set_temp_variable = {
+				temp_seats = 0
+			}
+			has_more_than_number_of_seat = yes
+		}
+		cost = 40
+		remove_effect = {
+			set_temp_variable = { temp_member = 1 }
+			set_temp_variable = { temp_seats = -3 }
+			modify_parliament_seat = yes
+		}
+	}
+	FRA_attack_PRRRS = {
+		days_remove = 20
+		cost = 40
+		visible = {
+			set_temp_variable = { 
+				temp_member = 2
+			}
+			set_temp_variable = {
+				temp_seats = 0
+			}
+			has_more_than_number_of_seat = yes
+		}
+		remove_effect = {
+			set_temp_variable = { temp_member = 2 }
+			set_temp_variable = { temp_seats = -3 }
+			modify_parliament_seat = yes
+		}
+	}
+	FRA_attack_SFIO = {
+		days_remove = 20
+		cost = 40
+		visible = {
+			set_temp_variable = { 
+				temp_member = 3
+			}
+			set_temp_variable = {
+				temp_seats = 0
+			}
+			has_more_than_number_of_seat = yes
+		}
+		remove_effect = {
+			set_temp_variable = { temp_member = 3 }
+			set_temp_variable = { temp_seats = -3 }
+			modify_parliament_seat = yes
+		}
+	}
+	FRA_attack_AD = {
+		days_remove = 20
+		cost = 40
+		visible = {
+			set_temp_variable = { 
+				temp_member = 4
+			}
+			set_temp_variable = {
+				temp_seats = 0
+			}
+			has_more_than_number_of_seat = yes
+		}
+		remove_effect = {
+			set_temp_variable = { temp_member = 4 }
+			set_temp_variable = { temp_seats = -3 }
+			modify_parliament_seat = yes
+		}
+	}
+	FRA_attack_PDP = {
+		days_remove = 20
+		cost = 40
+		visible = {
+			set_temp_variable = { 
+				temp_member = 5
+			}
+			set_temp_variable = {
+				temp_seats = 0
+			}
+			has_more_than_number_of_seat = yes
+		}
+		remove_effect = {
+			set_temp_variable = { temp_member = 5 }
+			set_temp_variable = { temp_seats = -3 }
+			modify_parliament_seat = yes
+		}
+	}
+	FRA_attack_FR = {
+		days_remove = 20
+		cost = 40
+		visible = {
+			set_temp_variable = { 
+				temp_member = 6
+			}
+			set_temp_variable = {
+				temp_seats = 0
+			}
+			has_more_than_number_of_seat = yes
+		}
+		remove_effect = {
+			set_temp_variable = { temp_member = 6 }
+			set_temp_variable = { temp_seats = -3 }
+			modify_parliament_seat = yes
+		}
+	}
+	FRA_attack_INDEP = {
+		days_remove = 20
+		cost = 40
+		visible = {
+			set_temp_variable = { 
+				temp_member = 7
+			}
+			set_temp_variable = {
+				temp_seats = 0
+			}
+			has_more_than_number_of_seat = yes
+		}
+		remove_effect = {
+			set_temp_variable = { temp_member = 7 }
+			set_temp_variable = { temp_seats = -3 }
+			modify_parliament_seat = yes
+		}
+	}
+	FRA_attack_AF = {
+		days_remove = 20
+		cost = 40
+		visible = {
+			set_temp_variable = { 
+				temp_member = 8
+			}
+			set_temp_variable = {
+				temp_seats = 0
+			}
+			has_more_than_number_of_seat = yes
+		}
+		remove_effect = {
+			set_temp_variable = { temp_member = 8 }
+			set_temp_variable = { temp_seats = -3 }
+			modify_parliament_seat = yes
+		}
+	}
 	test_parliament = {
 		visible = {
 			is_debug = yes

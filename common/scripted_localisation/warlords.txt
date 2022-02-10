@@ -23,7 +23,7 @@ defined_text = {
 	name = GetForeignSuspicion
 	text = {
 		trigger = {
-			QIN = {
+			ROOT = {
 				check_variable = {
 					foreign_suspicion_level < 31
 				}
@@ -34,7 +34,7 @@ defined_text = {
 
 	text = {
 		trigger = {
-			QIN = {
+			ROOT = {
 				check_variable = {
 					foreign_suspicion_level > 30
 				}
@@ -47,7 +47,7 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			QIN = {
+			ROOT = {
 				check_variable = {
 					foreign_suspicion_level > 60
 				}
@@ -60,7 +60,7 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			QIN = {
+			ROOT = {
 				check_variable = {
 					foreign_suspicion_level > 90
 				}

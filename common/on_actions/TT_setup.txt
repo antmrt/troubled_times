@@ -76,6 +76,18 @@ on_actions = {
 		effect = {
 			if = {
 				limit = {
+					NOT = { 
+						ROOT = {
+							has_variable = foreign_suspicion_level 
+						}
+					}
+				}
+				ROOT = {
+					set_variable = {foreign_suspicion_level = 0}
+				}
+			}
+			if = {
+				limit = {
 					ROOT = {has_idea = boxer_protocols}
 					
 				}
@@ -83,7 +95,7 @@ on_actions = {
 					limit = {
 						ROOT = {has_decision = TT_warlords_smuggle_weapons}
 					}
-					ROOT = {
+					ROOT = { 
 						add_to_variable = {
 							foreign_suspicion_level = 1
 						}

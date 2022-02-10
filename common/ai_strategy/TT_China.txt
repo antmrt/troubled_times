@@ -1,0 +1,18 @@
+ZHI_prepare_war = {
+	allowed = {
+		tag = ZHI
+	}
+	anable = {
+		always = yes
+	}
+	ai_strategy = {
+		type = front_unit_request
+		TAG = ANH
+		value = 200
+	}
+    ai_strategy = {
+		type = prepare_for_war
+		id = ANH
+		value = 1000
+	}
+}

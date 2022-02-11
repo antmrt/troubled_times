@@ -4,7 +4,17 @@ ZHI_prepare_war = {
 	}
 	abort_when_not_enabled = yes
 	enable = {
-		always = yes
+		OR = {
+			ZHI = {
+				has_war_with = ANH
+			}
+			ANH = {
+				check_variable = {
+					num_owned_controlled_states > 3
+				}
+			}
+
+		}
 	}
 	ai_strategy = {
 		type = front_unit_request
@@ -53,5 +63,32 @@ ANH_not_prepared_for_war = {
 	ai_strategy = {
         type = force_build_armies
         value = -1000
+    }
+}
+ZHI_prepare_for_FEN_war = {
+	allowed = {
+		tag = ZHI
+	}
+	enable = {
+		OR = {
+			ANH = {
+				check_variable = {
+					num_owned_controlled_states > 3
+				}
+			}
+			ZHI = {
+				has_war_with = FEN
+			}
+		}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = front_unit_request
+		TAG = FEN
+		value = 1000
+	}
+	ai_strategy = {
+        type = force_build_armies
+        value = 1000
     }
 }

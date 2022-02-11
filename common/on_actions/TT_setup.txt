@@ -77,46 +77,45 @@ on_actions = {
 			if = {
 				limit = {
 					NOT = { 
-						ROOT = {
-							has_variable = foreign_suspicion_level 
-						}
+						
+						has_variable = foreign_suspicion_level 
+						
 					}
 				}
-				ROOT = {
-					set_variable = {foreign_suspicion_level = 0}
-				}
+				
+				set_variable = { ROOT.foreign_suspicion_level = 0}
+				
 			}
 			if = {
 				limit = {
-					ROOT = {has_idea = boxer_protocols}
+					has_idea = boxer_protocols
 					
 				}
 				if = {
 					limit = {
-						ROOT = {has_decision = TT_warlords_smuggle_weapons}
+						has_decision = TT_warlords_smuggle_weapons
 					}
-					ROOT = { 
-						add_to_variable = {
-							foreign_suspicion_level = 1
-						}
+					
+					add_to_variable = {
+						ROOT.foreign_suspicion_level = 1
 					}
+					
 				}
 				if = {
 					limit = {
-						ROOT = {NOT = {has_decision = TT_warlords_smuggle_weapons}}
+						NOT = {has_decision = TT_warlords_smuggle_weapons}
 					}
-					ROOT = {
-						subtract_from_variable = {
-							foreign_suspicion_level = 0.5
-						}
+					
+					subtract_from_variable = {
+						ROOT.foreign_suspicion_level = 0.5
 					}
 				}
-				ROOT = {
-					clamp_variable = {
-						var = foreign_suspicion_level
-						min = 0
-						max = 100
-					}
+			
+				clamp_variable = {
+					var = ROOT.foreign_suspicion_level
+					min = 0
+					max = 100
+					
 				}
 				
 			}

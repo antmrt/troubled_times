@@ -264,6 +264,9 @@ country_event = {
 
 	option = {
 		name = TT_INT_France.9.a
+		ai_chance = {
+			base = 10
+		}
 		add_country_leader_role = {
 			Character = FRA_alexandre_millerand
 				
@@ -276,6 +279,13 @@ country_event = {
 		retire_country_leader = yes
 	}
 	option = {
+		ai_chance = {
+			base = 0
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
 		name = TT_INT_France.9.b
 		set_country_flag = deschanel_mad
 	}

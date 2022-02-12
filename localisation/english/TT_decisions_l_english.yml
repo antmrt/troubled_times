@@ -1,4 +1,10 @@
 ﻿l_english:
+ china_central_gov_tooltip:0 "The Chinese Central Government is controlled by §Y[TT_CHI_central_government.GetName]§!"
+ TT_controls_more_state_than_china_tt:0 "Controls §Ymore§! states than the §YCentral Government§! §g([?TT_CHI_central_government.num_owned_controlled_states])§!"
+ TT_controls_more_than_80_percent_state_than_china_tt:0 "Controls §Ymore§! than 80% of the total number of states controlled by the §YCentral Government§! §g([?TT_CHI_central_government.num_owned_controlled_states])§!" 
+ TT_claim_central_government:0 "Claim the Central Governance"
+ TT_ANH_launch_MON_expedition:0 "Launch Expedition in Mongolia"
+
  TT_get_around_boxer_protocols:0 "Weapon Smuggling"
  TT_get_around_boxer_protocols_desc:0 "The Boxer Peace Protocol does not allow us to manufacture weapons. This situation is unbearable, as an empire such as ours, needs weapons for its protection. By smuggling weapons, we might be able to stockpile equipment in secret, However, we need to make sure this remains unremarked by the Foreign Powers\n\n Foreign Suspicion is [GetForeignSuspicion]\n\n§gIf the Foreign Suspicion is too High, this might trigger an Foreign Intervention to enforce the Treaty§!\n[GetInvestigationStatus]"
  investigation_is_underway:0 "§RAn Investigation is Underway§!"
@@ -15,8 +21,11 @@
  TT_warlord_wars:0 "Warlord Wars"
  TT_root_out_resistance_in_STATE:0 "Root out resistance in [FROM.GetName]"
  TT_lauch_ANH_ZHI_war:0 "Prepare for war against [ANH.GetName]"
+ TT_launch_ZHI_FEN_WAR:0 "Prepare for war against [FEN.GetName]"
  TT_ANH_ZHI_peace:0 "[ANH.GetName]-[ZHI.GetName] Peace Treaty"
+ TT_ZHI_FEN_1_peace:0 "[ZHI.GetName]-[FEN.GetName] Peace Treaty"
  TT_FEN_join_ANH_ZHI_war:0 "Join [ZHI.GetName]" 
+ TT_reorganise_conscription:0 "Reorganise Conscription"
 
  TT_european_reconstruction:0 "Reconstruction"
  TT_european_reconstruction_desc:0 "[GetEuropeanReconstruction]"

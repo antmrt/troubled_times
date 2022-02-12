@@ -23,3 +23,5 @@
  TT_hyper_inflation_7:0 "Hyper Inflation"
  TT_hyper_inflation_8:0 "Hyper Inflation"
  TT_AUS_famine_risk:0 "Risk of Famine"
+ 
+ no_army_production:0 "§RCannot train divisions or produce any weapon§!"

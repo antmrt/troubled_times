@@ -18,19 +18,16 @@ ZHI_prepare_war = {
 	}
 	ai_strategy = {
 		type = front_unit_request
+		type = invasion_unit_request
 		TAG = ANH
 		value = 3000 
-	}
+	} 
     ai_strategy = {
 		type = prepare_for_war
 		id = ANH
 		value = 1000
 	}
-	ai_strategy = {
-		type = consider_weak
-		id = ANH
-		value = 1000
-	}
+	
 	ai_strategy = {
 		type = declare_war
 		id = ANH
@@ -38,7 +35,12 @@ ZHI_prepare_war = {
 	}
 	ai_strategy = {
         type = force_build_armies
-        value = 100
+        value = 10000
+    }
+	ai_strategy = {
+        type = antagonize
+		id = ANH
+        value = 10000
     }
 }
 
@@ -47,8 +49,13 @@ ANH_not_prepared_for_war = {
 		tag = ANH
 	}
 	abort_when_not_enabled = yes
+	abort = {
+		has_war = yes
+	}
 	enable = {
-		always = yes
+		NOT = {
+			has_war = yes
+		}
 	} 
 	ai_strategy = {
 		type = front_unit_request

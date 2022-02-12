@@ -6,7 +6,7 @@ recruit_character = GUC_johannes_taylor
 recruit_character = GUC_marcus_brown
 recruit_character = GUC_bob_brown
 
-oob = "YUN_1936"
+oob = "CHI_1919"
 
 capital = 325
 if = {
@@ -60,7 +60,7 @@ create_corps_commander = {
 	}
 }
 1918.11.11 = {
-	declare_war_on = {target = GXC type = annex_everything}
+	declare_war_on = {target = GXC type = puppet_wargoal_focus }
 }
 1936.1.1 = {
 	set_technology = {

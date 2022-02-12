@@ -1,12 +1,16 @@
 TT_get_around_boxer_protocols = {
 	priority = 200
 	allowed = {
+		is_chinese_warlord = yes
 	}
-	visible = {
-		has_idea = boxer_protocols
-	}
+	
 }
-
+                      
 TT_warlord_wars = {
 	priority = 199
-}
+	scripted_gui = china_central_government_gui
+	visible_when_empty = yes
+	allowed = {
+		is_chinese_warlord = yes
+	}
+}  

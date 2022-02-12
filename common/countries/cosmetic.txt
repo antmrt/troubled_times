@@ -840,3 +840,8 @@ AUS_DEUTSCHOSTERREICH = {
 	color = rgb { 194 198 215 }
 	color_ui = rgb { 255 255 255 }
 }
+
+CHI_KUOMINTANG = {
+	color = rgb { 3 34 76 }
+	color_ui = rgb { 3 34 76 }
+}

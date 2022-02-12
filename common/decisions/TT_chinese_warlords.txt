@@ -20,6 +20,11 @@ TT_get_around_boxer_protocols = {
 				}
 			}
 		}
+		visible = {
+			
+			has_idea = boxer_protocols
+			
+		}
 		cost = 20
 		complete_effect = {
 			country_lock_all_division_template = no
@@ -43,7 +48,7 @@ TT_get_around_boxer_protocols = {
 			NOT = {
 				has_idea = boxer_protocols
 			}
-		}
+		} 
 		ai_will_do = {
 			factor = 1100000
 		}
@@ -55,11 +60,123 @@ TT_get_around_boxer_protocols = {
 
 TT_warlord_wars = {
 
-	
+	TT_claim_central_government = {
+		priority = 100
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 10000
+			}
+		}
+		visible = {
+			is_chinese_warlord = yes
+		}
+		available = {
+			OR = {
+				custom_trigger_tooltip = {
+					tooltip = TT_controls_more_state_than_china_tt
+					check_variable = {
+						num_owned_controlled_states > TT_CHI_central_government.num_owned_controlled_states
+					}
+				}
+				
+
+				AND = {
+					event_target:TT_CHI_central_government = {
+						surrender_progress > 0.2
+					}
+					custom_trigger_tooltip = {
+						set_temp_variable = {
+							temp_china_states = TT_CHI_central_government.num_owned_controlled_states
+						}
+						multiply_temp_variable = {
+							temp_china_states = 0.8
+						}
+						check_variable = {
+							num_owned_controlled_states > temp_china_states
+						}
+						tooltip = TT_controls_more_than_80_percent_state_than_china_tt
+						
+						
+					}
+				}
+			}
+			
+		}
+		complete_effect = {
+			clear_global_event_target = TT_CHI_central_government
+			save_global_event_target_as = TT_CHI_central_government
+			
+		}
+	}
+
+	TT_ANH_launch_MON_expedition = {
+		allowed = {
+			tag = ANH
+
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1000000
+				date > 1919.9.1
+				date < 1920.1.1
+			}
+		}
+		days_remove = 30
+		fire_only_once = yes
+		complete_effect = {
+			MON = {
+				add_ai_strategy = {
+					type = prepare_for_war
+					value = 100
+					id = ANH
+				}
+			}
+			ANH = {
+				add_ai_strategy = {
+					type = prepare_for_war
+					value = 100
+					id = MON
+				}
+				add_ai_strategy = {
+					type = consider_weak
+					value = 100
+					id = MON
+				}
+			}
+		}
+
+		remove_effect = {
+			create_wargoal = {
+				target = MON
+				type = annex_everything
+			}
+		}
+	}
 	TT_ANH_ZHI_peace = {
 		available = {
 			hidden_trigger = {
 				always = no
+			}
+		}
+		visible = {
+			OR = {
+				tag = ANH
+				tag = ZHI
+
+				AND = {
+					tag = ANH
+					FEN = {
+						has_war_with = ANH
+					}
+				}
+				AND = {
+					tag = MON
+					FEN = {
+						has_war_with = MON
+					}
+				}
 			}
 		}
 		days_mission_timeout = 10
@@ -82,6 +199,16 @@ TT_warlord_wars = {
 			}
 		}
 		timeout_effect = {
+			if = {
+				limit ={
+					MON = {
+						has_war_with = ANH
+					}
+					MON = {
+						white_peace = ANH
+					}
+				}
+			}
 			if = {
 				limit = {
 					FEN = {
@@ -166,7 +293,11 @@ TT_warlord_wars = {
 				
 			}
 		}
-		
+		available = {
+			ANH = {
+				is_neighbor_of = ZHI
+			}
+		}
 		remove_effect = {
 			create_wargoal = {
 				target = ANH
@@ -189,7 +320,11 @@ TT_warlord_wars = {
 		allowed = {
 			tag = ZHI
 		}
-		
+		available = {
+			FEN = {
+				is_neighbor_of = ZHI
+			}
+		}
 		fire_only_once = yes
 		ai_will_do = {
 			base = 0
@@ -217,6 +352,45 @@ TT_warlord_wars = {
 			}
 		}
 
+	}
+
+	TT_ZHI_FEN_1_peace = {
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		days_mission_timeout = 10
+		fire_only_once = yes
+		activation = {
+			NOT = {
+				has_global_flag = first_ZHI_FEN_war_ended
+			}
+			ZHI = {
+				has_war_with = FEN
+			}
+			OR = {
+				ZHI = {
+					controls_state = 606
+					controls_state = 749
+					controls_state = 596
+					controls_state = 595
+					controls_state = 750
+				}
+				FEN = {
+					surrender_progress > 0.2
+				}
+			}
+		}
+		timeout_effect = {
+			ZHI = {
+				transfer_state = 610
+				transfer_state = 611
+				transfer_state = 612
+				transfer_state = 621
+				transfer_state = 746
+			}
+		}
 	}
 
 	TT_root_out_resistance_in_STATE = {

@@ -1,0 +1,22 @@
+add_namespace = TT_China
+
+country_event = {
+	id = TT_China.1
+	desc= TT_China.1.d
+	title = TT_China.1.t
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = TT_China.1.a
+		disband_full_army = yes
+		release = CHI
+		CHI = {
+			change_tag_from = ROOT
+			load_oob = "CHI_1919"
+		}
+		
+	}
+
+}

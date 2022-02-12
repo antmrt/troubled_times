@@ -3758,8 +3758,10 @@
  YUG_kingdom_SLO_CRO_SER:0 "Kingdom of Serbs, Croats and Slovenes"
 
  FRK_freikorps_germany:0 "Freikorps Regierung"
+ FRK_freikorps_germany_DEF:0 "Freikorps Regierung"
  SPK_spartakist_germany:0 "Spartakist Germany"
-  
+ SPK_spartakist_germany_DEF:0 "Spartakist Germany"
+
  SYNDICALIST_FRANCE:0 "Syndicalist France"
  SYNDICALIST_FRANCE_DEF:0 "Syndicalist France"
 
@@ -3771,4 +3773,6 @@
 
  AUS_DEUTSCHOSTERREICH:0 "Deutschösterreich"
  AUS_DEUTSCHOSTERREICH_DEF: "Deutschösterreich"
-  
+
+ CHI_KUOMINTANG:0 "Kuomintang"
+ CHI_KUOMINTANG_DEF:0 "Kuomintang"

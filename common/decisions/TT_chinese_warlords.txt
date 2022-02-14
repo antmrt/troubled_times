@@ -204,9 +204,10 @@ TT_warlord_wars = {
 					MON = {
 						has_war_with = ANH
 					}
-					MON = {
-						white_peace = ANH
-					}
+					
+				}
+				MON = {
+					white_peace = ANH
 				}
 			}
 			if = {

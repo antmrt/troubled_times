@@ -9,8 +9,21 @@
  ENG_David_lloyd_george:0 "David Lloyd George"
  ALS_military_worker_government:0 "Alsatian Junta"
  FRK_freikorps_junta:0 "Freikorps Junta"
+
+
  SOV_vladimir_lenin:0 "Vladimir Lenin"
  WHR_alexander_kolchak:0 "Alexander Kolchak"
+ WHR_pyotr_krasnov:0 "Pyotr Krasnov"
+ WHR_anton_denikin:0 "Anton Denikin"
+ WHR_pyotr_wrangel:0 "Pyotr Wrangel"
+ WHR_grigory_semyonov:0 "Grigory Semioniov"
+ WHR_lavr_kornilov:0 "Lavr Kornilov"
+ WHR_Roman_von_ungern_sternberg:0 "Roman Von Ungern Sternberg"
+ WHR_rudolf_gajda:0 "Rudolf Gajda"
+ WHR_stanislav_cecek:0 "Stanislav Cecek"
+ WHR_vladimir_kappel:0 "Vladimir Kappel"
+ WHR_anatoly_pepelyayev:0 "Anatoly Pepelyayev"
+
  HUN_Bela_kun:0 "Bela Kun"
  HUN_Mihaly_Karolyi:0 "Mihaly Karolyi"
  MNT_nicholas_i:0 "Nicholas I"
@@ -20,3 +33,7 @@
  OTT_mehmed_vi:0 "Mehmed VI"
  GRE_eleftherios_venizelos:0 "Elefthérios Venizélos"
  
+
+ ZHI_Feng_Guozhang:0 "Feng Guozhang"
+ FEN_Zhang_Zuolin:0 "Zhang Zuolin"
+ ANH_Duan_Qirui:0 "Duan Qirui"

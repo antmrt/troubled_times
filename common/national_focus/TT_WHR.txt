@@ -1,0 +1,306 @@
+focus_tree ={
+	id = TT_White_russia
+	country = {
+		base = 0
+		modifier = {
+			add = 25
+			tag = WHR
+			is_debug = yes
+		}
+	}
+
+	focus = {
+		id = TT_WHR_fight_the_reds
+		x = 20
+		y = 1
+		completion_reward = {
+			add_war_support = 0.05
+		}
+		cost = 5
+	}
+
+	focus = {
+		id = TT_WHR_battle_of_the_chiefs_focus
+		relative_position_id = TT_WHR_fight_the_reds
+		x = 0
+		y = 1
+		prerequisite = { focus = TT_WHR_fight_the_reds }
+		cost = 5
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = TT_WHR_krasnov_strategy
+		relative_position_id = TT_WHR_battle_of_the_chiefs_focus
+		x = -2
+		y = 1
+		cost = 5
+		prerequisite = {
+			focus = TT_WHR_battle_of_the_chiefs_focus
+		}
+		ai_will_do = {
+			modifier = {
+				factor = 0 
+				is_historical_focus_on = yes
+			}
+		}
+		available ={
+			check_variable = {
+				krasnov_legitimacy > denikin_legitimacy
+			}
+		}
+		mutually_exclusive = {
+			focus = TT_WHR_denikin_strategy
+		}
+		completion_reward = {
+
+		}
+	} 
+
+	focus = {
+		id = TT_WHR_denikin_strategy
+		relative_position_id = TT_WHR_battle_of_the_chiefs_focus
+		x = 2
+		y = 1
+		cost = 5
+		prerequisite = {
+			focus = TT_WHR_battle_of_the_chiefs_focus
+		}
+		available ={
+			check_variable = {
+				krasnov_legitimacy < denikin_legitimacy
+			}
+			NOT = {
+				has_completed_focus = TT_WHR_sakhalin_for_support
+			}
+		}
+		mutually_exclusive = {
+			focus = TT_WHR_krasnov_strategy
+		}
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = TT_WHR_ukraine_cooperation
+		relative_position_id = TT_WHR_krasnov_strategy
+		prerequisite = {
+			focus = TT_WHR_krasnov_strategy
+		}
+		x = -1
+		y = 1
+		cost = 5
+	}
+
+	focus = {
+		id = TT_WHR_baltic_cooperation
+		prerequisite = {
+			focus = TT_WHR_krasnov_strategy
+		}
+		relative_position_id = TT_WHR_krasnov_strategy
+		x = 1
+		y = 1
+		cost = 5
+	}
+
+	focus = {
+		id = TT_WHR_Polish_cooperation
+		relative_position_id = TT_WHR_krasnov_strategy
+		prerequisite = {
+			focus = TT_WHR_baltic_cooperation
+		}
+		x = 1
+		y = 2
+		cost = 5
+	}
+	
+	focus = {
+		id = TT_WHR_caucasian_cooperation
+		relative_position_id = TT_WHR_krasnov_strategy
+		prerequisite = {
+			focus = TT_WHR_ukraine_cooperation
+		}
+		x = -1
+		y = 2
+		cost = 5
+	}
+
+	focus = {
+		id = TT_WHR_finnish_cooperation
+		relative_position_id = TT_WHR_krasnov_strategy
+		prerequisite ={
+			focus = TT_WHR_Polish_cooperation
+			focus = TT_WHR_caucasian_cooperation
+		}
+		x = 0
+		y = 3
+		cost = 5
+	}
+
+	focus = {
+		id = TT_WHR_ukraine_war
+		relative_position_id = TT_WHR_denikin_strategy
+		prerequisite ={
+			focus = TT_WHR_denikin_strategy
+		}
+		x = -1
+		y = 1
+		cost = 5
+	}
+
+	focus = {
+		id = TT_WHR_baltic_war
+		relative_position_id = TT_WHR_denikin_strategy
+		prerequisite = {
+			focus = TT_WHR_denikin_strategy
+		}
+		x = 1
+		y = 1
+		cost = 5
+	}
+
+	focus = {
+		id = TT_WHR_Polish_war
+		relative_position_id = TT_WHR_denikin_strategy
+		prerequisite = {
+			focus = TT_WHR_baltic_war
+		}
+		x = 1
+		y = 2
+		cost = 5
+	}
+	
+	focus = {
+		id = TT_WHR_caucasian_war
+		relative_position_id = TT_WHR_denikin_strategy
+		prerequisite = {
+			focus = TT_WHR_ukraine_war
+		}
+		x = -1
+		y = 2
+		cost = 5
+	}
+
+	focus = {
+		id = TT_WHR_finnish_war
+		relative_position_id = TT_WHR_denikin_strategy
+		prerequisite = {
+			focus = TT_WHR_caucasian_war
+			focus = TT_WHR_Polish_war
+		}
+		x = 0
+		y = 3
+		cost = 5
+	}
+
+	focus = {
+		id = TT_WHR_diplomacy
+		x = 7
+		y = 1
+
+		cost = 5
+		completion_reward = {
+			add_political_power = 50
+		}
+
+	}
+	focus = {
+		id = TT_WHR_entente_shipment_1
+		relative_position_id = TT_WHR_diplomacy
+		x = -1
+		y = 1
+
+		cost = 10
+		prerequisite = {
+			focus = TT_WHR_diplomacy
+		}
+		completion_reward = {
+			custom_effect_tooltip = TT_WHR_entente_shipment_tt
+		}
+	}
+
+	focus = {
+		id = TT_WHR_entente_shipment_2
+		relative_position_id = TT_WHR_diplomacy
+		x = -1
+		y = 2
+		cost = 10
+		prerequisite = {
+			focus = TT_WHR_entente_shipment_1
+		}
+		completion_reward = {
+			custom_effect_tooltip = TT_WHR_entente_shipment_tt
+		}
+	}
+
+	focus = {
+		id = TT_WHR_entente_shipment_3
+		relative_position_id = TT_WHR_diplomacy
+		x = -1
+		y = 3
+		cost = 10
+		prerequisite = {
+			focus = TT_WHR_entente_shipment_2
+		}
+		completion_reward = {
+			custom_effect_tooltip = TT_WHR_entente_shipment_tt
+		}
+	}
+
+	focus = {
+		id = TT_WHR_entente_shipment_4
+		relative_position_id = TT_WHR_diplomacy
+		x = -1
+		y = 4
+		cost = 10
+		prerequisite = {
+			focus = TT_WHR_entente_shipment_3
+		}
+		completion_reward = {
+			custom_effect_tooltip = TT_WHR_entente_shipment_tt
+		}
+	}
+
+
+	focus = {
+		id = TT_WHR_approach_JAP
+		relative_position_id = TT_WHR_diplomacy
+		x = 1
+		y = 1
+		cost = 10
+		prerequisite = {
+			focus = TT_WHR_diplomacy
+		}
+	}
+
+	focus = {
+		id = TT_WHR_sakhalin_for_support
+
+		relative_position_id = TT_WHR_diplomacy
+		x = 1
+		y = 2
+		cost = 10
+		available = {
+			NOT = {
+				has_completed_focus = TT_WHR_denikin_strategy
+			}
+		}
+		prerequisite = {
+			focus = TT_WHR_approach_JAP
+		}
+	}
+
+	focus = {
+		id = TT_WHR_northern_china_for_intervention
+		relative_position_id = TT_WHR_diplomacy
+		x = 1
+		y = 3
+		cost = 10
+		prerequisite = { 
+			focus = TT_WHR_sakhalin_for_support
+		}
+	}
+}

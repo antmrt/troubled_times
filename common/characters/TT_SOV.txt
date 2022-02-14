@@ -25,4 +25,136 @@ characters = {
 			id = -1
 		}
 	}
+
+	WHR_anton_denikin = {
+		name = WHR_anton_denikin
+		portraits = {
+			army = {
+				large = "gfx/leaders/WHR/INT/portrait_anton_denikin.dds"
+				small = "gfx/interface/TT_ideas/idea_anton_denikin.dds"
+			}
+		}
+		field_marshal = {
+			skill = 6
+			traits = { organisational_leader offensive_doctrine logistics_wizard }
+		}
+	}
+	WHR_pyotr_krasnov = {
+		name = WHR_pyotr_krasnov
+		portraits = {
+			army = {
+				large = "gfx/leaders/WHR/INT/portrait_pyotr_krasnov.dds"
+				small = "gfx/interface/TT_ideas/idea_pyotr_krasnov.dds"
+			}
+		}
+		field_marshal = {
+			skill = 4
+			traits = { offensive_doctrine defensive_doctrine }
+		}
+	}
+
+	WHR_pyotr_wrangel = {
+		name = WHR_pyotr_wrangel
+		# portraits = {
+		# 	army = {
+		# 		large = ""
+		# 	}
+		# }
+		field_marshal = {
+			skill = 6
+			traits = { fast_planner inspirational_leader organisational_leader }
+		}
+	}
+
+	WHR_grigory_semyonov = {
+		name = WHR_grigory_semyonov
+		# portraits = {
+		# 	army = {
+		# 		large = ""
+		# 	}
+		# }
+		corps_commander = {
+			traits = { trickster trait_mountaineer winter_specialist }
+			skill = 4
+		}
+	}
+
+	WHR_lavr_kornilov = {
+		name = WHR_lavr_kornilov
+		# portraits = {
+		# 	army = {
+		# 		large = ""
+		# 	}
+		# }
+		corps_commander = {
+			traits = { fast_planner inspirational_leader offensive_doctrine }
+			skill = 3
+		}
+	}
+
+	WHR_Roman_von_ungern_sternberg = {
+		name = WHR_Roman_von_ungern_sternberg
+		# portraits = {
+		# 	army = {
+		# 		large = ""
+		# 	}
+		# }
+		corps_commander = {
+			traits = { trickster fortress_buster commando }
+			skill = 6
+		}
+	}
+
+	WHR_rudolf_gajda = {
+		name = WHR_rudolf_gajda
+		# portraits = {
+		# 	army = {
+		# 		large = ""
+		# 	}
+		# }
+		corps_commander = {
+			traits = { trickster commando }
+			skill = 3
+		}
+	}
+
+	WHR_stanislav_cecek = {
+		name = WHR_stanislav_cecek
+		# portraits = {
+		# 	army = {
+		# 		large = ""
+		# 	}
+		# }
+		corps_commander = {
+			traits = { panzer_leader trickster }
+			skill = 5
+		}
+	}
+
+	WHR_vladimir_kappel = {
+		name = WHR_vladimir_kappel
+		# portraits = {
+		# 	army = {
+		# 		large = ""
+		# 	}
+		# }
+		corps_commander = {
+			traits = { commando winter_specialist }
+			skill = 5
+		}
+	}
+
+	WHR_anatoly_pepelyayev = {
+		name = WHR_anatoly_pepelyayev
+		# portraits = {
+		# 	army = {
+		# 		large = ""
+		# 	}
+		# }
+		corps_commander = {
+			traits = { trickster trait_engineer }
+			skill = 4
+		}
+	}
+	
 }

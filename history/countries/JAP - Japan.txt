@@ -8,6 +8,7 @@ set_war_support = 0.8
 set_research_slots = 4
 set_fuel_ratio = 1.0
 1918.11.11 = {
+	set_oob = "JAP_1918"
 	recruit_character = JAP_taisho_tenno
 	set_popularities = {
 		neutrality = 100

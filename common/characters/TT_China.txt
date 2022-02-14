@@ -1,0 +1,47 @@
+characters = {
+	ANH_Duan_Qirui = {
+		name = ANH_Duan_Qirui
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CHINA/Portrait_Duan_Qirui.dds"
+			}
+		}
+		country_leader={
+			expire = "2060.1.1"
+			ideology = chinese_nationalism
+			id = -1
+		}
+	}
+	FEN_Zhang_Zuolin = {
+
+		name = FEN_Zhang_Zuolin
+
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CHINA/Portrait_FEN_Zhang_Zuolin.dds"
+			}
+		}
+		country_leader={
+			expire = "2060.1.1"
+			ideology = chinese_nationalism
+			id = -1
+		}
+	}
+	ZHI_Feng_Guozhang = {
+
+		name = ZHI_Feng_Guozhang
+
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CHINA/Protrait_Feng_Guozhang.dds"
+			}
+		}
+		country_leader={
+			expire = "2060.1.1"
+			ideology = chinese_nationalism
+			id = -1
+		}
+	}
+	
+
+}

@@ -216,6 +216,10 @@ TT_spartakist_uprising_timer:0 "Spartakist Uprising"
  WHR_soldiers_deserting:0 "Soldiers Deserting"
  entente_weapon_shipment:0 "Entente Weapon Shipment"
  WHR_launch_offensive:0 "Launch offensive"
+ TT_WHR_battle_of_the_chiefs:0 "Battle of the Chiefs"
+ TT_WHR_battle_of_the_chiefs_desc:0 "Multiple White Army leader are fighting for legitimacy, they have different strategies for winnig this civil war, while §YDenikin§! wants to rule over the Motherland with an Iron Fist, §YKrasnov§! is wanting to grant independance to the movement joining the war on our side.\n\n  §YDeninkin§!'s legitimacy is §Y[?denikin_legitimacy]§!\n  §YKrasnov§!'s legitimacy is §Y[?krasnov_legitimacy]§!\n\n§gLegitimacy is gained when the Army Leader is assigned to an army§!"
+
+
 
  TT_SOV_shifting_alliances:0 "Shifting Alliances"
  TT_SOV_shifting_alliances_desc:0 "The struggle in this war, causes several factions to fight for Power, what mmight be allies today, could become ennemies in the future. \n\n§gThe different factions are the following :§!"
@@ -273,7 +277,7 @@ TT_spartakist_uprising_timer:0 "Spartakist Uprising"
  AD_secures_seats:0 "The AD secures seats in the parliament"
  PDP_secures_seats:0 "The PDP secures seats in the parliament"
  FR_secures_seats:0 "The FR secures seats in the parliament"
- INDEP_secures_seats0 "Independents secures seats in the parliament"
+ INDEP_secures_seats:0 "Independents secures seats in the parliament"
  AF_secures_seats:0 "The AF secures seats in the parliament"
 
  demilitarize_french_border:0 "Adds '§GBorder Demilitarized§!' to the Treaty"

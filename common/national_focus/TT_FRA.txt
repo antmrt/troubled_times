@@ -15,8 +15,8 @@ focus_tree = {
 
 		x = 20
 		y = 1
-		cost = 2
-		icon = GFX_FRA_Victory_at_last_icon 
+		cost = 2 
+		icon = GFX_FRA_Victory_at_last_icon
 		available = {
 			has_global_flag = compiegne_armistice_signed
 		}
@@ -291,6 +291,7 @@ focus_tree = {
 	focus = {
 		id = TT_INT_FRA_reactionnary_right
 		prerequisite = { focus = TT_INT_FRA_l'allemagne_paiera focus = TT_INT_FRA_cordon_sanitaire }
+		icon = GFX_FRA_reactionnary_right_icon
 		x= 0
 		y = 1
 		relative_position_id = TT_INT_FRA_l'allemagne_paiera
@@ -332,6 +333,7 @@ focus_tree = {
 	focus = {
 		id = TT_INT_FRA_moderate_right
 		prerequisite = { focus = TT_INT_FRA_l'allemagne_paiera focus = TT_INT_FRA_cordon_sanitaire }
+		icon = GFX_FRA_moderate_right_icon
 		x= 0
 		y = 1
 		relative_position_id = TT_INT_FRA_cordon_sanitaire
@@ -393,6 +395,7 @@ focus_tree = {
 	focus = {
 		id = TT_INT_FRA_reformist_left
 		prerequisite = { focus = TT_INT_FRA_european_workers focus = TT_INT_FRA_reconstruction_funds}
+		icon = GFX_FRA_reformist_left_icon
 		x= 0
 		y = 1
 		mutually_exclusive = { focus = TT_INT_FRA_revolutionary_left }
@@ -556,7 +559,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TT_INT_FRA_polish_brothers
-		icon = GFX_FRA_polish_brothers_icon
+		icon = GFX_FRA_polish_brothers_icon 
 		relative_position_id = TT_INT_FRA_international_matters
 		x = 0
 		y = 1
@@ -571,6 +574,7 @@ focus_tree = {
 		id = TT_INT_FRA_russian_civil_war
 		x = -3
 		y = 1
+		icon = GFX_FRA_russian_civil_war_icon
 		relative_position_id = TT_INT_FRA_international_matters
 		prerequisite = {
 			focus = TT_INT_FRA_international_matters

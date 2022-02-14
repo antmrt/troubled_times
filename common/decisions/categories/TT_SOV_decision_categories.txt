@@ -26,3 +26,11 @@ TT_WHR_russian_civil_war = {
 		date < 1936.1.1
 	}
 }
+TT_WHR_battle_of_the_chiefs = {
+	allowed = {
+		tag = WHR
+		
+	}
+	priority = 201
+	visible_when_empty = yes
+}

@@ -1,5 +1,32 @@
 on_actions = {
-
+	on_daily_WHR = {
+		effect = {
+			if = {
+				limit = {
+					has_war = yes
+					WHR_pyotr_krasnov = {
+						is_unit_leader = yes
+						is_assigned = yes
+					}
+				}
+				add_to_variable = {
+					krasnov_legitimacy = 1
+				}
+			}
+			if = {
+				limit = {
+					has_war = yes
+					WHR_anton_denikin = {
+						is_unit_leader = yes
+						is_assigned = yes
+					}
+				}
+				add_to_variable = {
+					denikin_legitimacy = 1
+				}
+			}
+		}
+	}
 	on_civil_war_end = {
 		effect = {
 			if = {

@@ -1,0 +1,17 @@
+equipments = {
+	combat_gas = {
+		year = 1910
+
+
+		is_buildable = no
+
+		build_cost_ic = 1
+
+		interface_category = interface_category_land
+		
+		active = yes
+		resources = {
+			steel = 1
+		}
+	}
+}

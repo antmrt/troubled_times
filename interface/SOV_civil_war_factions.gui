@@ -8,7 +8,7 @@ guiTypes = {
     containerWindowType = {
         name = "SOV_civil_war_gui"
         position = { x = 0 y = 0 }
-		size = { width = 400 height = 400 }
+		size = { width = 400 height = 170 }
 
 		iconType = {
 			name ="AUK_icon"
@@ -29,7 +29,7 @@ guiTypes = {
 			position = { x = @FACTION_ICONS_X y = 30 }
 			maxwidth = 230
 			maxHeight = 38
-			pdx_tooltip = BUL_ZVENO_TOOLTIP
+			pdx_tooltip = SOV_ANARCHIST_TOOLTIP
 		}
 		instantTextBoxType = {
 			name ="SOV_anarchist_loyalty_status"
@@ -56,7 +56,7 @@ guiTypes = {
 		}
 
 		#Tooltip
-		instantTextBoxType = {
+		instantTextBoxType = { 
 			name ="green_army_tooltip_fake"
 			position = { x = @FACTION_ICONS_X y = 75 }
 			maxwidth = 230
@@ -70,7 +70,7 @@ guiTypes = {
 			text = "SOV_Green_Army_loyalty_status"
 			format = center
 			maxwidth = 110
-			pdx_tooltip = SOV_Green_Army_loyalty_status_breakdown
+			#pdx_tooltip = SOV_Green_Army_loyalty_status_breakdown
 		}
     }
 

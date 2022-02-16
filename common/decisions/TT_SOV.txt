@@ -1,3 +1,5 @@
+@WHR_default_propaganda_campaign_duration = 180
+
 TT_WHR_battle_of_the_chiefs = {
 	
 }
@@ -51,13 +53,13 @@ TT_WHR_russian_civil_war = {
 			country_exists = SOV
 		}
 		timeout_effect = {
-			randomize_temp_variable = {
+			randomize_variable = {
 				var = infantry_eq
 				distribution = uniform
 				min = 100
 				max = 500
 			}
-			randomize_temp_variable = {
+			randomize_variable = {
 				var = support_eq
 				distribution = uniform
 				min = 100
@@ -68,10 +70,10 @@ TT_WHR_russian_civil_war = {
 					has_completed_focus = TT_WHR_entente_shipment_1
 
 				}
-				multiply_temp_variable = {
+				multiply_variable = {
 					support_eq = 1.5
 				}
-				multiply_temp_variable = {
+				multiply_variable = {
 					infantry_eq = 1.5
 				}
 			}
@@ -81,13 +83,13 @@ TT_WHR_russian_civil_war = {
 					has_completed_focus = TT_WHR_entente_shipment_2
 
 				}
-				multiply_temp_variable = {
+				multiply_variable = {
 					support_eq = 1.5
 				}
-				multiply_temp_variable = {
+				multiply_variable = {
 					infantry_eq = 1.5
 				}
-				randomize_temp_variable = {
+				randomize_variable = {
 					var = artillery_eq
 					distribution = uniform
 					min = 50
@@ -100,18 +102,18 @@ TT_WHR_russian_civil_war = {
 					has_completed_focus = TT_WHR_entente_shipment_3
 
 				}
-				multiply_temp_variable = {
+				multiply_variable = {
 					support_eq = 1.1
 				}
-				multiply_temp_variable = {
+				multiply_variable = {
 					infantry_eq = 1.1
 				}
-				multiply_temp_variable = {
+				multiply_variable = {
 					artillery_eq = 1.5
 				}
 			}
-			
-			if = {
+			 
+			if = {  
 				limit = {
 					has_completed_focus = TT_WHR_entente_shipment_4
 				}
@@ -185,9 +187,10 @@ TT_WHR_russian_civil_war = {
 					NOT = {
 						has_variable = days_deserting_mission
 					}
-					set_variable = {
-						days_deserting_mission = 60
-					}
+					
+				}
+				set_variable = {
+					days_deserting_mission = 60
 				}
 			}
 		}
@@ -210,7 +213,325 @@ TT_WHR_russian_civil_war = {
 	}
 }
 
+TT_WHR_propaganda_posters = {
+	Propaganda_poster_Peace_and_Freedom = { #ID = 6
 
+		priority = 5
+
+		
+		ai_will_do = {
+			base = 100
+		}
+		icon = eng_propaganda_campaigns
+
+		allowed = {
+			original_tag = WHR
+		}
+		available = {
+			has_war_with = SOV
+			custom_trigger_tooltip = {
+				tooltip = WHR_has_available_propaganda_slots_tt
+				OR = {
+					check_variable = {
+						WHR_poster_right_icon_frame = 0
+					}
+					check_variable = {
+						WHR_poster_center_icon_frame = 0
+					}
+					check_variable = {
+						WHR_poster_left_icon_frame = 0
+					}
+					check_variable = {
+						WHR_poster_right_icon_frame = 1
+					}
+					check_variable = {
+						WHR_poster_center_icon_frame = 1
+					}
+					check_variable = {
+						WHR_poster_left_icon_frame = 1
+					}
+				}
+			}
+			
+		}
+		days_remove = 180
+		days_re_enable = WHR_default_propaganda_campaign_cooldown
+		cost = 50
+
+		targeted_modifier = {
+			tag = SOV
+			defense_bonus_against = 0.1
+		}
+		complete_effect = {
+			set_variable = { WHR_new_propaganda_campaign = 6 }
+			WHR_pick_propaganda_campaign_slot_effect = yes 
+		}
+		remove_effect = {
+			set_variable = { WHR_propaganda_campaign_to_remove = 6 }
+			WHR_reset_propaganda_campaign_slot_effect = yes
+		}
+
+	}
+
+	Propaganda_poster_God_with_us = { #ID = 3
+
+		priority = 2
+
+		icon = eng_propaganda_campaigns
+
+		allowed = {
+			original_tag = WHR
+		}
+		ai_will_do = {
+			base = 1000
+		}
+		available = {
+			has_war_with = SOV
+			custom_trigger_tooltip = {
+				tooltip = WHR_has_available_propaganda_slots_tt
+				OR = {
+					check_variable = {
+						WHR_poster_right_icon_frame = 0
+					}
+					check_variable = {
+						WHR_poster_center_icon_frame = 0
+					}
+					check_variable = {
+						WHR_poster_left_icon_frame = 0
+					}
+					check_variable = {
+						WHR_poster_right_icon_frame = 1
+					}
+					check_variable = {
+						WHR_poster_center_icon_frame = 1
+					}
+					check_variable = {
+						WHR_poster_left_icon_frame = 1
+					}
+				}
+			}
+		}
+		days_remove = 180
+		days_re_enable = WHR_default_propaganda_campaign_cooldown
+		cost = 50
+
+		modifier = {
+			stability_factor = 0.1
+			political_power_gain = 0.2
+			surrender_limit = 0.2
+			custom_modifier_tooltip = adds_15_days_deserting_tt
+		}
+		complete_effect = {
+			add_to_variable = {
+				days_deserting_mission = 15
+			}
+			set_variable = { WHR_new_propaganda_campaign = 3 }
+			WHR_pick_propaganda_campaign_slot_effect = yes
+		}
+		remove_effect = {
+			subtract_from_variable = {
+				days_deserting_mission = 15
+			}
+			set_variable = { WHR_propaganda_campaign_to_remove = 3 }
+			WHR_reset_propaganda_campaign_slot_effect = yes
+		}
+ 
+	}
+
+	Propaganda_poster_why_are_you_not_in_army = { #ID = 5
+
+		priority = 4 
+  
+		icon = eng_propaganda_campaigns
+
+		allowed = {
+			original_tag = WHR
+		}
+		available = {
+			has_war_with = SOV
+			custom_trigger_tooltip = {
+				tooltip = WHR_has_available_propaganda_slots_tt
+				OR = {
+					OR = {
+						check_variable = {
+							WHR_poster_right_icon_frame = 0
+						}
+						check_variable = {
+							WHR_poster_center_icon_frame = 0
+						}
+						check_variable = {
+							WHR_poster_left_icon_frame = 0
+						}
+						check_variable = {
+							WHR_poster_right_icon_frame = 1
+						}
+						check_variable = {
+							WHR_poster_center_icon_frame = 1
+						}
+						check_variable = {
+							WHR_poster_left_icon_frame = 1
+						}
+					}
+				}
+			}
+		}
+		days_remove = 180
+		days_re_enable = WHR_default_propaganda_campaign_cooldown
+		cost = 50
+		ai_will_do = {
+			base = 1000
+			modifier = {
+				factor = 10
+				num_divisions < 50
+			}
+		}
+		modifier = {
+			conscription_factor = 0.02
+			minimum_training_level = -0.1		
+			training_time_factor = -0.2
+		}
+		complete_effect = {
+			set_variable = { WHR_new_propaganda_campaign = 5 }
+			WHR_pick_propaganda_campaign_slot_effect = yes
+		}
+		remove_effect = {
+			set_variable = { WHR_propaganda_campaign_to_remove = 5 }
+			WHR_reset_propaganda_campaign_slot_effect = yes
+		}
+
+	}
+
+	Propaganda_poster_save_russia = { #ID = 4
+
+		priority = 3
+
+		icon = eng_propaganda_campaigns
+
+		allowed = {
+			original_tag = WHR
+		} 
+		available = {
+			has_war_with = SOV
+			custom_trigger_tooltip = {
+				tooltip = WHR_has_available_propaganda_slots_tt
+				OR = {
+					check_variable = {
+						WHR_poster_right_icon_frame = 0
+					}
+					check_variable = {
+						WHR_poster_center_icon_frame = 0
+					}
+					check_variable = {
+						WHR_poster_left_icon_frame = 0
+					}
+					check_variable = {
+						WHR_poster_right_icon_frame = 1
+					}
+					check_variable = {
+						WHR_poster_center_icon_frame = 1
+					}
+					check_variable = {
+						WHR_poster_left_icon_frame = 1
+					}
+				}
+			}
+		}
+		days_remove = 180
+		days_re_enable = WHR_default_propaganda_campaign_cooldown
+		cost = 50
+		ai_will_do = {
+			base = 1000
+		}
+		modifier = {
+			defence = 0.15
+			offence = 0.1
+			surrender_limit = 0.15
+			custom_modifier_tooltip = adds_25_days_deserting_tt
+		}
+		complete_effect = {
+			add_to_variable = {
+				days_deserting_mission = 25
+			}
+			set_variable = { WHR_new_propaganda_campaign = 4 }
+			WHR_pick_propaganda_campaign_slot_effect = yes
+		}
+		remove_effect = {
+			subtract_from_variable = {
+				days_deserting_mission = 25
+			}
+			set_variable = { WHR_propaganda_campaign_to_remove = 4 }
+			WHR_reset_propaganda_campaign_slot_effect = yes
+		}
+
+	}
+  
+	Propaganda_poster_for_united_russia = { #ID = 7
+ 
+		priority = 6
+
+		icon = eng_propaganda_campaigns
+
+		allowed = {
+			original_tag = WHR
+		}
+		available = {
+			has_war_with = SOV
+			has_completed_focus = TT_WHR_denikin_strategy
+			custom_trigger_tooltip = {
+				tooltip = WHR_has_available_propaganda_slots_tt
+				OR = {
+					check_variable = {
+						WHR_poster_right_icon_frame = 0
+					}
+					check_variable = {
+						WHR_poster_center_icon_frame = 0
+					}
+					check_variable = {
+						WHR_poster_left_icon_frame = 0
+					}
+					check_variable = {
+						WHR_poster_right_icon_frame = 1
+					}
+					check_variable = {
+						WHR_poster_center_icon_frame = 1
+					}
+					check_variable = {
+						WHR_poster_left_icon_frame = 1
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			base = 10000
+		}
+		days_remove = 180
+		days_re_enable = WHR_default_propaganda_campaign_cooldown
+		cost = 50
+
+		modifier = {
+			custom_modifier_tooltip = adds_50_days_deserting_tt
+			surrender_limit	= 0.1
+		}
+		complete_effect = {
+			add_to_variable = {
+				days_deserting_mission = 50
+			}
+			set_variable = { WHR_new_propaganda_campaign = 7 }
+			WHR_pick_propaganda_campaign_slot_effect = yes
+		}
+		remove_effect = {
+			subtract_from_variable = {
+				days_deserting_mission = 50
+			}
+			set_variable = { WHR_propaganda_campaign_to_remove = 7 }
+			WHR_reset_propaganda_campaign_slot_effect = yes
+		}
+
+	}    
+	
+
+	
+}
 TT_SOV_russian_civil_war = {
 	SOV_launch_offensive = {
 		targeted_modifier = {

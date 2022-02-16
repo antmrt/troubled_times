@@ -53,4 +53,11 @@ spriteTypes = {
 		name = "GFX_sanity_arrow"
 		texturefile = "gfx/interface/TT_Deschanel_sanity/sanity_arrow.dds"
 	}
+
+	spriteType = {
+		name = "GFX_WHR_propaganda_strip"
+		texturefile = "gfx/interface/WHR_propaganda_campaign.dds"
+		legacy_lazy_load = no
+		noOfFrames = 7 
+	}
 }

@@ -73,7 +73,9 @@ technologies = {
 			leads_to_tech = chemical_research3
 			research_cost_coeff = 1
 		}
-
+		enable_equipments = {
+			combat_gas
+		}
 		ai_will_do = {
 			factor = 1
 		}

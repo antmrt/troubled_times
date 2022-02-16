@@ -1,0 +1,33 @@
+ability = {
+	Generic_gas_attack = {
+		name = ABILITY_GAS_ATTACK
+		desc = ABILITY_GAS_ATTACK_DESC
+		icon = GFX_ability_chi_force_attack
+
+		type = army_leader
+
+		allowed = {
+			
+			has_equipment = {
+				combat_gas > 500
+			}
+		}
+		cost = 0.1
+		duration = 72
+
+		one_time_effect = {
+			add_equipment_to_stockpile = {
+				type = combat_gas
+				amount = -500
+				
+			}
+			add_temporary_buff_to_units = {
+				combat_offense = 4
+				combat_breakthrough = 0.5
+				
+				days = 3
+				
+			}
+		}
+	}
+}

@@ -1,7 +1,7 @@
 TT_SOV_shifting_alliances = {
 	allowed = {
 		original_tag = SOV
-		is_debug = yes
+		
 	}
 
 	priority = 199
@@ -16,6 +16,17 @@ TT_SOV_russian_civil_war = {
 	visible = { 
 		date < 1936.1.1
 	}
+}
+TT_WHR_propaganda_posters = {
+	allowed = {
+		tag = WHR
+	}
+	visible = {
+		has_dlc = "No Step Back"
+	}
+	priority = 200
+	visible_when_empty = yes
+	scripted_gui = WHR_propaganda_campaigns_ui
 }
 TT_WHR_russian_civil_war = {
 	allowed = {

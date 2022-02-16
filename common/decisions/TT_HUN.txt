@@ -54,7 +54,7 @@ TT_HUN_territorial_wars = {
 		}
 		complete_effect = {
 			disband_twenty_percent_units = yes
-			retire_character = HUN_Bela_kun
+			retire_character = HUN_Bela_kun 
 			every_country = {
 				limit = {
 					has_war_with = HUN

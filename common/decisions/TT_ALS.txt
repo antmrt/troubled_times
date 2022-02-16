@@ -6,7 +6,7 @@
 
 TT_ALS_border_skirmishes = {
 	BTE_escalate_incident_to_border_conflict = {
-
+		
 		icon = border_war
 
 		allowed = { always = no } #Activated from effect

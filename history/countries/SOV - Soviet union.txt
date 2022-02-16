@@ -3,6 +3,12 @@
 #### NO STEP BACK
 ####
 1918.1.1 = {
+	set_variable = {
+		anarchist_loyalty = 50
+	}
+	set_variable = {
+		green_army_loyalty = 34
+	}
 	add_ideas = TT_SOV_young_nation
 	recruit_character = SOV_vladimir_lenin
 	set_cosmetic_tag = Russian_SFSR

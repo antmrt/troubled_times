@@ -1,3 +1,161 @@
+# __        ___   _ ____    ____  ____   ___  ____   _    ____    _    _   _ ____    _    
+# \ \      / / | | |  _ \  |  _ \|  _ \ / _ \|  _ \ / \  / ___|  / \  | \ | |  _ \  / \   
+#  \ \ /\ / /| |_| | |_) | | |_) | |_) | | | | |_) / _ \| |  _  / _ \ |  \| | | | |/ _ \  
+#   \ V  V / |  _  |  _ <  |  __/|  _ <| |_| |  __/ ___ \ |_| |/ ___ \| |\  | |_| / ___ \ 
+#    \_/\_/  |_| |_|_| \_\ |_|   |_| \_\\___/|_| /_/   \_\____/_/   \_\_| \_|____/_/   \_\
+#                                                                                        
+
+
+defined_text ={
+    name = WHRGetPropaganda_Left
+    text = {
+        trigger = {
+			check_variable = { WHR_poster_left_icon_frame = 1 }
+		}
+		localization_key = SOV_propaganda_campaign_locked_slot_tt
+    }
+    text = {
+		trigger = {
+			check_variable = { WHR_poster_left_icon_frame = 2 }
+		}
+		localization_key = SOV_propaganda_campaign_empty_slot_tt
+	}
+	text = {
+		trigger = { 
+			check_variable = { WHR_poster_left_icon_frame = 3 }
+		}
+		localization_key = WHR_propaganda_god_with_us
+	}
+	text = {
+		trigger = {
+			check_variable = { WHR_poster_left_icon_frame = 4 }
+		}
+		localization_key = WHR_propaganda_save_russia
+	}
+	text = {
+		trigger = {
+			check_variable = { WHR_poster_left_icon_frame = 5 }
+		}
+		localization_key = WHR_propaganda_why_are_you_not_in_army
+	}
+	text = {
+		trigger = {
+			check_variable = { WHR_poster_left_icon_frame = 6 }
+		}
+		localization_key = WHR_propaganda_peace_and_freedom
+	}
+	text = {
+		trigger = {
+			check_variable = { WHR_poster_left_icon_frame = 7 }
+		}
+		localization_key = WHR_propaganda_united_russia
+	}
+
+}
+
+defined_text ={
+    name = WHRGetPropaganda_Center
+    text = {
+        trigger = {
+			check_variable = { WHR_poster_center_icon_frame = 1 }
+		}
+		localization_key = SOV_propaganda_campaign_locked_slot_tt
+    }
+    text = {
+		trigger = {
+			check_variable = { WHR_poster_center_icon_frame = 2 }
+		}
+		localization_key = SOV_propaganda_campaign_empty_slot_tt
+	}
+	text = {
+		trigger = { 
+			check_variable = { WHR_poster_center_icon_frame = 3 }
+		}
+		localization_key = WHR_propaganda_god_with_us
+	}
+	text = {
+		trigger = {
+			check_variable = { WHR_poster_center_icon_frame = 4 }
+		}
+		localization_key = WHR_propaganda_save_russia
+	}
+	text = {
+		trigger = {
+			check_variable = { WHR_poster_center_icon_frame = 5 }
+		}
+		localization_key = WHR_propaganda_why_are_you_not_in_army
+	}
+	text = {
+		trigger = {
+			check_variable = { WHR_poster_center_icon_frame = 6 }
+		}
+		localization_key = WHR_propaganda_peace_and_freedom
+	}
+	text = {
+		trigger = {
+			check_variable = { WHR_poster_center_icon_frame = 7 }
+		}
+		localization_key = WHR_propaganda_united_russia
+	}
+
+}
+
+defined_text ={
+    name = WHRGetPropaganda_Right
+    text = {
+        trigger = {
+			check_variable = { WHR_poster_right_icon_frame = 1 }
+		}
+		localization_key = SOV_propaganda_campaign_locked_slot_tt
+    }
+    text = {
+		trigger = {
+			check_variable = { WHR_poster_right_icon_frame = 2 }
+		}
+		localization_key = SOV_propaganda_campaign_empty_slot_tt
+	}
+	text = {
+		trigger = { 
+			check_variable = { WHR_poster_right_icon_frame = 3 }
+		}
+		localization_key = WHR_propaganda_god_with_us
+	}
+	text = {
+		trigger = {
+			check_variable = { WHR_poster_right_icon_frame = 4 }
+		}
+		localization_key = WHR_propaganda_save_russia
+	}
+	text = {
+		trigger = {
+			check_variable = { WHR_poster_right_icon_frame = 5 }
+		}
+		localization_key = WHR_propaganda_why_are_you_not_in_army
+	}
+	text = {
+		trigger = {
+			check_variable = { WHR_poster_right_icon_frame = 6 }
+		}
+		localization_key = WHR_propaganda_peace_and_freedom
+	}
+	text = {
+		trigger = {
+			check_variable = { WHR_poster_right_icon_frame = 7 }
+		}
+		localization_key = WHR_propaganda_united_russia
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
 defined_text = {
     name = GetAnarchistLoyalty
     

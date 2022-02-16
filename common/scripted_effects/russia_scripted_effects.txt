@@ -1,0 +1,77 @@
+WHR_pick_propaganda_campaign_slot_effect = {
+	hidden_effect = {
+		if = {
+			limit = {
+				check_variable = { WHR_poster_left_icon_frame = WHR_propaganda_empty_slot_index }
+			}
+			set_variable = { WHR_poster_left_icon_frame = WHR_new_propaganda_campaign }
+			
+		}
+		else_if = {
+			limit = {
+				check_variable = { WHR_poster_center_icon_frame = WHR_propaganda_empty_slot_index }
+			}
+			set_variable = { WHR_poster_center_icon_frame = WHR_new_propaganda_campaign }
+			
+			
+		}
+		else_if = {
+			limit = {
+				check_variable = { WHR_poster_right_icon_frame = WHR_propaganda_empty_slot_index }
+			}
+			set_variable = { WHR_poster_right_icon_frame = WHR_new_propaganda_campaign }
+		}
+	}
+}
+
+WHR_reset_propaganda_campaign_slot_effect = {
+	hidden_effect = {
+		if = {
+			limit = {
+				check_variable = { WHR_poster_left_icon_frame = WHR_propaganda_campaign_to_remove }
+			}
+			set_variable = { WHR_poster_left_icon_frame = WHR_propaganda_empty_slot_index }
+			
+			
+			
+		}
+		else_if = {
+			limit = {
+				check_variable = { WHR_poster_center_icon_frame = WHR_propaganda_campaign_to_remove }
+			}
+			set_variable = { WHR_poster_center_icon_frame = WHR_propaganda_empty_slot_index }
+			
+		}
+		else_if = { #This could be turned into an else, but leaving it like this to hopefully make it easier to see
+			limit = {
+				check_variable = { WHR_poster_right_icon_frame = WHR_propaganda_campaign_to_remove }
+			}
+			set_variable = { WHR_poster_right_icon_frame = WHR_propaganda_empty_slot_index }
+		}
+		set_variable = { WHR_propaganda_campaign_to_remove = 0 } # Reset var
+	}
+}
+
+WHR_unlock_propaganda_campaign_slot_effect = {
+	hidden_effect = {
+		if = {
+			limit = {
+				check_variable = { WHR_poster_left_icon_frame = WHR_propaganda_locked_slot_index }
+			}
+			set_variable = { WHR_poster_left_icon_frame = WHR_propaganda_empty_slot_index }
+		}
+		else_if = {
+			limit = {
+				check_variable = { WHR_poster_center_icon_frame = WHR_propaganda_locked_slot_index }
+			}
+			set_variable = { WHR_poster_center_icon_frame = WHR_propaganda_empty_slot_index }
+		}
+		else = {
+			set_variable = { WHR_poster_right_icon_frame = WHR_propaganda_empty_slot_index }
+		}
+	}
+}
+
+WHR_increase_propaganda_campaign_cost_effect = {
+	multiply_variable = { WHR_propaganda_cost = WHR_propaganda_cost_increase } #Using generic var WHR_propaganda_cost so that we only need to change this operation to tweak all propagandas' cost escalation
+}

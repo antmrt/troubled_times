@@ -11,7 +11,7 @@ focus_tree ={
 
 	focus = {
 		id = TT_WHR_fight_the_reds
-		x = 20
+		x = 15
 		y = 1
 		completion_reward = {
 			add_war_support = 0.05
@@ -55,7 +55,7 @@ focus_tree ={
 			focus = TT_WHR_denikin_strategy
 		}
 		completion_reward = {
-
+			create_faction = "White Movement"
 		}
 	} 
 
@@ -80,7 +80,10 @@ focus_tree ={
 			focus = TT_WHR_krasnov_strategy
 		}
 		completion_reward = {
-
+			add_named_threat = {
+				threat = 5
+				name = "Denikin Strategy"
+			}
 		}
 	}
 
@@ -146,6 +149,13 @@ focus_tree ={
 		prerequisite ={
 			focus = TT_WHR_denikin_strategy
 		}
+		will_lead_to_war_with = UKR
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = UKR
+			}
+		}
 		x = -1
 		y = 1
 		cost = 5
@@ -157,9 +167,27 @@ focus_tree ={
 		prerequisite = {
 			focus = TT_WHR_denikin_strategy
 		}
+		will_lead_to_war_with = LAT
+		will_lead_to_war_with = LIT
+		will_lead_to_war_with = EST
+
 		x = 1
 		y = 1
 		cost = 5
+		completion_reward = {
+			create_wargoal = {
+				target = LAT
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = EST
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = LIT
+				type = annex_everything
+			}
+		}
 	}
 
 	focus = {
@@ -168,9 +196,16 @@ focus_tree ={
 		prerequisite = {
 			focus = TT_WHR_baltic_war
 		}
+		will_lead_to_war_with = POL
 		x = 1
 		y = 2
 		cost = 5
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = POL
+			}
+		}
 	}
 	
 	focus = {
@@ -182,6 +217,23 @@ focus_tree ={
 		x = -1
 		y = 2
 		cost = 5
+		will_lead_to_war_with = GEO
+		will_lead_to_war_with = AZR
+		will_lead_to_war_with = ARM
+		completion_reward = {
+			create_wargoal = {
+				target = GEO
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = AZR
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = ARM
+				type = annex_everything
+			}
+		}
 	}
 
 	focus = {
@@ -194,6 +246,13 @@ focus_tree ={
 		x = 0
 		y = 3
 		cost = 5
+		will_lead_to_war_with = FIN
+		completion_reward = {
+			create_wargoal = {
+				target = FIN
+				type = annex_everything
+			}
+		}
 	}
 
 	focus = {
@@ -286,6 +345,12 @@ focus_tree ={
 		available = {
 			NOT = {
 				has_completed_focus = TT_WHR_denikin_strategy
+			}
+		}
+		ai_will_do = {
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
 			}
 		}
 		prerequisite = {

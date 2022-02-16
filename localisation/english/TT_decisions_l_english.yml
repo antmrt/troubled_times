@@ -211,22 +211,48 @@ TT_spartakist_uprising_timer:0 "Spartakist Uprising"
  TT_HUN_territorial_wars:0 "Territorial Wars"
  TT_HUN_form_slovakian_soviet_republic:0 "Form the Slovakian Soviet Republic"
 
-
+ 
+ TT_WHR_propaganda_posters:0 "Propaganda Campaign"
  TT_WHR_russian_civil_war:0 "The Russian Civil War"
  WHR_soldiers_deserting:0 "Soldiers Deserting"
  entente_weapon_shipment:0 "Entente Weapon Shipment"
  WHR_launch_offensive:0 "Launch offensive"
  TT_WHR_battle_of_the_chiefs:0 "Battle of the Chiefs"
  TT_WHR_battle_of_the_chiefs_desc:0 "Multiple White Army leader are fighting for legitimacy, they have different strategies for winnig this civil war, while §YDenikin§! wants to rule over the Motherland with an Iron Fist, §YKrasnov§! is wanting to grant independance to the movement joining the war on our side.\n\n  §YDeninkin§!'s legitimacy is §Y[?denikin_legitimacy]§!\n  §YKrasnov§!'s legitimacy is §Y[?krasnov_legitimacy]§!\n\n§gLegitimacy is gained when the Army Leader is assigned to an army§!"
+ 
+ adds_15_days_deserting_tt:0 "Mission §YSoldiers Deserting§!: §G+15§! days"
+ adds_50_days_deserting_tt:0 "Mission §YSoldiers Deserting§!: §G+50§! days"
+ adds_25_days_deserting_tt:0 "Mission §YSoldiers Deserting§!: §G+25§! days"
 
+ Propaganda_poster_Peace_and_Freedom:0 "'Peace and Freedom' in Soviet Russia"
+ Propaganda_poster_God_with_us:0 "God with Us"
+ Propaganda_poster_why_are_you_not_in_army:0 "Why are you not in the Army?"
+ Propaganda_poster_save_russia:0 "Save Russia"
+ Propaganda_poster_for_united_russia:0 "For an United Russia"
+ WHR_has_available_propaganda_slots_tt:0 "has §YPropaganda slots§! available"
+
+ WHR_poster_left_text:0 "[GetDaysRemainingLeft]"
+ WHR_poster_center_text:0 "[GetDaysRemainingCenter]"
+ WHR_poster_right_text:0 "[GetDaysRemainingRight]"
+
+
+ WHR_PROPAGANDA_CAMPAIGN_TT_LEFT:0 "[WHRGetPropaganda_Left]"
+ WHR_PROPAGANDA_CAMPAIGN_TT_CENTER:0 "[WHRGetPropaganda_Center]"
+ WHR_PROPAGANDA_CAMPAIGN_TT_RIGHT:0 "[WHRGetPropaganda_Right]" 
+ WHR_propaganda_united_russia:0 "For an United Russia!"
+ WHR_propaganda_peace_and_freedom:0 "'Peace and Freedom' in Soviet Russia"
+ WHR_propaganda_why_are_you_not_in_army:0 "Why are you not in the Army?"
+ WHR_propaganda_save_russia:0 "Save Russia!"
+ WHR_propaganda_god_with_us:0 "God with Us!"
 
 
  TT_SOV_shifting_alliances:0 "Shifting Alliances"
  TT_SOV_shifting_alliances_desc:0 "The struggle in this war, causes several factions to fight for Power, what mmight be allies today, could become ennemies in the future. \n\n§gThe different factions are the following :§!"
-
+ 
  AUK_name_text:0 "Anarchists"
  SOV_anarchist_loyalty_status:0 "[GetAnarchistLoyalty]"
-
+ SOV_ANARCHIST_TOOLTIP:0 "The §YAnarchists§! are a group of people obeying no laws and wanting to create a society in which everyone gets to do want he wants.\nThe §YAnachists§! play an ambiguous role in this conflict."
+ 
  SOV_Green_Army_loyalty_status:0 "[GetGreenArmyLoyalty]"
  SOV_Green_Army_loyalty_status_breakdown:0 "def"
  DISLOYAL:0 "§RDISLOYAL§!"

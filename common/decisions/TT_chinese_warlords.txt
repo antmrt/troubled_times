@@ -199,6 +199,7 @@ TT_warlord_wars = {
 			}
 		}
 		timeout_effect = {
+			set_global_flag = ANH_ZHI_war_over
 			if = {
 				limit ={
 					MON = {

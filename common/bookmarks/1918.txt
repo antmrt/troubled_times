@@ -64,6 +64,18 @@ bookmarks = {
 			focuses = {
 			}
 		}
+
+		WHR = {
+			history = "WHR_ARMISTICE_DESC"
+			ideology = fascism
+			ideas = {
+				TT_WHR_disputed_leadership
+			}
+			focuses = {
+				TT_WHR_krasnov_strategy
+				TT_WHR_denikin_strategy
+			}
+		}
 		#USA = {
 		#	history = "USA_ARMISTICE_DESC"
 		#	ideology = democratic

@@ -231,10 +231,6 @@ TT_spartakist_uprising_timer:0 "Spartakist Uprising"
  Propaganda_poster_for_united_russia:0 "For an United Russia"
  WHR_has_available_propaganda_slots_tt:0 "has §YPropaganda slots§! available"
 
- WHR_poster_left_text:0 "[GetDaysRemainingLeft]"
- WHR_poster_center_text:0 "[GetDaysRemainingCenter]"
- WHR_poster_right_text:0 "[GetDaysRemainingRight]"
-
 
  WHR_PROPAGANDA_CAMPAIGN_TT_LEFT:0 "[WHRGetPropaganda_Left]"
  WHR_PROPAGANDA_CAMPAIGN_TT_CENTER:0 "[WHRGetPropaganda_Center]"

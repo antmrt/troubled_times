@@ -179,20 +179,10 @@ TT_WHR_russian_civil_war = {
 				has_idea = TT_WHR_disputed_leadership
 			}
 		}
-		days_mission_timeout = days_deserting_mission?60
+		days_mission_timeout = days_deserting_mission
 		timeout_effect = {
 			disband_twenty_percent_units = yes
-			if = {
-				limit = {
-					NOT = {
-						has_variable = days_deserting_mission
-					}
-					
-				}
-				set_variable = {
-					days_deserting_mission = 60
-				}
-			}
+			
 		}
 
 	}
@@ -322,6 +312,15 @@ TT_WHR_propaganda_posters = {
 			custom_modifier_tooltip = adds_15_days_deserting_tt
 		}
 		complete_effect = {
+			if = {
+				limit = {
+					has_active_mission = WHR_soldiers_deserting
+				}
+				add_days_mission_timeout = {
+					mission = WHR_soldiers_deserting
+					days = 15
+				}
+			}
 			add_to_variable = {
 				days_deserting_mission = 15
 			}
@@ -329,6 +328,15 @@ TT_WHR_propaganda_posters = {
 			WHR_pick_propaganda_campaign_slot_effect = yes
 		}
 		remove_effect = {
+			if = {
+				limit = {
+					has_active_mission = WHR_soldiers_deserting
+				}
+				add_days_mission_timeout = {
+					mission = WHR_soldiers_deserting
+					days = -15
+				}
+			}
 			subtract_from_variable = {
 				days_deserting_mission = 15
 			}
@@ -449,6 +457,15 @@ TT_WHR_propaganda_posters = {
 			custom_modifier_tooltip = adds_25_days_deserting_tt
 		}
 		complete_effect = {
+			if = {
+				limit = {
+					has_active_mission = WHR_soldiers_deserting
+				}
+				add_days_mission_timeout = {
+					mission = WHR_soldiers_deserting
+					days = 25
+				}
+			}
 			add_to_variable = {
 				days_deserting_mission = 25
 			}
@@ -456,6 +473,15 @@ TT_WHR_propaganda_posters = {
 			WHR_pick_propaganda_campaign_slot_effect = yes
 		}
 		remove_effect = {
+			if = {
+				limit = {
+					has_active_mission = WHR_soldiers_deserting
+				}
+				add_days_mission_timeout = {
+					mission = WHR_soldiers_deserting
+					days = -25
+				}
+			}
 			subtract_from_variable = {
 				days_deserting_mission = 25
 			}
@@ -513,6 +539,15 @@ TT_WHR_propaganda_posters = {
 			surrender_limit	= 0.1
 		}
 		complete_effect = {
+			if = {
+				limit = {
+					has_active_mission = WHR_soldiers_deserting
+				}
+				add_days_mission_timeout = {
+					mission = WHR_soldiers_deserting
+					days = 50
+				}
+			}
 			add_to_variable = {
 				days_deserting_mission = 50
 			}
@@ -520,6 +555,23 @@ TT_WHR_propaganda_posters = {
 			WHR_pick_propaganda_campaign_slot_effect = yes
 		}
 		remove_effect = {
+			random_list = {
+				75 = {
+
+				}
+				25 = {
+					remove_ideas = TT_WHR_disputed_leadership
+				}
+			}
+			if = {
+				limit = {
+					has_active_mission = WHR_soldiers_deserting
+				}
+				add_days_mission_timeout = {
+					mission = WHR_soldiers_deserting
+					days = -50
+				}
+			}
 			subtract_from_variable = {
 				days_deserting_mission = 50
 			}

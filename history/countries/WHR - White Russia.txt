@@ -5,6 +5,9 @@ capital = 571
 		denikin_legitimacy = 50
 	}
 	set_variable = {
+		days_deserting_mission = 60
+	}
+	set_variable = {
 		krasnov_legitimacy = 20
 	}
 	add_ideas = {

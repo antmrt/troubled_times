@@ -51,7 +51,7 @@ on_actions = {
 			if = {
 				limit = {
 					FROM = {
-						tag = SOV
+						original_tag = SOV
 					}
 				}
 				every_state = {
@@ -74,13 +74,33 @@ on_actions = {
 					}
 
 				}
-				
-				every_country = {
+				if = {
 					limit = {
-						is_ai = no
+						country_exists = GAR
 					}
-					set_country_flag = white_army_cw_victory_super_event
+					GAR = {
+						declare_war_on = {
+							target = WHR
+							type = civil_war
+						}
+						add_civil_war_target = WHR
+					}
 				}
+				if = {
+					limit = {
+						NOT = {
+							country_exists = GAR
+
+						}
+					}
+					every_country = {
+						limit = {
+							is_ai = no
+						}
+						set_country_flag = white_army_cw_victory_super_event
+					}
+				}
+				
 			}
 
 

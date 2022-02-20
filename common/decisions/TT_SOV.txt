@@ -608,6 +608,8 @@ TT_SOV_russian_civil_war = {
 		}
 		days_re_enable = 45
 		complete_effect = {
+			custom_effect_tooltip = will_lower_anarchist_loyalty_tt
+			custom_effect_tooltip = will_lower_green_army_loyalty_tt
 			add_stability = -0.1
 			set_temp_variable = {div_created = 0}
 			while_loop_effect = {
@@ -618,6 +620,9 @@ TT_SOV_russian_civil_war = {
 				}
 		
 				random_owned_state = {
+					limit = {
+						is_fully_controlled_by = SOV
+					}
 				create_unit = {
 					division = "name = \"Infantry Division\" division_template = \"Strelkovaya Diviziya\" start_experience_factor = 0.1 start_equipment_factor = 0.1"
 					owner = SOV
@@ -818,4 +823,79 @@ TT_SOV_russian_civil_war = {
 
 		}
 	}
+}
+
+TT_SOV_shifting_alliances = {
+
+
+	TT_SOV_green_army_uprising = {
+
+		icon = revolt
+
+		days_mission_timeout = 10
+		is_good = no
+
+		activation = {
+			check_variable = {
+				green_army_loyalty < 30
+			}
+		}
+		fire_only_once = yes
+		allowed = {
+			tag = SOV
+		}
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+
+		timeout_effect = {
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = UKR
+						is_core_of = BLR
+					}
+					is_fully_controlled_by = SOV
+				}
+				GAR = {
+					transfer_state = PREV
+				}
+			}
+			transfer_units_fraction = {
+				target = GAR
+				size = 0.1
+			}
+			declare_war_on = {
+				target = GAR
+				type = civil_war
+			}
+			add_civil_war_target = GAR
+		}
+	}
+
+	TT_SOV_anarchist_uprising = {
+		icon = revolt 
+
+		days_mission_timeout = 100
+
+		is_good = no
+		fire_only_once = yes
+		activation = {
+			check_variable = {
+				anarchist_loyalty < 10
+			}
+		}
+
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		timeout_effect = {
+
+		}
+	}
+
 }

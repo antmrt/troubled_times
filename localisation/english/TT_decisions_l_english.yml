@@ -259,14 +259,17 @@ TT_spartakist_uprising_timer:0 "Spartakist Uprising"
  Green_ARMY_name_text:0 "Green Army"
  SOV_GREEN_ARMY_TOOLTIP:0 "The §YGreen Army§! is an Alliance of Peasants refusing Conscription and requisitions from the Government.\nThe §YGreen Army§! will cause for Peasants Uprising if they are disloyal towards the government."
 
-
+ will_lower_anarchist_loyalty_tt:0 "Anarchist Loyalty towards the Government will §Rdecrease§!"
+ will_lower_green_army_loyalty_tt:0 "Green Army Loyalty towards the Government will §Rdecrease§!"
 
  TT_SOV_russian_civil_war:0 "The Russian Civil War"
  SOV_launch_offensive:0 "Launch Offensive"
  SOV_emergency_consciption:0 "Emergency Conscription"
  reintegrate_EST:0 "reintegrate Estonia"
  reintegrate_LAT:0 "reintegrate Latvia"
- reintegrate_LIT:0 "reintegrate Lithuania"
+ reintegrate_LIT:0 "reintegrate Lithuania" 
+ 
+ TT_SOV_green_army_uprising:0 "Green Army Uprising"
 
  BALTIC_soviet_defense:0 "Soviet Defense"
  BALTIC_propose_peace_to_soviets:0 "Propose Peace to [SOV.GetName]"

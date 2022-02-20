@@ -845,3 +845,8 @@ CHI_KUOMINTANG = {
 	color = rgb { 3 34 76 }
 	color_ui = rgb { 3 34 76 }
 }
+
+GREEN_ARMY = {
+	color = rgb {50 168 0}
+	color_ui = rgb {50 168 0}
+}

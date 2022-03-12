@@ -137,6 +137,38 @@ focus_tree = {
 		prerequisite = { focus = TT_INT_GER_disband_the_mutinies   }
 		prerequisite = { focus = TT_INT_GER_call_to_the_freikorps }
 	}
+
+	focus = {
+		id = TT_INT_GER_Noske_strategy 
+		icon = GFX_unknown
+		relative_position_id = TT_INT_GER_get_rid_of_the_reds
+		x = 1
+		y = 1
+		cost = 1
+		prerequisite = { focus = TT_INT_GER_get_rid_of_the_reds }
+		mutually_exclusive = { focus = TT_INT_GER_strenghten_freikorps }
+	}
+
+	focus = {
+		id = TT_INT_Weimarer_verfassung
+		icon = GFX_unknown
+		relative_position_id = TT_INT_GER_Noske_strategy
+		x = -1
+		y = 1
+		prerequisite = { focus = TT_INT_GER_Noske_strategy focus = TT_INT_GER_strenghten_freikorps }
+		
+	}
+
+	focus = {
+		id = TT_INT_GER_strenghten_freikorps
+		icon = GFX_unknown
+		relative_position_id = TT_INT_GER_get_rid_of_the_reds
+		x = -1
+		y = 1
+		cost = 1
+		prerequisite = { focus = TT_INT_GER_get_rid_of_the_reds }
+		mutually_exclusive = { focus = TT_INT_GER_Noske_strategy }
+	}
 	focus = {
 		id = TT_INT_GER_rally_german_spartakists
 		icon = GFX_unknown

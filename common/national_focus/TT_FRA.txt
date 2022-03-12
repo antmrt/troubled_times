@@ -305,8 +305,232 @@ focus_tree = {
 				is_historical_focus_on = yes
 			}
 		}
+		completion_reward = {
+			
+			set_temp_variable = { temp_member = 8 }
+			set_temp_variable = { temp_seats = 10 }
+			modify_parliament_seat = yes
+		
+		}
 	}
 	
+	focus = {
+		id = TT_INT_FRA_revise_separation_law
+		prerequisite = {
+			focus = TT_INT_FRA_reactionnary_right
+		}
+		icon = GFX_unknown
+
+		relative_position_id = TT_INT_FRA_reactionnary_right
+		x = 0
+		y = 1
+		available = {
+			set_temp_variable = {
+				temp_member1 = 8
+			}
+			set_temp_variable = {
+				v = 8
+			}
+			#Party 2
+			set_temp_variable = {
+				temp_member2 = 1
+			}
+			set_temp_variable = {
+				v2 = 1
+			}
+			has_more_seats_than_party = yes
+			set_temp_variable = {
+				temp_member2 = 2
+			}
+			set_temp_variable = {
+				v2 = 2
+			}
+			has_more_seats_than_party = yes
+			set_temp_variable = {
+				temp_member2 = 3
+			}
+			set_temp_variable = {
+				v2 = 3
+			}
+			has_more_seats_than_party = yes
+			set_temp_variable = {
+				temp_member2 = 4
+			}
+			set_temp_variable = {
+				v2 = 4
+			}
+			has_more_seats_than_party = yes
+			
+			set_temp_variable = {
+				temp_member2 = 5
+			}
+			set_temp_variable = {
+				v2 = 5
+			}
+			has_more_seats_than_party = yes
+			set_temp_variable = {
+				temp_member2 = 6
+			}
+			set_temp_variable = {
+				v2 = 6
+			}
+			has_more_seats_than_party = yes
+			set_temp_variable = {
+				temp_member2 = 7
+			}
+			set_temp_variable = {
+				v2 = 7
+			}
+			has_more_seats_than_party = yes
+		}
+		cost = 10
+		completion_reward = {
+			add_popularity = {
+				ideology = theocratism
+				popularity = 0.1
+			}
+		}
+
+	}
+
+	focus = {
+		id = TT_INT_FRA_unleash_camelots
+		prerequisite = {
+			focus = TT_INT_FRA_revise_separation_law
+		}
+		icon = GFX_unknown
+
+		relative_position_id = TT_INT_FRA_revise_separation_law
+		x = 0
+		y = 1
+		cost = 10
+		completion_reward = {
+			add_stability = -0.1
+			
+			
+			set_temp_variable = { temp_member = 3 }
+			set_temp_variable = { temp_seats = -10 }
+			modify_parliament_seat = yes
+			
+			
+		}
+	}
+
+	focus = {
+		id = TT_INT_FRA_strong_church
+		prerequisite = {
+			focus = TT_INT_FRA_unleash_camelots
+
+		}
+		mutually_exclusive = {
+			focus = TT_INT_FRA_strong_state
+		}
+		icon = GFX_unknown
+		cost = 10
+		relative_position_id = TT_INT_FRA_unleash_camelots
+		completion_reward = {
+			add_popularity = {
+				ideology = theocratism
+				popularity = 0.15
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.1
+			}
+
+		}
+		x = -1
+		y = 1
+	}
+
+	focus = {
+		id = TT_INT_FRA_strong_state
+
+		prerequisite = {
+			focus = TT_INT_FRA_unleash_camelots
+		}
+		mutually_exclusive = {
+			focus = TT_INT_FRA_strong_church
+		}
+		icon = GFX_unknown
+		cost = 10
+		relative_position_id = TT_INT_FRA_unleash_camelots
+		completion_reward = {
+			add_popularity = {
+				ideology = theocratism 
+				popularity = 0.1
+
+			}
+			add_popularity = {
+				ideology = neutrality 
+				popularity = 0.15
+			}
+		}
+		x = 1
+		y = 1
+	}
+
+	focus = {
+		id = TT_INT_FRA_shut_down_parliament
+
+		prerequisite = {
+			focus = TT_INT_FRA_strong_church
+			focus = TT_INT_FRA_strong_state
+		}
+		
+		relative_position_id = TT_INT_FRA_strong_church
+		x = 1
+		y = 1
+		cost = 5
+		completion_reward = {
+			if = {
+				limit ={
+					has_completed_focus = TT_INT_FRA_strong_church
+				}
+				start_civil_war = {
+					ruling_party = theocratism
+					ideology = democratic
+					size = 0.4
+				}
+			}
+			else_if = {
+				limit ={
+					has_completed_focus = TT_INT_FRA_strong_state
+				}
+				start_civil_war = {
+					ruling_party = neutrality
+					ideology = democratic
+					size = 0.4
+				}
+			}
+			else = {
+				effect_tooltip= {
+					
+					start_civil_war = {
+							
+						ideology = democratic
+					}
+				}
+			}
+			
+		}
+	}
+
+	focus = {
+		id = TT_INT_FRA_reinstate_avignon_pope
+		prerequisite = {
+			focus = TT_INT_FRA_shut_down_parliament
+			
+		}
+		
+		relative_position_id = TT_INT_FRA_shut_down_parliament
+		x = 0
+		y = 1
+		completion_reward = {
+			
+		}
+	}
+
 	focus = {
 		id = TT_INT_FRA_cordon_sanitaire
 		prerequisite = { focus = TT_INT_FRA_Bloc_national}

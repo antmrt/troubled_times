@@ -1,0 +1,10 @@
+scripted_gui = {
+	latest_changes_gui = {
+		context_type = player_context
+		window_name = "recent_changes_container"
+
+		visible = {
+			has_country_flag = latest_changes_flag
+		}
+	}
+}

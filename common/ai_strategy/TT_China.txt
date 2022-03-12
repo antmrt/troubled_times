@@ -72,16 +72,47 @@ ANH_not_prepared_for_war = {
         value = -1000
     }
 }
+
+FEN_lack_of_army = {
+	allowed = {
+		tag = FEN
+
+	}
+	enable = {
+		FEN = {
+			is_neighbor_of = ZHI
+		}
+		NOT = {
+			has_war_with = ZHI
+		}
+	}
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+        type = force_build_armies
+        value = -1000
+    }
+	ai_strategy = {
+		type = prepare_for_war
+		id = ANH
+		value = -1000
+	}
+	
+	ai_strategy = {
+		type = declare_war
+		id = ANH
+		value = -1000
+	}
+}
+
 ZHI_prepare_for_FEN_war = {
 	allowed = {
 		tag = ZHI
 	}
 	enable = {
 		OR = {
-			ANH = {
-				check_variable = {
-					num_owned_controlled_states > 3
-				}
+			ZHI = {
+				is_neighbor_of = FEN
 			}
 			ZHI = {
 				has_war_with = FEN
@@ -98,4 +129,15 @@ ZHI_prepare_for_FEN_war = {
         type = force_build_armies
         value = 1000
     }
+	ai_strategy = {
+		type = prepare_for_war
+		id = ANH
+		value = 1000
+	}
+	
+	ai_strategy = {
+		type = declare_war
+		id = ANH
+		value = 1000
+	}
 }

@@ -664,7 +664,7 @@ ideologies = {
 		ai_neutral = yes #  
 	}
 
-	islamism = {
+	theocratism = {
 
 		types = {
 
@@ -690,15 +690,8 @@ ideologies = {
 
 		}
 
-		dynamic_faction_names = {
-			"FACTION_NAME_ISLAMIST_1"
-			"FACTION_NAME_ISLAMIST_2"
-			"FACTION_NAME_ISLAMIST_3"
-			"FACTION_NAME_ISLAMIST_4"
-			"FACTION_NAME_ISLAMIST_5"
-		}
-
-		color = { 0 20 0 }
+		
+		color = { 255 255 255 }
 
 		war_impact_on_world_tension = 1.0            #evil!
 		faction_impact_on_world_tension = 1.0

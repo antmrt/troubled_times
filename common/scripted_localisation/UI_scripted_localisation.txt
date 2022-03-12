@@ -1,3 +1,15 @@
+defined_text = {
+	name = GetStartupDescription
+
+	text = {
+		trigger = {
+			tag = FRA
+		}
+		localization_key = FRA_startup_description
+	}
+
+}
+ 
 
 ### Division Limits ###
 defined_text = {

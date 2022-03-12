@@ -2,3 +2,10 @@
  combat_gas:0 "Combat Gas"
  ABILITY_GAS_ATTACK:0 "Gas Attack"
  ABILITY_GAS_ATTACK_DESC:0 "Using the Power of Chemistry, by deploying attack Gas, we will be able to puch through our ennemies lines"
+
+ RECENT_CHANGES_TEXT:0 "[GetStartupDescription]"
+ 
+ FRA_startup_description:0 "With their Defeat in the §RFranco-Prussian War of 1870§!, §YFrance§! lost §YAlsace-Lorraine§!, as the situation escalated in the §YSummer of 1914§!, it was clear that joining the war was not an option, many saw the occasion to recover these lands. §YFrance§! is a Parliamentary Republic, meaning that its laws are voted in the Parliament. With the start of the §YGreat War§!, all parties agreed on the formation of the §3Union Sacrée§! which froze every debate in the National Assembly.\n With the Start of this month of November it seems that the German Troops are struggling, will they be Pushed Back, or will our Lines Crumble? \nWill France continue it's democratic Path, or will the system Collapse? Only the Future will tell."
+
+ theocratism:0 "Theocratism"
+ theocratism_noun:0 "Theocratism"

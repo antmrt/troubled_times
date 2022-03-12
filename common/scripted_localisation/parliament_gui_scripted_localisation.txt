@@ -164,7 +164,7 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			check_variable = { v = 6 }
+			check_variable = { v2 = 6 }
 		}
 		localization_key = party_6_text2
 	}

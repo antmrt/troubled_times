@@ -22,6 +22,7 @@ create_dynamic_country = {
 	
 	set_variable = { insanity_amount = 5 }
 	set_country_flag = clemenceau_president_du_conseil 
+	recruit_character = FRA_iron_mask
 	recruit_character = FRA_raymond_poincare
 	recruit_character = FRA_paul_deschanel
 	recruit_character = FRA_georges_clemenceau

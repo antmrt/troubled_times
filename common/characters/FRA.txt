@@ -1,4 +1,13 @@
 characters={
+
+	FRA_iron_mask = {
+		name = FRA_iron_mask
+		portraits = {
+			civilian={ 
+				large = "gfx/leaders/FRA/INT/iron_mask.dds"
+			}
+		}
+	}
 	FRA_ferdinand_foch = {
 		name = FRA_ferdinand_foch
 		portraits = {

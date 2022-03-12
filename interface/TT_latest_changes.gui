@@ -1,0 +1,44 @@
+guiTypes = { 
+	
+
+	containerWindowType = {
+		name = "recent_changes_container"
+		position = { x = 0 y = 0 }
+		size = { width = 600 height = 235 } 
+		margin = { top = 10 bottom = 20 }
+		Orientation = center
+		origo = center	
+		moveable = yes
+		
+		clipping  = yes
+		
+		
+		verticalScrollbar = "right_vertical_slider"
+
+		background = {
+			name = "emptybg"		
+			quadTextureSprite ="GFX_tiled_window"
+		}
+
+		
+		
+		
+
+		instantTextBoxType = {
+			
+			name ="recent_changes_text"
+			position = { x = 20 y = 10 }
+			font = "hoi_26mbs"
+			borderSize = {x = 0 y = 0}
+			text = "RECENT_CHANGES_TEXT"
+			format = center
+			maxWidth = 350
+			maxHeight = 235
+			
+		}
+		
+		
+		
+	}
+
+}

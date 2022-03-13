@@ -842,8 +842,8 @@ AUS_DEUTSCHOSTERREICH = {
 }
 
 CHI_KUOMINTANG = {
-	color = rgb { 3 34 76 }
-	color_ui = rgb { 3 34 76 }
+	color = rgb { 3 79 255 }
+	color_ui = rgb { 3 79 255 }
 }
 
 GREEN_ARMY = {

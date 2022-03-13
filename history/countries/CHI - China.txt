@@ -4,7 +4,9 @@ oob = "CHI_1936"
 
 1918.1.1 = {
 	set_cosmetic_tag = CHI_KUOMINTANG
+	recruit_character = CHI_Sun_yat_sen
 }
+
 1936.1.1 = {
 	drop_cosmetic_tag = yes
 	if = {
@@ -14,7 +16,7 @@ oob = "CHI_1936"
 			set_naval_oob = "CHI_1936_naval_legacy"
 		}
 	}
-	
+	retire_character = CHI_Sun_yat_sen
 	recruit_character = CHI_chiang_kaishek
 	recruit_character = CHI_zhang_guotao
 	recruit_character = CHI_wang_jingwei

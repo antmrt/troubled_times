@@ -109,7 +109,53 @@ TT_warlord_wars = {
 			
 		}
 	}
+	TT_proclaim_KMT = {
+		allowed = {
+			tag = GUC
+		}
+		visible = {
+			
+			NOT = {
+				has_war = yes
+				country_exists = CHI
+			}
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 100000
+				date > 1921.1.1
+			}
+		}
+		fire_only_once = yes
+		complete_effect = {
 
+			CHI = {
+				set_cosmetic_tag = CHI_KUOMINTANG
+			}
+			every_state	= {
+				limit = {
+					is_controlled_by = GUC
+					NOT = {
+						state = 591
+					}
+				}
+				CHI = {
+					transfer_state = PREV
+				}
+			}
+			GUC = {
+				transfer_units_fraction = {
+					target = CHI
+					size = 1
+				}
+			}
+			CHI = {change_tag_from = GUC}
+			CHI = {
+				transfer_state = 591
+			}
+		}
+	}
 	TT_ANH_launch_MON_expedition = {
 		allowed = {
 			tag = ANH

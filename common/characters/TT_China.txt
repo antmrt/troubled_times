@@ -42,6 +42,20 @@ characters = {
 			id = -1
 		}
 	}
-	
+	CHI_Sun_yat_sen = {
+
+		name = CHI_Sun_yat_sen
+
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CHINA/CHI_sun_yat_sen.dds.dds"
+			}
+		}
+		country_leader={
+			expire = "2060.1.1"
+			ideology = chinese_nationalism
+			id = -1
+		}
+	}
 
 }

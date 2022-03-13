@@ -623,12 +623,12 @@ TT_SOV_russian_civil_war = {
 					limit = {
 						is_fully_controlled_by = SOV
 					}
-				create_unit = {
-					division = "name = \"Infantry Division\" division_template = \"Strelkovaya Diviziya\" start_experience_factor = 0.1 start_equipment_factor = 0.1"
-					owner = SOV
+					create_unit = {
+						division = "name = \"Infantry Division\" division_template = \"Strelkovaya Diviziya\" start_experience_factor = 0.1 start_equipment_factor = 0.1"
+						owner = SOV
+					}
 				}
-			}
-			add_to_temp_variable = {div_created = 1}
+				add_to_temp_variable = {div_created = 1}
 			}
 		}
 	}

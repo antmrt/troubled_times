@@ -8,18 +8,22 @@ ability = {
 
 		allowed = {
 			
-			has_equipment = {
-				combat_gas > 500
+			FROM = {
+				has_equipment = {
+					combat_gas > 500
+				}
 			}
 		}
 		cost = 0.1
 		duration = 72
 
 		one_time_effect = {
-			add_equipment_to_stockpile = {
+			FROM = {
+				add_equipment_to_stockpile = {
 				type = combat_gas
 				amount = -500
 				
+				}
 			}
 			add_temporary_buff_to_units = {
 				combat_offense = 4

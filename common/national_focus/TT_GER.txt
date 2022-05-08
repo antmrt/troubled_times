@@ -41,7 +41,7 @@ focus_tree = {
 			focus = TT_INT_GER_bitter_defeat
 		}
 		completion_reward = {
-			
+			add_political_power = 50
 		}
 	}
 	focus = {
@@ -88,7 +88,18 @@ focus_tree = {
 			focus = TT_INT_GER_change_through_reforms focus = TT_INT_GER_change_through_revolution
 		}
 		
-		completion_reward = { }
+		completion_reward = { 
+			add_popularity = {
+				ideology = communism
+				popularity = -0.05
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.05
+			}
+
+
+		}
 	}
 	focus = {
 		id = TT_INT_GER_secure_army_loyalty
@@ -100,7 +111,11 @@ focus_tree = {
 			focus = TT_INT_GER_change_through_reforms
 		}
 		relative_position_id = TT_INT_GER_change_through_reforms
-		completion_reward = { }
+		completion_reward = { 
+
+			army_experience = 10
+
+		}
 	}
 	focus = {
 		id = TT_INT_GER_call_to_the_freikorps
@@ -112,7 +127,10 @@ focus_tree = {
 			focus = TT_INT_GER_secure_army_loyalty
 		}
 		relative_position_id = TT_INT_GER_secure_army_loyalty
-		completion_reward = { }
+		completion_reward = { 
+
+			custom_effect_tooltip = GER_freikorps_anti_communist_measures
+		}
 	}
 	focus = {
 		id = TT_INT_GER_disband_the_mutinies
@@ -124,7 +142,9 @@ focus_tree = {
 			focus = TT_INT_GER_secure_army_loyalty
 		}
 		relative_position_id = TT_INT_GER_secure_army_loyalty
-		completion_reward = { }
+		completion_reward = { 
+			remove_ideas = GER_looming_revolution
+		}
 	}
 
 	focus = {
@@ -136,6 +156,13 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = TT_INT_GER_disband_the_mutinies   }
 		prerequisite = { focus = TT_INT_GER_call_to_the_freikorps }
+
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = -0.05
+			}
+		}
 	}
 
 	focus = {
@@ -147,16 +174,88 @@ focus_tree = {
 		cost = 1
 		prerequisite = { focus = TT_INT_GER_get_rid_of_the_reds }
 		mutually_exclusive = { focus = TT_INT_GER_strenghten_freikorps }
+
+		completion_reward = {
+			add_popularity = {
+				ideology = neutrality 
+				popularity = 0.05
+			}
+			random_core_state = {
+				limit = {
+					OR = {
+						has_state_flag = spartakist_control
+						has_state_flag = republican_control
+					}
+				}
+
+				clr_state_flag = spartakist_control
+				clr_state_flag = republican_control
+				set_variable = {
+					monarchiststrengh = 10
+				}
+				set_variable = {
+					republicanstrengh = 0
+				}
+				set_variable = {
+					spartakiststrengh = 0
+				}
+				custom_effect_tooltip = state_will_switch_to_FRK
+			}
+			random_core_state = {
+				limit = {
+					OR = {
+						has_state_flag = spartakist_control
+						has_state_flag = republican_control
+					}
+				}
+
+				clr_state_flag = spartakist_control
+				clr_state_flag = republican_control
+				set_variable = {
+					monarchiststrengh = 10
+				}
+				set_variable = {
+					republicanstrengh = 0
+				}
+				set_variable = {
+					spartakiststrengh = 0
+				}
+				custom_effect_tooltip = state_will_switch_to_FRK
+			}
+			random_core_state = {
+				limit = {
+					OR = {
+						has_state_flag = spartakist_control
+						has_state_flag = republican_control
+					}
+				}
+
+				clr_state_flag = spartakist_control
+				clr_state_flag = republican_control
+				set_variable = {
+					monarchiststrengh = 10
+				}
+				set_variable = {
+					republicanstrengh = 0
+				}
+				set_variable = {
+					spartakiststrengh = 0
+				}
+				custom_effect_tooltip = state_will_switch_to_FRK
+			}
+		}
 	}
 
-	focus = {
+	focus = { 
 		id = TT_INT_Weimarer_verfassung
 		icon = GFX_unknown
 		relative_position_id = TT_INT_GER_Noske_strategy
 		x = -1
 		y = 1
 		prerequisite = { focus = TT_INT_GER_Noske_strategy focus = TT_INT_GER_strenghten_freikorps }
-		
+		completion_reward = {
+			add_stability = 0.05
+		}
 	}
 
 	focus = {
@@ -168,6 +267,35 @@ focus_tree = {
 		cost = 1
 		prerequisite = { focus = TT_INT_GER_get_rid_of_the_reds }
 		mutually_exclusive = { focus = TT_INT_GER_Noske_strategy }
+		completion_reward = {
+			random_owned_state = {
+				limit = {
+					has_state_flag = monarchist_control
+				}
+				add_to_variable = {
+					monarchiststrengh = 5
+				}
+				custom_effect_tooltip = increase_freikorps_strengh_by_5_tt
+			}
+			random_owned_state = {
+				limit = {
+					has_state_flag = monarchist_control
+				}
+				add_to_variable = { 
+					monarchiststrengh = 5
+				}
+				custom_effect_tooltip = increase_freikorps_strengh_by_5_tt
+			}
+			random_owned_state = {
+				limit = {
+					has_state_flag = monarchist_control
+				}
+				add_to_variable = {
+					monarchiststrengh = 5
+				}
+				custom_effect_tooltip = increase_freikorps_strengh_by_5_tt
+			}
+		}
 	}
 	focus = {
 		id = TT_INT_GER_rally_german_spartakists

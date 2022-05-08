@@ -1,5 +1,72 @@
 @WHR_default_propaganda_campaign_duration = 180
 
+TT_SOV_help_MON = {
+	TT_SOV_secure_MON_communism = {
+		visible = {
+			MON = {
+				has_war = yes
+				NOT = {
+					has_government = communism
+				}
+			}
+
+		}
+		allowed = {
+			tag = SOV
+		}
+
+		fire_only_once = yes
+		ai_will_do = {
+			base = 100000
+		}
+		complete_effect = {
+			MON = {
+				add_popularity = {
+					ideology = communism
+					popularity = 0.15
+				}
+
+				division_template = {
+					name = "Soviet Volunteers"
+					is_locked = yes
+					priority = 0
+					template_counter = 0
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+					}
+				}
+				random_owned_state = {
+					
+
+					create_unit = {
+						division = "name = \"Soviet Volunteers\" division_template = \"Soviet Volunteers\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
+						owner = MON
+					}
+					create_unit = {
+						division = "name = \"Soviet Volunteers\" division_template = \"Soviet Volunteers\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
+						owner = MON
+					}
+					create_unit = {
+						division = "name = \"Soviet Volunteers\" division_template = \"Soviet Volunteers\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
+						owner = MON
+					}
+					create_unit = {
+						division = "name = \"Soviet Volunteers\" division_template = \"Soviet Volunteers\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
+						owner = MON
+					}
+					create_unit = {
+						division = "name = \"Soviet Volunteers\" division_template = \"Soviet Volunteers\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
+						owner = MON
+					}
+				}
+			}
+		}
+	}
+}
+
 TT_WHR_battle_of_the_chiefs = {
 	
 }

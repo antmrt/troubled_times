@@ -1,4 +1,9 @@
 spriteTypes = {
+
+    spriteType = {
+        name = "GFX_france"
+        texturefile = "gfx/interface/random/france.dds"
+    }
     spriteType = {
         name = "GFX_moon_map"
         texturefile = "gfx/interface/space_program/moonmap.dds"

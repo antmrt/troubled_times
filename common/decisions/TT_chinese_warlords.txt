@@ -106,7 +106,8 @@ TT_warlord_wars = {
 		complete_effect = {
 			clear_global_event_target = TT_CHI_central_government
 			save_global_event_target_as = TT_CHI_central_government
-			
+			clear_global_event_target = WTT_current_china_leader
+			save_global_event_target_as = WTT_current_china_leader
 		}
 	}
 	TT_proclaim_KMT = {

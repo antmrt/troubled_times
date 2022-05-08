@@ -12,6 +12,8 @@ category = { ### THIS USES SOUND EFFECTS, NOT SOUND
 		# GERMAN REVOLUTION
 		spartakist_victory
 		freikorps_victory
+
+		german_intervention
 	}
  	compressor = {
 		enabled = yes

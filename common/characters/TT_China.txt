@@ -48,7 +48,7 @@ characters = {
 
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/CHINA/CHI_sun_yat_sen.dds.dds"
+				large = "gfx/leaders/CHINA/CHI_sun_yat_sen.dds"
 			}
 		}
 		country_leader={

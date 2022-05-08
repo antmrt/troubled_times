@@ -4,16 +4,24 @@ guiTypes = {
 	containerWindowType = {
 		name = "recent_changes_container"
 		position = { x = 0 y = 0 }
-		size = { width = 600 height = 235 } 
+		size = { width = 500 height = 400 } 
 		margin = { top = 10 bottom = 20 }
 		Orientation = center
 		origo = center	
 		moveable = yes
 		
-		clipping  = yes
+		clipping  = no
 		
 		
-		verticalScrollbar = "right_vertical_slider"
+		buttonType = {
+			name = "exit"
+			position = { x = 455 y = 0 }
+			spriteType = "GFX_closebutton"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+			shortcut = "ESCAPE"
+			#orientation = UPPER_RIGHT
+		}
 
 		background = {
 			name = "emptybg"		
@@ -22,19 +30,23 @@ guiTypes = {
 
 		
 		
-		
+		iconType = {
+			name = "random_image"
+			spriteType = "GFX_france"
+			position = { x = 455 y = 0 }
+		}
 
 		instantTextBoxType = {
 			
 			name ="recent_changes_text"
-			position = { x = 20 y = 10 }
+			position = { x = 40 y = 30 }
 			font = "hoi_26mbs"
 			borderSize = {x = 0 y = 0}
 			text = "RECENT_CHANGES_TEXT"
-			format = center
+			format = left
 			maxWidth = 350
-			maxHeight = 235
-			
+			maxHeight = 535
+			scrollbarType = standardtext_slider
 		}
 		
 		

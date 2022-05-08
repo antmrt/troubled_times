@@ -1,3 +1,12 @@
+TT_SOV_help_MON = {
+	allowed = {
+		original_tag = SOV
+
+	}
+	visible = {
+		has_government = communism
+	}
+}
 TT_SOV_shifting_alliances = {
 	allowed = {
 		original_tag = SOV

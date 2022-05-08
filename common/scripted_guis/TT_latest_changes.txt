@@ -6,5 +6,10 @@ scripted_gui = {
 		visible = {
 			has_country_flag = latest_changes_flag
 		}
+		effects = {
+			exit_click = {
+				clr_country_flag = latest_changes_flag
+			}
+		}
 	}
-}
+} 

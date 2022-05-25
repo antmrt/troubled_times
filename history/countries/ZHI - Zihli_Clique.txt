@@ -43,3 +43,14 @@ set_popularities = {
 		remove_ideas = boxer_protocols_visible
 		country_lock_all_division_template = no
 	}
+
+	create_dynamic_country = {
+		
+		original_tag = ZHI
+	    
+		set_politics = {
+			ruling_party = fascism
+		}
+		set_cosmetic_tag = ZHI_BREAKUP
+	    reserve_dynamic_country = yes
+	}

@@ -850,3 +850,8 @@ GREEN_ARMY = {
 	color = rgb {50 168 0}
 	color_ui = rgb {50 168 0}
 }
+
+ZHI_BREAKUP = {
+	color = rgb {255 130 184}
+	color_ui = rgb {255 130 184}
+}

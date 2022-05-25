@@ -329,6 +329,7 @@ is_chinese_warlord = {
 		tag = ZHI
 		tag = ANH
 		tag = CHI
+		tag = GUO
 	}
 }
 needs_army_reduction_for_manpower = {

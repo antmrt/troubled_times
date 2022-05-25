@@ -15,7 +15,7 @@ CP_treaty_of_frankfurt = {
 		priority = 200
 		activation = {
 			has_global_flag = FRA_2nde_revolution_lost_ww1
-		}
+		} 
 		fire_only_once = yes
 
 		timeout_effect = {

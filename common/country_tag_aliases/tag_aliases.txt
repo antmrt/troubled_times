@@ -143,14 +143,18 @@ SYF = {
 AUK = {
 	original_tag = UKR
 	has_cosmetic_tag = ANARCHIST_UKRAINE
-
-
 }
 
 GAR = {
 	original_tag = SOV
 	has_cosmetic_tag = GREEN_ARMY
 }
+
+ZHB = {
+	original_tag = ZHI
+	has_cosmetic_tag = ZHI_BREAKUP
+}
+
 # operative operation target
 # only set for majors who has agency
 # set on on_weekly

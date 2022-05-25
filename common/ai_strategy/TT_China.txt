@@ -9,11 +9,18 @@ ZHI_prepare_war = {
 				has_war_with = ANH
 			}
 			ANH = {
-				check_variable = {
-					num_owned_controlled_states > 3
-				}
+				
+				has_event_target = TT_CHI_central_government
+				
 			}
 
+		}
+	}
+	abort = {
+		ANH = {
+			NOT = {
+				has_event_target = TT_CHI_central_government
+			}
 		}
 	}
 	ai_strategy = {
@@ -49,13 +56,11 @@ ANH_not_prepared_for_war = {
 		tag = ANH
 	}
 	abort_when_not_enabled = yes
-	abort = {
-		has_war = yes
-	}
+	
 	enable = {
-		NOT = {
-			has_war = yes
-		}
+		
+		has_war = no
+		
 	} 
 	ai_strategy = {
 		type = front_unit_request
@@ -87,7 +92,9 @@ FEN_lack_of_army = {
 		}
 	}
 	abort_when_not_enabled = yes
-	
+	abort = {
+		has_war_with = ZHI
+	}
 	ai_strategy = {
         type = force_build_armies
         value = -1000
@@ -111,12 +118,16 @@ ZHI_prepare_for_FEN_war = {
 	}
 	enable = {
 		OR = {
-			ZHI = {
-				is_neighbor_of = FEN
-			}
+			has_wargoal_against = FEN
+			
 			ZHI = {
 				has_war_with = FEN
 			}
+		}
+	}
+	abort = {
+		NOT = {
+			has_wargoal_against = FEN
 		}
 	}
 	abort_when_not_enabled = yes
@@ -130,14 +141,21 @@ ZHI_prepare_for_FEN_war = {
         value = 1000
     }
 	ai_strategy = {
-		type = prepare_for_war
+		type = ignore
 		id = ANH
+		value = 100
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = FEN
 		value = 1000
 	}
 	
 	ai_strategy = {
 		type = declare_war
-		id = ANH
+		id = FEN
 		value = 1000
 	}
 }
+
+ 

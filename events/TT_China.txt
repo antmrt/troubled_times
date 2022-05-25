@@ -20,3 +20,55 @@ country_event = {
 	}
 
 }
+
+country_event = {
+	id = TT_China.2
+	desc = TT_China.2.d
+	title = TT_China.2.t
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = TT_China.2.a
+		ZHI = {
+			release = GUO
+		}
+		ZHB = {
+			transfer_state = 750
+		    transfer_state = 620
+		}
+		ZHI = {
+			transfer_units_fraction = {
+				size = 0.33
+				target = GUO
+			}
+			transfer_units_fraction = {
+				size = 0.5
+				target = ZHB
+			}
+			declare_war_on = {
+				target = ZHB
+				type = civil_war
+			}
+			declare_war_on = {
+				target = GUO
+				type = civil_war
+			}
+			add_civil_war_target = GUO
+			add_civil_war_target = ZHB
+			ZHB = {
+				add_civil_war_target = ZHI
+				add_civil_war_target = GUO
+			}
+			GUO = {
+				declare_war_on = {
+					target = ZHB
+					type = civil_war
+				}
+				add_civil_war_target = ZHB
+				add_civil_war_target = ZHI
+			}
+		}
+	}
+}

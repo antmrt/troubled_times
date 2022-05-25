@@ -25,3 +25,5 @@ SAR = "countries/Saar.txt"
 BDN = "countries/Baden.txt"
 DAN = "countries/Danzig.txt"
 BAV = "countries/Bavaria.txt"
+
+GUO = "countries/Guominjun.txt"

@@ -51,7 +51,7 @@ TT_get_around_boxer_protocols = {
 		} 
 		ai_will_do = {
 			factor = 1100000
-		}
+		} 
 		complete_effect = {
 			country_lock_all_division_template = no
 		}
@@ -409,6 +409,12 @@ TT_warlord_wars = {
 				always = no
 			}
 		}
+		allowed = {
+			OR = {
+				tag = ZHI
+				tag = FEN
+			}
+		}
 		days_mission_timeout = 10
 		fire_only_once = yes
 		activation = {
@@ -438,6 +444,8 @@ TT_warlord_wars = {
 				transfer_state = 612
 				transfer_state = 621
 				transfer_state = 746
+
+				white_peace = FEN
 			}
 		}
 	}
